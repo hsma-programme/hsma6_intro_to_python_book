@@ -9,17 +9,12 @@ When writing code, it is extremely important to write comments that explain how 
 
 This is important to help others understand how your code works, but also to help you remember how your code works…
 
-![](assets/2024-05-14-21-19-41.png)
+![](assets/2024-05-14-21-34-48.png)
 
 There are two ways of writing comments in Python.
 
-![](assets/2024-05-14-21-18-38.png)
+![](assets/2024-05-14-21-34-35.png)
 
-:::{pyodide-python}
-
-# Run this code cell - you can see that nothing happens!
-
-:::
 
 :::{pyodide-python}
 
