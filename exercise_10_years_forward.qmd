@@ -32,5 +32,5 @@ print (f"Hello {name}.  In 10 years time, you will be {age+10}")
 
 :::{.callout-tip collapse="true"}
 # Click here to view a video explaining the solution
-
+Coming Soon!
 :::

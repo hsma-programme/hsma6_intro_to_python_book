@@ -1,0 +1,29 @@
+---
+filters:
+  - pyodide
+---
+
+# Comments
+
+When writing code, it is extremely important to write comments that explain how each piece of code works (this might be for an individual line of code, or a block of code).
+
+This is important to help others understand how your code works, but also to help you remember how your code works…
+
+![](assets/2024-05-14-21-19-41.png)
+
+There are two ways of writing comments in Python.
+
+![](assets/2024-05-14-21-18-38.png)
+
+:::{pyodide-python}
+
+# Run this code cell - you can see that nothing happens!
+
+:::
+
+:::{pyodide-python}
+
+# This is a comment - it won't be printed
+print("But if you run this code cell, I will be printed!")
+
+:::
