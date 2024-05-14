@@ -1,0 +1,36 @@
+---
+filters:
+  - pyodide
+eval: false
+---
+
+
+# Exercise: 10 years forward
+
+
+**Using what you’ve learned so far, write a program that asks for the user’s name, then asks for their age, then stores the age as an appropriate variable type, and then prints a message that says hello to them, and tells them how old they will be in 10 years time.**
+
+If you don't have VSCode installed, you can create the program in Google Colab - just make sure you click 'file --> save' when you're done to save it to your Google account.
+
+<a target="_blank" href="https://colab.research.google.com/gist/Bergam0t/615deffaa14923c89cd6ce1276392d63/hsma-6-1e-exercise-1.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+## Sample Answer
+
+:::{.callout-tip collapse="true"}
+# Click here to view a sample answer
+```{python}
+name = input("What is your name?")
+age = int(input("How old are you?"))
+
+print (f"Hello {name}.  In 10 years time, you will be {age+10}")
+```
+:::
+
+## Answer Video
+
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
+
+:::

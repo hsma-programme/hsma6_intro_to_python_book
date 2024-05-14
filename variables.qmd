@@ -1,0 +1,82 @@
+---
+filters:
+  - pyodide
+---
+
+# Variables
+
+In Principles of Programming, we talked about variables.  We said these are essentially boxes that store information of a certain type so the program can refer to it later.
+
+In many programming languages, we need to create a variable by declaring it. This means specifying its type alongside its name.
+
+In Python, things are much more laid back.  Variables are dynamic, so we simply assign a value to a name to create the variable, and the type will be automatically set based on the Value we provide. We assign values in Python using the assignment operator =.  It basically says “Let this have a value of this”.
+
+This can cause confusion if you’re new to coding. = does not mean ‘equals’.
+
+
+What will be the variable type of each of these variables after assignment?
+![](assets/2024-05-14-20-52-48.png)
+
+Because variables in Python are dynamic, their type will change if we give it a value of a different type :
+
+![](assets/2024-05-14-20-53-07.png)
+
+### Dealing with spaces in names
+
+In programming languages, a space indicates a separation between instructions, values etc.  So if we want to name something (like a variable) with multiple words then we can’t use spaces.  There are two principle conventions for how we deal with this :
+
+![](assets/2024-05-14-20-53-36.png)
+
+You can use whichever you prefer (though ensure you’re consistent) but snake_case is generally preferred for (and recommended by the developers of) Python.
+
+### Variable Types - Single Items
+
+Let’s remind ourselves of some of the main types of variable, and see what they look like in Python.
+
+#### Numbers
+Integers (int) are whole numbers
+Floating point numbers (float) are numbers with up to 15 decimal places
+
+![](assets/2024-05-14-20-54-14.png)
+
+#### Text
+Strings (str) are sequences of characters denoted using “ or ‘
+(Note - Python does not have a separate variable type for characters, they are just strings of length 1)
+
+![](assets/2024-05-14-20-54-32.png)
+
+#### Truth
+Booleans (bool) take one of two values to indicate whether they are True or False.
+
+![](assets/2024-05-14-20-54-50.png)
+
+### Variables that store Multiple Items
+
+#### Lists
+Lists (list) are sequences of items, where the order matters.  Duplicates allowed.
+
+![](assets/2024-05-14-20-57-06.png)
+
+#### Sets
+Sets (set) are unordered sequences of unique items.
+
+![](assets/2024-05-14-20-57-20.png)
+
+:::{.callout-tip}
+You won't come across sets too often in Python - so don't worry about them too much for now!
+:::
+
+#### Tuples
+Tuples (tuple) are ordered sequences (like a list) but are immutable (once created, they cannot be changed)
+
+![](assets/2024-05-14-20-57-32.png)
+
+
+:::{.callout-tip}
+You won't come across tuples too often in Python - so don't worry about them too much for now!
+:::
+
+#### Dictionaries
+Dictionaries (dict) are unordered collections of key-value pairs
+
+![](assets/2024-05-14-20-57-43.png)

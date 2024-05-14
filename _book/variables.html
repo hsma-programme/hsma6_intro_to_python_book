@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HSMA - the little book of DES</title>
+<title>HSMA - Programming in Python - 4&nbsp; Variables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./functions.html" rel="next">
-<link href="./intro_to_programming_concepts.html" rel="prev">
+<link href="./fstrings.html" rel="next">
+<link href="./printing.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,11 +74,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="HSMA - the little book of DES">
-<meta property="og:site_name" content="HSMA - the little book of DES">
+<meta property="og:title" content="HSMA - Programming in Python - 4&nbsp; Variables">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="HSMA - Programming in Python">
 </head>
 
-<body class="nav-sidebar docked nav-fixed fullcontent">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -86,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">HSMA - the little book of DES</span>
+    <span class="navbar-title">HSMA - Programming in Python</span>
     </a>
   </div>
         <div class="quarto-navbar-tools tools-end">
@@ -100,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./variables.html">Part 2 - Your First Steps in Python</a></li><li class="breadcrumb-item"><a href="./variables.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">variables.html</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./printing.html">Your First Steps in Python</a></li><li class="breadcrumb-item"><a href="./variables.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Variables</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -140,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Part 1 - Programming Concepts</span></a>
+ <span class="menu-text">Programming Concepts</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -157,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Part 2 - Your First Steps in Python</span></a>
+ <span class="menu-text">Your First Steps in Python</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -165,8 +166,38 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./printing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Printing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./variables.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">variables.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Variables</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fstrings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./user_input_casting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">User Input and Changing Variable Types</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mathematical_operators.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mathematical Operators</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exercise_10_years_forward.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise: 10 years forward</span></span></a>
   </div>
 </li>
       </ul>
@@ -183,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">functions.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">functions.html</span></span></a>
   </div>
 </li>
       </ul>
@@ -200,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">intro_to_numpy.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">intro_to_numpy.html</span></span></a>
   </div>
 </li>
       </ul>
@@ -217,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">intro_to_pandas.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">intro_to_pandas.html</span></span></a>
   </div>
 </li>
       </ul>
@@ -225,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">further_reading.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">further_reading.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -239,15 +270,122 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#dealing-with-spaces-in-names" id="toc-dealing-with-spaces-in-names" class="nav-link active" data-scroll-target="#dealing-with-spaces-in-names"><span class="header-section-number">4.0.1</span> Dealing with spaces in names</a></li>
+  <li><a href="#variable-types---single-items" id="toc-variable-types---single-items" class="nav-link" data-scroll-target="#variable-types---single-items"><span class="header-section-number">4.0.2</span> Variable Types - Single Items</a></li>
+  <li><a href="#variables-that-store-multiple-items" id="toc-variables-that-store-multiple-items" class="nav-link" data-scroll-target="#variables-that-store-multiple-items"><span class="header-section-number">4.0.3</span> Variables that store Multiple Items</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./printing.html">Your First Steps in Python</a></li><li class="breadcrumb-item"><a href="./variables.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Variables</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Variables</span></h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<p>In Principles of Programming, we talked about variables. We said these are essentially boxes that store information of a certain type so the program can refer to it later.</p>
+<p>In many programming languages, we need to create a variable by declaring it. This means specifying its type alongside its name.</p>
+<p>In Python, things are much more laid back. Variables are dynamic, so we simply assign a value to a name to create the variable, and the type will be automatically set based on the Value we provide. We assign values in Python using the assignment operator =. It basically says “Let this have a value of this”.</p>
+<p>This can cause confusion if you’re new to coding. = does not mean ‘equals’.</p>
+<p>What will be the variable type of each of these variables after assignment? <img src="assets/2024-05-14-20-52-48.png" class="img-fluid"></p>
+<p>Because variables in Python are dynamic, their type will change if we give it a value of a different type :</p>
+<p><img src="assets/2024-05-14-20-53-07.png" class="img-fluid"></p>
+<section id="dealing-with-spaces-in-names" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="dealing-with-spaces-in-names"><span class="header-section-number">4.0.1</span> Dealing with spaces in names</h3>
+<p>In programming languages, a space indicates a separation between instructions, values etc. So if we want to name something (like a variable) with multiple words then we can’t use spaces. There are two principle conventions for how we deal with this :</p>
+<p><img src="assets/2024-05-14-20-53-36.png" class="img-fluid"></p>
+<p>You can use whichever you prefer (though ensure you’re consistent) but snake_case is generally preferred for (and recommended by the developers of) Python.</p>
+</section>
+<section id="variable-types---single-items" class="level3" data-number="4.0.2">
+<h3 data-number="4.0.2" class="anchored" data-anchor-id="variable-types---single-items"><span class="header-section-number">4.0.2</span> Variable Types - Single Items</h3>
+<p>Let’s remind ourselves of some of the main types of variable, and see what they look like in Python.</p>
+<section id="numbers" class="level4" data-number="4.0.2.1">
+<h4 data-number="4.0.2.1" class="anchored" data-anchor-id="numbers"><span class="header-section-number">4.0.2.1</span> Numbers</h4>
+<p>Integers (int) are whole numbers Floating point numbers (float) are numbers with up to 15 decimal places</p>
+<p><img src="assets/2024-05-14-20-54-14.png" class="img-fluid"></p>
+</section>
+<section id="text" class="level4" data-number="4.0.2.2">
+<h4 data-number="4.0.2.2" class="anchored" data-anchor-id="text"><span class="header-section-number">4.0.2.2</span> Text</h4>
+<p>Strings (str) are sequences of characters denoted using “ or ‘ (Note - Python does not have a separate variable type for characters, they are just strings of length 1)</p>
+<p><img src="assets/2024-05-14-20-54-32.png" class="img-fluid"></p>
+</section>
+<section id="truth" class="level4" data-number="4.0.2.3">
+<h4 data-number="4.0.2.3" class="anchored" data-anchor-id="truth"><span class="header-section-number">4.0.2.3</span> Truth</h4>
+<p>Booleans (bool) take one of two values to indicate whether they are True or False.</p>
+<p><img src="assets/2024-05-14-20-54-50.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="variables-that-store-multiple-items" class="level3" data-number="4.0.3">
+<h3 data-number="4.0.3" class="anchored" data-anchor-id="variables-that-store-multiple-items"><span class="header-section-number">4.0.3</span> Variables that store Multiple Items</h3>
+<section id="lists" class="level4" data-number="4.0.3.1">
+<h4 data-number="4.0.3.1" class="anchored" data-anchor-id="lists"><span class="header-section-number">4.0.3.1</span> Lists</h4>
+<p>Lists (list) are sequences of items, where the order matters. Duplicates allowed.</p>
+<p><img src="assets/2024-05-14-20-57-06.png" class="img-fluid"></p>
+</section>
+<section id="sets" class="level4" data-number="4.0.3.2">
+<h4 data-number="4.0.3.2" class="anchored" data-anchor-id="sets"><span class="header-section-number">4.0.3.2</span> Sets</h4>
+<p>Sets (set) are unordered sequences of unique items.</p>
+<p><img src="assets/2024-05-14-20-57-20.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You won’t come across sets too often in Python - so don’t worry about them too much for now!</p>
+</div>
+</div>
+</section>
+<section id="tuples" class="level4" data-number="4.0.3.3">
+<h4 data-number="4.0.3.3" class="anchored" data-anchor-id="tuples"><span class="header-section-number">4.0.3.3</span> Tuples</h4>
+<p>Tuples (tuple) are ordered sequences (like a list) but are immutable (once created, they cannot be changed)</p>
+<p><img src="assets/2024-05-14-20-57-32.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You won’t come across tuples too often in Python - so don’t worry about them too much for now!</p>
+</div>
+</div>
+</section>
+<section id="dictionaries" class="level4" data-number="4.0.3.4">
+<h4 data-number="4.0.3.4" class="anchored" data-anchor-id="dictionaries"><span class="header-section-number">4.0.3.4</span> Dictionaries</h4>
+<p>Dictionaries (dict) are unordered collections of key-value pairs</p>
+<p><img src="assets/2024-05-14-20-57-43.png" class="img-fluid"></p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -1142,13 +1280,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro_to_programming_concepts.html" class="pagination-link" aria-label="intro_to_programming_concepts.html">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro_to_programming_concepts.html</span></span>
+      <a href="./printing.html" class="pagination-link" aria-label="Printing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Printing</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./functions.html" class="pagination-link" aria-label="functions.html">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">functions.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./fstrings.html" class="pagination-link" aria-label="Variables and Printing together - the fString">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

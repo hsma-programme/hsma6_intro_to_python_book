@@ -1,0 +1,38 @@
+---
+filters:
+  - pyodide
+---
+
+# Printing
+
+There is a tradition in Computer Science that the first program anyone should write in a Programming Language is one that writes the words “Hello World!” to the screen.
+
+(Look, back in my day (the 80s), getting a machine to display anything on your TV was pretty amazing stuff!)
+
+Let’s write a Hello World program in Python.
+
+In Principles of Programming, we talked about functions.  We said that they are bundles of code that we can run every time we call them.  We can give them optional inputs, and may get some outputs.
+
+To write text to the screen in Python, we use something known as the print() function.  The input (that we put in the brackets) is the thing we want it to write to the screen.
+
+Let’s try it!
+
+We use quotation marks “ to denote a string (ie text - a series of characters).  We can also use single quotes ‘.  Either is fine, but you must use the same one to open and close the same string.
+
+
+```{pyodide-python}
+print("Hello World!")
+```
+
+
+:::{.callout-tip}
+If we were to do this in VSCode, we would create a new Python(.py) file
+
+![](assets/2024-05-14-20-48-38.png)
+
+When we type the above, nothing happens.  That’s because we need to run the program.
+![](assets/2024-05-14-20-52-08.png)
+
+This is exciting isn’t it.  (Don’t worry, it gets better)
+
+:::

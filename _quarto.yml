@@ -8,12 +8,17 @@ book:
   chapters:
   - index.qmd
   - intro.qmd
-  - part: "Part 1 - Programming Concepts"
+  - part: "Programming Concepts"
     chapters:
     - intro_to_programming_concepts.qmd
-  - part: "Part 2 - Your First Steps in Python"
+  - part: "Your First Steps in Python"
     chapters:
+    - printing.qmd
     - variables.qmd
+    - fstrings.qmd
+    - user_input_casting.qmd
+    - mathematical_operators.qmd
+    - exercise_10_years_forward.qmd
   - part: "Functions"
     chapters:
     - functions.qmd

@@ -1,0 +1,37 @@
+---
+filters:
+  - pyodide
+---
+
+
+# Mathematical Operators
+
+When we’re dealing with numbers, we often want to manipulate them in some way.  We can apply common mathematical functions in Python easily (though some of the symbols used might seem odd if you’re new to coding).
+
+![](assets/2024-05-14-21-06-19.png)
+
+Modulus can seem a bit weird, so let’s talk about it a bit more, because it can also be really useful…
+
+## Modulus
+
+10 % 3
+This means divide 10 by 3, and return the remainder.
+
+3 goes into 10 three times, but we’re left with 1 left over (3 x 3 = 9) - a remainder of 1.
+
+So 10 % 3 = 1.
+
+```{pyodide-python}
+10 % 3
+```
+
+20 % 2
+This means divide 20 by 2, and return the remainder.
+
+2 goes into 20 exactly 10 times, with nothing left over (no remainder).
+
+So 20 % 2 = 0.
+
+```{pyodide-python}
+20 % 2
+```

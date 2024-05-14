@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "HSMA - the little book of DES",
+    "title": "HSMA - Programming in Python",
     "section": "",
     "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
@@ -17,6 +17,127 @@
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "printing.html",
+    "href": "printing.html",
+    "title": "3  Printing",
+    "section": "",
+    "text": "There is a tradition in Computer Science that the first program anyone should write in a Programming Language is one that writes the words “Hello World!” to the screen.\n(Look, back in my day (the 80s), getting a machine to display anything on your TV was pretty amazing stuff!)\nLet’s write a Hello World program in Python.\nIn Principles of Programming, we talked about functions. We said that they are bundles of code that we can run every time we call them. We can give them optional inputs, and may get some outputs.\nTo write text to the screen in Python, we use something known as the print() function. The input (that we put in the brackets) is the thing we want it to write to the screen.\nLet’s try it!\nWe use quotation marks “ to denote a string (ie text - a series of characters). We can also use single quotes ’. Either is fine, but you must use the same one to open and close the same string.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nTip\n\n\n\nIf we were to do this in VSCode, we would create a new Python(.py) file\n\nWhen we type the above, nothing happens. That’s because we need to run the program. \nThis is exciting isn’t it. (Don’t worry, it gets better)",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Printing</span>"
+    ]
+  },
+  {
+    "objectID": "variables.html",
+    "href": "variables.html",
+    "title": "4  Variables",
+    "section": "",
+    "text": "In Principles of Programming, we talked about variables. We said these are essentially boxes that store information of a certain type so the program can refer to it later.\nIn many programming languages, we need to create a variable by declaring it. This means specifying its type alongside its name.\nIn Python, things are much more laid back. Variables are dynamic, so we simply assign a value to a name to create the variable, and the type will be automatically set based on the Value we provide. We assign values in Python using the assignment operator =. It basically says “Let this have a value of this”.\nThis can cause confusion if you’re new to coding. = does not mean ‘equals’.\nWhat will be the variable type of each of these variables after assignment? \nBecause variables in Python are dynamic, their type will change if we give it a value of a different type :\n\n\n4.0.1 Dealing with spaces in names\nIn programming languages, a space indicates a separation between instructions, values etc. So if we want to name something (like a variable) with multiple words then we can’t use spaces. There are two principle conventions for how we deal with this :\n\nYou can use whichever you prefer (though ensure you’re consistent) but snake_case is generally preferred for (and recommended by the developers of) Python.\n\n\n4.0.2 Variable Types - Single Items\nLet’s remind ourselves of some of the main types of variable, and see what they look like in Python.\n\n4.0.2.1 Numbers\nIntegers (int) are whole numbers Floating point numbers (float) are numbers with up to 15 decimal places\n\n\n\n4.0.2.2 Text\nStrings (str) are sequences of characters denoted using “ or ‘ (Note - Python does not have a separate variable type for characters, they are just strings of length 1)\n\n\n\n4.0.2.3 Truth\nBooleans (bool) take one of two values to indicate whether they are True or False.\n\n\n\n\n4.0.3 Variables that store Multiple Items\n\n4.0.3.1 Lists\nLists (list) are sequences of items, where the order matters. Duplicates allowed.\n\n\n\n4.0.3.2 Sets\nSets (set) are unordered sequences of unique items.\n\n\n\n\n\n\n\nTip\n\n\n\nYou won’t come across sets too often in Python - so don’t worry about them too much for now!\n\n\n\n\n4.0.3.3 Tuples\nTuples (tuple) are ordered sequences (like a list) but are immutable (once created, they cannot be changed)\n\n\n\n\n\n\n\nTip\n\n\n\nYou won’t come across tuples too often in Python - so don’t worry about them too much for now!\n\n\n\n\n4.0.3.4 Dictionaries\nDictionaries (dict) are unordered collections of key-value pairs",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Variables</span>"
+    ]
+  },
+  {
+    "objectID": "fstrings.html",
+    "href": "fstrings.html",
+    "title": "5  Variables and Printing together - the fString",
+    "section": "",
+    "text": "Python has a rather neat type of string called an fString. These are strings where we can include formatting within the string to define where we want dynamic text.\nWe often want to do this where we want to insert the value of a variable into a string of text.\ne.g. “Her name is &lt;&gt;”\nTo use fStrings, we simply put the character f immediately before our opening quotation mark, and use curly brackets to denote where we want to include the name of a variable, so that Python will pull in the value in that variable instead of hard-coded text.\nExample :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can also do some other cool things with fStrings. We’re not restricted to just variable names either, we can put in the curly brackets any instruction whose output will result in something that can be interpreted as a string (ie some characters).\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Variables and Printing together - the fString</span>"
+    ]
+  },
+  {
+    "objectID": "user_input_casting.html",
+    "href": "user_input_casting.html",
+    "title": "6  User Input and Changing Variable Types",
+    "section": "",
+    "text": "6.1 User Input\nSometimes we need to ask the user to input something in order to continue with the program.\nIn Python, getting input from the user is easy. We simply tell Python that we need an input, any message we want to display to the user, and the name of the variable in which we want to store the input.\nage = input(\"How old are you?: \")",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>User Input and Changing Variable Types</span>"
+    ]
+  },
+  {
+    "objectID": "user_input_casting.html#user-input",
+    "href": "user_input_casting.html#user-input",
+    "title": "6  User Input and Changing Variable Types",
+    "section": "",
+    "text": "Important\n\n\n\nHOWEVER, when we read in the inputs from a user, regardless of what it is supposed to represent, they will be read in as a sequence of characters. In other words, as a string.\nClearly, if we’re reading in something intended to be a number (like an age) that’s no good. So what can we do?\nWell, we are wizards…",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>User Input and Changing Variable Types</span>"
+    ]
+  },
+  {
+    "objectID": "user_input_casting.html#casting",
+    "href": "user_input_casting.html#casting",
+    "title": "6  User Input and Changing Variable Types",
+    "section": "6.2 Casting",
+    "text": "6.2 Casting\nPython allows us to turn one type of variable into another, like a magic spell. This is known as casting. As long as the value stored in the variable can be interpreted as the type we’re trying to cast it into, it’ll work (otherwise we’ll get an error).\nTo cast, we simply wrap the variable on which we’re performing the cast in brackets, and tell it the type of variable we want it to become.\n\nage = input(\"How old are you?: \")\nint(age)\n\nWe could also do that all in one line of code :\n\nage = int(input(\"How old are you?: \"))\n\nThis will only work if the user inputs something that can be interpreted as an integer. “42” will work. “Too old” will not work.\n\n\n\n\n\n\nWarning\n\n\n\nNote - you can cast a float value (e.g. 42.6547) as an integer (it’ll just ignore the decimal place and create an int value of 42 - it won’t round).\nHOWEVER, this won’t work for strings - you can’t cast “42.6547” as a string into an int.",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>User Input and Changing Variable Types</span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_operators.html",
+    "href": "mathematical_operators.html",
+    "title": "7  Mathematical Operators",
+    "section": "",
+    "text": "7.1 Modulus\n10 % 3 This means divide 10 by 3, and return the remainder.\n3 goes into 10 three times, but we’re left with 1 left over (3 x 3 = 9) - a remainder of 1.\nSo 10 % 3 = 1.\n20 % 2 This means divide 20 by 2, and return the remainder.\n2 goes into 20 exactly 10 times, with nothing left over (no remainder).\nSo 20 % 2 = 0.",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mathematical Operators</span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_operators.html#modulus",
+    "href": "mathematical_operators.html#modulus",
+    "title": "7  Mathematical Operators",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mathematical Operators</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_10_years_forward.html",
+    "href": "exercise_10_years_forward.html",
+    "title": "8  Exercise: 10 years forward",
+    "section": "",
+    "text": "8.1 Sample Answer",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: 10 years forward</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_10_years_forward.html#sample-answer",
+    "href": "exercise_10_years_forward.html#sample-answer",
+    "title": "8  Exercise: 10 years forward",
+    "section": "",
+    "text": "Click here to view a sample answer\n\n\n\n\n\n\nname = input(\"What is your name?\")\nage = int(input(\"How old are you?\"))\n\nprint (f\"Hello {name}.  In 10 years time, you will be {age+10}\")",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: 10 years forward</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_10_years_forward.html#answer-video",
+    "href": "exercise_10_years_forward.html#answer-video",
+    "title": "8  Exercise: 10 years forward",
+    "section": "8.2 Answer Video",
+    "text": "8.2 Answer Video\n\n\n\n\n\n\nClick here to view a video explaining the solution",
+    "crumbs": [
+      "Your First Steps in Python",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: 10 years forward</span>"
     ]
   },
   {

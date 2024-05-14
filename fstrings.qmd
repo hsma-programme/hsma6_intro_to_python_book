@@ -1,0 +1,32 @@
+---
+filters:
+  - pyodide
+---
+
+# Variables and Printing together - the fString
+
+Python has a rather neat type of string called an fString.  These are strings where we can include formatting within the string to define where we want dynamic text.
+
+We often want to do this where we want to insert the value of a variable into a string of text.
+
+
+e.g. “Her name is <<insert name here>>”
+
+To use fStrings, we simply put the character f immediately before our opening quotation mark, and use curly brackets to denote where we want to include the name of a variable, so that Python will pull in the value in that variable instead of hard-coded text.
+
+Example :
+```{pyodide-python}
+name_of_user = "Dan"
+print(f"Hello {name_of_user}!")
+```
+
+We can also do some other cool things with fStrings.  We’re not restricted to just variable names either, we can put in the curly brackets any instruction whose output will result in something that can be interpreted as a string (ie some characters).
+
+```{pyodide-python}
+print(f"The answer is {2+2}")
+```
+
+```{pyodide-python}
+my_float = 3.1415926535
+print(f"My number rounded to 3 decimal places is {my_float:.3f}")
+```
