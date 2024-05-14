@@ -16,9 +16,9 @@ There are two ways of writing comments in Python.
 ![](assets/2024-05-14-21-34-35.png)
 
 
-:::{pyodide-python}
+```{pyodide-python}
 
 # This is a comment - it won't be printed
 print("But if you run this code cell, I will be printed!")
 
-:::
+```

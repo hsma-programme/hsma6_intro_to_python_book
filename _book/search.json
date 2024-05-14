@@ -145,7 +145,7 @@
     "href": "comments.html",
     "title": "9  Comments",
     "section": "",
-    "text": "When writing code, it is extremely important to write comments that explain how each piece of code works (this might be for an individual line of code, or a block of code).\nThis is important to help others understand how your code works, but also to help you remember how your code works…\n\nThere are two ways of writing comments in Python.\n\n\n10 This is a comment - it won’t be printed\nprint(“But if you run this code cell, I will be printed!”)",
+    "text": "When writing code, it is extremely important to write comments that explain how each piece of code works (this might be for an individual line of code, or a block of code).\nThis is important to help others understand how your code works, but also to help you remember how your code works…\n\nThere are two ways of writing comments in Python.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Your Next Python Skills",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Comments</span>"
