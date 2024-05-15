@@ -1,0 +1,7 @@
+# An Introduction to Programming Concepts
+
+Coming soon!
+
+In the meantime, you can refer to this video:
+
+{{< video https://youtu.be/aftDNqfMe1w?t=9104 >}}

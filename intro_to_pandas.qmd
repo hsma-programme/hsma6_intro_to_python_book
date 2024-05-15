@@ -5,6 +5,8 @@ filters:
 
 # An Introduction to Pandas
 
+{{< video https://youtu.be/YiecfDcq40o >}}
+
 Let’s talk about Pandas.
 
 And by that, we of course mean the beautiful, glorious, intelligent…
@@ -31,6 +33,8 @@ Imagine a table in Excel.  Only much more powerful.
 ![](assets/2024-05-15-15-55-45.png)
 
 ## Creating a new dataframe
+
+{{< video https://youtu.be/UWQtgQUPBY8 >}}
 
 We have two choices when we want to create a new Pandas DataFrame :
 

@@ -56,8 +56,12 @@ book:
   - part: "Pandas"
     chapters:
     - intro_to_pandas.qmd
+    - pandas_indexing.qmd
+    - extending_joining_dataframes.qmd
+    - removing_data_pandas.qmd
+    - aggregating_pandas.qmd
+    - sorting_previewing_more_pandas.qmd
   - further_reading.qmd
-  - references.qmd
   cover-image: resources/logos/hsma_logo_transparent_background_large.png
   favicon: resources/logos/hsma_logo_transparent_background_large.png
   search: true

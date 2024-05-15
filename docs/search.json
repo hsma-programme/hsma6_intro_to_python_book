@@ -20,6 +20,17 @@
     ]
   },
   {
+    "objectID": "intro_to_programming_concepts.html",
+    "href": "intro_to_programming_concepts.html",
+    "title": "2  An Introduction to Programming Concepts",
+    "section": "",
+    "text": "Coming soon!\nIn the meantime, you can refer to this video:",
+    "crumbs": [
+      "Programming Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>An Introduction to Programming Concepts</span>"
+    ]
+  },
+  {
     "objectID": "intro_to_python.html",
     "href": "intro_to_python.html",
     "title": "3  Intro to Python",
@@ -948,7 +959,7 @@
     "href": "intro_to_pandas.html#creating-a-new-dataframe",
     "title": "32  An Introduction to Pandas",
     "section": "32.2 Creating a new dataframe",
-    "text": "32.2 Creating a new dataframe\nWe have two choices when we want to create a new Pandas DataFrame :\n\nWe can create a new DataFrame and then build the DataFrame manually\nWe can read in existing data from a .csv file\n\nGiven that 99% of the time you’ll be doing the latter for real world applications, let’s just focus on that. And it’s also really easy!\nPandas has a fantastic function that allows us to read in data from a .csv file, and it will automatically stuff it into a new DataFrame for us!\nIn one line of code!!\nDon’t believe me? Observe…\n\n\n\n\n\n\nTip\n\n\n\nOne fantastic feature of pandas is that we can point to either a local file (one stored on our machine) or a remote file (one stored somewhere else - like the web).\n\n\nIn the example below, we are accessing a file called input_data.csv.\nIf this file was stored in the same folder as our python file, we would just do\n\ndf = pd.read_csv(\"input_data.csv\")\n\nWe can then show the first 5 rows of the data with the .head() method.\n\ndf.head()\n\n\n\n\n\n\n\n\n\nPatient ID\nName\nFlu Vaccine\nAge\nCounty\n\n\n\n\n0\n65192\nBob\nYes\n42\nCornwall\n\n\n1\n84568\nNigel\nNo\n27\nDevon\n\n\n2\n93765\nFlorence\nYes\n84\nSomerset\n\n\n3\n97865\nMartha\nYes\n57\nSomerset\n\n\n4\n12451\nSimon\nNo\n35\nSomerset\n\n\n\n\n\n\n\n\nHowever, we could also use a web location. We’re going to use this method in the rest of the examples to allow us to interact with pandas dataframes in this book.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nYou can see that the outputs are identical!",
+    "text": "32.2 Creating a new dataframe\n\nWe have two choices when we want to create a new Pandas DataFrame :\n\nWe can create a new DataFrame and then build the DataFrame manually\nWe can read in existing data from a .csv file\n\nGiven that 99% of the time you’ll be doing the latter for real world applications, let’s just focus on that. And it’s also really easy!\nPandas has a fantastic function that allows us to read in data from a .csv file, and it will automatically stuff it into a new DataFrame for us!\nIn one line of code!!\nDon’t believe me? Observe…\n\n\n\n\n\n\nTip\n\n\n\nOne fantastic feature of pandas is that we can point to either a local file (one stored on our machine) or a remote file (one stored somewhere else - like the web).\n\n\nIn the example below, we are accessing a file called input_data.csv.\nIf this file was stored in the same folder as our python file, we would just do\n\ndf = pd.read_csv(\"input_data.csv\")\n\nWe can then show the first 5 rows of the data with the .head() method.\n\ndf.head()\n\n\n\n\n\n\n\n\n\nPatient ID\nName\nFlu Vaccine\nAge\nCounty\n\n\n\n\n0\n65192\nBob\nYes\n42\nCornwall\n\n\n1\n84568\nNigel\nNo\n27\nDevon\n\n\n2\n93765\nFlorence\nYes\n84\nSomerset\n\n\n3\n97865\nMartha\nYes\n57\nSomerset\n\n\n4\n12451\nSimon\nNo\n35\nSomerset\n\n\n\n\n\n\n\n\nHowever, we could also use a web location. We’re going to use this method in the rest of the examples to allow us to interact with pandas dataframes in this book.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nYou can see that the outputs are identical!",
     "crumbs": [
       "Pandas",
       "<span class='chapter-number'>32</span>  <span class='chapter-title'>An Introduction to Pandas</span>"
@@ -977,13 +988,178 @@
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
+    "objectID": "pandas_indexing.html",
+    "href": "pandas_indexing.html",
+    "title": "33  Selecting Rows and Columns in Pandas",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "33.1 Indexing\nIn Pandas, we can select certain rows and / or columns of data in our DataFrame - this is known as Indexing. Let’s look at some examples using our DataFrame.",
     "crumbs": [
-      "References"
+      "Pandas",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Selecting Rows and Columns in Pandas</span>"
+    ]
+  },
+  {
+    "objectID": "pandas_indexing.html#indexing",
+    "href": "pandas_indexing.html#indexing",
+    "title": "33  Selecting Rows and Columns in Pandas",
+    "section": "",
+    "text": "33.1.1 Retrieve a given column\nWhen we retrieve a given column, note the index is always returned too:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n33.1.2 Retrieve multiple columns\nWhen we retrieve a given column, note the index is always returned too:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n33.1.3 Retrieve a given row (record) (by providing the unique index value)\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n33.1.4 Retrieve multiple given rows\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n33.1.5 Retrieve multiple given rows and only specified columns\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Selecting Rows and Columns in Pandas</span>"
+    ]
+  },
+  {
+    "objectID": "pandas_indexing.html#conditional-indexing",
+    "href": "pandas_indexing.html#conditional-indexing",
+    "title": "33  Selecting Rows and Columns in Pandas",
+    "section": "33.2 Conditional Indexing",
+    "text": "33.2 Conditional Indexing\n\nWe can also select rows in a DataFrame that meet certain criteria by using conditional logic.\n\n33.2.1 Retrieve all records meeting a single criteria\nHere, we’ll retrieve all records where the county is Cornwall\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nTip\n\n\n\nThe following - not using .loc - will also work.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nHow does this work? Let’s first look at what happens when we just run the part inside the square brackets.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe just get a list of ‘true’ and ‘false’ because it’s looking at the ‘county’ value for every row and returning True if it matches “Cornwall”, and False otherwise.\nThis can be called a mask.\nWhen we apply this mask to our dataframe, it returns only the rows where the value in the mask was True.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n33.2.2 More conditional indexing\nThis time, instead of looking for exact matches, we’ll look for something that exceeds a numeric value.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n33.2.3 Multiple Conditions (and)\nLet’s now retrieve all records for patients in Cornwall aged 60 and over.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nWarning\n\n\n\nYou must use ampersand (&) not the word and here\n\n\nWe could also write this all on one line.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNote that you will need brackets around each separate condition when doing this.\n\n\n33.2.4 Multiple Conditions (or)\nLet’s retrieve all records where either the patient lives in Cornwall or they’re aged 60 or over.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nWarning\n\n\n\nYou must use pipe (|) not the word or here\n\n\nWe could also write this all on one line.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Selecting Rows and Columns in Pandas</span>"
+    ]
+  },
+  {
+    "objectID": "extending_joining_dataframes.html",
+    "href": "extending_joining_dataframes.html",
+    "title": "34  Extending and Joining Dataframes",
+    "section": "",
+    "text": "34.1 Adding data to a dataframe\nWe can add additional rows (and columns) to a DataFrame. To add a row, we must specify the values for all of the columns for this new row. Similarly, to add a column, we must specify the value for this column for all of the rows.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Extending and Joining Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "extending_joining_dataframes.html#adding-data-to-a-dataframe",
+    "href": "extending_joining_dataframes.html#adding-data-to-a-dataframe",
+    "title": "34  Extending and Joining Dataframes",
+    "section": "",
+    "text": "34.1.1 Adding rows\nTo add a row, we specify the index value for the new row (that doesn’t yet exist in our DataFrame) and assign a list of values for the other columns :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nWarning\n\n\n\nBe careful - you can overwrite an existing row this way if you provide an index that already exists.\n\n\n\n\n34.1.2 Adding columns\nWe can add a new column as follows.\nHowever - note that you’ll need a value for every single row in your dataset.\nThe code below makes a new dataframe that is just the first 5 rows of the existing dataframe, then adds the new column\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Extending and Joining Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "extending_joining_dataframes.html#concatenation",
+    "href": "extending_joining_dataframes.html#concatenation",
+    "title": "34  Extending and Joining Dataframes",
+    "section": "34.2 Concatenation",
+    "text": "34.2 Concatenation\n\nAnother way of adding to our DataFrame is by joining two DataFrames together to create a new one.\nWe can do this using the Pandas concat() method.\n\n\n\n\n\n\nTip\n\n\n\naxis = 0 joins by adding rows\naxis = 1 joins by adding columns\n\n\nFirst, let’s make two new dataframes.\nThis shows you another way you can create a dataframe - by passing a list of dictionaries, where every dictionary in the list represents one row.\nThe keys of the dictionary will be the column names, and the values will be the values in the row.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can then join these with the concat method.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNote : in this example, we have entries with duplicate index values. We’d likely want to do something about this, but in practice, the DataFrames you’ll be concatenating will normally have their own unique index that will hold when both are joined.\nIf you do need to reset the index, you can use the .reset_index() method.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNote that the old index becomes a new column! We can avoid this by passing drop=True.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nLet’s have a quick look at concatenating on the other axis.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nYou may notice that concatenating in this direction feels a bit risky!\nYou may prefer to use the merge method of pandas. The kind of joins available with that method will feel very familiar if you have used SQL.\nUsing merge, you can specify columns or an index that must match, ensuring that the correct rows are matched up.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nYou can read more about the types of joins available in merge here: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Extending and Joining Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "removing_data_pandas.html",
+    "href": "removing_data_pandas.html",
+    "title": "35  Dropping Data from Dataframes",
+    "section": "",
+    "text": "35.1 Dropping rows and columns\nPandas allows us to easily drop (remove) columns and rows of a DataFrame.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Dropping Data from Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "removing_data_pandas.html#dropping-rows-and-columns",
+    "href": "removing_data_pandas.html#dropping-rows-and-columns",
+    "title": "35  Dropping Data from Dataframes",
+    "section": "",
+    "text": "35.1.1 Dropping columns\nLet’s first remind ourselves of what our dataframe looks like. We’ll just print the first five rows by using the head() method.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nTo drop a single column (multiple columns is the same, just add them to the list of column names):\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNote - in the above example, we store a new DataFrame that has the Name column dropped, leaving the original DataFrame intact. This is normally what you want to do.\nIf we want to actually remove it from the original DataFrame, we can either simply assign the above to df (the name of the original DataFrame), thereby overwriting it with a copy that doesn’t have the “Name” column.\n\n\n\n\n\n\nTip\n\n\n\nOR we can use the parameter flag inplace=True to specify the changes should be made to the DataFrame we’re working on.\n\n\n\n\n35.1.2 Dropping Rows\nWe can also drop a row or rows by specifying the index / indices of the row (or rows) we want to drop :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIf you wanted to drop multiple rows that met a condition, we could use conditional indexing from before.\nThe ~ symbol means we\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe could instead use != (not equal to)\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Dropping Data from Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "removing_data_pandas.html#removing-duplicates",
+    "href": "removing_data_pandas.html#removing-duplicates",
+    "title": "35  Dropping Data from Dataframes",
+    "section": "35.2 Removing Duplicates",
+    "text": "35.2 Removing Duplicates\n\nPandas provides us with some powerful tools to drop duplicate rows. First, we can easily drop any rows where all the values (other than the index) are identical.\nLet’s set up a new DataFrame to show this in action. We’ll create one manually here, using a dictionary to store the column names and associated data for each record. We won’t use patient ID as the index here.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIn this new DataFrame, we have three records (rows) that are duplicates, because they have the same info for the same patient.\nLet’s drop the duplicate rows in one line of code :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nBy default, Pandas will keep the first duplicate (index 0 in the above). But we may want to keep the last duplicate instead (eg if our data related to individual encounters with a service for the same patient - keeping the most recent entry may make the most sense). To do this :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe may also want to change our definition of a “duplicate”. It may be that we don’t need all the values to be the same, just a certain one (or ones) to be considered a duplicate.\nImagine a reconfigured version of our prior table, in which the number of admissions has been updated for patient 105 in the final entry.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe may only want to keep records for a patient where there was a new admission. So we’d want to keep either 0 or 2, and also 3. This will do the trick :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Dropping Data from Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "aggregating_pandas.html",
+    "href": "aggregating_pandas.html",
+    "title": "36  Aggregating Data in Dataframes",
+    "section": "",
+    "text": "36.1 Value Counts\nWe can quickly count the number of values for categorical data in a Pandas DataFrame. Let’s say we want to look at the number of those who have vs haven’t been vaccinated in our data.\nWe can combine the above with an indexing operation to, for example, give us the value counts of flu vaccines but only for the county of Cornwall :",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Aggregating Data in Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "aggregating_pandas.html#value-counts",
+    "href": "aggregating_pandas.html#value-counts",
+    "title": "36  Aggregating Data in Dataframes",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Aggregating Data in Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "aggregating_pandas.html#pivot-tables",
+    "href": "aggregating_pandas.html#pivot-tables",
+    "title": "36  Aggregating Data in Dataframes",
+    "section": "36.2 Pivot Tables",
+    "text": "36.2 Pivot Tables\n\nWe can create Pivot Tables quickly and easily in Python (and far more computationally efficiently than Excel, particularly for very large datasets). The resultant Pivot Tables we create are also themselves Pandas DataFrames, and so we can work with them in the same way as any other DataFrame.\nLet’s imagine we want to look at the average age by county in our DataFrame :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nTo create the table above, we specified\n\nthe name of the DataFrame on which we want to pivot\nthe column we will use as the index\nthe column(s) containing our data of interest\nand the function we want to perform on the data of interest.\n\nThe above basically says “Give me a table that, by county, gives me mean age”\nAs the resultant Pivot Table is a DataFrame itself, we can work with it like any other DataFrame. For example, to retrieve the mean for Cornwall (remember, County is the index in this new DataFrame) :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nTo add more than one value of comparison to your pivot table, you need to pass the values in as a list. For example :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nYou can learn more about pivot tables here.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Aggregating Data in Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "sorting_previewing_more_pandas.html",
+    "href": "sorting_previewing_more_pandas.html",
+    "title": "37  Sorting, previewing and more with dataframes",
+    "section": "",
+    "text": "37.1 Sorting values\nWe can sort values easily in Pandas. Let’s imagine we want to sort our original DataFrame by age, then by Patient ID :\nThe above line will change the original DataFrame because we’ve set inplace to True - so we don’t need to assign it back.\nThese two lines are equivalent:\ndf.sort_values(by=[\"Age\"], inplace=True)\n\ndf = df.sort_values(by=[\"Age\"])\nPandas will automatically sort by the index (PatientID here) where the values are equal for the column we are sorting by, so we don’t need to do that manually.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Sorting, previewing and more with dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "sorting_previewing_more_pandas.html#sorting-values",
+    "href": "sorting_previewing_more_pandas.html#sorting-values",
+    "title": "37  Sorting, previewing and more with dataframes",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Sorting, previewing and more with dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "sorting_previewing_more_pandas.html#other-neat-pandas-features",
+    "href": "sorting_previewing_more_pandas.html#other-neat-pandas-features",
+    "title": "37  Sorting, previewing and more with dataframes",
+    "section": "37.2 Other neat pandas features",
+    "text": "37.2 Other neat pandas features\n\n\n37.2.1 Describe\nPandas has a describe() function that allows us to get a quick overview of the numerical data in our DataFrame :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n37.2.2 Previewing the dataset\n\n37.2.2.1 head()\nWe can see the first x number of entries in our DataFrame using head()\nThe default is 5 entries\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nor we can specify a different number.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n37.2.2.2 tail()\nWe can see the last x entries using tail()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nor we can specify a different number.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n37.2.2.3 sample()\nWe can use the sample() method to see a random selection of rows.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nor we can specify a different number.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n37.2.3 Calculating statistics on a single column\nIt’s easy to take the mean of a column / DataFrame.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThere are various other options too!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe could also do the sum on a dataset where that makes sense.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Sorting, previewing and more with dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "further_reading.html",
+    "href": "further_reading.html",
+    "title": "38  Further Reading",
+    "section": "",
+    "text": "You can find a list of resources for Python beginners in the Google Sheet below.",
+    "crumbs": [
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Further Reading</span>"
     ]
   }
 ]

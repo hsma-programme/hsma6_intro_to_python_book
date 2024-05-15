@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./further_reading.html" rel="next">
+<link href="./pandas_indexing.html" rel="next">
 <link href="./exercise_numpy.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -270,7 +270,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"code":"import pandas as pd\n\ndf = pd.read_csv(\"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\")\n\ndf.head()","options":{"out-height":"","output":"true","comment":"","classes":"","message":"true","label":"","fig-width":7,"dpi":72,"read-only":"false","autorun":"","out-width":"700px","context":"interactive","warning":"true","fig-height":5,"fig-cap":"","results":"markup"}},{"id":2,"code":"import pandas as pd\n\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )\n\ndf.head()","options":{"out-height":"","output":"true","comment":"","classes":"","message":"true","label":"","fig-width":7,"dpi":72,"read-only":"false","autorun":"","out-width":"700px","context":"interactive","warning":"true","fig-height":5,"fig-cap":"","results":"markup"}}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"import pandas as pd\n\ndf = pd.read_csv(\"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\")\n\ndf.head()","options":{"read-only":"false","warning":"true","out-height":"","output":"true","message":"true","autorun":"","classes":"","context":"interactive","fig-cap":"","fig-height":5,"out-width":"700px","results":"markup","dpi":72,"comment":"","fig-width":7,"label":""}},{"id":2,"code":"import pandas as pd\n\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )\n\ndf.head()","options":{"read-only":"false","warning":"true","out-height":"","output":"true","message":"true","autorun":"","classes":"","context":"interactive","fig-cap":"","fig-height":5,"out-width":"700px","results":"markup","dpi":72,"comment":"","fig-width":7,"label":""}}];
 
 
 </script>
@@ -539,7 +539,7 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_programming_concepts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro_to_programming_concepts.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An Introduction to Programming Concepts</span></span></a>
   </div>
 </li>
       </ul>
@@ -799,18 +799,42 @@ globalThis._qpyodideGetInstance = function() {
  <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">An Introduction to Pandas</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pandas_indexing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Selecting Rows and Columns in Pandas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extending_joining_dataframes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Extending and Joining Dataframes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./removing_data_pandas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Dropping Data from Dataframes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./aggregating_pandas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sorting_previewing_more_pandas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">further_reading.html</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>
@@ -862,12 +886,13 @@ globalThis._qpyodideGetInstance = function() {
 </header>
 
 
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/YiecfDcq40o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Let’s talk about Pandas.</p>
 <p>And by that, we of course mean the beautiful, glorious, intelligent… … open source Python library that provides powerful data structures and analysis tools.</p>
 <p>(You can judge the level of geekiness of someone fairly easily by simply making the statement “I love Pandas” and seeing if they reply “Me too, and NumPy!”)</p>
 <p>Pandas is very powerful for manipulating data in large arrays (unlike some spreadsheet software…), and allows for indexing of data. NumPy and Pandas are often used together, with NumPy used for mathematical functions applied to the data, and Pandas used to manipulate the data.</p>
 <p>As with NumPy, there is a conventional alias under which Pandas should be imported :</p>
-<div id="1e44f070" class="cell" data-execution_count="1">
+<div id="e2f9d0dd" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="the-pandas-dataframe" class="level2" data-number="32.1">
@@ -878,6 +903,7 @@ globalThis._qpyodideGetInstance = function() {
 </section>
 <section id="creating-a-new-dataframe" class="level2" data-number="32.2">
 <h2 data-number="32.2" class="anchored" data-anchor-id="creating-a-new-dataframe"><span class="header-section-number">32.2</span> Creating a new dataframe</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/UWQtgQUPBY8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>We have two choices when we want to create a new Pandas DataFrame :</p>
 <ul>
 <li>We can create a new DataFrame and then build the DataFrame manually</li>
@@ -902,11 +928,11 @@ Tip
 </div>
 <p>In the example below, we are accessing a file called <code>input_data.csv</code>.</p>
 <p>If this file was stored in the same folder as our python file, we would just do</p>
-<div id="0d39b7d7" class="cell" data-execution_count="2">
+<div id="1389b43d" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"input_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We can then show the first 5 rows of the data with the <code>.head()</code> method.</p>
-<div id="1a8ecc9d" class="cell" data-execution_count="3">
+<div id="3b34ea24" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
@@ -1890,8 +1916,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./further_reading.html" class="pagination-link" aria-label="further_reading.html">
-        <span class="nav-page-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">further_reading.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./pandas_indexing.html" class="pagination-link" aria-label="Selecting Rows and Columns in Pandas">
+        <span class="nav-page-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Selecting Rows and Columns in Pandas</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

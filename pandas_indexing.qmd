@@ -23,6 +23,8 @@ df = pd.read_csv(
 
 ## Indexing
 
+{{< video https://youtu.be/HVSz4tE07l8 >}}
+
 In Pandas, we can select certain rows and / or columns of data in our DataFrame - this is known as Indexing.  Let’s look at some examples using our DataFrame.
 
 ### Retrieve a given column
@@ -62,6 +64,8 @@ df.loc[[76547,19811],
 
 
 ## Conditional Indexing
+
+{{< video https://youtu.be/HPbGs3TDAb0 >}}
 
 We can also select rows in a DataFrame that meet certain criteria by using conditional logic.
 

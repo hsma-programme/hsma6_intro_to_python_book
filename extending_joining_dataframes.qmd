@@ -3,7 +3,7 @@ filters:
   - pyodide
 ---
 
-# Extending your dataframes
+# Extending and Joining Dataframes
 
 :::{.callout-tip}
 
@@ -20,6 +20,8 @@ df = pd.read_csv(
 ```
 
 ## Adding data to a dataframe
+
+{{< video https://youtu.be/9ngAR9sMu0I >}}
 
 We can add additional rows (and columns) to a DataFrame.  To add a row, we must specify the values for all of the columns for this new row.  Similarly, to add a column, we must specify the value for this column for all of the rows.
 
@@ -57,6 +59,8 @@ first_five_rows
 
 
 ## Concatenation
+
+{{< video https://youtu.be/EPYJ3n2TnuA >}}
 
 Another way of adding to our DataFrame is by joining two DataFrames together to create a new one.
 
@@ -146,14 +150,15 @@ Using merge, you can specify columns or an index that must match, ensuring that 
 ```{pyodide-python}
 df_f = pd.DataFrame(
     [{"Name": "Dan", "Favourite Decade": "80s", "Favourite Game": "Monkey Island 2"},
-     {"Name": "Sammi", "Favourite Decade": "90s", "Favourite Game": "Outer Wilds"}]
+     {"Name": "Sammi", "Favourite Decade": "90s", "Favourite Game": "Outer Wilds"},
+     {"Name": "Hugo", "Favourite Decade": "70s", "Favourite Game": "Pong"}]
 )
 
 df_f
 ```
 
 ```{pyodide-python}
-pd.merge(df_a, df_f, how="inner", on="Name")
+pd.merge(df_a, df_f, how="right", on="Name")
 ```
 
-You can read more about the types of joins available here: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html
+You can read more about the types of joins available in `merge` here: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html

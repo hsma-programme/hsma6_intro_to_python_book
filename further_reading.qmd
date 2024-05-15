@@ -1,0 +1,7 @@
+# Further Reading
+
+You can find a list of resources for Python beginners in the Google Sheet below.
+
+```{=html}
+<iframe width="1280" height="800" src="https://docs.google.com/spreadsheets/d/1OU1YErGT_qOKS9Mi_Wkw7N9e-04n5RCG_0YnOeZqAEk/edit?usp=sharing" title="Webpage example"></iframe>
+```

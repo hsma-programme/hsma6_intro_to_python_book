@@ -1,0 +1,141 @@
+---
+filters:
+  - pyodide
+---
+
+# Sorting, previewing and more with dataframes
+
+:::{.callout-tip}
+
+To allow all the exercises in this section to work, please run this code cell first!
+
+This will import pandas and load the dataframe we'll be working with.
+
+```{pyodide-python}
+import pandas as pd
+df = pd.read_csv(
+    "https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv",
+    index_col="Patient ID"
+    )
+```
+
+## Sorting values
+
+{{< video https://youtu.be/M4lXWmA1jkk >}}
+
+We can sort values easily in Pandas.  Let’s imagine we want to sort our original DataFrame by age, then by Patient ID :
+
+```{pyodide-python}
+df.sort_values(by=["Age"], inplace=True)
+
+df
+```
+
+The above line will change the original DataFrame because we’ve set inplace to True - so we don't need to assign it back.
+
+These two lines are equivalent:
+
+```{python}
+#| eval: false
+
+df.sort_values(by=["Age"], inplace=True)
+
+df = df.sort_values(by=["Age"])
+```
+
+Pandas will automatically sort by the index (PatientID here) where the values are equal for the column we are sorting by, so we don’t need to do that manually.
+
+## Other neat pandas features
+
+{{< video https://youtu.be/eDQMCkdWt8Y >}}
+
+### Describe
+
+Pandas has a describe() function that allows us to get a quick overview of the numerical data in our DataFrame :
+
+```{pyodide-python}
+df.describe()
+```
+
+
+### Previewing the dataset
+
+#### head()
+
+We can see the first x number of entries in our DataFrame using head()
+
+The default is 5 entries
+
+```{pyodide-python}
+df.head()
+```
+
+or we can specify a different number.
+
+```{pyodide-python}
+df.head(8)
+```
+
+#### tail()
+
+We can see the last x entries using tail()
+
+```{pyodide-python}
+df.tail()
+```
+
+or we can specify a different number.
+
+```{pyodide-python}
+df.tail(8)
+```
+
+#### sample()
+
+We can use the `sample()` method to see a random selection of rows.
+
+```{pyodide-python}
+df.sample(1)
+```
+
+or we can specify a different number.
+
+```{pyodide-python}
+df.sample(6)
+```
+
+### Calculating statistics on a single column
+
+It’s easy to take the mean of a column / DataFrame.
+
+```{pyodide-python}
+df["Age"].mean()
+```
+
+There are various other options too!
+
+```{pyodide-python}
+df["Age"].median()
+```
+
+```{pyodide-python}
+df["Age"].min()
+```
+
+```{pyodide-python}
+df["Age"].max()
+```
+
+We could also do the sum on a dataset where that makes sense.
+
+```{pyodide-python}
+admissions_data= {
+  'Patient ID': [105,243,105,105,316],
+  'Age':[76,31,76,76,52],
+  'Admissions':[3,1,3,3,2]
+}
+
+admissions_df = pd.DataFrame(admissions_data)
+
+admissions_df["Admissions"].sum()
+```

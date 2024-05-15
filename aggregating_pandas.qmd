@@ -1,0 +1,86 @@
+---
+filters:
+  - pyodide
+---
+
+# Aggregating Data in Dataframes
+
+
+:::{.callout-tip}
+
+To allow all the exercises in this section to work, please run this code cell first!
+
+This will import pandas and load the dataframe we'll be working with.
+
+```{pyodide-python}
+import pandas as pd
+df = pd.read_csv(
+    "https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv",
+    index_col="Patient ID"
+    )
+```
+
+## Value Counts
+
+{{< video https://youtu.be/kOe3VkVV_qY >}}
+
+We can quickly count the number of values for categorical data in a Pandas DataFrame.  Let’s say we want to look at the number of those who have vs haven’t been vaccinated in our data.
+
+```{pyodide-python}
+df["Flu Vaccine"].value_counts()
+```
+
+We can combine the above with an indexing operation to, for example, give us the value counts of flu vaccines but only for the county of Cornwall :
+
+```{pyodide-python}
+df[df["County"] == "Cornwall"]["Flu Vaccine"].value_counts()
+```
+
+## Pivot Tables
+
+{{< video https://youtu.be/dW9cHhrDh0s >}}
+
+We can create Pivot Tables quickly and easily in Python (and far more computationally efficiently than Excel, particularly for very large datasets).  The resultant Pivot Tables we create are also themselves Pandas DataFrames, and so we can work with them in the same way as any other DataFrame.
+
+Let’s imagine we want to look at the average age by county in our DataFrame :
+
+
+```{pyodide-python}
+pivot_age_by_county = pd.pivot_table(
+    data = df,
+    index = "County",
+    values = "Age",
+    aggfunc = "mean
+)
+
+pivot_age_by_county
+```
+
+To create the table above, we specified
+
+- the name of the DataFrame on which we want to pivot
+- the column we will use as the index
+- the column(s) containing our data of interest
+- and the function we want to perform on the data of interest.
+
+The above basically says “Give me a table that, by county, gives me mean age”
+
+As the resultant Pivot Table is a DataFrame itself, we can work with it like any other DataFrame.  For example, to retrieve the mean for Cornwall (remember, County is the index in this new DataFrame) :
+
+```{pyodide-python}
+pivot_age_by_county.loc["Cornwall"]
+```
+
+To add more than one value of comparison to your pivot table, you need to pass the values in as a list.  For example :
+
+```{pyodide-python}
+pd.pivot_table(
+    data = df,
+    index = "County",
+    values = ["Age", "Number Admissions"],
+    aggfunc = "mean
+)
+
+```
+
+You can learn more about pivot tables [here](https://pandas.pydata.org/docs/user_guide/reshaping.html#reshaping-pivot).
