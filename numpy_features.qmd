@@ -15,6 +15,8 @@ import numpy as np
 
 ## Empty arrays
 
+{{< video https://youtu.be/OELia4VYA4M >}}
+
 To create a new empty NumPy array, we can use the empty() function and specify the shape (length of each dimension) of the array we want.
 
 ```{pyodide-python}
@@ -27,7 +29,9 @@ my_np_array = np.empty([5,4,3])
 Just think of it as empty.  If you actually want 0s, we use something else (which you’ll see in a moment).  But empty() is a little more computationally efficient.
 :::
 
-## Creating an array of evenly-spaced values
+## Creating an Array of Evenly-spaced Values
+
+{{< video https://youtu.be/9SCmVX-qKYM >}}
 
 NumPy has a neat function called arange() which will create a NumPy array with evenly spaced values at an interval of our choosing.
 
@@ -41,7 +45,9 @@ fives_array = np.arange(0, 101, 5)
 print(fives_array)
 ```
 
-## Zeroes
+## Creating an Array of Zeros
+
+{{< video https://youtu.be/_Zs6UBUa7Dg >}}
 
 numpy.zeros() is a function that creates a NumPy array of given dimensions, filled with zeros.  This can be useful if we want to create a placeholder array that we will fill in / update with data as we go.
 
@@ -55,6 +61,8 @@ print(zeros_array)
 eg an array to hold data for five departments, each with 4 groups, each with 3 people.
 
 ## Shape and ndim
+
+{{< video https://youtu.be/9YY18yYJhaQ >}}
 
 The shape attribute stores the length (number of elements) in each dimension.
 
@@ -76,6 +84,8 @@ print(zeros_array.ndim)
 ```
 
 ## Mathematical Operations
+
+{{< video https://youtu.be/oE2YxLyv7_Y >}}
 
 One of the key advantages of NumPy arrays is that you can apply mathematical operations at scale to large numbers of values much more efficiently than you would be able to otherwise.
 
@@ -117,6 +127,8 @@ We could grab these out as a separate array if we wanted.
 
 ## Statistical Operations
 
+{{< video https://youtu.be/NGckVgz8fek >}}
+
 We can also perform statistical operations on NumPy arrays easily and efficiently.  We can find a single mean value across the whole array (the same principle works for slices) :
 
 ```{pyodide-python}
@@ -149,6 +161,8 @@ Axis values of 2+ are used for third dimensional columns+ (don’t worry if your
 
 ## Dot Product
 
+{{< video https://youtu.be/7x3yg7xTQC8 >}}
+
 The dot product of two arrays of identical length multiplies the nth element of array a with the nth element of array b, and adds all of these multiplications together to give a single answer.
 
 Example :
@@ -178,6 +192,8 @@ For example, in a geographic model, we may want to weight travel times by the nu
 :::
 
 ## Removing Duplicate Data
+
+{{< video https://youtu.be/fHQROx3LUDU >}}
 
 The unique() function allows us to easily remove duplicate values from a NumPy array.
 

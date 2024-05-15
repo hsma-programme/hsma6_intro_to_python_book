@@ -496,6 +496,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/yYnA1EsJf4s" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>So far, we have only looked at storing data temporarily (in variables). This data is lost when we shut down. Similarly, we have got all our inputs from the user when the program runs, but that’s likely not practical for many purposes.</p>
 <p>A better approach is to use files to store data that we need longer term. This might include : Input data for our code (e.g.&nbsp;parameters for our model) Output data from our code (e.g.&nbsp;results from our model)</p>
 <p>There are lots of different ways we can do this in Python. However, for most of the data you’ll be using, you’ll likely want to interact with comma separated value (.csv) files.</p>
@@ -506,7 +507,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="reading-.csv-files-in-python" class="level2" data-number="26.1">
 <h2 data-number="26.1" class="anchored" data-anchor-id="reading-.csv-files-in-python"><span class="header-section-number">26.1</span> Reading .csv files in Python</h2>
 <p>There’s a library in Python called csv which allows us to easily read from and write to .csv files. (There’s an even easier approach to using .csv files in Python using Pandas, which you’ll learn about later). Let’s say we wanted to read in a .csv which contained name and age data in the format name, age :</p>
-<div id="7a136921" class="cell" data-execution_count="1">
+<div id="8f3dc858" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv <span class="co"># import the csv library</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up two empty lists - one to store names, one to store ages</span></span>
@@ -534,7 +535,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="writing-.csv-files-in-python" class="level2" data-number="26.2">
 <h2 data-number="26.2" class="anchored" data-anchor-id="writing-.csv-files-in-python"><span class="header-section-number">26.2</span> Writing .csv files in Python</h2>
 <p>We can also write to .csv files in Python using the same library.</p>
-<div id="179a964d" class="cell" data-execution_count="2">
+<div id="cb3e1515" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv <span class="co"># import the csv library</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Here's a list of column titles</span></span>
@@ -569,6 +570,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="file-access-modes" class="level2" data-number="26.3">
 <h2 data-number="26.3" class="anchored" data-anchor-id="file-access-modes"><span class="header-section-number">26.3</span> File access Modes</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/isAgpjVnZJc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>There are a huge number of different file access modes. The most common ones you will use are :</p>
 <p>“r” - open the file read-only, start at the beginning of the file</p>
 <p>“w” - open the file write-only, start at the beginning of the file</p>

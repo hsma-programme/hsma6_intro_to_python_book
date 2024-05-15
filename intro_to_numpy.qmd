@@ -5,6 +5,8 @@ filters:
 
 # An Introduction to NumPy
 
+{{< https://youtu.be/m1GAd7mkftg >}}
+
 NumPy (“Numerical Python”) is an important Python library for scientific computing.  It provides a number of features, and key amongst them is the ability to easily work with large multidimensional arrays MUCH more efficiently (computationally).
 
 Because of this, NumPy is particularly important when working in Machine Learning (as you’ll see later in the course).

@@ -5,6 +5,8 @@ filters:
 
 # File Handling
 
+{{< video https://youtu.be/yYnA1EsJf4s >}}
+
 So far, we have only looked at storing data temporarily (in variables).  This data is lost when we shut down.  Similarly, we have got all our inputs from the user when the program runs, but that’s likely not practical for many purposes.
 
 A better approach is to use files to store data that we need longer term.  This might include :
@@ -96,6 +98,8 @@ The resulting csv from this code would look like this.
 ![](assets/2024-05-15-12-26-33.png)
 
 ## File access Modes
+
+{{< video https://youtu.be/isAgpjVnZJc >}}
 
 There are a huge number of different file access modes.  The most common ones you will use are :
 

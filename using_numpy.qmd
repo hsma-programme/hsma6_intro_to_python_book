@@ -5,6 +5,8 @@ filters:
 
 # Using Numpy
 
+{{< video https://youtu.be/Dr_vZ7ZLOHU >}}
+
 :::{.callout-tip}
 Make sure you run the code cell below before any of the others. This will import the numpy package, and it will be remembered until you move to a different page or refresh this page.
 :::
@@ -51,7 +53,9 @@ d = np.array([[1,2,3], [1,2]])
 print(d)
 ```
 
-## Referring to values in Numpy arrays
+## Referring to values (indexing) in Numpy arrays
+
+{{< video https://youtu.be/9gYfneBkv1I >}}
 
 To refer to a value in a NumPy array, we specify the index of the value we want in each dimension, starting with the “outermost” dimension.
 
@@ -112,6 +116,8 @@ print(three_dim_array[:, 0, :2])
 ```
 
 ## Updating Values
+
+{{< video https://youtu.be/ecj4YtkJI2g >}}
 
 Just like a list, we can update values in a NumPy array just by specifying the indices of the elements we want to update, and the new values.
 

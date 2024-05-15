@@ -5,6 +5,8 @@ filters:
 
 # Exception (Error) Handling
 
+{{< video https://youtu.be/shHg-C5AsR4 >}}
+
 Sometimes things in our code won’t work as expected.  Something might go wrong, particularly when we’re trying to get in some external input (input from a user, reading in data from a file etc).
 
 For example, if we ask the user to input a number, and then the characters that they type can’t be cast as a number, the program will terminate with an error.

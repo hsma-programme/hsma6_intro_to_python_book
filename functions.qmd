@@ -5,6 +5,8 @@ filters:
 
 # Functions
 
+{{< video https://youtu.be/-wbjeWMWyfE >}}
+
 Often, when we write things we want a computer to do, we want to do them more than once, maybe at different points in our computer program. Or even in a different program altogether.  We want stuff to be reusable without having to write it out each time.
 
 To prevent us having to write out the same sets of instructions time and again, we can wrap a set of instructions up in a function.
@@ -16,6 +18,8 @@ A function is defined by giving it a name, the list of inputs it should expect (
 ![](assets/2024-05-15-12-08-01.png)
 
 ## Writing functions
+
+{{< video https://youtu.be/Evo8ddJO204 >}}
 
 As well as the many in-built functions and those in external libraries, we can also write our own functions.  Indeed, most programs will (and should) have their own functions, so we don’t have to repeat the same code multiple times.
 
@@ -30,8 +34,6 @@ Let’s consider an example. Let’s say we want to write a function that takes 
 ![](assets/2024-05-15-12-08-30.png)
 
 ## Calling a function
-
-
 
 :::{.callout-tip}
 We’ve now written a function, but at the moment we’ve just told Python that we want a function that looks like this.
@@ -135,6 +137,8 @@ multiply_and_check(my_special_number, my_third_special_number)
 
 ## Functions without inputs
 
+{{< video https://youtu.be/j4LtMtvcyak >}}
+
 Some functions don’t need inputs and / or outputs.  Here’s an example of one that has neither inputs nor outputs.
 
 ```{pyodide-python}
@@ -150,6 +154,8 @@ say_hello()
 In the above example, the function definition contains nothing in the brackets (no inputs) and no return statements (no outputs - nothing passed back).  Because there are no outputs, we just call the function without assigning the output to a variable (because there isn’t one).
 
 ## Returning multiple values
+
+{{< video https://youtu.be/HSamB5ssx14 >}}
 
 Sometimes, you may want to return multiple values from a function.  There are basically two ways to do this :
 Return the values separately
@@ -220,6 +226,8 @@ print (returned_list[2])
 ```
 
 ## Global and local variables
+
+{{< video https://youtu.be/jEQ4wgBWEmg >}}
 
 When using functions in Python, it’s important to understand the difference between a local and a global variable.
 
