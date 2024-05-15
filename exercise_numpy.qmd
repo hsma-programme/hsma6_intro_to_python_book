@@ -1,0 +1,31 @@
+# Exercise - Numpy
+
+You’ll now work through a notebook on numpy.  There are only two tasks here, but the second one will require you to look some things up, as you’ll need to use some NumPy functions that we haven’t told you about.
+
+This is a really important skill to learn when coding.  Coders look things up all the time, and we can’t possibly teach you all of NumPy, or most of the other packages you will learn in this course.  You’ll learn the basics of how each works, along with practical examples of it being used, but in the real world there will always be things you want to do that aren’t covered here.
+
+A good place to start is the search engine of your choice.  You’ll find answers to lots of coding questions on https://stackoverflow.com/ too.
+
+Plus there’s always the documentation for the package you’re using (for NumPy, that’s https://numpy.org/doc/stable/index.html) - though this can be quite big!
+
+You could also use AI (e.g. ChatGPT, perplexity.ai). These can often give good answers - but they will sometimes give you incorrect information, or 'hallucinate' a function of python that doesn't exist! So use them with caution - but they can be a great tool, and you can ask them to break down their answer in more detail if you don't understand something it has done.
+
+## Exercise: Functions
+
+Open this exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/exercise_3.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+## Sample Answers
+
+:::{.callout-tip collapse="true"}
+# Click here to view the answers
+Open exercise solutions in Google Colab: Coming Soon!
+:::
+
+## Answer Video
+
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
+Coming Soon!
+:::

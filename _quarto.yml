@@ -50,6 +50,9 @@ book:
   - part: "Numpy"
     chapters:
     - intro_to_numpy.qmd
+    - using_numpy.qmd
+    - numpy_features.qmd
+    - exercise_numpy.qmd
   - part: "Pandas"
     chapters:
     - intro_to_pandas.qmd

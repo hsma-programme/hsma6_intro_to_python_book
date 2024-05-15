@@ -233,7 +233,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"classes":"","read-only":"false","label":"","autorun":"","dpi":72,"comment":"","context":"interactive","output":"true","message":"true","out-height":"","fig-cap":"","fig-height":5,"warning":"true","results":"markup","fig-width":7,"out-width":"700px"},"code":"for x in range(10):\n    print(x)"},{"id":2,"options":{"classes":"","read-only":"false","label":"","autorun":"","dpi":72,"comment":"","context":"interactive","output":"true","message":"true","out-height":"","fig-cap":"","fig-height":5,"warning":"true","results":"markup","fig-width":7,"out-width":"700px"},"code":"for x in range(10, 20):\n    print(x)"},{"id":3,"options":{"classes":"","read-only":"false","label":"","autorun":"","dpi":72,"comment":"","context":"interactive","output":"true","message":"true","out-height":"","fig-cap":"","fig-height":5,"warning":"true","results":"markup","fig-width":7,"out-width":"700px"},"code":"for x in range(2, 30, 2):\n    print(x)"},{"id":4,"options":{"classes":"","read-only":"false","label":"","autorun":"","dpi":72,"comment":"","context":"interactive","output":"true","message":"true","out-height":"","fig-cap":"","fig-height":5,"warning":"true","results":"markup","fig-width":7,"out-width":"700px"},"code":"for x in range(10, 0, -1):\n    print(x)"},{"id":5,"options":{"classes":"","read-only":"false","label":"","autorun":"","dpi":72,"comment":"","context":"interactive","output":"true","message":"true","out-height":"","fig-cap":"","fig-height":5,"warning":"true","results":"markup","fig-width":7,"out-width":"700px"},"code":"my_list = [1, 10, \"Dan\", True, \"HSMA\"]\n\nfor element in my_list:\n    print(element)"},{"id":6,"options":{"classes":"","read-only":"false","label":"","autorun":"","dpi":72,"comment":"","context":"interactive","output":"true","message":"true","out-height":"","fig-cap":"","fig-height":5,"warning":"true","results":"markup","fig-width":7,"out-width":"700px"},"code":"total = 0\n\nfor x in range(10):\n    total = total + x\n    print(total)\n\n    if total > 5:\n        print(\"Break condition triggered!\")\n        break"}];
+globalThis.qpyodideCellDetails = [{"code":"for x in range(10):\n    print(x)","id":1,"options":{"fig-width":7,"fig-cap":"","warning":"true","classes":"","message":"true","out-height":"","fig-height":5,"results":"markup","out-width":"700px","context":"interactive","autorun":"","label":"","output":"true","read-only":"false","comment":"","dpi":72}},{"code":"for x in range(10, 20):\n    print(x)","id":2,"options":{"fig-width":7,"fig-cap":"","warning":"true","classes":"","message":"true","out-height":"","fig-height":5,"results":"markup","out-width":"700px","context":"interactive","autorun":"","label":"","output":"true","read-only":"false","comment":"","dpi":72}},{"code":"for x in range(2, 30, 2):\n    print(x)","id":3,"options":{"fig-width":7,"fig-cap":"","warning":"true","classes":"","message":"true","out-height":"","fig-height":5,"results":"markup","out-width":"700px","context":"interactive","autorun":"","label":"","output":"true","read-only":"false","comment":"","dpi":72}},{"code":"for x in range(10, 0, -1):\n    print(x)","id":4,"options":{"fig-width":7,"fig-cap":"","warning":"true","classes":"","message":"true","out-height":"","fig-height":5,"results":"markup","out-width":"700px","context":"interactive","autorun":"","label":"","output":"true","read-only":"false","comment":"","dpi":72}},{"code":"my_list = [1, 10, \"Dan\", True, \"HSMA\"]\n\nfor element in my_list:\n    print(element)","id":5,"options":{"fig-width":7,"fig-cap":"","warning":"true","classes":"","message":"true","out-height":"","fig-height":5,"results":"markup","out-width":"700px","context":"interactive","autorun":"","label":"","output":"true","read-only":"false","comment":"","dpi":72}},{"code":"total = 0\n\nfor x in range(10):\n    total = total + x\n    print(total)\n\n    if total > 5:\n        print(\"Break condition triggered!\")\n        break","id":6,"options":{"fig-width":7,"fig-cap":"","warning":"true","classes":"","message":"true","out-height":"","fig-height":5,"results":"markup","out-width":"700px","context":"interactive","autorun":"","label":"","output":"true","read-only":"false","comment":"","dpi":72}}];
 
 
 </script>
@@ -724,7 +724,25 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">intro_to_numpy.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">An Introduction to NumPy</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./using_numpy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using Numpy</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./numpy_features.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exercise_numpy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise - Numpy</span></span></a>
   </div>
 </li>
       </ul>
@@ -741,7 +759,7 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">intro_to_pandas.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">intro_to_pandas.html</span></span></a>
   </div>
 </li>
       </ul>
@@ -749,7 +767,7 @@ globalThis._qpyodideGetInstance = function() {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">further_reading.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">further_reading.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">

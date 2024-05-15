@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dan Chalk and Sammi Rosser">
-<meta name="dcterms.date" content="2025-02-05">
 
-<title>HSMA - Programming in Python</title>
+<title>HSMA - Programming in Python - 31&nbsp; Exercise - Numpy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./intro_to_pandas.html" rel="next">
+<link href="./numpy_features.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -75,8 +74,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="HSMA - Programming in Python">
-<meta property="og:description" content="An introduction to writing code in Python - from scratch!">
+<meta property="og:title" content="HSMA - Programming in Python - 31&nbsp; Exercise - Numpy">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="HSMA - Programming in Python">
 </head>
 
@@ -102,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_numpy.html">Numpy</a></li><li class="breadcrumb-item"><a href="./exercise_numpy.html"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise - Numpy</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -129,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -390,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercise_numpy.html" class="sidebar-item-text sidebar-link">
+  <a href="./exercise_numpy.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise - Numpy</span></span></a>
   </div>
 </li>
@@ -435,36 +434,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#exercise-functions" id="toc-exercise-functions" class="nav-link active" data-scroll-target="#exercise-functions"><span class="header-section-number">31.1</span> Exercise: Functions</a></li>
+  <li><a href="#sample-answers" id="toc-sample-answers" class="nav-link" data-scroll-target="#sample-answers"><span class="header-section-number">31.2</span> Sample Answers</a></li>
+  <li><a href="#answer-video" id="toc-answer-video" class="nav-link" data-scroll-target="#answer-video"><span class="header-section-number">31.3</span> Answer Video</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_numpy.html">Numpy</a></li><li class="breadcrumb-item"><a href="./exercise_numpy.html"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise - Numpy</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">HSMA - Programming in Python</h1>
-<p class="subtitle lead">An introduction to writing code in Python - from scratch!</p>
+<h1 class="title"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise - Numpy</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dan Chalk and Sammi Rosser </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 5, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -474,11 +462,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1><p><img src="resources/logos/hsma_logo_transparent_background_large.png" title="HSMA - Programming in Python" class="quarto-cover-image img-fluid"></p>
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<p>You’ll now work through a notebook on numpy. There are only two tasks here, but the second one will require you to look some things up, as you’ll need to use some NumPy functions that we haven’t told you about.</p>
+<p>This is a really important skill to learn when coding. Coders look things up all the time, and we can’t possibly teach you all of NumPy, or most of the other packages you will learn in this course. You’ll learn the basics of how each works, along with practical examples of it being used, but in the real world there will always be things you want to do that aren’t covered here.</p>
+<p>A good place to start is the search engine of your choice. You’ll find answers to lots of coding questions on https://stackoverflow.com/ too.</p>
+<p>Plus there’s always the documentation for the package you’re using (for NumPy, that’s https://numpy.org/doc/stable/index.html) - though this can be quite big!</p>
+<p>You could also use AI (e.g.&nbsp;ChatGPT, perplexity.ai). These can often give good answers - but they will sometimes give you incorrect information, or ‘hallucinate’ a function of python that doesn’t exist! So use them with caution - but they can be a great tool, and you can ask them to break down their answer in more detail if you don’t understand something it has done.</p>
+<section id="exercise-functions" class="level2" data-number="31.1">
+<h2 data-number="31.1" class="anchored" data-anchor-id="exercise-functions"><span class="header-section-number">31.1</span> Exercise: Functions</h2>
+<p>Open this exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/exercise_3.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"> </a></p>
+</section>
+<section id="sample-answers" class="level2" data-number="31.2">
+<h2 data-number="31.2" class="anchored" data-anchor-id="sample-answers"><span class="header-section-number">31.2</span> Sample Answers</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click here to view the answers
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Open exercise solutions in Google Colab: Coming Soon!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="answer-video" class="level2" data-number="31.3">
+<h2 data-number="31.3" class="anchored" data-anchor-id="answer-video"><span class="header-section-number">31.3</span> Answer Video</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click here to view a video explaining the solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Coming Soon!</p>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -1376,10 +1405,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./numpy_features.html" class="pagination-link" aria-label="Handy Numpy Features">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./intro_to_pandas.html" class="pagination-link" aria-label="intro_to_pandas.html">
+        <span class="nav-page-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">intro_to_pandas.html</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

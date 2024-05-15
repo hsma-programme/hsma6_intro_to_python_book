@@ -680,6 +680,215 @@
     ]
   },
   {
+    "objectID": "intro_to_numpy.html",
+    "href": "intro_to_numpy.html",
+    "title": "28  An Introduction to NumPy",
+    "section": "",
+    "text": "28.1 Multidimensional Arrays\nThe main object in NumPy is a multidimensional array. Before we go any further, let’s explain what we mean by a multidimensional array.\nThat seems rather abstract. Let’s think about some more practical examples.\nA list of ages is a 1 dimensional array\n[32, 71, 56, 54, 28]\nA list of ages for each of a number of groups is a 2 dimensional array\nA list of ages for each group within each department is a 3 dimensional array\nA 4 Dimensional Array might have Organisation, Department, Group, Age etc etc\nIn Machine Learning, Multidimensional arrays are common, because we are looking to predict an outcome based on input values (which we call features) - things like patient age, number of admissions etc. And there may be lots of them. And each one adds another dimension to our problem.\nSo we need a solution that allows us to work with multi-dimensional arrays easily and efficiently. NumPy provides us with this via NumPy Arrays - arrays that can be multi-dimensional and upon which we can perform rapid calculations.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>An Introduction to NumPy</span>"
+    ]
+  },
+  {
+    "objectID": "intro_to_numpy.html#multidimensional-arrays",
+    "href": "intro_to_numpy.html#multidimensional-arrays",
+    "title": "28  An Introduction to NumPy",
+    "section": "",
+    "text": "Group 1 : 32, 71, 56, 54, 28\nGroup 2 : 17, 28, 22, 18, 56\nGroup 3 : 98, 88, 10, 12, 5\n\n\nDepartment 1\nGroup 1 : 32, 71, 56, 54, 28\nGroup 2 : 17, 28, 22, 18, 56\nGroup 3 : 98, 88, 10, 12, 5\n\nDepartment 2\nGroup 1 : 8, 9, 15, 16, 23\nGroup 2 : 21, 37, 45, 42, 46\nGroup 3 : 51, 67, 16, 16, 21",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>An Introduction to NumPy</span>"
+    ]
+  },
+  {
+    "objectID": "using_numpy.html",
+    "href": "using_numpy.html",
+    "title": "29  Using Numpy",
+    "section": "",
+    "text": "29.1 Homogeneity and Dimension Lengths\nNumPy arrays are homogenous. This means that you can only store the same type of data (e.g. floats, integers etc) across the array.\nThe dimensions of a NumPy array must also be the same length consistently across the array (but can differ across dimensions).\nFor example, we can have an array which represents 3 departments, with 4 groups in each, and 10 people in each group. But we can’t have more or fewer than 10 people in each group, or more or fewer than 4 groups in each department. For real world data, this means we will sometimes have 0 or missing data for some values, and we deal with that differently depending on what we’re trying to represent.\nTo hammer this home, the below is NOT valid (but NumPy will let you do it, it’s just it won’t work as you think - you’ll end up with a 1D array with two values which are references to two lists) :",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Using Numpy</span>"
+    ]
+  },
+  {
+    "objectID": "using_numpy.html#homogeneity-and-dimension-lengths",
+    "href": "using_numpy.html#homogeneity-and-dimension-lengths",
+    "title": "29  Using Numpy",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Using Numpy</span>"
+    ]
+  },
+  {
+    "objectID": "using_numpy.html#referring-to-values-in-numpy-arrays",
+    "href": "using_numpy.html#referring-to-values-in-numpy-arrays",
+    "title": "29  Using Numpy",
+    "section": "29.2 Referring to values in Numpy arrays",
+    "text": "29.2 Referring to values in Numpy arrays\nTo refer to a value in a NumPy array, we specify the index of the value we want in each dimension, starting with the “outermost” dimension.\n\n\n\n\n\n\nTip\n\n\n\nRemember - in Python we start counting from 0!\nSo the ‘first’ element in a numpy array will be 0, the ‘second’ will be 1, and so on.\n\n\nRun each of the cells below and try to understand how the indexing is working in each case.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Using Numpy</span>"
+    ]
+  },
+  {
+    "objectID": "using_numpy.html#slicing-numpy-arrays",
+    "href": "using_numpy.html#slicing-numpy-arrays",
+    "title": "29  Using Numpy",
+    "section": "29.3 Slicing numpy arrays",
+    "text": "29.3 Slicing numpy arrays\nJust as with lists, we can use slicing to carve out a bit of a multidimensional NumPy array to return only the values we want.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe principle is the same for 3D+ arrays - remember, just count from the outside in.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Using Numpy</span>"
+    ]
+  },
+  {
+    "objectID": "using_numpy.html#updating-values",
+    "href": "using_numpy.html#updating-values",
+    "title": "29  Using Numpy",
+    "section": "29.4 Updating Values",
+    "text": "29.4 Updating Values\nJust like a list, we can update values in a NumPy array just by specifying the indices of the elements we want to update, and the new values.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nTip\n\n\n\nNOTE : A lot of the examples you’re about to see use only one or two dimensional arrays for simplicity of understanding. But the same principles apply to arrays of any dimension.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Using Numpy</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html",
+    "href": "numpy_features.html",
+    "title": "30  Handy Numpy Features",
+    "section": "",
+    "text": "30.1 Empty arrays\nTo create a new empty NumPy array, we can use the empty() function and specify the shape (length of each dimension) of the array we want.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html#empty-arrays",
+    "href": "numpy_features.html#empty-arrays",
+    "title": "30  Handy Numpy Features",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nNote\n\n\n\n“But wait!” you exclaim, “That doesn’t look empty to me!”. The way it actually works is it creates a new array and dumps in some garbage values that are very close to 0 (note the e to the minus at the end of the numbers) based on stuff that’s in memory at the time.\nJust think of it as empty. If you actually want 0s, we use something else (which you’ll see in a moment). But empty() is a little more computationally efficient.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html#creating-an-array-of-evenly-spaced-values",
+    "href": "numpy_features.html#creating-an-array-of-evenly-spaced-values",
+    "title": "30  Handy Numpy Features",
+    "section": "30.2 Creating an array of evenly-spaced values",
+    "text": "30.2 Creating an array of evenly-spaced values\nNumPy has a neat function called arange() which will create a NumPy array with evenly spaced values at an interval of our choosing.\nExample : let’s say we want to create a NumPy array with first value 0 and counting up in intervals of 5 up to 100.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html#zeroes",
+    "href": "numpy_features.html#zeroes",
+    "title": "30  Handy Numpy Features",
+    "section": "30.3 Zeroes",
+    "text": "30.3 Zeroes\nnumpy.zeros() is a function that creates a NumPy array of given dimensions, filled with zeros. This can be useful if we want to create a placeholder array that we will fill in / update with data as we go.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\neg an array to hold data for five departments, each with 4 groups, each with 3 people.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html#shape-and-ndim",
+    "href": "numpy_features.html#shape-and-ndim",
+    "title": "30  Handy Numpy Features",
+    "section": "30.4 Shape and ndim",
+    "text": "30.4 Shape and ndim\nThe shape attribute stores the length (number of elements) in each dimension.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe ndim attribute stores the number of dimensions in the array.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html#mathematical-operations",
+    "href": "numpy_features.html#mathematical-operations",
+    "title": "30  Handy Numpy Features",
+    "section": "30.5 Mathematical Operations",
+    "text": "30.5 Mathematical Operations\nOne of the key advantages of NumPy arrays is that you can apply mathematical operations at scale to large numbers of values much more efficiently than you would be able to otherwise.\nIt’s also really easy to do! Let’s imagine we have an array, and we want to double every single value in it.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can also combine mathematical operations with slicing to only apply our operation to certain bits of the array.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThis says “for each of the second lists in both groups, replace them with the values doubled”.\nWe could grab these out as a separate array if we wanted.",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html#statistical-operations",
+    "href": "numpy_features.html#statistical-operations",
+    "title": "30  Handy Numpy Features",
+    "section": "30.6 Statistical Operations",
+    "text": "30.6 Statistical Operations\nWe can also perform statistical operations on NumPy arrays easily and efficiently. We can find a single mean value across the whole array (the same principle works for slices) :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nOr find means across dimensions of the array :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\naxis = 0 means give the mean across the rows - ie the two lists. So, the mean of element 0 in both, mean of element 1 in both etc\naxis = 1 means give the mean across the columns - ie the mean of each row (list). So, the mean of list 0, the mean of list 1 etc\nAxis values of 2+ are used for third dimensional columns+ (don’t worry if your head’s starting to hurt, that’s normal!)",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html#dot-product",
+    "href": "numpy_features.html#dot-product",
+    "title": "30  Handy Numpy Features",
+    "section": "30.7 Dot Product",
+    "text": "30.7 Dot Product\nThe dot product of two arrays of identical length multiplies the nth element of array a with the nth element of array b, and adds all of these multiplications together to give a single answer.\nExample :\na = [1, 2, 3]\nb = [2, 4, 6]\n\na · b = (1 x 2) + (2 x 4) + (3 x 6) = 2 + 8 + 18 = 28\nTo do this in NumPy, we use the dot() function.\na = [1, 2, 3]\nb = [2, 4, 6]\n\ndp = np.dot(a,b)\n\nprint(dp)\n\n\n\n\n\n\nTip\n\n\n\nDot Product calculations are useful when we want to weight one set of values by another set of values.\nFor example, in a geographic model, we may want to weight travel times by the number of people coming from a location (so that we don’t treat 1 person having to travel a longer distance the same way as 100 people having to do this).",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "numpy_features.html#removing-duplicate-data",
+    "href": "numpy_features.html#removing-duplicate-data",
+    "title": "30  Handy Numpy Features",
+    "section": "30.8 Removing Duplicate Data",
+    "text": "30.8 Removing Duplicate Data\nThe unique() function allows us to easily remove duplicate values from a NumPy array.\nc = np.array([[1,2,3,4,5], [5,6,7,8,9]])\nc_unique = np.unique(c)\n\nprint(c_unique)\nWe can also use it to remove duplicate rows or columns.\nd = np.array([[1,2,3], [4,5,6],[1,2,3]])\nd_unique = np.unique(d, axis=0)\n\nprint(d_unique)\ne = np.array([[1,2,1], [2,4,2],[3,5,3]])\ne_unique = np.unique(e, axis=0)\n\nprint(e_unique)",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Handy Numpy Features</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_numpy.html",
+    "href": "exercise_numpy.html",
+    "title": "31  Exercise - Numpy",
+    "section": "",
+    "text": "31.1 Exercise: Functions\nOpen this exercise in Google Colab:",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Exercise - Numpy</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_numpy.html#sample-answers",
+    "href": "exercise_numpy.html#sample-answers",
+    "title": "31  Exercise - Numpy",
+    "section": "31.2 Sample Answers",
+    "text": "31.2 Sample Answers\n\n\n\n\n\n\nClick here to view the answers\n\n\n\n\n\nOpen exercise solutions in Google Colab: Coming Soon!",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Exercise - Numpy</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_numpy.html#answer-video",
+    "href": "exercise_numpy.html#answer-video",
+    "title": "31  Exercise - Numpy",
+    "section": "31.3 Answer Video",
+    "text": "31.3 Answer Video\n\n\n\n\n\n\nClick here to view a video explaining the solution\n\n\n\n\n\nComing Soon!",
+    "crumbs": [
+      "Numpy",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Exercise - Numpy</span>"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",

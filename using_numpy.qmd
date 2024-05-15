@@ -1,0 +1,136 @@
+---
+filters:
+  - pyodide
+---
+
+# Using Numpy
+
+:::{.callout-tip}
+Make sure you run the code cell below before any of the others. This will import the numpy package, and it will be remembered until you move to a different page or refresh this page.
+:::
+
+```{pyodide-python}
+import numpy as np
+```
+
+Let's create some numpy arrays!
+
+```{pyodide-python}
+one_dim_array = np.array([1,2,3,4,5])
+print(one_dim_array)
+```
+
+Pay close attention to the use of the square brackets in the following examples.
+
+```{pyodide-python}
+two_dim_array = np.array([[1,2,3,4,5],
+                          [2,4,6,8,10],
+                          [3,6,9,12,15]])
+print(two_dim_array)
+```
+
+```{pyodide-python}
+three_dim_array = np.array([[[1,2,3,4,5],[6,7,8,9,10]],
+                            [[2,4,6,8,10],[12,14,16,18,20]]])
+print(three_dim_array)
+```
+
+## Homogeneity and Dimension Lengths
+
+NumPy arrays are homogenous.  This means that you can only store the same type of data (e.g. floats, integers etc) across the array.
+
+The dimensions of a NumPy array must also be the same length consistently across the array (but can differ across dimensions).
+
+For example, we can have an array which represents 3 departments, with 4 groups in each, and 10 people in each group.  But we can’t have more or fewer than 10 people in each group, or more or fewer than 4 groups in each department.  For real world data, this means we will sometimes have 0 or missing data for some values, and we deal with that differently depending on what we’re trying to represent.
+
+To hammer this home, the below is NOT valid (but NumPy will let you do it, it’s just it won’t work as you think - you’ll end up with a 1D array with two values which are references to two lists) :
+
+```{pyodide-python}
+d = np.array([[1,2,3], [1,2]])
+
+print(d)
+```
+
+## Referring to values in Numpy arrays
+
+To refer to a value in a NumPy array, we specify the index of the value we want in each dimension, starting with the “outermost” dimension.
+
+:::{.callout-tip}
+Remember - in Python we start counting from 0!
+
+So the 'first' element in a numpy array will be 0, the 'second' will be 1, and so on.
+:::
+
+Run each of the cells below and try to understand how the indexing is working in each case.
+
+```{pyodide-python}
+one_dim_array = np.array([1,2,3,4,5])
+print(one_dim_array[0])
+```
+
+```{pyodide-python}
+two_dim_array = np.array([[1,2,3,4,5],
+                          [2,4,6,8,10],
+                          [3,6,9,12,15]])
+print(two_dim_array[1][2])
+```
+
+```{pyodide-python}
+three_dim_array = np.array([[[1,2,3,4,5],[6,7,8,9,10]],
+                            [[2,4,6,8,10],[12,14,16,18,20]]])
+print(three_dim_array[1][1][3])
+```
+
+## Slicing numpy arrays
+
+Just as with lists, we can use slicing to carve out a bit of a multidimensional NumPy array to return only the values we want.
+
+```{pyodide-python}
+my_np_array = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+
+# From the first list (element 0), give me back the first three values (indices 0, 1 and 2)
+print(my_np_array[0, :3])
+```
+
+
+```{pyodide-python}
+my_np_array = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+
+# From all lists, give me back elements at indices 1, 2 and 3 (ie the middle three)
+print(my_np_array[:, 1:4])
+```
+
+The principle is the same for 3D+ arrays - remember, just count from the outside in.
+
+```{pyodide-python}
+three_dim_array = np.array([[[1,2,3,4,5],[6,7,8,9,10]],
+                            [[2,4,6,8,10],[12,14,16,18,20]]])
+
+# From both outermost groups, give me back the first list in each, but only the first two elements
+
+print(three_dim_array[:, 0, :2])
+```
+
+## Updating Values
+
+Just like a list, we can update values in a NumPy array just by specifying the indices of the elements we want to update, and the new values.
+
+```{pyodide-python}
+three_dim_array = np.array([[[1,2,3,4,5],[6,7,8,9,10]],
+                            [[2,4,6,8,10],[12,14,16,18,20]]])
+
+print("Original Array")
+print(three_dim_array)
+
+three_dim_array[0][1][2] = 999
+
+print("Updated Array")
+print(three_dim_array)
+
+```
+
+
+
+:::{.callout-tip}
+NOTE : A lot of the examples you’re about to see use only one or two dimensional arrays for simplicity of understanding.  But the same principles apply to arrays of any dimension.
+:::
