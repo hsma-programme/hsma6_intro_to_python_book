@@ -1,0 +1,24 @@
+# Exercise
+
+## Coding Challenge
+
+So far, you’ve learned the following Python concepts :
+= Printing to the display
+- Variables and casting
+- User inputs
+- Comments
+- Mathematical operators
+- Conditional Logic
+- For and While Loops
+- Working with Lists and List Comprehension
+- Dictionaries
+- Libraries / Packages and Imports
+- The Random Library
+
+Your task now is to design and build a computer program that uses some or all of the concepts you’ve learned about today.
+
+Your program can do anything you like - be as creative as possible!
+
+Open a blank notebook for this task in Google Colab: <a target="_blank" href="https://colab.research.google.com/gist/Bergam0t/b7c9f7bca7e3c4f09868be5940310250/hsma_6_session_1e_group_coding_competition.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>

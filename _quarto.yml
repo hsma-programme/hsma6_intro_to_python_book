@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 book:
   title: HSMA - Programming in Python
   subtitle: An introduction to writing code in Python - from scratch!
@@ -13,6 +14,7 @@ book:
     - intro_to_programming_concepts.qmd
   - part: "Your First Steps in Python"
     chapters:
+    - intro_to_python.qmd
     - printing.qmd
     - variables.qmd
     - fstrings.qmd
@@ -24,9 +26,27 @@ book:
     - comments.qmd
     - conditional_logic.qmd
     - exercise_conditional_logic_etc.qmd
-  - part: "Functions"
+  - part: "Loops, Lists and Dictionaries"
+    chapters:
+    - loops.qmd
+    - exercise_loops.qmd
+    - lists.qmd
+    - list_comprehensions.qmd
+    - dictionaries.qmd
+    - exercise_lists_dictionaries.qmd
+  - part: "An Introduction to Libraries"
+    chapters:
+    - importing_packages.qmd
+    - the_random_library.qmd
+    - exercise_smarter_dan_10.qmd
+    - exercise_coding_challenge_1.qmd
+  - part: "Functions, Files and error Handling"
     chapters:
     - functions.qmd
+    - exercise_functions.qmd
+    - exception_handling.qmd
+    - file_handling.qmd
+    - exercise_exception_handling.qmd
   - part: "Numpy"
     chapters:
     - intro_to_numpy.qmd

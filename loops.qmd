@@ -1,0 +1,140 @@
+---
+filters:
+  - pyodide
+---
+
+# Loops
+
+In Principles of Programming, we talked about the use of loops as a way of performing the same thing multiple times.
+
+![](assets/2024-05-15-10-05-15.png)
+
+## For Loops
+
+A simple for loop might look like this.
+
+![](assets/2024-05-15-10-05-40.png)
+
+```{pyodide-python}
+for x in range(10):
+    print(x)
+```
+
+The code in the for loop can be anything you like!
+
+![](assets/2024-05-15-10-06-24.png)
+
+### Using a custom range in for loops
+
+A more advanced for loop might specify which number to start and finish at.
+
+We can use the `range()` function in python to do this.
+
+The first argument to range specifies which number to start at, and the second specifies where to end.
+
+Note that our counter will start at the number specified, but the end number won't be included!
+
+![](assets/2024-05-15-10-07-52.png)
+
+You can play around with this in the code cell below.
+
+```{pyodide-python}
+for x in range(10, 20):
+    print(x)
+```
+
+### Using a custom increment in for loops
+
+Taking this even further, we can add a third parameter to the `range()` function. This changes the step (the gap) between our numbers.
+
+![](assets/2024-05-15-10-08-59.png)
+
+You can play around with this in the code cell below.
+
+```{pyodide-python}
+for x in range(2, 30, 2):
+    print(x)
+```
+
+### Counting down
+
+We can also count down. This is sometimes referred to as a **negative increment** or **decrement**.
+
+![](assets/2024-05-15-10-09-47.png)
+
+Play around with this here.
+
+```{pyodide-python}
+for x in range(10, 0, -1):
+    print(x)
+```
+
+### Iterating through a list in a for loop
+
+One very powerful aspect of for loops is being able to iterate through a list.
+
+![](assets/2024-05-15-10-11-28.png)
+
+For example - you might have a list of 5 regions you need to run a report for. You could create a list of those regions, filter your dataset down to just the data for that region, then export a data file for each separate region. It's a very useful pattern!
+
+```{pyodide-python}
+my_list = [1, 10, "Dan", True, "HSMA"]
+
+for element in my_list:
+    print(element)
+```
+
+## While Loops
+
+While loops are another powerful type of loop, though you might use them less frequently than for loops.
+
+![](assets/2024-05-15-10-29-09.png)
+
+## Breaking from loops
+
+Sometimes we want to break out of a loop mid-flow. For example, we may have a for loop, and want to break out of it when a condition has been met.
+
+We can do this using the break command, which immediately breaks out of the loop and continues as though the for loop had completed.
+
+![](assets/2024-05-15-10-29-38.png)
+
+You can experiment with changing the break condition in the code cell below. What happens if you change the condition to `total > 6`? What about `total > 11`?
+
+```{pyodide-python}
+total = 0
+
+for x in range(10):
+    total = total + x
+    print(total)
+
+    if total > 5:
+        print("Break condition triggered!")
+        break
+```
+
+## Infinite loops
+
+Sometimes you can accidentally write an infinite loop – one that will never end. Anybody who used to play with BASIC in the old days will remember an example of an infinite loop :
+
+```
+10 PRINT “HELLO WORLD”
+20 GOTO 10
+```
+
+More modern examples include setting up a while loop that can never stop.
+
+This loop will never terminate because we never change the value of true!
+
+![](assets/2024-05-15-10-32-36.png)
+
+In the loop below - assuming our value of x was greater than or equal to 3 to begin with - it will keep triggering because x is getting bigger with each loop (as we're adding 1 to it).
+
+![](assets/2024-05-15-10-33-25.png)
+
+:::{.callout-tip}
+If you find yourself stuck in an infinite loop (and you will at some point), you need to interrupt the kernel and terminate the program.
+
+To do this in VSCode, click the Interrupt button in your Interactive Window (Note - if it is currently expecting a user input, you’ll need to interrupt and then cancel out of the user input).
+
+![](assets/2024-05-15-10-32-00.png)
+:::

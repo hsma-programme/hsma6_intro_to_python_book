@@ -1,0 +1,37 @@
+# Exercise - Handling errors and files
+
+We’ve now covered exception handling, as well as reading and writing .csv files (without Pandas - in reality, you’ll probably use Pandas’ in-built method more often for the kind of work you’ll do - more on that later).
+
+Now work through the following notebook.
+
+Open Exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/1f_2.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+To access the file input_data.csv in colab, you will need to upload it to Google Colab.
+
+First, download it by right clicking on the following link and choosing 'save file as': [Download Link](https://github.com/hsma-programme/h6_1f_python_part_2/raw/main/1f_python_programming_part_2/input_data.csv)
+
+
+Once in Colab,
+1. Click on 'files' in the left hand bar in Google colab (the folder-shaped icon)
+2. Choose 'upload to session storage'
+3. Select the file 'input_data.csv' from your machine. You can download it if required - right click on this link and choose 'save file as'
+4. Click 'ok' if a warning message appears. input_data.csv should now appear in your list of files. Hover over it and three dots will appear - click on these.
+5. Choose 'copy path' to get the filepath of the csv file. You can then right click and choose 'paste' in a code cell to get the filepath you will need in your code.
+
+![](assets/2024-05-15-12-28-46.png)
+
+## Sample Answers
+
+:::{.callout-tip collapse="true"}
+# Click here to view the answers
+Open exercise solutions in Google Colab: Coming Soon!
+:::
+
+## Answer Video
+
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
+Coming Soon!
+:::

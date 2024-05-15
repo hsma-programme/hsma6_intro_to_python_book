@@ -1,0 +1,25 @@
+## Exercise
+
+Let's do an exercise practicing lists and dictionaries.
+
+There is only one task in this notebook, but it’ll take a bit more thought!
+
+Open Exercise 4 in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1e_python_part_1/blob/main/1e_python_programming_part_1/1e_4.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+## Sample Answers
+
+:::{.callout-tip collapse="true"}
+# Click here to view the answers
+Open Exercise 4 SOLUTIONS in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1e_python_part_1/blob/main/1e_python_programming_part_1/solutions/1e_4_solution.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+:::
+
+## Answer Video
+
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
+Coming Soon!
+:::

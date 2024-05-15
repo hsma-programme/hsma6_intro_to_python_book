@@ -1,4 +1,4 @@
-## Exercise
+# Exercise
 
 So far, you’ve learned about print statements, user inputs, variables, fStrings, casting, mathematical operators, comments, conditional logic and comparison operators.
 

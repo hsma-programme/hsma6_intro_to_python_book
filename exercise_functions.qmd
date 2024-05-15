@@ -1,0 +1,19 @@
+## Exercise: Functions
+
+Open this exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/1f_1.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+## Sample Answers
+
+:::{.callout-tip collapse="true"}
+# Click here to view the answers
+Open exercise solutions in Google Colab: Coming Soon!
+:::
+
+## Answer Video
+
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
+Coming Soon!
+:::

@@ -5,6 +5,8 @@ filters:
 
 # Variables
 
+{{< video https://www.youtube.com/watch?v=LpCEl4DGmSA>}}
+
 In Principles of Programming, we talked about variables.  We said these are essentially boxes that store information of a certain type so the program can refer to it later.
 
 In many programming languages, we need to create a variable by declaring it. This means specifying its type alongside its name.

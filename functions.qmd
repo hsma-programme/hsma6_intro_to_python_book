@@ -1,0 +1,236 @@
+---
+filters:
+  - pyodide
+---
+
+# Functions
+
+Often, when we write things we want a computer to do, we want to do them more than once, maybe at different points in our computer program. Or even in a different program altogether.  We want stuff to be reusable without having to write it out each time.
+
+To prevent us having to write out the same sets of instructions time and again, we can wrap a set of instructions up in a function.
+
+A function can take inputs (optionally), do something with them, and then return an output (optionally). The things it does are just sets of instructions.
+
+A function is defined by giving it a name, the list of inputs it should expect (if any), the things we want it to do, and the outputs it should return (if any). The function doesn’t do anything until it is called, however.
+
+![](assets/2024-05-15-12-08-01.png)
+
+## Writing functions
+
+As well as the many in-built functions and those in external libraries, we can also write our own functions.  Indeed, most programs will (and should) have their own functions, so we don’t have to repeat the same code multiple times.
+
+To define a function we use the def command. We specify the function name, the input(s) to the function (if any), and the block of code representing the function’s inner workings. We also usually need to return an output (though not always).
+
+:::{.callout-tip}
+Note : Good function design is to have the function to do one thing well.
+:::
+
+Let’s consider an example. Let’s say we want to write a function that takes two numbers, multiplies them together, works out whether the result is higher than 100 and returns a Boolean to indicate this.
+
+![](assets/2024-05-15-12-08-30.png)
+
+## Calling a function
+
+
+
+:::{.callout-tip}
+We’ve now written a function, but at the moment we’ve just told Python that we want a function that looks like this.
+
+Nothing will happen until we tell Python we want to use the function - this is known as calling the function.
+
+:::
+
+Try running the cell below. Do you see any output?
+
+```{pyodide-python}
+def multiply_and_check(number_1, number_2):
+    result = number_1 * number_2
+
+    if result > 100:
+        print("Over 100!")
+    else:
+        print("Under 100!")
+```
+
+Now let's try again
+
+```{pyodide-python}
+def multiply_and_check(number_1, number_2):
+    result = number_1 * number_2
+
+    if result > 100:
+        return True
+    else:
+        return False
+
+multiply_and_check(5, 7)
+```
+
+We can call the function anywhere in our code after the function has been defined, and we can call it as many times as we like.
+
+As long as you've run one of the cells above, the cells below should work as Python has remembered our function.
+
+```{pyodide-python}
+multiply_and_check(5, 7)
+
+multiply_and_check(24, 6)
+
+multiply_and_check(2, 100)
+```
+
+We must provide any required inputs when we call a function.
+
+If an output is returned, we must store it somewhere.
+In the function below, instead of printing, we are returning a boolean value (true or false)
+
+```{pyodide-python}
+def multiply_and_check(number_1, number_2):
+    result = number_1 * number_2
+
+    if result > 100:
+        return True
+    else:
+        return False
+
+the_result = multiply_and_check(5, 7)
+
+print(the_result)
+```
+
+We could also just print the result directly by wrapping our call to our new function inside the print function.
+
+```{pyodide-python}
+def multiply_and_check(number_1, number_2):
+    result = number_1 * number_2
+
+    if result > 100:
+        return True
+    else:
+        return False
+
+print(multiply_and_check(5, 7))
+```
+
+Note - if we pass in variable names as inputs to a function, they don’t need to match the names in the function definition.
+
+!()[assets/2024-05-15-12-08-48.png]
+
+```{pyodide-python}
+def multiply_and_check(number_1, number_2):
+    result = number_1 * number_2
+
+    if result > 100:
+        print("Over 100!")
+    else:
+        print("Under 100!")
+
+my_special_number = 42
+my_other_special_number = 13
+
+multiply_and_check(my_special_number, my_other_special_number)
+
+my_third_special_number = 101
+multiply_and_check(my_special_number, my_third_special_number)
+```
+
+## Functions without inputs
+
+Some functions don’t need inputs and / or outputs.  Here’s an example of one that has neither inputs nor outputs.
+
+```{pyodide-python}
+
+def say_hello():
+    print("Hello! Welcome to your new Chalk computer! We hope you enjoy")
+    print("using the vast 128k of RAM, and 1Mhz processor. For help, just")
+    print("type ?")
+
+say_hello()
+```
+
+In the above example, the function definition contains nothing in the brackets (no inputs) and no return statements (no outputs - nothing passed back).  Because there are no outputs, we just call the function without assigning the output to a variable (because there isn’t one).
+
+## Returning multiple values
+
+Sometimes, you may want to return multiple values from a function.  There are basically two ways to do this :
+Return the values separately
+Return the values stored in a single structure (eg a list)
+
+For the first approach, we list out the values being returned using commas in the return statement, and list out the variables to store those values using commas in the variable assignment when calling the function.
+
+Let’s look at an example.
+
+```{pyodide-python}
+
+import random
+
+def generate_three_unique_random_integers(low, high):
+    number_1 = random.randint(low, high)
+
+    while True:
+        number_2 = random.randint(low, high)
+        if number_2 != number_1:
+            break
+
+    while True:
+        number_3 = random.randint(low, high)
+        if number_3 != number_1 and number_3 != number_2:
+            break
+
+    return number_1, number_2, number_3
+
+num_1, num_2, num_3 = generate_three_unique_random_integers(1, 10)
+
+print (num_1)
+print (num_2)
+print (num_3)
+
+
+```
+
+Let’s see how we could do the same but returning as a list.
+
+```{pyodide-python}
+
+
+import random
+
+def generate_three_unique_random_integers(low, high):
+    number_1 = random.randint(low, high)
+
+    while True:
+        number_2 = random.randint(low, high)
+        if number_2 != number_1:
+            break
+
+    while True:
+        number_3 = random.randint(low, high)
+        if number_3 != number_1 and number_3 != number_2:
+            break
+
+    returned_list = [number_1, number_2, number_3]
+    return returned_list
+
+returned_list = generate_three_unique_random_integers(1, 10)
+
+print (returned_list[0])
+print (returned_list[1])
+print (returned_list[2])
+
+
+```
+
+## Global and local variables
+
+When using functions in Python, it’s important to understand the difference between a local and a global variable.
+
+A local variable is one which lives inside a function, but it has no visibility outside of that.  In other words, nothing outside the function can see or use that variable.
+
+In the previous example, low, high, number_1, number_2 and number_3 are local variables.  If we tried to reference them outside of the function, we’d get an error (though we can create new variables with the same names, but they are different variables to the ones in the function).
+
+![](assets/2024-05-15-12-18-12.png)
+
+A global variable is one which is defined outside of a function.  These can be used and referenced anywhere - all of the Python code can see it.  However, if we want to change them inside a function, we have to use something known as the global keyword.
+
+:::{.callout-warning}
+This is not typically recommended though, and is considered bad practice (and can lead to problems, as you can likely imagine), so we won’t teach it here.
+:::

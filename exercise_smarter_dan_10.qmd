@@ -1,0 +1,41 @@
+# Exercise - Putting it all together
+
+## Are you Smarter than (Dan as) a 4 year old?
+
+When I was 4 years old, I wrote my very first program in BASIC on my Atari 800XL.
+
+In it, the computer randomly picked a whole number between 1 and 100, and the user had 10 chances to guess the number.
+
+Every time the user guessed a number, they would be told either that the number was “too low”, “too high” or “correct”.
+
+If the user used up all 10 chances without guessing correctly, they were told “you lose”, along with what the number was, and the game would end.
+
+You’ve been taught enough to write this program in Python.  You should write the game above along with the following features that 4-year old Dan didn’t implement :
+
+- a score, which starts at 1000 and which reduces by 100 for every unsuccessful guess,
+and which is displayed if the user wins
+- the user’s guesses are stored in a list and printed once the game is over
+- the game asks if the player wants to play again after every game ends
+- after each game, the player’s score is checked against the current high-score (default is 0) and if the last score is higher than the recorded high score then this replaces the high score.
+
+You could also add some bells and whistles of your choosing!
+
+Open Exercise 5 in Google Colab: <a target="_blank" href="https://colab.research.google.com/gist/Bergam0t/81eec03542933c78e0fedc7ed5918e4a/hsma_6_session_1e_exercise_5.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+## Sample Answers
+
+:::{.callout-tip collapse="true"}
+# Click here to view the answers
+Open Exercise 5 SOLUTIONS in Google Colab: <a target="_blank" href="https://colab.research.google.com/gist/Bergam0t/744f9d266208d56ff1be1fcf06f35b1e/solution-smarter-than-4-year-old-dan.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+:::
+
+## Answer Video
+
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
+Coming Soon!
+:::

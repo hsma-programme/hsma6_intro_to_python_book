@@ -1,0 +1,38 @@
+---
+filters:
+  - pyodide
+---
+
+# The Random Library
+
+Python’s random library contains a number of functions that allow us to generate random numbers.  This is useful in modelling, because we’re going to need random numbers if we’re to build stochastic models.
+
+Remember we talked about probability distributions in session 1B?
+
+![](assets/2024-05-15-11-24-28.png)
+
+To import the random library, we use the following at the start of our code (we don’t need to install random, as it comes with the Anaconda distribution of Python) :
+
+```{pyodide-python}
+import random
+```
+
+:::{.callout-important}
+You need to run the cell above first, otherwise the examples further down this page won't work!
+:::
+
+```{pyodide-python}
+# Generate a random number between 0 and 1 sampled from a uniform distribution
+print(random.random())
+```
+
+```{pyodide-python}
+# Generate a random integer (whole number) between 1 and 10 inclusive
+print(random.randint(1,10))
+```
+
+```{pyodide-python}
+my_list = ["Dan", "Sammi", "Amy"]
+# Choose a random item from my_list
+print(random.choice(my_list))
+```

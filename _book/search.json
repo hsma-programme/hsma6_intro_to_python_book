@@ -196,6 +196,215 @@
     ]
   },
   {
+    "objectID": "loops.html",
+    "href": "loops.html",
+    "title": "12  Loops",
+    "section": "",
+    "text": "12.1 For Loops\nA simple for loop might look like this.\nThe code in the for loop can be anything you like!",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Loops</span>"
+    ]
+  },
+  {
+    "objectID": "loops.html#for-loops",
+    "href": "loops.html#for-loops",
+    "title": "12  Loops",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n12.1.1 Using a custom range in for loops\nA more advanced for loop might specify which number to start and finish at.\nWe can use the range() function in python to do this.\nThe first argument to range specifies which number to start at, and the second specifies where to end.\nNote that our counter will start at the number specified, but the end number won’t be included!\n\nYou can play around with this in the code cell below.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n12.1.2 Using a custom increment in for loops\nTaking this even further, we can add a third parameter to the range() function. This changes the step (the gap) between our numbers.\n\nYou can play around with this in the code cell below.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n12.1.3 Counting down\nWe can also count down. This is sometimes referred to as a negative increment or decrement.\n\nPlay around with this here.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n12.1.4 Iterating through a list in a for loop\nOne very powerful aspect of for loops is being able to iterate through a list.\n\nFor example - you might have a list of 5 regions you need to run a report for. You could create a list of those regions, filter your dataset down to just the data for that region, then export a data file for each separate region. It’s a very useful pattern!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Loops</span>"
+    ]
+  },
+  {
+    "objectID": "loops.html#while-loops",
+    "href": "loops.html#while-loops",
+    "title": "12  Loops",
+    "section": "12.2 While Loops",
+    "text": "12.2 While Loops\nWhile loops are another powerful type of loop, though you might use them less frequently than for loops.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Loops</span>"
+    ]
+  },
+  {
+    "objectID": "loops.html#breaking-from-loops",
+    "href": "loops.html#breaking-from-loops",
+    "title": "12  Loops",
+    "section": "12.3 Breaking from loops",
+    "text": "12.3 Breaking from loops\nSometimes we want to break out of a loop mid-flow. For example, we may have a for loop, and want to break out of it when a condition has been met.\nWe can do this using the break command, which immediately breaks out of the loop and continues as though the for loop had completed.\n\nYou can experiment with changing the break condition in the code cell below. What happens if you change the condition to total &gt; 6? What about total &gt; 11?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Loops</span>"
+    ]
+  },
+  {
+    "objectID": "loops.html#infinite-loops",
+    "href": "loops.html#infinite-loops",
+    "title": "12  Loops",
+    "section": "12.4 Infinite loops",
+    "text": "12.4 Infinite loops\nSometimes you can accidentally write an infinite loop – one that will never end. Anybody who used to play with BASIC in the old days will remember an example of an infinite loop :\n10 PRINT “HELLO WORLD”\n20 GOTO 10\nMore modern examples include setting up a while loop that can never stop.\nThis loop will never terminate because we never change the value of true!\n\nIn the loop below - assuming our value of x was greater than or equal to 3 to begin with - it will keep triggering because x is getting bigger with each loop (as we’re adding 1 to it).\n\n\n\n\n\n\n\nTip\n\n\n\nIf you find yourself stuck in an infinite loop (and you will at some point), you need to interrupt the kernel and terminate the program.\nTo do this in VSCode, click the Interrupt button in your Interactive Window (Note - if it is currently expecting a user input, you’ll need to interrupt and then cancel out of the user input).",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Loops</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_loops.html",
+    "href": "exercise_loops.html",
+    "title": "13  Exercise",
+    "section": "",
+    "text": "13.1 Sample Answers",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_loops.html#sample-answers",
+    "href": "exercise_loops.html#sample-answers",
+    "title": "13  Exercise",
+    "section": "",
+    "text": "Click here to view the answers\n\n\n\n\n\nOpen Exercise 3 SOLUTIONS in Google Colab:",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_loops.html#answer-video",
+    "href": "exercise_loops.html#answer-video",
+    "title": "13  Exercise",
+    "section": "13.2 Answer Video",
+    "text": "13.2 Answer Video\n\n\n\n\n\n\nClick here to view a video explaining the solution\n\n\n\n\n\nComing Soon!",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "lists.html",
+    "href": "lists.html",
+    "title": "14  Lists",
+    "section": "",
+    "text": "14.1 Indices\nLists are ordered, which means that we can refer to elements in a list by their location - their index.\nTo refer to an element in a list by its index, we use the following notation :\nmy_list[x]\nwhere x is the index number of the element we want to reference.\nHOWEVER, Python (like many languages) starts counting from 0. Which means the first element of a list has an index of 0, the second an index of 1 etc. This will catch you out if you’re new to coding, especially as a few constructs in Python start counting from 1…\nSo, to reference the fourth element in a list my_list, we would use :\nmy_list[3]\nLet’s run this below! Try changing the index (the ‘3’) in the line print(my_list[3])",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lists</span>"
+    ]
+  },
+  {
+    "objectID": "lists.html#indices",
+    "href": "lists.html#indices",
+    "title": "14  Lists",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lists</span>"
+    ]
+  },
+  {
+    "objectID": "lists.html#negative-indexing-and-slicing",
+    "href": "lists.html#negative-indexing-and-slicing",
+    "title": "14  Lists",
+    "section": "14.2 Negative Indexing and Slicing",
+    "text": "14.2 Negative Indexing and Slicing\nWe can also use negative indexing to refer to an item based on its position from the end of the list. Here, -1 would refer to the last element, -2 to the penultimate element etc.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIf we want to refer to multiple items in a list, we can use a slice. Here, we use a colon to denote the indices of the start and end elements that we want.\n\n\n\n\n\n\nTip\n\n\n\nThe start element is included.\nThe end element is not included.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lists</span>"
+    ]
+  },
+  {
+    "objectID": "lists.html#length-and-removal",
+    "href": "lists.html#length-and-removal",
+    "title": "14  Lists",
+    "section": "14.3 Length and Removal",
+    "text": "14.3 Length and Removal\nTo find the length of a list (the number of elements it contains), we simply use the len() function :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can remove an item from a list by specifying the element we want to remove, and using remove :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nOr by giving the index of the element we want to remove, and using pop:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIf we want to remove the last element from a list, we can just use pop without specifying an index :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lists</span>"
+    ]
+  },
+  {
+    "objectID": "lists.html#checking-existence",
+    "href": "lists.html#checking-existence",
+    "title": "14  Lists",
+    "section": "14.4 Checking Existence",
+    "text": "14.4 Checking Existence\nWe can check whether or not an element exists in a list using conditional logic combined with the in keyword :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nOr whether something is not in a list by additionally using the not keyword :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lists</span>"
+    ]
+  },
+  {
+    "objectID": "lists.html#copying-lists",
+    "href": "lists.html#copying-lists",
+    "title": "14  Lists",
+    "section": "14.5 Copying lists",
+    "text": "14.5 Copying lists\nIf we want to copy a list, we might be tempted to write this :\n\nmy_list = [3, 4, 7, \"hello\", 2]\ncopy_of_my_list = my_list\n\nThe previous example will create a second reference to the same list. In other words, there is still one list, just two different names for it.\nTo create a copy, we need to use the copy() function of a list object :\n\nmy_list = [3, 4, 7, \"hello\", 2]\ncopy_of_my_list = my_list.copy()\n\nNow we have two lists, and can work with them independently (ie changes made to one will not affect the other).",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lists</span>"
+    ]
+  },
+  {
+    "objectID": "list_comprehensions.html",
+    "href": "list_comprehensions.html",
+    "title": "15  List Comprehensions",
+    "section": "",
+    "text": "Python has a really useful feature called “List Comprehension” that allows us to easily create lists based off of other lists using a single line of code.\nLet’s consider an example. Let’s imagine we have a list of numbers, and we want to set up a second list containing all the numbers of the first list, but doubled. Here’s one way we could do (without list comprehension) :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nBut a list comprehension replaces three of the lines of code here to create list_b with a single line of code :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nYou may find it easier to read a list comprehension from the middle. The above says for each value in list_a, give me back that value doubled and add that as an element to list_b.\nWe can also add conditional logic to a list comprehension, so that we only include elements that meet certain criteria.\nWhat numbers will be in list_b in the example below?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe’ve asked the list comprehension to only include numbers that have a remainder of 0 when dividing by 2, and dividing an even number by 2 will give a remainder of 0.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>List Comprehensions</span>"
+    ]
+  },
+  {
+    "objectID": "dictionaries.html",
+    "href": "dictionaries.html",
+    "title": "16  Dictionaries",
+    "section": "",
+    "text": "Dictionaries are another way in which we can store multiple values in Python. Unlike lists, they are unordered (the order doesn’t matter), and instead each value is associated with a lookup key. This allows us to store values against something that describes that value being stored. Dictionaries are structured as key : value pairs.\nLet’s create an example dictionary. We use curly brackets to denote dictionaries.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nTip\n\n\n\nNotice that our keys (the bit on the left hand side of the colon) are strings.\nHowever - the bits on the right of the colon - our values - can be anything! We could even use lists or other dictionaries.\nDictionaries are fine with a variety of types being used as values within a single dictionary object.\n\n\nTo refer to a value in a dictionary, we just provide the key :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can also update the value of a key this way.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can add new key : value pairs in the same way :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can also delete ones we don’t need.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Dictionaries</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_lists_dictionaries.html",
+    "href": "exercise_lists_dictionaries.html",
+    "title": "17  Exercise",
+    "section": "",
+    "text": "17.1 Sample Answers",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_lists_dictionaries.html#sample-answers",
+    "href": "exercise_lists_dictionaries.html#sample-answers",
+    "title": "17  Exercise",
+    "section": "",
+    "text": "Click here to view the answers\n\n\n\n\n\nOpen Exercise 4 SOLUTIONS in Google Colab:",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_lists_dictionaries.html#answer-video",
+    "href": "exercise_lists_dictionaries.html#answer-video",
+    "title": "17  Exercise",
+    "section": "17.2 Answer Video",
+    "text": "17.2 Answer Video\n\n\n\n\n\n\nClick here to view a video explaining the solution\n\n\n\n\n\nComing Soon!",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Exercise</span>"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",

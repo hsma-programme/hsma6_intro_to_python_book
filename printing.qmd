@@ -5,6 +5,8 @@ filters:
 
 # Printing
 
+{{< video https://www.youtube.com/watch?v=33iBXqTZBOk >}}
+
 There is a tradition in Computer Science that the first program anyone should write in a Programming Language is one that writes the words “Hello World!” to the screen.
 
 (Look, back in my day (the 80s), getting a machine to display anything on your TV was pretty amazing stuff!)

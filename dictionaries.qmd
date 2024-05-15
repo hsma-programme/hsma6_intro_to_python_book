@@ -1,0 +1,80 @@
+---
+filters:
+  - pyodide
+---
+
+# Dictionaries
+
+Dictionaries are another way in which we can store multiple values in Python.  Unlike lists, they are unordered (the order doesn’t matter), and instead each value is associated with a lookup key.  This allows us to store values against something that describes that value being stored.  Dictionaries are structured as key : value pairs.
+
+Let’s create an example dictionary.  We use curly brackets to denote dictionaries.
+
+```{pyodide-python}
+my_patient_dictionary = {"patient_id": 1674234,
+                         "name": "Bob Smith",
+                         "year_of_birth": 1961,
+                         "readmission": True}
+```
+
+:::{.callout-tip}
+Notice that our keys (the bit on the left hand side of the colon) are strings.
+
+However - the bits on the right of the colon - our values - can be anything! We could even use lists or other dictionaries.
+
+Dictionaries are fine with a variety of types being used as values within a single dictionary object.
+:::
+
+To refer to a value in a dictionary, we just provide the key :
+
+```{pyodide-python}
+my_patient_dictionary = {"patient_id": 1674234,
+                         "name": "Bob Smith",
+                         "year_of_birth": 1961,
+                         "readmission": True}
+
+print(my_patient_dictionary["name"])
+```
+
+We can also update the value of a key this way.
+
+```{pyodide-python}
+my_patient_dictionary = {"patient_id": 1674234,
+                         "name": "Bob Smith",
+                         "year_of_birth": 1961,
+                         "readmission": True}
+
+print(f"The original name in this dictionary is {my_patient_dictionary["name"]}")
+
+my_patient_dictionary["name"] = "Dan Chalk"
+print(f"The name in the updated dictionary is {my_patient_dictionary["name"]}")
+```
+
+We can add new key : value pairs in the same way :
+
+```{pyodide-python}
+my_patient_dictionary = {"patient_id": 1674234,
+                         "name": "Bob Smith",
+                         "year_of_birth": 1961,
+                         "readmission": True}
+
+print(f"The original dictionary is {my_patient_dictionary}")
+
+my_patient_dictionary["month_of_birth"] = 6
+
+print(f"The updated dictionary is {my_patient_dictionary}")
+```
+
+We can also delete ones we don't need.
+
+```{pyodide-python}
+my_patient_dictionary = {"patient_id": 1674234,
+                         "name": "Bob Smith",
+                         "year_of_birth": 1961,
+                         "readmission": True}
+
+print(f"The original dictionary is {my_patient_dictionary}")
+
+del my_patient_dictionary["readmission"]
+
+print(f"The updated dictionary is {my_patient_dictionary}")
+```

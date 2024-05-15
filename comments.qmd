@@ -17,8 +17,6 @@ There are two ways of writing comments in Python.
 
 
 ```{pyodide-python}
-
 # This is a comment - it won't be printed
 print("But if you run this code cell, I will be printed!")
-
 ```

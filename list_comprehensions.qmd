@@ -1,0 +1,58 @@
+---
+filters:
+  - pyodide
+---
+
+# List Comprehensions
+
+<!-- ```{r, echo = FALSE, results='asis'}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Uncomment to change widget colours:
+#style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
+``` -->
+
+Python has a really useful feature called “List Comprehension” that allows us to easily create lists based off of other lists using a single line of code.
+
+Let’s consider an example. Let’s imagine we have a list of numbers, and we want to set up a second list containing all the numbers of the first list, but doubled.  Here’s one way we could do (without list comprehension) :
+
+```{pyodide-python}
+list_a = [1, 2, 3, 4, 5]
+list_b = []
+
+for number in list_a:
+    list_b.append(number*2)
+
+print(list_a)
+print(list_b)
+```
+
+But a list comprehension replaces three of the lines of code here to create list_b with a single line of code :
+
+```{pyodide-python}
+list_a = [1, 2, 3, 4, 5]
+
+list_b = [number * 2 for number in list_a]
+
+print(list_a)
+print(list_b)
+```
+
+You may find it easier to read a list comprehension from the middle.  The above says for each value in list_a, give me back that value doubled and add that as an element to list_b.
+
+We can also add conditional logic to a list comprehension, so that we only include elements that meet certain criteria.
+
+What numbers will be in list_b in the example below?
+
+<!-- `r mcq(opts=c("All Numbers", "Odd Numbers", answer = "Even Numbers"), feedback=c("Nope - we've added a condition that will exclude some numbers", "Not quite - dividing an odd number by 2 will give a remainder of 1. We've asked the list comprehension to only include numbers that have a remainder of 0 when dividing by 2.", "Correct! We've asked the list comprehension to only include numbers that have a remainder of 0 when dividing by 2, and dividing an even number by 2 will give a remainder of 0."))` -->
+
+```{pyodide-python}
+list_a = [1, 2, 3, 4, 5]
+
+list_b = [number for number in list_a if number % 2 == 0]
+
+print(list_a)
+print(list_b)
+```
+
+We've asked the list comprehension to only include numbers that have a remainder of 0 when dividing by 2, and dividing an even number by 2 will give a remainder of 0.

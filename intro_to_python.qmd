@@ -1,0 +1,13 @@
+# Intro to Python
+
+{{< video https://www.youtube.com/watch?v=iI3CRbRJpiE >}}
+
+Python is a high-level programming language that has been around since the early 90s, but has particularly come to prominence in the last 15 years.  It is now the most widely used language in the world.
+
+A key feature of Python is that it is highly extensible.  This means we can bring in code that others have written to extend the core functionality of Python (we saw that in the last session when we talked about packages).
+
+Python also allows us to get quick results and build iteratively making it perfect for scientific computing (such as modelling and data science).
+
+:::{.callout-tip}
+Yes - it really is named after British comedy troupe Monty Python!
+:::

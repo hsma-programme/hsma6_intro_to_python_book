@@ -1,0 +1,18 @@
+---
+filters:
+  - pyodide
+---
+
+# Importing Packages
+
+One of the huge advantages of Python being the most widely used programming language in the world, is that people have already written lots of useful stuff that we can use ourselves, without needing to reinvent the wheel.  These bits of code are known as packages (sometimes referred to as libraries).
+
+We can import these libraries into our code (assuming the package is installed), so we can use the stuff they’ve written.  Most of the code you write will include imports of packages.
+
+We write import statements at the start of our code.  It is also good practice to only import what we actually need (so if there’s a big package, and we only need a bit of it, we should try to import only the bit we want).
+
+![](assets/2024-05-15-11-23-41.png)
+
+1 : this says import the package named string
+2 : this says import the pyplot bit of code from the matplotlib package, and henceforth I shall refer to it as plt (this is known as an alias)
+3 : this says from the wordcloud package import the concept of a WordCloud, as well as a list of Stopwords

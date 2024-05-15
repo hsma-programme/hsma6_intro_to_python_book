@@ -1,0 +1,28 @@
+---
+filters:
+  - pyodide
+---
+
+# Exception (Error) Handling
+
+Sometimes things in our code won’t work as expected.  Something might go wrong, particularly when we’re trying to get in some external input (input from a user, reading in data from a file etc).
+
+For example, if we ask the user to input a number, and then the characters that they type can’t be cast as a number, the program will terminate with an error.
+
+![](assets/2024-05-15-12-22-31.png)
+
+This is messy, and we don’t want our code to crash if we get something unexpected!  A better approach is to use Exception Handling.  Exception handling allows us to catch errors, and tell Python what we want to do if it finds one (without crashing the program).  Exceptions are the fancy name for errors in programming.
+
+## Try and Except
+
+In Python, we do this by using try and except statements.
+
+A try and except statement tells Python to try running the code in the “try” block, and if it runs into any problems, to run the bit of code in the “except” block instead.
+
+![](assets/2024-05-15-12-22-48.png)
+
+## Else and Finally
+
+Whilst Try and Except will suffice for most of our purposes, we can also extend the functionality by using else and finally.
+
+![](assets/2024-05-15-12-23-14.png)
