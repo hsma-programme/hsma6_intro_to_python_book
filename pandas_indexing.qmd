@@ -1,0 +1,160 @@
+---
+filters:
+  - pyodide
+---
+
+# Selecting Rows and Columns in Pandas
+
+:::{.callout-tip}
+
+To allow all the exercises in this section to work, please run this code cell first!
+
+This will import pandas and load the dataframe we'll be working with.
+
+```{pyodide-python}
+import pandas as pd
+df = pd.read_csv(
+    "https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv",
+    index_col="Patient ID"
+    )
+```
+
+:::
+
+## Indexing
+
+In Pandas, we can select certain rows and / or columns of data in our DataFrame - this is known as Indexing.  Let’s look at some examples using our DataFrame.
+
+### Retrieve a given column
+
+When we retrieve a given column, note the index is always returned too:
+
+```{pyodide-python}
+df["Name"]
+```
+
+### Retrieve multiple columns
+
+When we retrieve a given column, note the index is always returned too:
+
+```{pyodide-python}
+df[["Name", "County"]]
+```
+
+### Retrieve a given row (record) (by providing the unique index value)
+
+```{pyodide-python}
+df.loc[90154]
+```
+
+### Retrieve multiple given rows
+
+```{pyodide-python}
+df.loc[[76547,19811]]
+```
+
+### Retrieve multiple given rows and only specified columns
+
+```{pyodide-python}
+df.loc[[76547,19811],
+       ["Name", "County"]]
+```
+
+
+## Conditional Indexing
+
+We can also select rows in a DataFrame that meet certain criteria by using conditional logic.
+
+### Retrieve all records meeting a single criteria
+
+Here, we'll retrieve all records where the county is Cornwall
+
+```{pyodide-python}
+df.loc[df["County"] == "Cornwall"]
+```
+
+:::{.callout-tip}
+The following - not using .loc - will also work.
+
+```{pyodide-python}
+df[df["County"] == "Cornwall"]
+```
+
+:::
+
+
+:::{.callout-info}
+
+How does this work? Let's first look at what happens when we just run the part inside the square brackets.
+
+```{pyodide-python}
+df["County"] == "Cornwall"
+```
+
+We just get a list of 'true' and 'false' because it's looking at the 'county' value for every row and returning `True` if it matches "Cornwall", and `False` otherwise.
+
+This can be called a `mask`.
+
+When we apply this `mask` to our dataframe, it returns only the rows where the value in the mask was True.
+
+```{pyodide-python}
+mask = df["County"] == "Cornwall"
+
+df[mask]
+
+```
+:::
+
+
+### More conditional indexing
+
+This time, instead of looking for exact matches, we'll look for something that exceeds a numeric value.
+
+```{pyodide-python}
+df.loc[df["Age"] >= 60]
+```
+
+
+### Multiple Conditions (and)
+
+Let's now retrieve all records for patients in Cornwall aged 60 and over.
+
+```{pyodide-python}
+df.loc[
+    (df["County"] == "Cornwall") &
+    (df["Age"] >= 60)
+    ]
+```
+
+:::{.callout-warning}
+You must use ampersand (&) not the word and here
+:::
+
+We could also write this all on one line.
+
+```{pyodide-python}
+df.loc[(df["County"] == "Cornwall") & (df["Age"] >= 60)]
+```
+
+Note that you will need brackets around each separate condition when doing this.
+
+### Multiple Conditions (or)
+
+Let's retrieve all records where either the patient lives in Cornwall or they’re aged 60 or over.
+
+```{pyodide-python}
+df.loc[
+    (df["County"] == "Cornwall") |
+    (df["Age"] >= 60)
+    ]
+```
+
+:::{.callout-warning}
+You must use pipe (|) not the word or here
+:::
+
+We could also write this all on one line.
+
+```{pyodide-python}
+df.loc[(df["County"] == "Cornwall") | (df["Age"] >= 60)]
+```

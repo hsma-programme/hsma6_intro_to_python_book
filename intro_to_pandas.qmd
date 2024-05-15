@@ -1,0 +1,102 @@
+---
+filters:
+  - pyodide
+---
+
+# An Introduction to Pandas
+
+Let’s talk about Pandas.
+
+And by that, we of course mean the beautiful, glorious, intelligent…
+… open source Python library that provides powerful data structures and analysis tools.
+
+(You can judge the level of geekiness of someone fairly easily by simply making the statement “I love Pandas” and seeing if they reply “Me too, and NumPy!”)
+
+Pandas is very powerful for manipulating data in large arrays (unlike some spreadsheet software…), and allows for indexing of data.  NumPy and Pandas are often used together, with NumPy used for mathematical functions applied to the data, and Pandas used to manipulate the data.
+
+As with NumPy, there is a conventional alias under which Pandas should be imported :
+
+```{python}
+#| eval: true
+
+import pandas as pd
+```
+
+## The Pandas Dataframe
+
+One of the most useful structures in Pandas is the Pandas DataFrame. A DataFrame is like a table with different columns (which can have names) for different data fields, and different rows for each entry in the data.
+
+Imagine a table in Excel.  Only much more powerful.
+
+![](assets/2024-05-15-15-55-45.png)
+
+## Creating a new dataframe
+
+We have two choices when we want to create a new Pandas DataFrame :
+
+- We can create a new DataFrame and then build the DataFrame manually
+- We can read in existing data from a .csv file
+
+Given that 99% of the time you’ll be doing the latter for real world applications, let’s just focus on that.  And it’s also really easy!
+
+Pandas has a fantastic function that allows us to read in data from a .csv file, and it will automatically stuff it into a new DataFrame for us!
+
+In one line of code!!
+
+Don’t believe me?  Observe…
+
+:::{.callout-tip}
+One fantastic feature of pandas is that we can point to either a **local** file (one stored on our machine) or a **remote** file (one stored somewhere else - like the web).
+:::
+
+In the example below, we are accessing a file called `input_data.csv`.
+
+If this file was stored in the same folder as our python file, we would just do
+
+```{python}
+#| eval: true
+df = pd.read_csv("input_data.csv")
+```
+
+We can then show the first 5 rows of the data with the `.head()` method.
+
+```{python}
+#| eval: true
+df.head()
+```
+
+However, we could also use a web location. We're going to use this method in the rest of the examples to allow us to interact with pandas dataframes in this book.
+
+```{pyodide-python}
+import pandas as pd
+
+df = pd.read_csv("https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv")
+
+df.head()
+```
+
+You can see that the outputs are identical!
+
+## The index
+
+![](assets/2024-05-15-15-57-30.png)
+
+
+## Specifying an existing column as the index
+
+In our data, we already have a unique identifier in our data - “Patient ID”.  When we read in the .csv, we can tell Pandas that we want to set this column to be the Index (rather than creating a new one).
+
+```{pyodide-python}
+import pandas as pd
+
+df = pd.read_csv(
+    "https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv",
+    index_col="Patient ID"
+    )
+
+df.head()
+```
+
+IMPORTANT - Pandas will check that the column you specify does truly have unique values.  If it doesn’t, it will raise an exception (error) and if you don’t catch it, the code will terminate.
+
+Be careful when importing data where multiple records refer to the same patient - patient ID would not be a unique identifier in that case.

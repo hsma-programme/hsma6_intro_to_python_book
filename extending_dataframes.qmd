@@ -1,0 +1,159 @@
+---
+filters:
+  - pyodide
+---
+
+# Extending your dataframes
+
+:::{.callout-tip}
+
+To allow all the exercises in this section to work, please run this code cell first!
+
+This will import pandas and load the dataframe we'll be working with.
+
+```{pyodide-python}
+import pandas as pd
+df = pd.read_csv(
+    "https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv",
+    index_col="Patient ID"
+    )
+```
+
+## Adding data to a dataframe
+
+We can add additional rows (and columns) to a DataFrame.  To add a row, we must specify the values for all of the columns for this new row.  Similarly, to add a column, we must specify the value for this column for all of the rows.
+
+### Adding rows
+
+To add a row, we specify the index value for the new row (that doesn’t yet exist in our DataFrame) and assign a list of values for the other columns :
+
+```{pyodide-python}
+row_to_add = ["Dan", "Yes",42,"Cornwall]
+df.loc[12345] = row_to_add
+
+df
+```
+
+:::{.callout-warning}
+Be careful - you can overwrite an existing row this way if you provide an index that already exists.
+:::
+
+### Adding columns
+
+We can add a new column as follows.
+
+However - note that you’ll need a value for every single row in your dataset.
+
+The code below makes a new dataframe that is just the first 5 rows of the existing dataframe, then adds the new column
+
+```{pyodide-python}
+
+first_five_rows = df.head()
+
+first_five_rows["Admitted"] = ["Yes", "No", "No", "Yes", "No]
+
+first_five_rows
+```
+
+
+## Concatenation
+
+Another way of adding to our DataFrame is by joining two DataFrames together to create a new one.
+
+We can do this using the Pandas concat() method.
+
+:::{.callout-tip}
+axis = 0 joins by adding rows
+
+axis = 1 joins by adding columns
+:::
+
+First, let's make two new dataframes.
+
+This shows you another way you can create a dataframe - by passing a **list** of **dictionaries**, where every dictionary in the list represents one row.
+
+The **keys** of the dictionary will be the column names, and the **values** will be the values in the row.
+
+
+```{pyodide-python}
+df_a = pd.DataFrame(
+    [{"Name": "Dan", "Trainer?": "Yes"},
+     {"Name": "Sammi", "Trainer?": "Yes"}]
+)
+
+df_b = pd.DataFrame(
+    [{"Name": "Mike", "Trainer?": "No"},
+     {"Name": "Tom", "Trainer?": "No"}]
+)
+```
+
+
+```{pyodide-python}
+df_a
+```
+
+```{pyodide-python}
+df_b
+```
+
+We can then join these with the concat method.
+
+```{pyodide-python}
+df_c = pd.concat([df_a, df_b], axis=0)
+
+df_c
+```
+
+Note : in this example, we have entries with duplicate index values.  We’d likely want to do something about this, but in practice, the DataFrames you’ll be concatenating will normally have their own unique index that will hold when both are joined.
+
+If you do need to reset the index, you can use the `.reset_index()` method.
+
+```{pyodide-python}
+df_c.reset_index()
+```
+
+Note that the old index becomes a new column!
+We can avoid this by passing `drop=True`.
+
+```{pyodide-python}
+df_c.reset_index(drop=True)
+```
+
+
+Let's have a quick look at concatenating on the other axis.
+
+```{pyodide-python}
+df_d = pd.DataFrame(
+    [{"Favourite Decade": "80s", "Favourite Game": "Monkey Island 2"},
+     {"Favourite Decade": "90s", "Favourite Game": "Outer Wilds"}]
+)
+```
+
+```{pyodide-python}
+df_e = pd.concat([df_a, df_d], axis=1)
+
+df_e
+```
+
+
+You may notice that concatenating in this direction feels a bit risky!
+
+You may prefer to use the **merge** method of pandas.
+The kind of joins available with that method will feel very familiar if you have used SQL.
+
+Using merge, you can specify columns or an index that must match, ensuring that the correct rows are matched up.
+
+```{pyodide-python}
+df_f = pd.DataFrame(
+    [{"Name": "Dan", "Favourite Decade": "80s", "Favourite Game": "Monkey Island 2"},
+     {"Name": "Sammi", "Favourite Decade": "90s", "Favourite Game": "Outer Wilds"}]
+)
+
+df_f
+```
+
+```{pyodide-python}
+pd.merge(df_a, df_f, how="inner", on="Name")
+```
+
+You can read more about the types of joins available here: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html

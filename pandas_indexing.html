@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HSMA - Programming in Python - 16&nbsp; List Comprehensions</title>
+<title>pandas_indexing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,54 +23,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./dictionaries.html" rel="next">
-<link href="./lists.html" rel="prev">
-<link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<script src="pandas_indexing_files/libs/clipboard/clipboard.min.js"></script>
+<script src="pandas_indexing_files/libs/quarto-html/quarto.js"></script>
+<script src="pandas_indexing_files/libs/quarto-html/popper.min.js"></script>
+<script src="pandas_indexing_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="pandas_indexing_files/libs/quarto-html/anchor.min.js"></script>
+<link href="pandas_indexing_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="pandas_indexing_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="pandas_indexing_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="pandas_indexing_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="pandas_indexing_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   
@@ -233,7 +195,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"list_a = [1, 2, 3, 4, 5]\nlist_b = []\n\nfor number in list_a:\n    list_b.append(number*2)\n\nprint(list_a)\nprint(list_b)","options":{"classes":"","dpi":72,"out-height":"","read-only":"false","output":"true","comment":"","warning":"true","context":"interactive","fig-cap":"","results":"markup","label":"","fig-height":5,"message":"true","out-width":"700px","autorun":"","fig-width":7},"id":1},{"code":"list_a = [1, 2, 3, 4, 5]\n\nlist_b = [number * 2 for number in list_a]\n\nprint(list_a)\nprint(list_b)","options":{"classes":"","dpi":72,"out-height":"","read-only":"false","output":"true","comment":"","warning":"true","context":"interactive","fig-cap":"","results":"markup","label":"","fig-height":5,"message":"true","out-width":"700px","autorun":"","fig-width":7},"id":2},{"code":"list_a = [1, 2, 3, 4, 5]\n\nlist_b = [number for number in list_a if number % 2 == 0]\n\nprint(list_a)\nprint(list_b)","options":{"classes":"","dpi":72,"out-height":"","read-only":"false","output":"true","comment":"","warning":"true","context":"interactive","fig-cap":"","results":"markup","label":"","fig-height":5,"message":"true","out-width":"700px","autorun":"","fig-width":7},"id":3}];
+globalThis.qpyodideCellDetails = [{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":1,"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":2,"code":"df[\"Name\"]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":3,"code":"df[[\"Name\", \"County\"]]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":4,"code":"df.loc[90154]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":5,"code":"df.loc[[76547,19811]]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":6,"code":"df.loc[[76547,19811],\n       [\"Name\", \"County\"]]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":7,"code":"df.loc[df[\"County\"] == \"Cornwall\"]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":8,"code":"df[df[\"County\"] == \"Cornwall\"]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":9,"code":"df[\"County\"] == \"Cornwall\""},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":10,"code":"mask = df[\"County\"] == \"Cornwall\"\n\ndf[mask]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":11,"code":"df.loc[df[\"Age\"] >= 60]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":12,"code":"df.loc[\n    (df[\"County\"] == \"Cornwall\") &\n    (df[\"Age\"] >= 60)\n    ]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":13,"code":"df.loc[(df[\"County\"] == \"Cornwall\") & (df[\"Age\"] >= 60)]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":14,"code":"df.loc[\n    (df[\"County\"] == \"Cornwall\") |\n    (df[\"Age\"] >= 60)\n    ]"},{"options":{"fig-height":5,"out-width":"700px","read-only":"false","comment":"","autorun":"","output":"true","context":"interactive","message":"true","dpi":72,"classes":"","label":"","fig-cap":"","results":"markup","warning":"true","out-height":"","fig-width":7},"id":15,"code":"df.loc[(df[\"County\"] == \"Cornwall\") | (df[\"Age\"] >= 60)]"}];
 
 
 </script>
@@ -425,366 +387,12 @@ globalThis._qpyodideGetInstance = function() {
 </script>
 
 
-<link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="HSMA - Programming in Python - 16&nbsp; List Comprehensions">
-<meta property="og:description" content="">
-<meta property="og:site_name" content="HSMA - Programming in Python">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="fullcontent">
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">HSMA - Programming in Python</span>
-    </a>
-  </div>
-        <div class="quarto-navbar-tools tools-end">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-          <div id="quarto-search" class="" title="Search"></div>
-      </div> <!-- /container-fluid -->
-    </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./loops.html">Loops, Lists and Dictionaries</a></li><li class="breadcrumb-item"><a href="./list_comprehensions.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">List Comprehensions</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./resources/logos/hsma_logo_transparent_background_large.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Attribution and Acknowledgements</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Programming Concepts</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro_to_programming_concepts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro_to_programming_concepts.html</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Your First Steps in Python</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro_to_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intro to Python</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./printing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Printing</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./variables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./fstrings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./user_input_casting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">User Input and Changing Variable Types</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mathematical_operators.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mathematical Operators</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_10_years_forward.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise: 10 years forward</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Your Next Python Skills</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./comments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Comments</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./conditional_logic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conditional Logic</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_conditional_logic_etc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Loops, Lists and Dictionaries</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Loops</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lists.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Lists</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./list_comprehensions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">List Comprehensions</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_lists_dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
- <span class="menu-text">An Introduction to Libraries</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./importing_packages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Importing Packages</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./the_random_library.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">The Random Library</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_smarter_dan_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exercise - Putting it all together</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_coding_challenge_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
- <span class="menu-text">Functions, Files and error Handling</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Functions</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Exercise: Functions</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exception_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Exception (Error) Handling</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./file_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">File Handling</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_exception_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Exercise - Handling errors and files</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
- <span class="menu-text">Numpy</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro_to_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">An Introduction to NumPy</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./using_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using Numpy</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./numpy_features.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise - Numpy</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
- <span class="menu-text">Pandas</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro_to_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">An Introduction to Pandas</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">further_reading.html</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
-<!-- main -->
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
 <main class="content" id="quarto-document-content">
 <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/loader.js"></script>
 <script type="module" id="qpyodide-monaco-editor-init">
@@ -797,387 +405,148 @@ globalThis._qpyodideGetInstance = function() {
   });
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./loops.html">Loops, Lists and Dictionaries</a></li><li class="breadcrumb-item"><a href="./list_comprehensions.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">List Comprehensions</span></a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">List Comprehensions</span></h1>
+
+
+
+<section id="selecting-rows-and-columns-in-pandas" class="level1">
+<h1>Selecting Rows and Columns in Pandas</h1>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/x9vjgNxXdcc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<!-- ```{r, echo = FALSE, results='asis'}
-knitr::opts_chunk$set(echo = FALSE)
-
-# Uncomment to change widget colours:
-#style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
-``` -->
-<p>Python has a really useful feature called “List Comprehension” that allows us to easily create lists based off of other lists using a single line of code.</p>
-<p>Let’s consider an example. Let’s imagine we have a list of numbers, and we want to set up a second list containing all the numbers of the first list, but doubled. Here’s one way we could do (without list comprehension) :</p>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To allow all the exercises in this section to work, please run this code cell first!</p>
+<p>This will import pandas and load the dataframe we’ll be working with.</p>
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>But a list comprehension replaces three of the lines of code here to create list_b with a single line of code :</p>
+</div>
+</div>
+<section id="indexing" class="level2">
+<h2 class="anchored" data-anchor-id="indexing">Indexing</h2>
+<p>In Pandas, we can select certain rows and / or columns of data in our DataFrame - this is known as Indexing. Let’s look at some examples using our DataFrame.</p>
+<section id="retrieve-a-given-column" class="level3">
+<h3 class="anchored" data-anchor-id="retrieve-a-given-column">Retrieve a given column</h3>
+<p>When we retrieve a given column, note the index is always returned too:</p>
 <div id="qpyodide-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>You may find it easier to read a list comprehension from the middle. The above says for each value in list_a, give me back that value doubled and add that as an element to list_b.</p>
-<p>We can also add conditional logic to a list comprehension, so that we only include elements that meet certain criteria.</p>
-<p>What numbers will be in list_b in the example below?</p>
-<!-- `r mcq(opts=c("All Numbers", "Odd Numbers", answer = "Even Numbers"), feedback=c("Nope - we've added a condition that will exclude some numbers", "Not quite - dividing an odd number by 2 will give a remainder of 1. We've asked the list comprehension to only include numbers that have a remainder of 0 when dividing by 2.", "Correct! We've asked the list comprehension to only include numbers that have a remainder of 0 when dividing by 2, and dividing an even number by 2 will give a remainder of 0."))` -->
+</section>
+<section id="retrieve-multiple-columns" class="level3">
+<h3 class="anchored" data-anchor-id="retrieve-multiple-columns">Retrieve multiple columns</h3>
+<p>When we retrieve a given column, note the index is always returned too:</p>
 <div id="qpyodide-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>We’ve asked the list comprehension to only include numbers that have a remainder of 0 when dividing by 2, and dividing an even number by 2 will give a remainder of 0.</p>
-
-
-
-</main> <!-- /main -->
-<script>
-
-/* update total correct if #webex-total_correct exists */
-update_total_correct = function() {
-  console.log("webex: update total_correct");
-
-  var t = document.getElementsByClassName("webex-total_correct");
-  for (var i = 0; i < t.length; i++) {
-    p = t[i].parentElement;
-    var correct = p.getElementsByClassName("webex-correct").length;
-    var solvemes = p.getElementsByClassName("webex-solveme").length;
-    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
-    var selects = p.getElementsByClassName("webex-select").length;
-
-    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
-  }
-}
-
-/* webex-solution button toggling function */
-b_func = function() {
-  console.log("webex: toggle hide");
-
-  var cl = this.parentElement.classList;
-  if (cl.contains('open')) {
-    cl.remove("open");
-  } else {
-    cl.add("open");
-  }
-}
-
-/* check answers */
-check_func = function() {
-  console.log("webex: check answers");
-  console.log(document.getElementsByClassName("webex-check"));
-
-  var cl = this.parentElement.classList;
-  if (cl.contains('unchecked')) {
-    cl.remove("unchecked");
-    this.innerHTML = "Hide Answers";
-
-    check_answer_box_nodelist = this.parentNode.childNodes
-    console.log(check_answer_box_nodelist)
-    for (let i = 0; i < check_answer_box_nodelist.length; i++) {
-      var cl_inner = check_answer_box_nodelist[i].classList;
-      console.log("Nodelist", i, ":", cl_inner);
-      if (typeof cl_inner !== "undefined")
-        {
-          if (cl_inner.contains("feedback")) {
-            {/* console.log(cl_inner.contains("feedback")) */}
-            {/* console.log(check_answer_box_nodelist[i].style.display) */}
-            check_answer_box_nodelist[i].style.display = "block"
-          }
-        }
-
-      }
-
-  } else {
-    cl.add("unchecked");
-    this.innerHTML = "Show Answers";
-
-    check_answer_box_nodelist = this.parentNode.childNodes
-    console.log(check_answer_box_nodelist)
-    for (let i = 0; i < check_answer_box_nodelist.length; i++) {
-      var cl_inner = check_answer_box_nodelist[i].classList;
-      console.log("Nodelist", i, ":", cl_inner);
-      if (typeof cl_inner !== "undefined")
-        {
-          if (cl_inner.contains("feedback")) {
-            {/* console.log(cl_inner.contains("feedback")) */}
-            {/* console.log(check_answer_box_nodelist[i].style.display) */}
-            check_answer_box_nodelist[i].style.display = "none"
-          }
-        }
-
-      }
-
-  }
-
-}
-
-/* function for checking solveme answers */
-solveme_func = function(e) {
-  console.log("webex: check solveme");
-  {/* console.log(e) */}
-  {/* console.log(this) */}
-
-  var real_answers = JSON.parse(this.dataset.answer);
-  var my_answer = this.value;
-  var cl = this.classList;
-
-  var feedback = (this.getAttribute("feedback"))
-
-  if (document.getElementById('feedbackDiv'+this.id) === null){
-
-    var feedbackDiv = document.createElement("p");
-    feedbackDiv.setAttribute("id", "feedbackDiv"+this.id);
-    feedbackDiv.setAttribute("class", "feedback");
-
-  } else {
-
-    var feedbackDiv = document.getElementById('feedbackDiv'+this.id)
-    feedbackDiv.innerHTML = "";
-
-  }
-
-  // Check if inside a 'check answers' box - if so and if answer box is
-  // currently unchecked, ensure feedback is hidden
-  if (this.parentElement.parentElement.classList.contains("unchecked")) {
-    {/* console.log(this.parentElement.parentElement.classList); */}
-    feedbackDiv.style.display = "none"
-  } else {
-    {/* console.log(this.parentElement.parentElement.classList); */}
-    feedbackDiv.style.display = "block"
-  }
-
-  if (cl.contains("ignorecase")) {
-    my_answer = my_answer.toLowerCase();
-  }
-  if (cl.contains("nospaces")) {
-    my_answer = my_answer.replace(/ /g, "")
-  }
-
-  if (my_answer == "") {
-    cl.remove("webex-correct");
-    cl.remove("webex-incorrect");
-  } else if (real_answers.includes(my_answer)) {
-    cl.add("webex-correct");
-    cl.remove("webex-incorrect");
-  } else {
-    cl.add("webex-incorrect");
-    cl.remove("webex-correct");
-    feedbackDiv.innerHTML = feedback;
-  	this.parentNode.insertAdjacentElement('afterend', feedbackDiv);
-  }
-
-  // match numeric answers within a specified tolerance
-  if(this.dataset.tol > 0){
-    var tol = JSON.parse(this.dataset.tol);
-    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
-    if (matches.reduce((a, b) => a + b, 0) > 0) {
-      cl.add("webex-correct");
-    } else {
-      cl.remove("webex-correct");
-      feedbackDiv.innerHTML = feedback;
-  	  this.parentNode.insertAdjacentElement('afterend', feedbackDiv);
-    }
-  }
-
-  // added regex bit
-  if (cl.contains("regex")){
-    answer_regex = RegExp(real_answers.join("|"))
-    if (answer_regex.test(my_answer)) {
-      cl.add("webex-correct");
-    }
-  }
-
-  update_total_correct();
-}
-
-/* function for checking select answers */
-select_func = function(e) {
-  console.log("webex: check select");
-
-  var cl = this.classList
-  var feedback = (this[this.selectedIndex].getAttribute("feedback"))
-
-  if (document.getElementById('feedbackDiv'+this.id) === null){
-
-    var feedbackDiv = document.createElement("p");
-    feedbackDiv.setAttribute("id", "feedbackDiv"+this.id);
-    feedbackDiv.setAttribute("class", "feedback");
-
-  } else {
-
-    var feedbackDiv = document.getElementById('feedbackDiv'+this.id)
-    feedbackDiv.innerHTML = "";
-
-  }
-
-  feedbackDiv.innerHTML = feedback;
-  this.parentNode.insertAdjacentElement('afterend', feedbackDiv);
-
-  // Check if inside a 'check answers' box - if so and if answer box is
-  // currently unchecked, ensure feedback is hidden
-  if (this.parentElement.parentElement.classList.contains("unchecked")) {
-    {/* console.log(this.parentElement.parentElement.classList); */}
-    feedbackDiv.style.display = "none"
-  } else {
-    {/* console.log(this.parentElement.parentElement.classList); */}
-    feedbackDiv.style.display = "block"
-  }
-
-  /* add style */
-  cl.remove("webex-incorrect");
-  cl.remove("webex-correct");
-  if (this.value == "answer") {
-    cl.add("webex-correct");
-  } else if (this.value != "blank") {
-    cl.add("webex-incorrect");
-  }
-
-  update_total_correct();
-}
-
-/* function for checking radiogroups answers */
-radiogroups_func = function(e) {
-  console.log("webex: check radiogroups");
-
-  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
-  var cl = checked_button.parentElement.classList;
-  var labels = checked_button.parentElement.parentElement.children;
-  var feedback = (checked_button.getAttribute("feedback"))
-  if (feedback !== null & feedback !== "<b></b>") { feedback = feedback + "</br></br>" }
-
-  if (document.getElementById('feedbackDiv'+this.id) === null){
-
-    var feedbackDiv = document.createElement("div");
-    feedbackDiv.setAttribute("id", "feedbackDiv"+this.id);
-    feedbackDiv.setAttribute("class", "feedback");
-
-  } else {
-
-      var feedbackDiv = document.getElementById('feedbackDiv'+this.id)
-      feedbackDiv.innerHTML = "";
-
-  }
-
-  const currentDiv = document.getElementById(this);
-  feedbackDiv.innerHTML = feedback;
-  this.insertAdjacentElement('afterend', feedbackDiv);
-
-    // Check if inside a 'check answers' box - if so and if answer box is
-  // currently unchecked, ensure feedback is hidden
-  if (this.parentElement.classList.contains("unchecked")) {
-      {/* console.log(this.parentElement.parentElement.classList); */}
-      feedbackDiv.style.display = "none"
-    } else {
-      {/* console.log(this.parentElement.parentElement.classList); */}
-      feedbackDiv.style.display = "block"
-    }
-
-
-  /* get rid of styles */
-  for (i = 0; i < labels.length; i++) {
-    labels[i].classList.remove("webex-incorrect");
-    labels[i].classList.remove("webex-correct");
-  }
-
-  /* add style */
-  if (checked_button.value == "answer") {
-    cl.add("webex-correct");
-  } else {
-    cl.add("webex-incorrect");
-  }
-
-  update_total_correct();
-}
-
-window.onload = function() {
-  console.log("webex onload");
-  /* set up solution buttons */
-  var buttons = document.getElementsByTagName("button");
-
-  for (var i = 0; i < buttons.length; i++) {
-    if (buttons[i].parentElement.classList.contains('webex-solution')) {
-      buttons[i].onclick = b_func;
-    }
-  }
-
-  var check_sections = document.getElementsByClassName("webex-check");
-  console.log("check:", check_sections.length);
-  for (var i = 0; i < check_sections.length; i++) {
-    check_sections[i].classList.add("unchecked");
-    console.log(check_sections[i])
-
-    let btn = document.createElement("button");
-    btn.innerHTML = "Show Answers";
-    btn.classList.add("webex-check-button");
-    // check_func removes the 'unchecked' class from box
-    // and updates the button text
-    // subsequently recheck all possible question funcs
-    // to ensure feedback gets shown or hidden as appropriate
-    btn.onclick = check_func;
-
-    check_sections[i].appendChild(btn);
-
-    let spn = document.createElement("span");
-    spn.classList.add("webex-total_correct");
-    check_sections[i].appendChild(spn);
-  }
-
-  /* set up webex-solveme inputs */
-  var solveme = document.getElementsByClassName("webex-solveme");
-
-  for (var i = 0; i < solveme.length; i++) {
-    /* make sure input boxes don't auto-anything */
-    solveme[i].setAttribute("autocomplete","off");
-    solveme[i].setAttribute("autocorrect", "off");
-    solveme[i].setAttribute("autocapitalize", "off");
-    solveme[i].setAttribute("spellcheck", "false");
-    solveme[i].value = "";
-
-    /* adjust answer for ignorecase or nospaces */
-    var cl = solveme[i].classList;
-    var real_answer = solveme[i].dataset.answer;
-    if (cl.contains("ignorecase")) {
-      real_answer = real_answer.toLowerCase();
-    }
-    if (cl.contains("nospaces")) {
-      real_answer = real_answer.replace(/ /g, "");
-    }
-    solveme[i].dataset.answer = real_answer;
-
-    /* attach checking function */
-    solveme[i].onkeyup = solveme_func;
-    solveme[i].onchange = solveme_func;
-
-    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
-  }
-
-  /* set up radiogroups */
-  var radiogroups = document.getElementsByClassName("webex-radiogroup");
-  for (var i = 0; i < radiogroups.length; i++) {
-    radiogroups[i].onchange = radiogroups_func;
-  }
-
-  /* set up selects */
-  var selects = document.getElementsByClassName("webex-select");
-  for (var i = 0; i < selects.length; i++) {
-    selects[i].onchange = select_func;
-    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
-  }
-
-  update_total_correct();
-}
-
-</script>
+</section>
+<section id="retrieve-a-given-row-record-by-providing-the-unique-index-value" class="level3">
+<h3 class="anchored" data-anchor-id="retrieve-a-given-row-record-by-providing-the-unique-index-value">Retrieve a given row (record) (by providing the unique index value)</h3>
+<div id="qpyodide-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="retrieve-multiple-given-rows" class="level3">
+<h3 class="anchored" data-anchor-id="retrieve-multiple-given-rows">Retrieve multiple given rows</h3>
+<div id="qpyodide-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="retrieve-multiple-given-rows-and-only-specified-columns" class="level3">
+<h3 class="anchored" data-anchor-id="retrieve-multiple-given-rows-and-only-specified-columns">Retrieve multiple given rows and only specified columns</h3>
+<div id="qpyodide-insertion-location-6"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+</section>
+<section id="conditional-indexing" class="level2">
+<h2 class="anchored" data-anchor-id="conditional-indexing">Conditional Indexing</h2>
+<p>We can also select rows in a DataFrame that meet certain criteria by using conditional logic.</p>
+<section id="retrieve-all-records-meeting-a-single-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="retrieve-all-records-meeting-a-single-criteria">Retrieve all records meeting a single criteria</h3>
+<p>Here, we’ll retrieve all records where the county is Cornwall</p>
+<div id="qpyodide-insertion-location-7"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The following - not using .loc - will also work.</p>
+<div id="qpyodide-insertion-location-8"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+<div class="callout-info">
+<p>How does this work? Let’s first look at what happens when we just run the part inside the square brackets.</p>
+<div id="qpyodide-insertion-location-9"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>We just get a list of ‘true’ and ‘false’ because it’s looking at the ‘county’ value for every row and returning <code>True</code> if it matches “Cornwall”, and <code>False</code> otherwise.</p>
+<p>This can be called a <code>mask</code>.</p>
+<p>When we apply this <code>mask</code> to our dataframe, it returns only the rows where the value in the mask was True.</p>
+<div id="qpyodide-insertion-location-10"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</section>
+<section id="more-conditional-indexing" class="level3">
+<h3 class="anchored" data-anchor-id="more-conditional-indexing">More conditional indexing</h3>
+<p>This time, instead of looking for exact matches, we’ll look for something that exceeds a numeric value.</p>
+<div id="qpyodide-insertion-location-11"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="multiple-conditions-and" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-conditions-and">Multiple Conditions (and)</h3>
+<p>Let’s now retrieve all records for patients in Cornwall aged 60 and over.</p>
+<div id="qpyodide-insertion-location-12"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You must use ampersand (&amp;) not the word and here</p>
+</div>
+</div>
+<p>We could also write this all on one line.</p>
+<div id="qpyodide-insertion-location-13"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Note that you will need brackets around each separate condition when doing this.</p>
+</section>
+<section id="multiple-conditions-or" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-conditions-or">Multiple Conditions (or)</h3>
+<p>Let’s etrieve all records where either the patient lives in Cornwall or they’re aged 60 or over.</p>
+<div id="qpyodide-insertion-location-14"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You must use pipe (|) not the word or here</p>
+</div>
+</div>
+<p>We could also write this all on one line.</p>
+<div id="qpyodide-insertion-location-15"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1198,150 +567,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = true;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -1731,18 +956,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./lists.html" class="pagination-link" aria-label="Lists">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Lists</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./dictionaries.html" class="pagination-link" aria-label="Dictionaries">
-        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Dictionaries</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <script type="module">
 /**

@@ -933,6 +933,50 @@
     ]
   },
   {
+    "objectID": "intro_to_pandas.html",
+    "href": "intro_to_pandas.html",
+    "title": "32  An Introduction to Pandas",
+    "section": "",
+    "text": "32.1 The Pandas Dataframe\nOne of the most useful structures in Pandas is the Pandas DataFrame. A DataFrame is like a table with different columns (which can have names) for different data fields, and different rows for each entry in the data.\nImagine a table in Excel. Only much more powerful.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>An Introduction to Pandas</span>"
+    ]
+  },
+  {
+    "objectID": "intro_to_pandas.html#creating-a-new-dataframe",
+    "href": "intro_to_pandas.html#creating-a-new-dataframe",
+    "title": "32  An Introduction to Pandas",
+    "section": "32.2 Creating a new dataframe",
+    "text": "32.2 Creating a new dataframe\nWe have two choices when we want to create a new Pandas DataFrame :\n\nWe can create a new DataFrame and then build the DataFrame manually\nWe can read in existing data from a .csv file\n\nGiven that 99% of the time you’ll be doing the latter for real world applications, let’s just focus on that. And it’s also really easy!\nPandas has a fantastic function that allows us to read in data from a .csv file, and it will automatically stuff it into a new DataFrame for us!\nIn one line of code!!\nDon’t believe me? Observe…\n\n\n\n\n\n\nTip\n\n\n\nOne fantastic feature of pandas is that we can point to either a local file (one stored on our machine) or a remote file (one stored somewhere else - like the web).\n\n\nIn the example below, we are accessing a file called input_data.csv.\nIf this file was stored in the same folder as our python file, we would just do\n\ndf = pd.read_csv(\"input_data.csv\")\n\nWe can then show the first 5 rows of the data with the .head() method.\n\ndf.head()\n\n\n\n\n\n\n\n\n\nPatient ID\nName\nFlu Vaccine\nAge\nCounty\n\n\n\n\n0\n65192\nBob\nYes\n42\nCornwall\n\n\n1\n84568\nNigel\nNo\n27\nDevon\n\n\n2\n93765\nFlorence\nYes\n84\nSomerset\n\n\n3\n97865\nMartha\nYes\n57\nSomerset\n\n\n4\n12451\nSimon\nNo\n35\nSomerset\n\n\n\n\n\n\n\n\nHowever, we could also use a web location. We’re going to use this method in the rest of the examples to allow us to interact with pandas dataframes in this book.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nYou can see that the outputs are identical!",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>An Introduction to Pandas</span>"
+    ]
+  },
+  {
+    "objectID": "intro_to_pandas.html#the-index",
+    "href": "intro_to_pandas.html#the-index",
+    "title": "32  An Introduction to Pandas",
+    "section": "32.3 The index",
+    "text": "32.3 The index",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>An Introduction to Pandas</span>"
+    ]
+  },
+  {
+    "objectID": "intro_to_pandas.html#specifying-an-existing-column-as-the-index",
+    "href": "intro_to_pandas.html#specifying-an-existing-column-as-the-index",
+    "title": "32  An Introduction to Pandas",
+    "section": "32.4 Specifying an existing column as the index",
+    "text": "32.4 Specifying an existing column as the index\nIn our data, we already have a unique identifier in our data - “Patient ID”. When we read in the .csv, we can tell Pandas that we want to set this column to be the Index (rather than creating a new one).\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIMPORTANT - Pandas will check that the column you specify does truly have unique values. If it doesn’t, it will raise an exception (error) and if you don’t catch it, the code will terminate.\nBe careful when importing data where multiple records refer to the same patient - patient ID would not be a unique identifier in that case.",
+    "crumbs": [
+      "Pandas",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>An Introduction to Pandas</span>"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
