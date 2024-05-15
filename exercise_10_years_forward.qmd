@@ -4,11 +4,9 @@ filters:
 eval: false
 ---
 
-
 # Exercise: 10 years forward
 
-
-**Using what you’ve learned so far, write a program that asks for the user’s name, then asks for their age, then stores the age as an appropriate variable type, and then prints a message that says hello to them, and tells them how old they will be in 10 years time.**
+Using what you’ve learned so far, write a program that asks for the user’s name, then asks for their age, then stores the age as an appropriate variable type, and then prints a message that says hello to them, and tells them how old they will be in 10 years time.
 
 If you don't have VSCode installed, you can create the program in Google Colab - just make sure you click 'file --> save' when you're done to save it to your Google account.
 

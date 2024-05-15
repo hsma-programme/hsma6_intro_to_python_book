@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HSMA - Programming in Python - 37&nbsp; Sorting, previewing and more with dataframes</title>
+<title>HSMA - Programming in Python - 36&nbsp; Sorting, previewing and more with dataframes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./further_reading.html" rel="next">
+<link href="./exercise_pandas.html" rel="next">
 <link href="./aggregating_pandas.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -267,7 +267,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":1},{"code":"df.sort_values(by=[\"Age\"], inplace=True)\n\ndf","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":2},{"code":"df.describe()","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":3},{"code":"df.head()","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":4},{"code":"df.head(8)","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":5},{"code":"df.tail()","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":6},{"code":"df.tail(8)","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":7},{"code":"df.sample(1)","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":8},{"code":"df.sample(6)","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":9},{"code":"df[\"Age\"].mean()","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":10},{"code":"df[\"Age\"].median()","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":11},{"code":"df[\"Age\"].min()","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":12},{"code":"df[\"Age\"].max()","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":13},{"code":"admissions_data= {\n  'Patient ID': [105,243,105,105,316],\n  'Age':[76,31,76,76,52],\n  'Admissions':[3,1,3,3,2]\n}\n\nadmissions_df = pd.DataFrame(admissions_data)\n\nadmissions_df[\"Admissions\"].sum()","options":{"read-only":"false","out-height":"","warning":"true","out-width":"700px","fig-height":5,"output":"true","comment":"","message":"true","results":"markup","fig-cap":"","autorun":"","label":"","dpi":72,"context":"interactive","classes":"","fig-width":7},"id":14}];
+globalThis.qpyodideCellDetails = [{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":1,"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":2,"code":"df.sort_values(by=[\"Age\"], inplace=True)\n\ndf"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":3,"code":"df.describe()"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":4,"code":"df.head()"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":5,"code":"df.head(8)"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":6,"code":"df.tail()"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":7,"code":"df.tail(8)"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":8,"code":"df.sample(1)"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":9,"code":"df.sample(6)"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":10,"code":"df[\"Age\"].mean()"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":11,"code":"df[\"Age\"].median()"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":12,"code":"df[\"Age\"].min()"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":13,"code":"df[\"Age\"].max()"},{"options":{"warning":"true","dpi":72,"out-height":"","output":"true","classes":"","out-width":"700px","message":"true","context":"interactive","comment":"","results":"markup","fig-cap":"","read-only":"false","fig-width":7,"label":"","fig-height":5,"autorun":""},"id":14,"code":"admissions_data= {\n  'Patient ID': [105,243,105,105,316],\n  'Age':[76,31,76,76,52],\n  'Admissions':[3,1,3,3,2]\n}\n\nadmissions_df = pd.DataFrame(admissions_data)\n\nadmissions_df[\"Admissions\"].sum()"}];
 
 
 </script>
@@ -460,7 +460,7 @@ globalThis._qpyodideGetInstance = function() {
 
 
 <link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="HSMA - Programming in Python - 37&nbsp; Sorting, previewing and more with dataframes">
+<meta property="og:title" content="HSMA - Programming in Python - 36&nbsp; Sorting, previewing and more with dataframes">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="HSMA - Programming in Python">
 </head>
@@ -476,10 +476,37 @@ globalThis._qpyodideGetInstance = function() {
     <span class="navbar-title">HSMA - Programming in Python</span>
     </a>
   </div>
-        <div class="quarto-navbar-tools tools-end">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hsma-programme/"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@hsma/"> <i class="bi bi-youtube" role="img" aria-label="YouTube">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://sites.google.com/nihr.ac.uk/hsma/introduction-to-hsma"> <i class="bi bi-globe2" role="img" aria-label="Website">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Bergam0t/hsma6_intro_to_python_book"> <i class="bi bi-book" role="img" aria-label="BookRepository">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -487,7 +514,7 @@ globalThis._qpyodideGetInstance = function() {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_pandas.html">Pandas</a></li><li class="breadcrumb-item"><a href="./sorting_previewing_more_pandas.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_pandas.html">Pandas</a></li><li class="breadcrumb-item"><a href="./sorting_previewing_more_pandas.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -520,8 +547,8 @@ globalThis._qpyodideGetInstance = function() {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  <a href="./how_to_use_book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to use this book</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -536,7 +563,7 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_programming_concepts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An Introduction to Programming Concepts</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">An Introduction to Programming Concepts</span></span></a>
   </div>
 </li>
       </ul>
@@ -553,43 +580,43 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intro to Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Intro to Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./printing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Printing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Printing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./variables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Variables</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fstrings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./user_input_casting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">User Input and Changing Variable Types</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">User Input and Changing Variable Types</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mathematical_operators.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mathematical Operators</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mathematical Operators</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_10_years_forward.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise: 10 years forward</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise: 10 years forward</span></span></a>
   </div>
 </li>
       </ul>
@@ -606,19 +633,19 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Comments</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Comments</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./conditional_logic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conditional Logic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Conditional Logic</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_conditional_logic_etc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Exercise: Stepping Up</span></span></a>
   </div>
 </li>
       </ul>
@@ -635,37 +662,37 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Loops</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Exercise: Loops</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lists.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Lists</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Lists</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./list_comprehensions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">List Comprehensions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">List Comprehensions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_lists_dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Exercise: Lists and Dictionaries</span></span></a>
   </div>
 </li>
       </ul>
@@ -682,25 +709,25 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./importing_packages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Importing Packages</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Importing Packages</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./the_random_library.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">The Random Library</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Random Library</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_smarter_dan_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exercise - Putting it all together</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Exercise: Putting it all together</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_coding_challenge_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exercise: Coding Challenge 1</span></span></a>
   </div>
 </li>
       </ul>
@@ -717,31 +744,31 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Exercise: Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Exercise: Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exception_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Exception (Error) Handling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Exception (Error) Handling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./file_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">File Handling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">File Handling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_exception_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Exercise - Handling errors and files</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Exercise: Handling errors and files</span></span></a>
   </div>
 </li>
       </ul>
@@ -758,25 +785,25 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">An Introduction to NumPy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">An Introduction to NumPy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./using_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using Numpy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Using Numpy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./numpy_features.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise - Numpy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Exercise: Numpy</span></span></a>
   </div>
 </li>
       </ul>
@@ -793,37 +820,43 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">An Introduction to Pandas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">An Introduction to Pandas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pandas_indexing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Selecting Rows and Columns in Pandas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Selecting Rows and Columns in Pandas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./extending_joining_dataframes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Extending and Joining Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Extending and Joining Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./removing_data_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Dropping Data from Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Dropping Data from Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./aggregating_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sorting_previewing_more_pandas.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exercise_pandas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Exercise: Pandas</span></span></a>
   </div>
 </li>
       </ul>
@@ -844,12 +877,12 @@ globalThis._qpyodideGetInstance = function() {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sorting-values" id="toc-sorting-values" class="nav-link active" data-scroll-target="#sorting-values"><span class="header-section-number">37.1</span> Sorting values</a></li>
-  <li><a href="#other-neat-pandas-features" id="toc-other-neat-pandas-features" class="nav-link" data-scroll-target="#other-neat-pandas-features"><span class="header-section-number">37.2</span> Other neat pandas features</a>
+  <li><a href="#sorting-values" id="toc-sorting-values" class="nav-link active" data-scroll-target="#sorting-values"><span class="header-section-number">36.1</span> Sorting values</a></li>
+  <li><a href="#other-neat-pandas-features" id="toc-other-neat-pandas-features" class="nav-link" data-scroll-target="#other-neat-pandas-features"><span class="header-section-number">36.2</span> Other neat pandas features</a>
   <ul class="collapse">
-  <li><a href="#describe" id="toc-describe" class="nav-link" data-scroll-target="#describe"><span class="header-section-number">37.2.1</span> Describe</a></li>
-  <li><a href="#previewing-the-dataset" id="toc-previewing-the-dataset" class="nav-link" data-scroll-target="#previewing-the-dataset"><span class="header-section-number">37.2.2</span> Previewing the dataset</a></li>
-  <li><a href="#calculating-statistics-on-a-single-column" id="toc-calculating-statistics-on-a-single-column" class="nav-link" data-scroll-target="#calculating-statistics-on-a-single-column"><span class="header-section-number">37.2.3</span> Calculating statistics on a single column</a></li>
+  <li><a href="#describe" id="toc-describe" class="nav-link" data-scroll-target="#describe"><span class="header-section-number">36.2.1</span> Describe</a></li>
+  <li><a href="#previewing-the-dataset" id="toc-previewing-the-dataset" class="nav-link" data-scroll-target="#previewing-the-dataset"><span class="header-section-number">36.2.2</span> Previewing the dataset</a></li>
+  <li><a href="#calculating-statistics-on-a-single-column" id="toc-calculating-statistics-on-a-single-column" class="nav-link" data-scroll-target="#calculating-statistics-on-a-single-column"><span class="header-section-number">36.2.3</span> Calculating statistics on a single column</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -867,9 +900,9 @@ globalThis._qpyodideGetInstance = function() {
   });
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_pandas.html">Pandas</a></li><li class="breadcrumb-item"><a href="./sorting_previewing_more_pandas.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_pandas.html">Pandas</a></li><li class="breadcrumb-item"><a href="./sorting_previewing_more_pandas.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></h1>
+<h1 class="title"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></h1>
 </div>
 
 
@@ -891,34 +924,34 @@ globalThis._qpyodideGetInstance = function() {
 <p>This will import pandas and load the dataframe we’ll be working with.</p>
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<section id="sorting-values" class="level2" data-number="37.1">
-<h2 data-number="37.1" class="anchored" data-anchor-id="sorting-values"><span class="header-section-number">37.1</span> Sorting values</h2>
+<section id="sorting-values" class="level2" data-number="36.1">
+<h2 data-number="36.1" class="anchored" data-anchor-id="sorting-values"><span class="header-section-number">36.1</span> Sorting values</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/M4lXWmA1jkk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>We can sort values easily in Pandas. Let’s imagine we want to sort our original DataFrame by age, then by Patient ID :</p>
 <div id="qpyodide-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>The above line will change the original DataFrame because we’ve set inplace to True - so we don’t need to assign it back.</p>
 <p>These two lines are equivalent:</p>
-<div id="4ca1e2af" class="cell" data-execution_count="1">
+<div id="876ea79d" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>df.sort_values(by<span class="op">=</span>[<span class="st">"Age"</span>], inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(by<span class="op">=</span>[<span class="st">"Age"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Pandas will automatically sort by the index (PatientID here) where the values are equal for the column we are sorting by, so we don’t need to do that manually.</p>
 </section>
-<section id="other-neat-pandas-features" class="level2" data-number="37.2">
-<h2 data-number="37.2" class="anchored" data-anchor-id="other-neat-pandas-features"><span class="header-section-number">37.2</span> Other neat pandas features</h2>
+<section id="other-neat-pandas-features" class="level2" data-number="36.2">
+<h2 data-number="36.2" class="anchored" data-anchor-id="other-neat-pandas-features"><span class="header-section-number">36.2</span> Other neat pandas features</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/eDQMCkdWt8Y" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="describe" class="level3" data-number="37.2.1">
-<h3 data-number="37.2.1" class="anchored" data-anchor-id="describe"><span class="header-section-number">37.2.1</span> Describe</h3>
+<section id="describe" class="level3" data-number="36.2.1">
+<h3 data-number="36.2.1" class="anchored" data-anchor-id="describe"><span class="header-section-number">36.2.1</span> Describe</h3>
 <p>Pandas has a describe() function that allows us to get a quick overview of the numerical data in our DataFrame :</p>
 <div id="qpyodide-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="previewing-the-dataset" class="level3" data-number="37.2.2">
-<h3 data-number="37.2.2" class="anchored" data-anchor-id="previewing-the-dataset"><span class="header-section-number">37.2.2</span> Previewing the dataset</h3>
-<section id="head" class="level4" data-number="37.2.2.1">
-<h4 data-number="37.2.2.1" class="anchored" data-anchor-id="head"><span class="header-section-number">37.2.2.1</span> head()</h4>
+<section id="previewing-the-dataset" class="level3" data-number="36.2.2">
+<h3 data-number="36.2.2" class="anchored" data-anchor-id="previewing-the-dataset"><span class="header-section-number">36.2.2</span> Previewing the dataset</h3>
+<section id="head" class="level4" data-number="36.2.2.1">
+<h4 data-number="36.2.2.1" class="anchored" data-anchor-id="head"><span class="header-section-number">36.2.2.1</span> head()</h4>
 <p>We can see the first x number of entries in our DataFrame using head()</p>
 <p>The default is 5 entries</p>
 <div id="qpyodide-insertion-location-4"></div>
@@ -927,8 +960,8 @@ globalThis._qpyodideGetInstance = function() {
 <div id="qpyodide-insertion-location-5"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="tail" class="level4" data-number="37.2.2.2">
-<h4 data-number="37.2.2.2" class="anchored" data-anchor-id="tail"><span class="header-section-number">37.2.2.2</span> tail()</h4>
+<section id="tail" class="level4" data-number="36.2.2.2">
+<h4 data-number="36.2.2.2" class="anchored" data-anchor-id="tail"><span class="header-section-number">36.2.2.2</span> tail()</h4>
 <p>We can see the last x entries using tail()</p>
 <div id="qpyodide-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
@@ -936,8 +969,8 @@ globalThis._qpyodideGetInstance = function() {
 <div id="qpyodide-insertion-location-7"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="sample" class="level4" data-number="37.2.2.3">
-<h4 data-number="37.2.2.3" class="anchored" data-anchor-id="sample"><span class="header-section-number">37.2.2.3</span> sample()</h4>
+<section id="sample" class="level4" data-number="36.2.2.3">
+<h4 data-number="36.2.2.3" class="anchored" data-anchor-id="sample"><span class="header-section-number">36.2.2.3</span> sample()</h4>
 <p>We can use the <code>sample()</code> method to see a random selection of rows.</p>
 <div id="qpyodide-insertion-location-8"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
@@ -946,8 +979,8 @@ globalThis._qpyodideGetInstance = function() {
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 </section>
-<section id="calculating-statistics-on-a-single-column" class="level3" data-number="37.2.3">
-<h3 data-number="37.2.3" class="anchored" data-anchor-id="calculating-statistics-on-a-single-column"><span class="header-section-number">37.2.3</span> Calculating statistics on a single column</h3>
+<section id="calculating-statistics-on-a-single-column" class="level3" data-number="36.2.3">
+<h3 data-number="36.2.3" class="anchored" data-anchor-id="calculating-statistics-on-a-single-column"><span class="header-section-number">36.2.3</span> Calculating statistics on a single column</h3>
 <p>It’s easy to take the mean of a column / DataFrame.</p>
 <div id="qpyodide-insertion-location-10"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
@@ -1860,12 +1893,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./aggregating_pandas.html" class="pagination-link" aria-label="Aggregating Data in Dataframes">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./further_reading.html" class="pagination-link" aria-label="Further Reading">
-        <span class="nav-page-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Further Reading</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./exercise_pandas.html" class="pagination-link" aria-label="Exercise: Pandas">
+        <span class="nav-page-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Exercise: Pandas</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

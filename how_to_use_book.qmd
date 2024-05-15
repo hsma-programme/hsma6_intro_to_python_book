@@ -1,0 +1,61 @@
+---
+filters:
+  - pyodide
+---
+
+# How to use this book {.unnumbered}
+
+This book is designed as reference material for the HSMA course.
+
+However, you can also follow along with it if you are not part of the course.
+
+Use the panel on the left to navigate to chapters. If you're new to Python, we'd recommend going through them in order.
+
+Various examples in the text will use browser-based version of Python called 'Pyodide' for the course - so you don't need to install a thing.
+
+Just look out for the green light at the top of the page - about 15 seconds after you load the page, Pyodide should be ready to go.
+
+Once it's ready, you can click the 'Run Code' button to make the code activate - right within your browser, with the output appearing below the box of code! Magic, eh?
+
+```{pyodide-python}
+n = 3
+for i in range(n):
+  print(f"{3-i}...")
+
+print("Let's get ready to Python!")
+```
+
+We call these little interactive blocks **code cells**. So if you see the term 'cell' used at any point, that's what it's referring to.
+
+You can click into the code cell to change any and all code that's written there. For example, in the box below, try changing the name 'Bob' to your own name. Don't worry - it doesn't get sent anywhere! Make sure you don't get rid of the quotation marks around the name or it will break...
+
+```{pyodide-python}
+name = "Bob"
+
+print(f"Hi {name}! I'm so glad you're trying this course out.")
+```
+
+There are two more cool things to know about code cells before we get started properly.
+
+If you've played around with some code and want to restore it to its original state, you can reset the code without having to refresh the page.
+
+Just click the little pair of arrows at the top right corner of the code cell. This will reset the code to its original state. Be careful - you can't undo this!
+
+Any changes you make to code cells will not be saved - they will only last until you close or refresh the page. However, in each cell, the two little boxes on top of each other are your copy button. Clicking that will copy all of the code in the code cell into your clipboard, so you can then paste this anywhere you want - your own notes, perhaps, or you can just keep it safe while you reset the code state.
+
+
+## Exercises
+
+The exercises throughout the book can be undertaken on a web-based coding platform called Google Colab.
+
+You will need to be logged in to a google account in your browser.
+
+Using the Google Colab button on each exercise page below will open a fresh copy of the notebook to work on - your changes will not be visible to anyone else.
+
+However, if you want to be able to refer back to your version of the notebook in future, make sure you click 'File --> Save to Drive'. Your changes will then be saved to your own account, and you can access your edited copy of the notebook from https://colab.research.google.com/.
+
+:::{.callout-tip}
+Note: when you first run a cell, you will need to click 'run anyway' in the popup that appears.
+
+This is a standard pop-up that appears for any notebook you haven't created from scratch yourself!
+:::

@@ -1,4 +1,4 @@
-## Exercise
+## Exercise: Lists and Dictionaries
 
 Let's do an exercise practicing lists and dictionaries.
 

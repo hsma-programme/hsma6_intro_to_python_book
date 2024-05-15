@@ -1,8 +1,8 @@
-# Exercise
+# Exercise: Stepping Up
 
 So far, you’ve learned about print statements, user inputs, variables, fStrings, casting, mathematical operators, comments, conditional logic and comparison operators.
 
-Open Exercise 2 in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1e_python_part_1/blob/main/1e_python_programming_part_1/1e_2.ipynb">
+Open this exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1e_python_part_1/blob/main/1e_python_programming_part_1/1e_2.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -10,7 +10,7 @@ Open Exercise 2 in Google Colab: <a target="_blank" href="https://colab.research
 
 :::{.callout-tip collapse="true"}
 # Click here to view the answers
-Open Exercise 2 SOLUTIONS in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1e_python_part_1/blob/main/1e_python_programming_part_1/solutions/1e_2_solution.ipynb">
+Open SOLUTIONS in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1e_python_part_1/blob/main/1e_python_programming_part_1/solutions/1e_2_solution.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 :::

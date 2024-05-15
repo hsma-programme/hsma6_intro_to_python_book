@@ -8,7 +8,7 @@ book:
   date: 14/05/2024
   chapters:
   - index.qmd
-  - intro.qmd
+  - how_to_use_book.qmd
   - part: "Programming Concepts"
     chapters:
     - intro_to_programming_concepts.qmd
@@ -61,8 +61,9 @@ book:
     - removing_data_pandas.qmd
     - aggregating_pandas.qmd
     - sorting_previewing_more_pandas.qmd
+    - exercise_pandas.qmd
   - further_reading.qmd
-  cover-image: resources/logos/hsma_logo_transparent_background_large.png
+  cover-image: cover.jpeg
   favicon: resources/logos/hsma_logo_transparent_background_large.png
   search: true
   page-navigation: true
@@ -70,6 +71,19 @@ book:
   navbar:
     search: false
     background: '#8A1E1E'
+    right:
+      - icon: github
+        href: https://github.com/hsma-programme/
+        aria-label: GitHub
+      - icon: youtube
+        href: https://www.youtube.com/@hsma/
+        aria-label: YouTube
+      - icon: globe2
+        href: https://sites.google.com/nihr.ac.uk/hsma/introduction-to-hsma
+        aria-label: Website
+      - icon: book
+        href: https://github.com/Bergam0t/hsma6_intro_to_python_book
+        aria-label: BookRepository
   sidebar:
     search: true
     style: docked

@@ -1,4 +1,4 @@
-## Exercise
+## Exercise: Loops
 
 We’ve now talked about loops.  Let’s practice using them!
 

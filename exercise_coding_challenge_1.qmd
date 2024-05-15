@@ -1,6 +1,4 @@
-# Exercise
-
-## Coding Challenge
+# Exercise: Coding Challenge 1
 
 So far, you’ve learned the following Python concepts :
 = Printing to the display

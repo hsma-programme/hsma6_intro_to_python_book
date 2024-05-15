@@ -1,0 +1,38 @@
+# Exercise: Pandas
+
+Now let's have a go at using some pandas code.
+
+There are 8 shorter tasks to complete, and you will be using a dataset that is commonly used in Machine Learning (and which we’ll be using later in the HSMA course) - the Titanic Dataset from Kaggle.  This dataset contains data about passengers on board the Titanic.
+
+Open Exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/pandas_pop_exercise_4.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+When using Colab, you can point towards the titanic dataset csv on the HSMA repository. The following will work:
+
+```
+pd.read_csv("https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/titanic_dataset.csv",
+            #INSERT THE REST OF YOUR IMPORT CODE HERE)
+```
+
+## Sample Answers
+
+:::{.callout-tip collapse="true"}
+# Click here to view the answers
+Open exercise solutions in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/solutions/pandas_pop_exercise_4_solution.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+You will need to change the second line in the first code cell (where we import the dataset) to the following to make this work in Google Colab:
+```
+titanic_df = pd.read_csv("https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/titanic_dataset.csv", index_col="PassengerId")
+```
+
+:::
+
+## Answer Video
+
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
+Coming Soon!
+:::

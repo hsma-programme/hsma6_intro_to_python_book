@@ -1,10 +1,10 @@
-# Exercise - Handling errors and files
+# Exercise: Handling errors and files
 
 We’ve now covered exception handling, as well as reading and writing .csv files (without Pandas - in reality, you’ll probably use Pandas’ in-built method more often for the kind of work you’ll do - more on that later).
 
 Now work through the following notebook.
 
-Open Exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/1f_2.ipynb">
+Open Exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/solutions/1f_2_solution.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -26,7 +26,11 @@ Once in Colab,
 
 :::{.callout-tip collapse="true"}
 # Click here to view the answers
-Open exercise solutions in Google Colab: Coming Soon!
+Open exercise solutions in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/1f_2.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+You will need to upload the dataset to the solution notebook if you want to run the solutions.
 :::
 
 ## Answer Video

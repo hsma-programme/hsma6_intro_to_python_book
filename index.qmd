@@ -1,29 +1,63 @@
 #  Attribution and Acknowledgements {.unnumbered}
 
-This book is an adaptation of a series of lectures given by Dr Daniel Chalk as part of the HSMA programme. All lectures and accompanying code examples and exercises were written by Dr Daniel Chalk and made available under the **C BY-NC-SA 4.0** licence. The chapters often replicate the wording of these lectures nearly exactly, with minor tweaks and additions for readability and to better suit the format of a book made by Sammi Rosser.
+This book is an adaptation of a series of lectures given by [Dr Daniel Chalk](https://orcid.org/0000-0002-4165-4364) as part of the HSMA programme.
+
+All lectures and accompanying code examples and exercises were written by Dr Daniel Chalk and made available under the **CC BY-NC-SA 4.0** licence.
+
+The chapters often replicate the wording of these lectures nearly exactly, with tweaks and additions for readability and to better suit the format of a book made by [Sammi Rosser](https://orcid.org/0000-0002-9552-8988).
 
 **HSMA 6: Intro to Programming Concepts**
 
-[Slides](https://docs.google.com/presentation/d/1HO0wXTocHRZgeuLadkGvqf5yC8BEmQzTcgo8QHOd0yY/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1TXAZUL9hEGvyvbso3UegJgPcjrKQPAirDmEjph_kApA/edit?usp=sharing)
+
+[Video](https://www.youtube.com/watch?v=aftDNqfMe1w)
 
 **HSMA 6: Intro to VSCode**
 
-[Slides](https://docs.google.com/presentation/d/1HO0wXTocHRZgeuLadkGvqf5yC8BEmQzTcgo8QHOd0yY/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1We3qn3Sh5nNYc0BkwtOPQrm0xKFoNrbSElCfW6K1PbQ/edit?usp=sharing)
+
+[Video](https://www.youtube.com/watch?v=0jV0jtIE3_U)
 
 **HSMA 6: Python Programming Lecture 1**
 
-[Slides](https://docs.google.com/presentation/d/1HO0wXTocHRZgeuLadkGvqf5yC8BEmQzTcgo8QHOd0yY/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1n6fDITAvNas78FJwQPA65ifnhMtnjcyK-af1aX8majA/edit?usp=sharing)
 
 [Github](https://github.com/hsma-programme/h6_2a_intro_to_des)
 
 **HSMA 6: Python Programming Lecture 2**
 
-[Slides](https://docs.google.com/presentation/d/15bQX0yxfDgjNVJSQORNzBCWVvbKI_LaTcbtYVKsvYcU/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1XSt5dXEiaOoPryq4r2dPJzMQnNQSa-imG3Fe7gr-sSs/edit?usp=sharing)
 
-[Github](https://github.com/hsma-programme/h6_simpy_part_1)
+[Github](https://github.com/hsma-programme/h6_1e_python_part_1)
 
 **HSMA 6: Python Programming Lecture 3**
 
 [Slides](Coming Soon)
 
-[Github](https://github.com/hsma-programme/h6_simpy_part_2)
+[Github](https://github.com/hsma-programme/h6_1f_python_part_2)
+
+
+## The HSMA Programme {.unnumbered}
+
+To find out more about the HSMA programme, visit our
+
+[Website](https://sites.google.com/nihr.ac.uk/hsma/introduction-to-hsma)
+
+[Github Repository](https://github.com/hsma-programme)
+
+[Youtube Channel](https://www.youtube.com/@hsma)
+
+![](resources/logos/hsma_logo_transparent_background_large.png)
+
+## Licencing of this Ebook {.unnumbered}
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+The text and images in this book are licenced under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+[![][cc-by-nc-sa-image]][cc-by-nc-sa]

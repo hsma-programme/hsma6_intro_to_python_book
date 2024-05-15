@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HSMA - Programming in Python - 13&nbsp; Loops</title>
+<title>HSMA - Programming in Python - 12&nbsp; Loops</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -233,7 +233,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"comment":"","read-only":"false","fig-height":5,"classes":"","output":"true","results":"markup","dpi":72,"autorun":"","context":"interactive","fig-width":7,"message":"true","fig-cap":"","warning":"true","out-width":"700px","out-height":"","label":""},"code":"for x in range(10):\n    print(x)","id":1},{"options":{"comment":"","read-only":"false","fig-height":5,"classes":"","output":"true","results":"markup","dpi":72,"autorun":"","context":"interactive","fig-width":7,"message":"true","fig-cap":"","warning":"true","out-width":"700px","out-height":"","label":""},"code":"for x in range(10, 20):\n    print(x)","id":2},{"options":{"comment":"","read-only":"false","fig-height":5,"classes":"","output":"true","results":"markup","dpi":72,"autorun":"","context":"interactive","fig-width":7,"message":"true","fig-cap":"","warning":"true","out-width":"700px","out-height":"","label":""},"code":"for x in range(2, 30, 2):\n    print(x)","id":3},{"options":{"comment":"","read-only":"false","fig-height":5,"classes":"","output":"true","results":"markup","dpi":72,"autorun":"","context":"interactive","fig-width":7,"message":"true","fig-cap":"","warning":"true","out-width":"700px","out-height":"","label":""},"code":"for x in range(10, 0, -1):\n    print(x)","id":4},{"options":{"comment":"","read-only":"false","fig-height":5,"classes":"","output":"true","results":"markup","dpi":72,"autorun":"","context":"interactive","fig-width":7,"message":"true","fig-cap":"","warning":"true","out-width":"700px","out-height":"","label":""},"code":"my_list = [1, 10, \"Dan\", True, \"HSMA\"]\n\nfor element in my_list:\n    print(element)","id":5},{"options":{"comment":"","read-only":"false","fig-height":5,"classes":"","output":"true","results":"markup","dpi":72,"autorun":"","context":"interactive","fig-width":7,"message":"true","fig-cap":"","warning":"true","out-width":"700px","out-height":"","label":""},"code":"total = 0\n\nfor x in range(10):\n    total = total + x\n    print(total)\n\n    if total > 5:\n        print(\"Break condition triggered!\")\n        break","id":6}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"for x in range(10):\n    print(x)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":2,"code":"for x in range(10, 20):\n    print(x)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":3,"code":"for x in range(2, 30, 2):\n    print(x)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":4,"code":"for x in range(10, 0, -1):\n    print(x)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":5,"code":"my_list = [1, 10, \"Dan\", True, \"HSMA\"]\n\nfor element in my_list:\n    print(element)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":6,"code":"total = 0\n\nfor x in range(10):\n    total = total + x\n    print(total)\n\n    if total > 5:\n        print(\"Break condition triggered!\")\n        break","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}}];
 
 
 </script>
@@ -426,7 +426,7 @@ globalThis._qpyodideGetInstance = function() {
 
 
 <link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="HSMA - Programming in Python - 13&nbsp; Loops">
+<meta property="og:title" content="HSMA - Programming in Python - 12&nbsp; Loops">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="HSMA - Programming in Python">
 </head>
@@ -442,10 +442,37 @@ globalThis._qpyodideGetInstance = function() {
     <span class="navbar-title">HSMA - Programming in Python</span>
     </a>
   </div>
-        <div class="quarto-navbar-tools tools-end">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hsma-programme/"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@hsma/"> <i class="bi bi-youtube" role="img" aria-label="YouTube">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://sites.google.com/nihr.ac.uk/hsma/introduction-to-hsma"> <i class="bi bi-globe2" role="img" aria-label="Website">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Bergam0t/hsma6_intro_to_python_book"> <i class="bi bi-book" role="img" aria-label="BookRepository">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -453,7 +480,7 @@ globalThis._qpyodideGetInstance = function() {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./loops.html">Loops, Lists and Dictionaries</a></li><li class="breadcrumb-item"><a href="./loops.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Loops</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./loops.html">Loops, Lists and Dictionaries</a></li><li class="breadcrumb-item"><a href="./loops.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Loops</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -486,8 +513,8 @@ globalThis._qpyodideGetInstance = function() {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  <a href="./how_to_use_book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to use this book</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -502,7 +529,7 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_programming_concepts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An Introduction to Programming Concepts</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">An Introduction to Programming Concepts</span></span></a>
   </div>
 </li>
       </ul>
@@ -519,43 +546,43 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intro to Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Intro to Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./printing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Printing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Printing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./variables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Variables</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fstrings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./user_input_casting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">User Input and Changing Variable Types</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">User Input and Changing Variable Types</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mathematical_operators.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mathematical Operators</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mathematical Operators</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_10_years_forward.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise: 10 years forward</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise: 10 years forward</span></span></a>
   </div>
 </li>
       </ul>
@@ -572,19 +599,19 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Comments</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Comments</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./conditional_logic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conditional Logic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Conditional Logic</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_conditional_logic_etc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Exercise: Stepping Up</span></span></a>
   </div>
 </li>
       </ul>
@@ -601,37 +628,37 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./loops.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Loops</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Exercise: Loops</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lists.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Lists</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Lists</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./list_comprehensions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">List Comprehensions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">List Comprehensions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_lists_dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Exercise: Lists and Dictionaries</span></span></a>
   </div>
 </li>
       </ul>
@@ -648,25 +675,25 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./importing_packages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Importing Packages</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Importing Packages</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./the_random_library.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">The Random Library</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Random Library</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_smarter_dan_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exercise - Putting it all together</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Exercise: Putting it all together</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_coding_challenge_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exercise: Coding Challenge 1</span></span></a>
   </div>
 </li>
       </ul>
@@ -683,31 +710,31 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Exercise: Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Exercise: Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exception_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Exception (Error) Handling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Exception (Error) Handling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./file_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">File Handling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">File Handling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_exception_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Exercise - Handling errors and files</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Exercise: Handling errors and files</span></span></a>
   </div>
 </li>
       </ul>
@@ -724,25 +751,25 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">An Introduction to NumPy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">An Introduction to NumPy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./using_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using Numpy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Using Numpy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./numpy_features.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise - Numpy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Exercise: Numpy</span></span></a>
   </div>
 </li>
       </ul>
@@ -759,37 +786,43 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">An Introduction to Pandas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">An Introduction to Pandas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pandas_indexing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Selecting Rows and Columns in Pandas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Selecting Rows and Columns in Pandas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./extending_joining_dataframes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Extending and Joining Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Extending and Joining Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./removing_data_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Dropping Data from Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Dropping Data from Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./aggregating_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sorting_previewing_more_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exercise_pandas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Exercise: Pandas</span></span></a>
   </div>
 </li>
       </ul>
@@ -810,16 +843,16 @@ globalThis._qpyodideGetInstance = function() {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#for-loops" id="toc-for-loops" class="nav-link active" data-scroll-target="#for-loops"><span class="header-section-number">13.1</span> For Loops</a>
+  <li><a href="#for-loops" id="toc-for-loops" class="nav-link active" data-scroll-target="#for-loops"><span class="header-section-number">12.1</span> For Loops</a>
   <ul class="collapse">
-  <li><a href="#using-a-custom-range-in-for-loops" id="toc-using-a-custom-range-in-for-loops" class="nav-link" data-scroll-target="#using-a-custom-range-in-for-loops"><span class="header-section-number">13.1.1</span> Using a custom range in for loops</a></li>
-  <li><a href="#using-a-custom-increment-in-for-loops" id="toc-using-a-custom-increment-in-for-loops" class="nav-link" data-scroll-target="#using-a-custom-increment-in-for-loops"><span class="header-section-number">13.1.2</span> Using a custom increment in for loops</a></li>
-  <li><a href="#counting-down" id="toc-counting-down" class="nav-link" data-scroll-target="#counting-down"><span class="header-section-number">13.1.3</span> Counting down</a></li>
-  <li><a href="#iterating-through-a-list-in-a-for-loop" id="toc-iterating-through-a-list-in-a-for-loop" class="nav-link" data-scroll-target="#iterating-through-a-list-in-a-for-loop"><span class="header-section-number">13.1.4</span> Iterating through a list in a for loop</a></li>
+  <li><a href="#using-a-custom-range-in-for-loops" id="toc-using-a-custom-range-in-for-loops" class="nav-link" data-scroll-target="#using-a-custom-range-in-for-loops"><span class="header-section-number">12.1.1</span> Using a custom range in for loops</a></li>
+  <li><a href="#using-a-custom-increment-in-for-loops" id="toc-using-a-custom-increment-in-for-loops" class="nav-link" data-scroll-target="#using-a-custom-increment-in-for-loops"><span class="header-section-number">12.1.2</span> Using a custom increment in for loops</a></li>
+  <li><a href="#counting-down" id="toc-counting-down" class="nav-link" data-scroll-target="#counting-down"><span class="header-section-number">12.1.3</span> Counting down</a></li>
+  <li><a href="#iterating-through-a-list-in-a-for-loop" id="toc-iterating-through-a-list-in-a-for-loop" class="nav-link" data-scroll-target="#iterating-through-a-list-in-a-for-loop"><span class="header-section-number">12.1.4</span> Iterating through a list in a for loop</a></li>
   </ul></li>
-  <li><a href="#while-loops" id="toc-while-loops" class="nav-link" data-scroll-target="#while-loops"><span class="header-section-number">13.2</span> While Loops</a></li>
-  <li><a href="#breaking-from-loops" id="toc-breaking-from-loops" class="nav-link" data-scroll-target="#breaking-from-loops"><span class="header-section-number">13.3</span> Breaking from loops</a></li>
-  <li><a href="#infinite-loops" id="toc-infinite-loops" class="nav-link" data-scroll-target="#infinite-loops"><span class="header-section-number">13.4</span> Infinite loops</a></li>
+  <li><a href="#while-loops" id="toc-while-loops" class="nav-link" data-scroll-target="#while-loops"><span class="header-section-number">12.2</span> While Loops</a></li>
+  <li><a href="#breaking-from-loops" id="toc-breaking-from-loops" class="nav-link" data-scroll-target="#breaking-from-loops"><span class="header-section-number">12.3</span> Breaking from loops</a></li>
+  <li><a href="#infinite-loops" id="toc-infinite-loops" class="nav-link" data-scroll-target="#infinite-loops"><span class="header-section-number">12.4</span> Infinite loops</a></li>
   </ul>
 </nav>
     </div>
@@ -836,9 +869,9 @@ globalThis._qpyodideGetInstance = function() {
   });
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./loops.html">Loops, Lists and Dictionaries</a></li><li class="breadcrumb-item"><a href="./loops.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Loops</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./loops.html">Loops, Lists and Dictionaries</a></li><li class="breadcrumb-item"><a href="./loops.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Loops</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Loops</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Loops</span></h1>
 </div>
 
 
@@ -858,8 +891,8 @@ globalThis._qpyodideGetInstance = function() {
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/2OMw5kqctVU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>In Principles of Programming, we talked about the use of loops as a way of performing the same thing multiple times.</p>
 <p><img src="assets/2024-05-15-10-05-15.png" class="img-fluid"></p>
-<section id="for-loops" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="for-loops"><span class="header-section-number">13.1</span> For Loops</h2>
+<section id="for-loops" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="for-loops"><span class="header-section-number">12.1</span> For Loops</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/QgZ6W-tvVss" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>A simple for loop might look like this.</p>
 <p><img src="assets/2024-05-15-10-05-40.png" class="img-fluid"></p>
@@ -867,8 +900,8 @@ globalThis._qpyodideGetInstance = function() {
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>The code in the for loop can be anything you like!</p>
 <p><img src="assets/2024-05-15-10-06-24.png" class="img-fluid"></p>
-<section id="using-a-custom-range-in-for-loops" class="level3" data-number="13.1.1">
-<h3 data-number="13.1.1" class="anchored" data-anchor-id="using-a-custom-range-in-for-loops"><span class="header-section-number">13.1.1</span> Using a custom range in for loops</h3>
+<section id="using-a-custom-range-in-for-loops" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="using-a-custom-range-in-for-loops"><span class="header-section-number">12.1.1</span> Using a custom range in for loops</h3>
 <p>A more advanced for loop might specify which number to start and finish at.</p>
 <p>We can use the <code>range()</code> function in python to do this.</p>
 <p>The first argument to range specifies which number to start at, and the second specifies where to end.</p>
@@ -878,24 +911,24 @@ globalThis._qpyodideGetInstance = function() {
 <div id="qpyodide-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="using-a-custom-increment-in-for-loops" class="level3" data-number="13.1.2">
-<h3 data-number="13.1.2" class="anchored" data-anchor-id="using-a-custom-increment-in-for-loops"><span class="header-section-number">13.1.2</span> Using a custom increment in for loops</h3>
+<section id="using-a-custom-increment-in-for-loops" class="level3" data-number="12.1.2">
+<h3 data-number="12.1.2" class="anchored" data-anchor-id="using-a-custom-increment-in-for-loops"><span class="header-section-number">12.1.2</span> Using a custom increment in for loops</h3>
 <p>Taking this even further, we can add a third parameter to the <code>range()</code> function. This changes the step (the gap) between our numbers.</p>
 <p><img src="assets/2024-05-15-10-08-59.png" class="img-fluid"></p>
 <p>You can play around with this in the code cell below.</p>
 <div id="qpyodide-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="counting-down" class="level3" data-number="13.1.3">
-<h3 data-number="13.1.3" class="anchored" data-anchor-id="counting-down"><span class="header-section-number">13.1.3</span> Counting down</h3>
+<section id="counting-down" class="level3" data-number="12.1.3">
+<h3 data-number="12.1.3" class="anchored" data-anchor-id="counting-down"><span class="header-section-number">12.1.3</span> Counting down</h3>
 <p>We can also count down. This is sometimes referred to as a <strong>negative increment</strong> or <strong>decrement</strong>.</p>
 <p><img src="assets/2024-05-15-10-09-47.png" class="img-fluid"></p>
 <p>Play around with this here.</p>
 <div id="qpyodide-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="iterating-through-a-list-in-a-for-loop" class="level3" data-number="13.1.4">
-<h3 data-number="13.1.4" class="anchored" data-anchor-id="iterating-through-a-list-in-a-for-loop"><span class="header-section-number">13.1.4</span> Iterating through a list in a for loop</h3>
+<section id="iterating-through-a-list-in-a-for-loop" class="level3" data-number="12.1.4">
+<h3 data-number="12.1.4" class="anchored" data-anchor-id="iterating-through-a-list-in-a-for-loop"><span class="header-section-number">12.1.4</span> Iterating through a list in a for loop</h3>
 <p>One very powerful aspect of for loops is being able to iterate through a list.</p>
 <p><img src="assets/2024-05-15-10-11-28.png" class="img-fluid"></p>
 <p>For example - you might have a list of 5 regions you need to run a report for. You could create a list of those regions, filter your dataset down to just the data for that region, then export a data file for each separate region. It’s a very useful pattern!</p>
@@ -903,14 +936,14 @@ globalThis._qpyodideGetInstance = function() {
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 </section>
-<section id="while-loops" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="while-loops"><span class="header-section-number">13.2</span> While Loops</h2>
+<section id="while-loops" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="while-loops"><span class="header-section-number">12.2</span> While Loops</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/sQZrK4fLvDk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>While loops are another powerful type of loop, though you might use them less frequently than for loops.</p>
 <p><img src="assets/2024-05-15-10-29-09.png" class="img-fluid"></p>
 </section>
-<section id="breaking-from-loops" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="breaking-from-loops"><span class="header-section-number">13.3</span> Breaking from loops</h2>
+<section id="breaking-from-loops" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="breaking-from-loops"><span class="header-section-number">12.3</span> Breaking from loops</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/FgdAkCJHpew" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Sometimes we want to break out of a loop mid-flow. For example, we may have a for loop, and want to break out of it when a condition has been met.</p>
 <p>We can do this using the break command, which immediately breaks out of the loop and continues as though the for loop had completed.</p>
@@ -919,8 +952,8 @@ globalThis._qpyodideGetInstance = function() {
 <div id="qpyodide-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="infinite-loops" class="level2" data-number="13.4">
-<h2 data-number="13.4" class="anchored" data-anchor-id="infinite-loops"><span class="header-section-number">13.4</span> Infinite loops</h2>
+<section id="infinite-loops" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="infinite-loops"><span class="header-section-number">12.4</span> Infinite loops</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/cIucv-oiGdo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Sometimes you can accidentally write an infinite loop – one that will never end. Anybody who used to play with BASIC in the old days will remember an example of an infinite loop :</p>
 <pre><code>10 PRINT “HELLO WORLD”
@@ -1842,13 +1875,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./exercise_conditional_logic_etc.html" class="pagination-link" aria-label="Exercise">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Exercise</span></span>
+      <a href="./exercise_conditional_logic_etc.html" class="pagination-link" aria-label="Exercise: Stepping Up">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Exercise: Stepping Up</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./exercise_loops.html" class="pagination-link" aria-label="Exercise">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Exercise</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./exercise_loops.html" class="pagination-link" aria-label="Exercise: Loops">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Exercise: Loops</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -1,4 +1,4 @@
-# Exercise - Numpy
+# Exercise: Numpy
 
 You’ll now work through a notebook on numpy.  There are only two tasks here, but the second one will require you to look some things up, as you’ll need to use some NumPy functions that we haven’t told you about.
 
@@ -20,7 +20,9 @@ Open this exercise in Google Colab: <a target="_blank" href="https://colab.resea
 
 :::{.callout-tip collapse="true"}
 # Click here to view the answers
-Open exercise solutions in Google Colab: Coming Soon!
+Open exercise solutions in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/solutions/exercise_3_solution.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 :::
 
 ## Answer Video
