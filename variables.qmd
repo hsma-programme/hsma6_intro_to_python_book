@@ -5,7 +5,7 @@ filters:
 
 # Variables
 
-{{< video https://www.youtube.com/watch?v=LpCEl4DGmSA>}}
+{{< video https://youtu.be/Db1N5CC2980 >}}
 
 In Principles of Programming, we talked about variables.  We said these are essentially boxes that store information of a certain type so the program can refer to it later.
 
@@ -33,6 +33,8 @@ You can use whichever you prefer (though ensure you’re consistent) but snake_c
 
 ### Variable Types - Single Items
 
+{{< video https://youtu.be/Kvm8o9D5YTA >}}
+
 Let’s remind ourselves of some of the main types of variable, and see what they look like in Python.
 
 #### Numbers
@@ -53,6 +55,8 @@ Booleans (bool) take one of two values to indicate whether they are True or Fals
 ![](assets/2024-05-14-20-54-50.png)
 
 ### Variables that store Multiple Items
+
+{{< video https://youtu.be/v32e52X83w4 >}}
 
 #### Lists
 Lists (list) are sequences of items, where the order matters.  Duplicates allowed.

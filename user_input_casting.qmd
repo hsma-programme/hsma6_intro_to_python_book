@@ -7,6 +7,8 @@ eval: false
 
 # User Input and Changing Variable Types
 
+{{< video https://youtu.be/Oor-9idAfOE  >}}
+
 ## User Input
 
 Sometimes we need to ask the user to input something in order to continue with the program.

@@ -1,6 +1,6 @@
 # Intro to Python
 
-{{< video https://www.youtube.com/watch?v=iI3CRbRJpiE >}}
+{{< video https://youtu.be/N1-0sX3kPOE >}}
 
 Python is a high-level programming language that has been around since the early 90s, but has particularly come to prominence in the last 15 years.  It is now the most widely used language in the world.
 

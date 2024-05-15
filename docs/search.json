@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "HSMA - Programming in Python",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Attribution and Acknowledgements\nThis book is an adaptation of a series of lectures given by Dr Daniel Chalk as part of the HSMA programme. All lectures and accompanying code examples and exercises were written by Dr Daniel Chalk and made available under the C BY-NC-SA 4.0 licence. The chapters often replicate the wording of these lectures nearly exactly, with minor tweaks and additions for readability and to better suit the format of a book made by Sammi Rosser.\nHSMA 6: Intro to Programming Concepts\nSlides\nHSMA 6: Intro to VSCode\nSlides\nHSMA 6: Python Programming Lecture 1\nSlides\nGithub\nHSMA 6: Python Programming Lecture 2\nSlides\nGithub\nHSMA 6: Python Programming Lecture 3\nSlides\nGithub",
     "crumbs": [
-      "Preface"
+      "Attribution and Acknowledgements"
     ]
   },
   {
@@ -46,7 +46,7 @@
     "href": "variables.html",
     "title": "5  Variables",
     "section": "",
-    "text": "In Principles of Programming, we talked about variables. We said these are essentially boxes that store information of a certain type so the program can refer to it later.\nIn many programming languages, we need to create a variable by declaring it. This means specifying its type alongside its name.\nIn Python, things are much more laid back. Variables are dynamic, so we simply assign a value to a name to create the variable, and the type will be automatically set based on the Value we provide. We assign values in Python using the assignment operator =. It basically says “Let this have a value of this”.\nThis can cause confusion if you’re new to coding. = does not mean ‘equals’.\nWhat will be the variable type of each of these variables after assignment? \nBecause variables in Python are dynamic, their type will change if we give it a value of a different type :\n\n\n5.0.1 Dealing with spaces in names\nIn programming languages, a space indicates a separation between instructions, values etc. So if we want to name something (like a variable) with multiple words then we can’t use spaces. There are two principle conventions for how we deal with this :\n\nYou can use whichever you prefer (though ensure you’re consistent) but snake_case is generally preferred for (and recommended by the developers of) Python.\n\n\n5.0.2 Variable Types - Single Items\nLet’s remind ourselves of some of the main types of variable, and see what they look like in Python.\n\n5.0.2.1 Numbers\nIntegers (int) are whole numbers Floating point numbers (float) are numbers with up to 15 decimal places\n\n\n\n5.0.2.2 Text\nStrings (str) are sequences of characters denoted using “ or ‘ (Note - Python does not have a separate variable type for characters, they are just strings of length 1)\n\n\n\n5.0.2.3 Truth\nBooleans (bool) take one of two values to indicate whether they are True or False.\n\n\n\n\n5.0.3 Variables that store Multiple Items\n\n5.0.3.1 Lists\nLists (list) are sequences of items, where the order matters. Duplicates allowed.\n\n\n\n5.0.3.2 Sets\nSets (set) are unordered sequences of unique items.\n\n\n\n\n\n\n\nTip\n\n\n\nYou won’t come across sets too often in Python - so don’t worry about them too much for now!\n\n\n\n\n5.0.3.3 Tuples\nTuples (tuple) are ordered sequences (like a list) but are immutable (once created, they cannot be changed)\n\n\n\n\n\n\n\nTip\n\n\n\nYou won’t come across tuples too often in Python - so don’t worry about them too much for now!\n\n\n\n\n5.0.3.4 Dictionaries\nDictionaries (dict) are unordered collections of key-value pairs",
+    "text": "In Principles of Programming, we talked about variables. We said these are essentially boxes that store information of a certain type so the program can refer to it later.\nIn many programming languages, we need to create a variable by declaring it. This means specifying its type alongside its name.\nIn Python, things are much more laid back. Variables are dynamic, so we simply assign a value to a name to create the variable, and the type will be automatically set based on the Value we provide. We assign values in Python using the assignment operator =. It basically says “Let this have a value of this”.\nThis can cause confusion if you’re new to coding. = does not mean ‘equals’.\nWhat will be the variable type of each of these variables after assignment? \nBecause variables in Python are dynamic, their type will change if we give it a value of a different type :\n\n\n5.0.1 Dealing with spaces in names\nIn programming languages, a space indicates a separation between instructions, values etc. So if we want to name something (like a variable) with multiple words then we can’t use spaces. There are two principle conventions for how we deal with this :\n\nYou can use whichever you prefer (though ensure you’re consistent) but snake_case is generally preferred for (and recommended by the developers of) Python.\n\n\n5.0.2 Variable Types - Single Items\n\nLet’s remind ourselves of some of the main types of variable, and see what they look like in Python.\n\n5.0.2.1 Numbers\nIntegers (int) are whole numbers Floating point numbers (float) are numbers with up to 15 decimal places\n\n\n\n5.0.2.2 Text\nStrings (str) are sequences of characters denoted using “ or ‘ (Note - Python does not have a separate variable type for characters, they are just strings of length 1)\n\n\n\n5.0.2.3 Truth\nBooleans (bool) take one of two values to indicate whether they are True or False.\n\n\n\n\n5.0.3 Variables that store Multiple Items\n\n\n5.0.3.1 Lists\nLists (list) are sequences of items, where the order matters. Duplicates allowed.\n\n\n\n5.0.3.2 Sets\nSets (set) are unordered sequences of unique items.\n\n\n\n\n\n\n\nTip\n\n\n\nYou won’t come across sets too often in Python - so don’t worry about them too much for now!\n\n\n\n\n5.0.3.3 Tuples\nTuples (tuple) are ordered sequences (like a list) but are immutable (once created, they cannot be changed)\n\n\n\n\n\n\n\nTip\n\n\n\nYou won’t come across tuples too often in Python - so don’t worry about them too much for now!\n\n\n\n\n5.0.3.4 Dictionaries\nDictionaries (dict) are unordered collections of key-value pairs",
     "crumbs": [
       "Your First Steps in Python",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Variables</span>"
@@ -167,7 +167,7 @@
     "href": "conditional_logic.html",
     "title": "11  Conditional Logic",
     "section": "",
-    "text": "11.1 Comparison Operators\nThere are many comparison operators in Python. We use these to express relational statements that resolve to a Boolean - True or False. They are therefore used in conditional logic.",
+    "text": "11.1 Comparison Operators\nThere are many comparison operators in Python. We use these to express relational statements that resolve to a Boolean - True or False. They are therefore used in conditional logic.\nYou won’t be able to play along, but have a watch of this game of ‘comparison operators’ to learn more about comparisons.",
     "crumbs": [
       "Your Next Python Skills",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Conditional Logic</span>"
@@ -233,7 +233,7 @@
     "href": "loops.html#while-loops",
     "title": "13  Loops",
     "section": "13.2 While Loops",
-    "text": "13.2 While Loops\nWhile loops are another powerful type of loop, though you might use them less frequently than for loops.",
+    "text": "13.2 While Loops\n\nWhile loops are another powerful type of loop, though you might use them less frequently than for loops.",
     "crumbs": [
       "Loops, Lists and Dictionaries",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Loops</span>"
@@ -244,7 +244,7 @@
     "href": "loops.html#breaking-from-loops",
     "title": "13  Loops",
     "section": "13.3 Breaking from loops",
-    "text": "13.3 Breaking from loops\nSometimes we want to break out of a loop mid-flow. For example, we may have a for loop, and want to break out of it when a condition has been met.\nWe can do this using the break command, which immediately breaks out of the loop and continues as though the for loop had completed.\n\nYou can experiment with changing the break condition in the code cell below. What happens if you change the condition to total &gt; 6? What about total &gt; 11?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "text": "13.3 Breaking from loops\n\nSometimes we want to break out of a loop mid-flow. For example, we may have a for loop, and want to break out of it when a condition has been met.\nWe can do this using the break command, which immediately breaks out of the loop and continues as though the for loop had completed.\n\nYou can experiment with changing the break condition in the code cell below. What happens if you change the condition to total &gt; 6? What about total &gt; 11?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Loops, Lists and Dictionaries",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Loops</span>"
@@ -255,7 +255,7 @@
     "href": "loops.html#infinite-loops",
     "title": "13  Loops",
     "section": "13.4 Infinite loops",
-    "text": "13.4 Infinite loops\nSometimes you can accidentally write an infinite loop – one that will never end. Anybody who used to play with BASIC in the old days will remember an example of an infinite loop :\n10 PRINT “HELLO WORLD”\n20 GOTO 10\nMore modern examples include setting up a while loop that can never stop.\nThis loop will never terminate because we never change the value of true!\n\nIn the loop below - assuming our value of x was greater than or equal to 3 to begin with - it will keep triggering because x is getting bigger with each loop (as we’re adding 1 to it).\n\n\n\n\n\n\n\nTip\n\n\n\nIf you find yourself stuck in an infinite loop (and you will at some point), you need to interrupt the kernel and terminate the program.\nTo do this in VSCode, click the Interrupt button in your Interactive Window (Note - if it is currently expecting a user input, you’ll need to interrupt and then cancel out of the user input).",
+    "text": "13.4 Infinite loops\n\nSometimes you can accidentally write an infinite loop – one that will never end. Anybody who used to play with BASIC in the old days will remember an example of an infinite loop :\n10 PRINT “HELLO WORLD”\n20 GOTO 10\nMore modern examples include setting up a while loop that can never stop.\nThis loop will never terminate because we never change the value of true!\n\nIn the loop below - assuming our value of x was greater than or equal to 3 to begin with - it will keep triggering because x is getting bigger with each loop (as we’re adding 1 to it).\n\n\n\n\n\n\n\nTip\n\n\n\nIf you find yourself stuck in an infinite loop (and you will at some point), you need to interrupt the kernel and terminate the program.\nTo do this in VSCode, click the Interrupt button in your Interactive Window (Note - if it is currently expecting a user input, you’ll need to interrupt and then cancel out of the user input).",
     "crumbs": [
       "Loops, Lists and Dictionaries",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Loops</span>"
@@ -321,7 +321,7 @@
     "href": "lists.html#negative-indexing-and-slicing",
     "title": "15  Lists",
     "section": "15.2 Negative Indexing and Slicing",
-    "text": "15.2 Negative Indexing and Slicing\nWe can also use negative indexing to refer to an item based on its position from the end of the list. Here, -1 would refer to the last element, -2 to the penultimate element etc.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIf we want to refer to multiple items in a list, we can use a slice. Here, we use a colon to denote the indices of the start and end elements that we want.\n\n\n\n\n\n\nTip\n\n\n\nThe start element is included.\nThe end element is not included.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "text": "15.2 Negative Indexing and Slicing\n\nWe can also use negative indexing to refer to an item based on its position from the end of the list. Here, -1 would refer to the last element, -2 to the penultimate element etc.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIf we want to refer to multiple items in a list, we can use a slice. Here, we use a colon to denote the indices of the start and end elements that we want.\n\n\n\n\n\n\nTip\n\n\n\nThe start element is included.\nThe end element is not included.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Loops, Lists and Dictionaries",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lists</span>"
@@ -376,7 +376,51 @@
     "href": "dictionaries.html",
     "title": "17  Dictionaries",
     "section": "",
-    "text": "Dictionaries are another way in which we can store multiple values in Python. Unlike lists, they are unordered (the order doesn’t matter), and instead each value is associated with a lookup key. This allows us to store values against something that describes that value being stored. Dictionaries are structured as key : value pairs.\nLet’s create an example dictionary. We use curly brackets to denote dictionaries.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nTip\n\n\n\nNotice that our keys (the bit on the left hand side of the colon) are strings.\nHowever - the bits on the right of the colon - our values - can be anything! We could even use lists or other dictionaries.\nDictionaries are fine with a variety of types being used as values within a single dictionary object.\n\n\nTo refer to a value in a dictionary, we just provide the key :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can also update the value of a key this way.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can add new key : value pairs in the same way :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can also delete ones we don’t need.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "text": "17.1 Getting values from dictionaries\nTo refer to a value in a dictionary, we just provide the key :",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Dictionaries</span>"
+    ]
+  },
+  {
+    "objectID": "dictionaries.html#getting-values-from-dictionaries",
+    "href": "dictionaries.html#getting-values-from-dictionaries",
+    "title": "17  Dictionaries",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Dictionaries</span>"
+    ]
+  },
+  {
+    "objectID": "dictionaries.html#updating-values-in-dictionaries",
+    "href": "dictionaries.html#updating-values-in-dictionaries",
+    "title": "17  Dictionaries",
+    "section": "17.2 Updating values in dictionaries",
+    "text": "17.2 Updating values in dictionaries\nWe can also update the value of a key this way.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Dictionaries</span>"
+    ]
+  },
+  {
+    "objectID": "dictionaries.html#adding-new-key-value-pairs-to-dictionaries",
+    "href": "dictionaries.html#adding-new-key-value-pairs-to-dictionaries",
+    "title": "17  Dictionaries",
+    "section": "17.3 Adding new key-value pairs to dictionaries",
+    "text": "17.3 Adding new key-value pairs to dictionaries\nWe can add new key : value pairs in the same way :\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Loops, Lists and Dictionaries",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Dictionaries</span>"
+    ]
+  },
+  {
+    "objectID": "dictionaries.html#deleting-key-value-pairs-from-dictionaries",
+    "href": "dictionaries.html#deleting-key-value-pairs-from-dictionaries",
+    "title": "17  Dictionaries",
+    "section": "17.4 Deleting key-value pairs from dictionaries",
+    "text": "17.4 Deleting key-value pairs from dictionaries\nWe can also delete ones we don’t need.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Loops, Lists and Dictionaries",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Dictionaries</span>"

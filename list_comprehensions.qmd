@@ -5,6 +5,8 @@ filters:
 
 # List Comprehensions
 
+{{< video https://youtu.be/x9vjgNxXdcc >}}
+
 <!-- ```{r, echo = FALSE, results='asis'}
 knitr::opts_chunk$set(echo = FALSE)
 

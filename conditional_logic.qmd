@@ -5,6 +5,8 @@ filters:
 
 # Conditional Logic
 
+{{< video https://youtu.be/9Fix--fIVEc >}}
+
 In the Principles of Programming section, we talked about Conditional Logic.
 
 ![](assets/2024-05-14-21-25-24.png)
@@ -59,3 +61,7 @@ else:
 There are many comparison operators in Python.  We use these to express relational statements that resolve to a Boolean - True or False.  They are therefore used in conditional logic.
 
 ![](assets/2024-05-14-21-26-22.png)
+
+You won't be able to play along, but have a watch of this game of 'comparison operators' to learn more about comparisons.
+
+{{< video https://youtu.be/wAAy0S96bks >}}

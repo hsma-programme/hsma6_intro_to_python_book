@@ -5,6 +5,8 @@ filters:
 
 # Dictionaries
 
+{{< video https://youtu.be/lKM845WFD3Q >}}
+
 Dictionaries are another way in which we can store multiple values in Python.  Unlike lists, they are unordered (the order doesn’t matter), and instead each value is associated with a lookup key.  This allows us to store values against something that describes that value being stored.  Dictionaries are structured as key : value pairs.
 
 Let’s create an example dictionary.  We use curly brackets to denote dictionaries.
@@ -24,6 +26,10 @@ However - the bits on the right of the colon - our values - can be anything! We 
 Dictionaries are fine with a variety of types being used as values within a single dictionary object.
 :::
 
+{{< video https://youtu.be/9hzMPiP70lM >}}
+
+## Getting values from dictionaries
+
 To refer to a value in a dictionary, we just provide the key :
 
 ```{pyodide-python}
@@ -34,6 +40,8 @@ my_patient_dictionary = {"patient_id": 1674234,
 
 print(my_patient_dictionary["name"])
 ```
+
+## Updating values in dictionaries
 
 We can also update the value of a key this way.
 
@@ -49,6 +57,8 @@ my_patient_dictionary["name"] = "Dan Chalk"
 print(f"The name in the updated dictionary is {my_patient_dictionary["name"]}")
 ```
 
+## Adding new key-value pairs to dictionaries
+
 We can add new key : value pairs in the same way :
 
 ```{pyodide-python}
@@ -63,6 +73,8 @@ my_patient_dictionary["month_of_birth"] = 6
 
 print(f"The updated dictionary is {my_patient_dictionary}")
 ```
+
+## Deleting key-value pairs from dictionaries
 
 We can also delete ones we don't need.
 

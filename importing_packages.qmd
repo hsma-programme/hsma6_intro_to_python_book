@@ -5,6 +5,8 @@ filters:
 
 # Importing Packages
 
+{{< video https://youtu.be/QCRjo7awQpg >}}
+
 One of the huge advantages of Python being the most widely used programming language in the world, is that people have already written lots of useful stuff that we can use ourselves, without needing to reinvent the wheel.  These bits of code are known as packages (sometimes referred to as libraries).
 
 We can import these libraries into our code (assuming the package is installed), so we can use the stuff they’ve written.  Most of the code you write will include imports of packages.

@@ -5,6 +5,8 @@ filters:
 
 # Variables and Printing together - the fString
 
+{{< video https://youtu.be/vhNTM_MQFP8 >}}
+
 Python has a rather neat type of string called an fString.  These are strings where we can include formatting within the string to define where we want dynamic text.
 
 We often want to do this where we want to insert the value of a variable into a string of text.

@@ -5,6 +5,8 @@ filters:
 
 # The Random Library
 
+{{< video https://youtu.be/mo_bdWJNE-A >}}
+
 Python’s random library contains a number of functions that allow us to generate random numbers.  This is useful in modelling, because we’re going to need random numbers if we’re to build stochastic models.
 
 Remember we talked about probability distributions in session 1B?

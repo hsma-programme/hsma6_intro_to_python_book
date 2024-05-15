@@ -6,6 +6,8 @@ filters:
 
 # Mathematical Operators
 
+{{< video https://youtu.be/pnoNpwCR5zU >}}
+
 When we’re dealing with numbers, we often want to manipulate them in some way.  We can apply common mathematical functions in Python easily (though some of the symbols used might seem odd if you’re new to coding).
 
 ![](assets/2024-05-14-21-06-19.png)

@@ -5,6 +5,8 @@ filters:
 
 # Comments
 
+{{< video https://youtu.be/zoDonjiQTaY >}}
+
 When writing code, it is extremely important to write comments that explain how each piece of code works (this might be for an individual line of code, or a block of code).
 
 This is important to help others understand how your code works, but also to help you remember how your code works…

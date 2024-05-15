@@ -5,11 +5,15 @@ filters:
 
 # Loops
 
+{{< video https://youtu.be/2OMw5kqctVU >}}
+
 In Principles of Programming, we talked about the use of loops as a way of performing the same thing multiple times.
 
 ![](assets/2024-05-15-10-05-15.png)
 
 ## For Loops
+
+{{< video https://youtu.be/QgZ6W-tvVss >}}
 
 A simple for loop might look like this.
 
@@ -86,11 +90,15 @@ for element in my_list:
 
 ## While Loops
 
+{{< video https://youtu.be/sQZrK4fLvDk >}}
+
 While loops are another powerful type of loop, though you might use them less frequently than for loops.
 
 ![](assets/2024-05-15-10-29-09.png)
 
 ## Breaking from loops
+
+{{< video https://youtu.be/FgdAkCJHpew >}}
 
 Sometimes we want to break out of a loop mid-flow. For example, we may have a for loop, and want to break out of it when a condition has been met.
 
@@ -113,6 +121,8 @@ for x in range(10):
 ```
 
 ## Infinite loops
+
+{{< video https://youtu.be/cIucv-oiGdo >}}
 
 Sometimes you can accidentally write an infinite loop – one that will never end. Anybody who used to play with BASIC in the old days will remember an example of an infinite loop :
 
