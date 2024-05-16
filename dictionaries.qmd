@@ -16,6 +16,8 @@ my_patient_dictionary = {"patient_id": 1674234,
                          "name": "Bob Smith",
                          "year_of_birth": 1961,
                          "readmission": True}
+
+print(my_patient_dictionary)
 ```
 
 :::{.callout-tip}
@@ -45,16 +47,24 @@ print(my_patient_dictionary["name"])
 
 We can also update the value of a key this way.
 
+:::{.callout-tip}
+Note that when we have included the dictionary key inside the f string, we have used single quotation marks
+(i.e. `['name']` rather than `["name"]`).
+This is because Python would otherwise match up the opening quotation mark of our f-string with the opening quotation mark of `["name"]`, which will cause chaos!
+
+A good option is to always open your string with double quotes (`"`) and then use a single quote/apostrophe (`'`) inside your string. This will avoid any problems.
+:::
+
 ```{pyodide-python}
 my_patient_dictionary = {"patient_id": 1674234,
                          "name": "Bob Smith",
                          "year_of_birth": 1961,
                          "readmission": True}
 
-print(f"The original name in this dictionary is {my_patient_dictionary["name"]}")
+print(f"The original name in this dictionary is {my_patient_dictionary['name']}")
 
 my_patient_dictionary["name"] = "Dan Chalk"
-print(f"The name in the updated dictionary is {my_patient_dictionary["name"]}")
+print(f"The name in the updated dictionary is {my_patient_dictionary['name']}")
 ```
 
 ## Adding new key-value pairs to dictionaries

@@ -439,7 +439,7 @@
     "href": "dictionaries.html#updating-values-in-dictionaries",
     "title": "16  Dictionaries",
     "section": "16.2 Updating values in dictionaries",
-    "text": "16.2 Updating values in dictionaries\nWe can also update the value of a key this way.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "text": "16.2 Updating values in dictionaries\nWe can also update the value of a key this way.\n\n\n\n\n\n\nTip\n\n\n\nNote that when we have included the dictionary key inside the f string, we have used single quotation marks (i.e. ['name'] rather than [\"name\"]). This is because Python would otherwise match up the opening quotation mark of our f-string with the opening quotation mark of [\"name\"], which will cause chaos!\nA good option is to always open your string with double quotes (\") and then use a single quote/apostrophe (') inside your string. This will avoid any problems.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Loops, Lists and Dictionaries",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Dictionaries</span>"
