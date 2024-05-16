@@ -19,6 +19,8 @@ df = pd.read_csv(
     )
 ```
 
+:::
+
 ## Sorting values
 
 {{< video https://youtu.be/M4lXWmA1jkk >}}

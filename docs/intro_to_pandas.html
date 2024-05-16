@@ -282,7 +282,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"label":"","output":"true","read-only":"false","message":"true","context":"interactive","autorun":"","comment":"","results":"markup","fig-cap":"","warning":"true","fig-height":5,"dpi":72,"fig-width":7,"out-height":"","out-width":"700px","classes":""},"code":"import pandas as pd\n\ndf = pd.read_csv(\"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\")\n\ndf.head()"},{"id":2,"options":{"label":"","output":"true","read-only":"false","message":"true","context":"interactive","autorun":"","comment":"","results":"markup","fig-cap":"","warning":"true","fig-height":5,"dpi":72,"fig-width":7,"out-height":"","out-width":"700px","classes":""},"code":"import pandas as pd\n\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )\n\ndf.head()"}];
+globalThis.qpyodideCellDetails = [{"options":{"warning":"true","message":"true","out-width":"700px","dpi":72,"context":"interactive","autorun":"","comment":"","read-only":"false","classes":"","fig-width":7,"label":"","fig-height":5,"results":"markup","fig-cap":"","output":"true","out-height":""},"code":"import pandas as pd\n\ndf = pd.read_csv(\"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\")\n\ndf.head()","id":1},{"options":{"warning":"true","message":"true","out-width":"700px","dpi":72,"context":"interactive","autorun":"","comment":"","read-only":"false","classes":"","fig-width":7,"label":"","fig-height":5,"results":"markup","fig-cap":"","output":"true","out-height":""},"code":"import pandas as pd\n\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )\n\ndf.head()","id":2}];
 
 
 </script>
@@ -937,7 +937,7 @@ globalThis._qpyodideGetInstance = function() {
 <p>(You can judge the level of geekiness of someone fairly easily by simply making the statement “I love Pandas” and seeing if they reply “Me too, and NumPy!”)</p>
 <p>Pandas is very powerful for manipulating data in large arrays (unlike some spreadsheet software…), and allows for indexing of data. NumPy and Pandas are often used together, with NumPy used for mathematical functions applied to the data, and Pandas used to manipulate the data.</p>
 <p>As with NumPy, there is a conventional alias under which Pandas should be imported :</p>
-<div id="6aea2fcb" class="cell" data-execution_count="1">
+<div id="8d102b8c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="the-pandas-dataframe" class="level2" data-number="31.1">
@@ -973,11 +973,11 @@ Tip
 </div>
 <p>In the example below, we are accessing a file called <code>input_data.csv</code>.</p>
 <p>If this file was stored in the same folder as our python file, we would just do</p>
-<div id="b34f4e07" class="cell" data-execution_count="2">
+<div id="adeae0e3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"input_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We can then show the first 5 rows of the data with the <code>.head()</code> method.</p>
-<div id="769b7b95" class="cell" data-execution_count="3">
+<div id="26ec6255" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>

@@ -19,6 +19,7 @@ df = pd.read_csv(
     )
 ```
 
+:::
 
 ## Dropping rows and columns
 

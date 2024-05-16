@@ -19,6 +19,8 @@ df = pd.read_csv(
     )
 ```
 
+:::
+
 ## Adding data to a dataframe
 
 {{< video https://youtu.be/9ngAR9sMu0I >}}
