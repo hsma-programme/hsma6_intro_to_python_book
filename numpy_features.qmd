@@ -21,6 +21,8 @@ To create a new empty NumPy array, we can use the empty() function and specify t
 
 ```{pyodide-python}
 my_np_array = np.empty([5,4,3])
+
+print(my_np_array)
 ```
 
 :::{.callout-note}

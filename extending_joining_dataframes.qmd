@@ -32,7 +32,7 @@ We can add additional rows (and columns) to a DataFrame.  To add a row, we must 
 To add a row, we specify the index value for the new row (that doesn’t yet exist in our DataFrame) and assign a list of values for the other columns :
 
 ```{pyodide-python}
-row_to_add = ["Dan", "Yes",42,"Cornwall]
+row_to_add = ["Dan", "Yes",42,"Cornwall"]
 df.loc[12345] = row_to_add
 
 df
@@ -54,7 +54,7 @@ The code below makes a new dataframe that is just the first 5 rows of the existi
 
 first_five_rows = df.head()
 
-first_five_rows["Admitted"] = ["Yes", "No", "No", "Yes", "No]
+first_five_rows["Admitted"] = ["Yes", "No", "No", "Yes", "No"]
 
 first_five_rows
 ```
@@ -133,6 +133,8 @@ df_d = pd.DataFrame(
     [{"Favourite Decade": "80s", "Favourite Game": "Monkey Island 2"},
      {"Favourite Decade": "90s", "Favourite Game": "Outer Wilds"}]
 )
+
+df_d
 ```
 
 ```{pyodide-python}
@@ -159,8 +161,18 @@ df_f = pd.DataFrame(
 df_f
 ```
 
+Let's join this to `df_a`. Run the cell below to remind yourself of what was in that dataframe.
+
+```{pyodide-python}
+df_a
+```
+
 ```{pyodide-python}
 pd.merge(df_a, df_f, how="right", on="Name")
 ```
+
+:::{.callout-tip}
+Note that because we haven't got a value in dataframe a for Hugo, we don't have a record of whether he is a trainer, so in the merged dataframe, we get `NaN`. This stands for 'not a number' and effectively means the cell in the dataframe is blank.
+:::
 
 You can read more about the types of joins available in `merge` here: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html

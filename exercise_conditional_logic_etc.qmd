@@ -16,6 +16,7 @@ Open SOLUTIONS in Google Colab: <a target="_blank" href="https://colab.research.
 
 ## Answer Video
 
-:::{.callout-tip}
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
 {{< video https://youtu.be/RwS_o3K3jGo >}}
 :::

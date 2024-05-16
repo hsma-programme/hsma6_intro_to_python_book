@@ -47,6 +47,33 @@ df = df.sort_values(by=["Age"])
 
 Pandas will automatically sort by the index (PatientID here) where the values are equal for the column we are sorting by, so we don’t need to do that manually.
 
+We can sort in the other direction by passing the argument `ascending=False`
+
+```{pyodide-python}
+df.sort_values(by=["Age"], ascending=False)
+```
+
+We can also sort by multiple features at once.
+
+```{pyodide-python}
+df.sort_values(by=["Flu Vaccine", "County", "Age"])
+```
+
+If we want to sort these in different orders, we can pass in a list of booleans (`True`/`False`) to the ascend argument that are in the same order as our sorting columns.
+
+```{pyodide-python}
+df.sort_values(
+  by=["Flu Vaccine", "County", "Age"],
+  ascending=[True, False, False]
+  )
+```
+
+This will
+
+- first sort by the flu vaccine column in ascending order
+- then, within each group for the flu vaccine column, it will sort by county in descending order
+- finally, within each group for the county column, it will sort people by age in descending order
+
 ## Other neat pandas features
 
 {{< video https://youtu.be/eDQMCkdWt8Y >}}

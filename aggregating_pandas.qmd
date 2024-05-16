@@ -20,6 +20,8 @@ df = pd.read_csv(
     )
 ```
 
+:::
+
 ## Value Counts
 
 {{< video https://youtu.be/kOe3VkVV_qY >}}
@@ -50,7 +52,7 @@ pivot_age_by_county = pd.pivot_table(
     data = df,
     index = "County",
     values = "Age",
-    aggfunc = "mean
+    aggfunc = "mean"
 )
 
 pivot_age_by_county
@@ -78,7 +80,7 @@ pd.pivot_table(
     data = df,
     index = "County",
     values = ["Age", "Number Admissions"],
-    aggfunc = "mean
+    aggfunc = "mean"
 )
 
 ```

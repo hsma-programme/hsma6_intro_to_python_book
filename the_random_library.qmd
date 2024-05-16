@@ -23,6 +23,10 @@ import random
 You need to run the cell above first, otherwise the examples further down this page won't work!
 :::
 
+:::{.callout-tip}
+Try running the cells below multiple times - you will see that you get a different output each time!
+:::
+
 ```{pyodide-python}
 # Generate a random number between 0 and 1 sampled from a uniform distribution
 print(random.random())

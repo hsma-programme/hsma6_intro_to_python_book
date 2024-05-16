@@ -245,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )","id":1,"options":{"out-width":"700px","message":"true","classes":"","output":"true","fig-width":7,"read-only":"false","fig-cap":"","comment":"","results":"markup","label":"","warning":"true","autorun":"","fig-height":5,"dpi":72,"out-height":"","context":"interactive"}},{"code":"df[\"Flu Vaccine\"].value_counts()","id":2,"options":{"out-width":"700px","message":"true","classes":"","output":"true","fig-width":7,"read-only":"false","fig-cap":"","comment":"","results":"markup","label":"","warning":"true","autorun":"","fig-height":5,"dpi":72,"out-height":"","context":"interactive"}},{"code":"df[df[\"County\"] == \"Cornwall\"][\"Flu Vaccine\"].value_counts()","id":3,"options":{"out-width":"700px","message":"true","classes":"","output":"true","fig-width":7,"read-only":"false","fig-cap":"","comment":"","results":"markup","label":"","warning":"true","autorun":"","fig-height":5,"dpi":72,"out-height":"","context":"interactive"}},{"code":"pivot_age_by_county = pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = \"Age\",\n    aggfunc = \"mean\n)\n\npivot_age_by_county","id":4,"options":{"out-width":"700px","message":"true","classes":"","output":"true","fig-width":7,"read-only":"false","fig-cap":"","comment":"","results":"markup","label":"","warning":"true","autorun":"","fig-height":5,"dpi":72,"out-height":"","context":"interactive"}},{"code":"pivot_age_by_county.loc[\"Cornwall\"]","id":5,"options":{"out-width":"700px","message":"true","classes":"","output":"true","fig-width":7,"read-only":"false","fig-cap":"","comment":"","results":"markup","label":"","warning":"true","autorun":"","fig-height":5,"dpi":72,"out-height":"","context":"interactive"}},{"code":"pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = [\"Age\", \"Number Admissions\"],\n    aggfunc = \"mean\n)","id":6,"options":{"out-width":"700px","message":"true","classes":"","output":"true","fig-width":7,"read-only":"false","fig-cap":"","comment":"","results":"markup","label":"","warning":"true","autorun":"","fig-height":5,"dpi":72,"out-height":"","context":"interactive"}}];
+globalThis.qpyodideCellDetails = [{"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )","id":1,"options":{"context":"interactive","results":"markup","message":"true","label":"","read-only":"false","autorun":"","dpi":72,"output":"true","warning":"true","fig-width":7,"classes":"","comment":"","out-width":"700px","fig-cap":"","out-height":"","fig-height":5}},{"code":"df[\"Flu Vaccine\"].value_counts()","id":2,"options":{"context":"interactive","results":"markup","message":"true","label":"","read-only":"false","autorun":"","dpi":72,"output":"true","warning":"true","fig-width":7,"classes":"","comment":"","out-width":"700px","fig-cap":"","out-height":"","fig-height":5}},{"code":"df[df[\"County\"] == \"Cornwall\"][\"Flu Vaccine\"].value_counts()","id":3,"options":{"context":"interactive","results":"markup","message":"true","label":"","read-only":"false","autorun":"","dpi":72,"output":"true","warning":"true","fig-width":7,"classes":"","comment":"","out-width":"700px","fig-cap":"","out-height":"","fig-height":5}},{"code":"pivot_age_by_county = pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = \"Age\",\n    aggfunc = \"mean\"\n)\n\npivot_age_by_county","id":4,"options":{"context":"interactive","results":"markup","message":"true","label":"","read-only":"false","autorun":"","dpi":72,"output":"true","warning":"true","fig-width":7,"classes":"","comment":"","out-width":"700px","fig-cap":"","out-height":"","fig-height":5}},{"code":"pivot_age_by_county.loc[\"Cornwall\"]","id":5,"options":{"context":"interactive","results":"markup","message":"true","label":"","read-only":"false","autorun":"","dpi":72,"output":"true","warning":"true","fig-width":7,"classes":"","comment":"","out-width":"700px","fig-cap":"","out-height":"","fig-height":5}},{"code":"pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = [\"Age\", \"Number Admissions\"],\n    aggfunc = \"mean\"\n)","id":6,"options":{"context":"interactive","results":"markup","message":"true","label":"","read-only":"false","autorun":"","dpi":72,"output":"true","warning":"true","fig-width":7,"classes":"","comment":"","out-width":"700px","fig-cap":"","out-height":"","fig-height":5}}];
 
 
 </script>
@@ -892,11 +892,22 @@ globalThis._qpyodideGetInstance = function() {
 </header>
 
 
-<p>:::{.callout-tip}</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>To allow all the exercises in this section to work, please run this code cell first!</p>
 <p>This will import pandas and load the dataframe we’ll be working with.</p>
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
 <section id="value-counts" class="level2" data-number="35.1">
 <h2 data-number="35.1" class="anchored" data-anchor-id="value-counts"><span class="header-section-number">35.1</span> Value Counts</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kOe3VkVV_qY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>

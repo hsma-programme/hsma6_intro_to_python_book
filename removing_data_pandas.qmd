@@ -63,13 +63,7 @@ df_no_alfred
 
 If you wanted to drop multiple rows that met a condition, we could use conditional indexing from before.
 
-The `~` symbol means we
-
-```{pyodide-python}
-df[~df["County"] == "Devon"]
-```
-
-We could instead use `!=` (not equal to)
+We use `!=` (not equal to) to get rid of any rows where the value of county is "Cornwall".
 
 ```{pyodide-python}
 df[df["County"] != "Cornwall"]
