@@ -19,7 +19,6 @@ Open Exercise 3 SOLUTIONS in Google Colab: <a target="_blank" href="https://cola
 
 ## Answer Video
 
-:::{.callout-tip collapse="true"}
-# Click here to view a video explaining the solution
-Coming Soon!
+:::{.callout-tip}
+{{< video https://youtu.be/AnMgH4uI1s4 >}}
 :::
