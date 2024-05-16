@@ -71,6 +71,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   
@@ -233,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"list_a = [1, 2, 3, 4, 5]\nlist_b = []\n\nfor number in list_a:\n    list_b.append(number*2)\n\nprint(list_a)\nprint(list_b)","id":1,"options":{"dpi":72,"message":"true","autorun":"","classes":"","context":"interactive","read-only":"false","fig-height":5,"fig-cap":"","fig-width":7,"warning":"true","label":"","out-width":"700px","comment":"","results":"markup","out-height":"","output":"true"}},{"code":"list_a = [1, 2, 3, 4, 5]\n\nlist_b = [number * 2 for number in list_a]\n\nprint(list_a)\nprint(list_b)","id":2,"options":{"dpi":72,"message":"true","autorun":"","classes":"","context":"interactive","read-only":"false","fig-height":5,"fig-cap":"","fig-width":7,"warning":"true","label":"","out-width":"700px","comment":"","results":"markup","out-height":"","output":"true"}},{"code":"list_a = [1, 2, 3, 4, 5]\n\nlist_b = [number for number in list_a if number % 2 == 0]\n\nprint(list_a)\nprint(list_b)","id":3,"options":{"dpi":72,"message":"true","autorun":"","classes":"","context":"interactive","read-only":"false","fig-height":5,"fig-cap":"","fig-width":7,"warning":"true","label":"","out-width":"700px","comment":"","results":"markup","out-height":"","output":"true"}}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"list_a = [1, 2, 3, 4, 5]\nlist_b = []\n\nfor number in list_a:\n    list_b.append(number*2)\n\nprint(list_a)\nprint(list_b)","options":{"output":"true","results":"markup","out-width":"700px","read-only":"false","dpi":72,"message":"true","warning":"true","context":"interactive","fig-height":5,"autorun":"","out-height":"","classes":"","fig-width":7,"fig-cap":"","label":"","comment":""}},{"id":2,"code":"list_a = [1, 2, 3, 4, 5]\n\nlist_b = [number * 2 for number in list_a]\n\nprint(list_a)\nprint(list_b)","options":{"output":"true","results":"markup","out-width":"700px","read-only":"false","dpi":72,"message":"true","warning":"true","context":"interactive","fig-height":5,"autorun":"","out-height":"","classes":"","fig-width":7,"fig-cap":"","label":"","comment":""}},{"id":3,"code":"list_a = [1, 2, 3, 4, 5]\n\nlist_b = [number for number in list_a if number % 2 == 0]\n\nprint(list_a)\nprint(list_b)","options":{"output":"true","results":"markup","out-width":"700px","read-only":"false","dpi":72,"message":"true","warning":"true","context":"interactive","fig-height":5,"autorun":"","out-height":"","classes":"","fig-width":7,"fig-cap":"","label":"","comment":""}}];
 
 
 </script>

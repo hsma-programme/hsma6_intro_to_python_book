@@ -71,6 +71,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   
@@ -233,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"fig-cap":"","message":"true","classes":"","label":"","fig-height":5,"comment":"","autorun":"","results":"markup","read-only":"false","context":"interactive","fig-width":7,"dpi":72,"out-height":"","warning":"true","out-width":"700px","output":"true"},"code":"import random","id":1},{"options":{"fig-cap":"","message":"true","classes":"","label":"","fig-height":5,"comment":"","autorun":"","results":"markup","read-only":"false","context":"interactive","fig-width":7,"dpi":72,"out-height":"","warning":"true","out-width":"700px","output":"true"},"code":"# Generate a random number between 0 and 1 sampled from a uniform distribution\nprint(random.random())","id":2},{"options":{"fig-cap":"","message":"true","classes":"","label":"","fig-height":5,"comment":"","autorun":"","results":"markup","read-only":"false","context":"interactive","fig-width":7,"dpi":72,"out-height":"","warning":"true","out-width":"700px","output":"true"},"code":"# Generate a random integer (whole number) between 1 and 10 inclusive\nprint(random.randint(1,10))","id":3},{"options":{"fig-cap":"","message":"true","classes":"","label":"","fig-height":5,"comment":"","autorun":"","results":"markup","read-only":"false","context":"interactive","fig-width":7,"dpi":72,"out-height":"","warning":"true","out-width":"700px","output":"true"},"code":"my_list = [\"Dan\", \"Sammi\", \"Amy\"]\n# Choose a random item from my_list\nprint(random.choice(my_list))","id":4}];
+globalThis.qpyodideCellDetails = [{"id":1,"options":{"read-only":"false","classes":"","autorun":"","output":"true","warning":"true","dpi":72,"fig-width":7,"context":"interactive","fig-height":5,"message":"true","out-height":"","fig-cap":"","label":"","comment":"","results":"markup","out-width":"700px"},"code":"import random"},{"id":2,"options":{"read-only":"false","classes":"","autorun":"","output":"true","warning":"true","dpi":72,"fig-width":7,"context":"interactive","fig-height":5,"message":"true","out-height":"","fig-cap":"","label":"","comment":"","results":"markup","out-width":"700px"},"code":"# Generate a random number between 0 and 1 sampled from a uniform distribution\nprint(random.random())"},{"id":3,"options":{"read-only":"false","classes":"","autorun":"","output":"true","warning":"true","dpi":72,"fig-width":7,"context":"interactive","fig-height":5,"message":"true","out-height":"","fig-cap":"","label":"","comment":"","results":"markup","out-width":"700px"},"code":"# Generate a random integer (whole number) between 1 and 10 inclusive\nprint(random.randint(1,10))"},{"id":4,"options":{"read-only":"false","classes":"","autorun":"","output":"true","warning":"true","dpi":72,"fig-width":7,"context":"interactive","fig-height":5,"message":"true","out-height":"","fig-cap":"","label":"","comment":"","results":"markup","out-width":"700px"},"code":"my_list = [\"Dan\", \"Sammi\", \"Amy\"]\n# Choose a random item from my_list\nprint(random.choice(my_list))"}];
 
 
 </script>

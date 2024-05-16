@@ -1,6 +1,11 @@
 project:
   type: book
   output-dir: docs
+website:
+  comments:
+      hypothesis:
+        theme: clean
+        openSidebar: false
 book:
   title: HSMA - Programming in Python
   subtitle: An introduction to writing code in Python - from scratch!
@@ -68,6 +73,10 @@ book:
   search: true
   page-navigation: true
   back-to-top-navigation: true
+  comments:
+    hypothesis:
+      theme: clean
+      openSidebar: false
   navbar:
     search: false
     background: '#8A1E1E'

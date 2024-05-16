@@ -28,7 +28,6 @@ print (f"Hello {name}.  In 10 years time, you will be {age+10}")
 
 ## Answer Video
 
-:::{.callout-tip collapse="true"}
-# Click here to view a video explaining the solution
-Coming Soon!
+:::{.callout-tip}
+{{< video https://youtu.be/GdNqEM6aUEs >}}
 :::

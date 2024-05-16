@@ -71,6 +71,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   
@@ -233,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"out-width":"700px","message":"true","comment":"","label":"","results":"markup","out-height":"","autorun":"","warning":"true","read-only":"false","classes":"","output":"true","context":"interactive","dpi":72,"fig-cap":"","fig-width":7,"fig-height":5},"id":1,"code":"10 % 3"},{"options":{"out-width":"700px","message":"true","comment":"","label":"","results":"markup","out-height":"","autorun":"","warning":"true","read-only":"false","classes":"","output":"true","context":"interactive","dpi":72,"fig-cap":"","fig-width":7,"fig-height":5},"id":2,"code":"20 % 2"}];
+globalThis.qpyodideCellDetails = [{"code":"10 % 3","options":{"autorun":"","output":"true","results":"markup","comment":"","out-width":"700px","warning":"true","context":"interactive","classes":"","message":"true","read-only":"false","dpi":72,"fig-width":7,"fig-height":5,"fig-cap":"","label":"","out-height":""},"id":1},{"code":"20 % 2","options":{"autorun":"","output":"true","results":"markup","comment":"","out-width":"700px","warning":"true","context":"interactive","classes":"","message":"true","read-only":"false","dpi":72,"fig-width":7,"fig-height":5,"fig-cap":"","label":"","out-height":""},"id":2}];
 
 
 </script>

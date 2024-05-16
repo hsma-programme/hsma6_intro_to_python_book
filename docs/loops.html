@@ -71,6 +71,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   
@@ -233,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"code":"for x in range(10):\n    print(x)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":2,"code":"for x in range(10, 20):\n    print(x)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":3,"code":"for x in range(2, 30, 2):\n    print(x)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":4,"code":"for x in range(10, 0, -1):\n    print(x)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":5,"code":"my_list = [1, 10, \"Dan\", True, \"HSMA\"]\n\nfor element in my_list:\n    print(element)","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}},{"id":6,"code":"total = 0\n\nfor x in range(10):\n    total = total + x\n    print(total)\n\n    if total > 5:\n        print(\"Break condition triggered!\")\n        break","options":{"context":"interactive","results":"markup","out-width":"700px","comment":"","read-only":"false","output":"true","message":"true","autorun":"","label":"","warning":"true","fig-cap":"","dpi":72,"out-height":"","classes":"","fig-height":5,"fig-width":7}}];
+globalThis.qpyodideCellDetails = [{"options":{"fig-height":5,"results":"markup","context":"interactive","fig-cap":"","classes":"","output":"true","dpi":72,"autorun":"","message":"true","label":"","comment":"","out-height":"","read-only":"false","out-width":"700px","fig-width":7,"warning":"true"},"id":1,"code":"for x in range(10):\n    print(x)"},{"options":{"fig-height":5,"results":"markup","context":"interactive","fig-cap":"","classes":"","output":"true","dpi":72,"autorun":"","message":"true","label":"","comment":"","out-height":"","read-only":"false","out-width":"700px","fig-width":7,"warning":"true"},"id":2,"code":"for x in range(10, 20):\n    print(x)"},{"options":{"fig-height":5,"results":"markup","context":"interactive","fig-cap":"","classes":"","output":"true","dpi":72,"autorun":"","message":"true","label":"","comment":"","out-height":"","read-only":"false","out-width":"700px","fig-width":7,"warning":"true"},"id":3,"code":"for x in range(2, 30, 2):\n    print(x)"},{"options":{"fig-height":5,"results":"markup","context":"interactive","fig-cap":"","classes":"","output":"true","dpi":72,"autorun":"","message":"true","label":"","comment":"","out-height":"","read-only":"false","out-width":"700px","fig-width":7,"warning":"true"},"id":4,"code":"for x in range(10, 0, -1):\n    print(x)"},{"options":{"fig-height":5,"results":"markup","context":"interactive","fig-cap":"","classes":"","output":"true","dpi":72,"autorun":"","message":"true","label":"","comment":"","out-height":"","read-only":"false","out-width":"700px","fig-width":7,"warning":"true"},"id":5,"code":"my_list = [1, 10, \"Dan\", True, \"HSMA\"]\n\nfor element in my_list:\n    print(element)"},{"options":{"fig-height":5,"results":"markup","context":"interactive","fig-cap":"","classes":"","output":"true","dpi":72,"autorun":"","message":"true","label":"","comment":"","out-height":"","read-only":"false","out-width":"700px","fig-width":7,"warning":"true"},"id":6,"code":"total = 0\n\nfor x in range(10):\n    total = total + x\n    print(total)\n\n    if total > 5:\n        print(\"Break condition triggered!\")\n        break"}];
 
 
 </script>

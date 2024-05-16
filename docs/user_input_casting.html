@@ -105,6 +105,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 
 
 <link rel="stylesheet" href="include/webex.css">
@@ -557,7 +569,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="6.1" class="anchored" data-anchor-id="user-input"><span class="header-section-number">6.1</span> User Input</h2>
 <p>Sometimes we need to ask the user to input something in order to continue with the program.</p>
 <p>In Python, getting input from the user is easy. We simply tell Python that we need an input, any message we want to display to the user, and the name of the variable in which we want to store the input.</p>
-<div id="1c2cabee" class="cell" data-execution_count="1">
+<div id="a21a76a8" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">input</span>(<span class="st">"How old are you?: "</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -580,12 +592,12 @@ Important
 <h2 data-number="6.2" class="anchored" data-anchor-id="casting"><span class="header-section-number">6.2</span> Casting</h2>
 <p>Python allows us to turn one type of variable into another, like a magic spell. This is known as casting. As long as the value stored in the variable can be interpreted as the type we’re trying to cast it into, it’ll work (otherwise we’ll get an error).</p>
 <p>To cast, we simply wrap the variable on which we’re performing the cast in brackets, and tell it the type of variable we want it to become.</p>
-<div id="e0d0bfac" class="cell" data-execution_count="2">
+<div id="ba5b6bf5" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">input</span>(<span class="st">"How old are you?: "</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">int</span>(age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We could also do that all in one line of code :</p>
-<div id="be057070" class="cell" data-execution_count="3">
+<div id="d9771d68" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"How old are you?: "</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This will only work if the user inputs something that can be interpreted as an integer. “42” will work. “Too old” will not work.</p>
