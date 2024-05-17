@@ -20,7 +20,7 @@ and which is displayed if the user wins
 
 You could also add some bells and whistles of your choosing!
 
-Open Exercise 5 in Google Colab: <a target="_blank" href="https://colab.research.google.com/gist/Bergam0t/81eec03542933c78e0fedc7ed5918e4a/hsma_6_session_1e_exercise_5.ipynb">
+Open the exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/gist/Bergam0t/81eec03542933c78e0fedc7ed5918e4a/hsma_6_session_1e_exercise_5.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -28,7 +28,7 @@ Open Exercise 5 in Google Colab: <a target="_blank" href="https://colab.research
 
 :::{.callout-tip collapse="true"}
 # Click here to view the answers
-Open Exercise 5 SOLUTIONS in Google Colab: <a target="_blank" href="https://colab.research.google.com/gist/Bergam0t/744f9d266208d56ff1be1fcf06f35b1e/solution-smarter-than-4-year-old-dan.ipynb">
+Openthe solution in Google Colab: <a target="_blank" href="https://colab.research.google.com/gist/Bergam0t/744f9d266208d56ff1be1fcf06f35b1e/solution-smarter-than-4-year-old-dan.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 :::
@@ -37,5 +37,64 @@ Open Exercise 5 SOLUTIONS in Google Colab: <a target="_blank" href="https://cola
 
 :::{.callout-tip collapse="true"}
 # Click here to view a video explaining the solution
-Coming Soon!
+{{< video https://youtu.be/5-yaFZ-NA2I >}}
+
+The code for this video is slightly different to the example solution given above.
+
+```{python}
+#| eval: false
+
+import random
+
+continue_play = True
+high_score = 0
+
+while continue_play == True:
+
+    user_guesses_list = []
+    score = 1000
+    guessed_correctly = False
+
+    computer_chosen_number = random.randint(1,100)
+
+    print("Welcome to the guessing game! I'm thinking of a number.")
+    #print(f"DEBUG: computer number is {computer_chosen_number}")
+
+    for turn in range(10):
+
+        user_guess = int(input("Please enter a number:"))
+        user_guesses_list.append(user_guess)
+
+        if user_guess == computer_chosen_number:
+            print("Correct! You guessed it.")
+            guessed_correctly = True
+            break
+        elif user_guess < computer_chosen_number:
+            print("Too low!")
+            score -= 100
+        else:
+            print("Too high!")
+            score -= 100
+
+    if not guessed_correctly:
+        print("You lose!")
+        print(f"The number was {computer_chosen_number}")
+    else:
+        print(f"Your score: {score}")
+
+        if score > high_score:
+            print(f"New high score! The previous high score was {high_score}")
+            high_score = score
+        else:
+            print("You didn't beat the high score!")
+            print(f"High score: {high_score}")
+
+    print(f"Your guesses were {user_guesses_list}")
+
+    keep_playing_input = input("Please enter Y to keep playing or N to leave:")
+
+    if keep_playing_input == "N":
+        continue_play = False
+
+```
 :::
