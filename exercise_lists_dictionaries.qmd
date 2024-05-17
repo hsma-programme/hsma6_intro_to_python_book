@@ -21,5 +21,5 @@ Open Exercise 4 SOLUTIONS in Google Colab: <a target="_blank" href="https://cola
 
 :::{.callout-tip collapse="true"}
 # Click here to view a video explaining the solution
-Coming Soon!
+{{< video https://youtu.be/5-yaFZ-NA2I >}}
 :::
