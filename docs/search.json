@@ -670,7 +670,7 @@
     "href": "exercise_functions.html#answer-video",
     "title": "23  Exercise: Functions",
     "section": "23.2 Answer Video",
-    "text": "23.2 Answer Video\n\n\n\n\n\n\nClick here to view a video explaining the solution\n\n\n\n\n\nComing Soon!",
+    "text": "23.2 Answer Video\n\n\n\n\n\n\nClick here to view a video explaining the solution\n\n\n\n\n\n\n23.3 Task 1\n\n\n\n23.4 Task 2",
     "crumbs": [
       "Functions, Files and error Handling",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise: Functions</span>"
@@ -1223,6 +1223,28 @@
     "text": "You can find a list of resources for Python beginners in the Google Sheet below.",
     "crumbs": [
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>Further Reading</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_functions.html#task-1",
+    "href": "exercise_functions.html#task-1",
+    "title": "23  Exercise: Functions",
+    "section": "23.3 Task 1",
+    "text": "23.3 Task 1",
+    "crumbs": [
+      "Functions, Files and error Handling",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise: Functions</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_functions.html#task-2",
+    "href": "exercise_functions.html#task-2",
+    "title": "23  Exercise: Functions",
+    "section": "23.4 Task 2",
+    "text": "23.4 Task 2",
+    "crumbs": [
+      "Functions, Files and error Handling",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise: Functions</span>"
     ]
   }
 ]

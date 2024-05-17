@@ -18,5 +18,10 @@ Open exercise solutions in Google Colab: <a target="_blank" href="https://colab.
 
 :::{.callout-tip collapse="true"}
 # Click here to view a video explaining the solution
-Coming Soon!
+
+## Task 1
+{{< video https://youtu.be/STT2aHLeKyE >}}
+
+## Task 2
+{{< video https://youtu.be/NGoxLQfhsTw >}}
 :::
