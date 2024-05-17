@@ -44,4 +44,12 @@ You will need to upload the dataset to the solution notebook if you want to run 
 ## Task 2
 
 {{< video https://youtu.be/wOvMpixoHXI >}}
+
+**There were two things I forgot to explain in this solution video!
+
+- The file input_data.csv is in the **same folder** as the notebook we are working on, so we can just set our file path to be "input_data.csv" rather than having to give the full filepath (like "C:/Users/Sammi/HSMA Exercises/HSMA 1F/Datasets/input_data.csv")
+
+- in the line `with open("input_data.csv", "r") as my_file:`, the "r" refers to the **access mode** of the file.
+"r" just means to want to **read** the file, as opposed to **write** new data to it (which would use **w**).
+
 :::
