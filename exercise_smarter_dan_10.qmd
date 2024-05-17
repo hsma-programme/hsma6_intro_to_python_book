@@ -37,7 +37,7 @@ Openthe solution in Google Colab: <a target="_blank" href="https://colab.researc
 
 :::{.callout-tip collapse="true"}
 # Click here to view a video explaining the solution
-{{< video https://youtu.be/5-yaFZ-NA2I >}}
+{{< video https://youtu.be/bM1S1jkGKA0 >}}
 
 The code for this video is slightly different to the example solution given above.
 
