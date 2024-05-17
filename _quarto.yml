@@ -51,7 +51,7 @@ book:
     - exercise_functions.qmd
     - exception_handling.qmd
     - file_handling.qmd
-    - exercise_exception_handling.qmd
+    - exercise_exception_and_file_handling.qmd
   - part: "Numpy"
     chapters:
     - intro_to_numpy.qmd

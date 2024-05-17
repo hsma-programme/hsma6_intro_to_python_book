@@ -677,6 +677,28 @@
     ]
   },
   {
+    "objectID": "exercise_functions.html#task-1",
+    "href": "exercise_functions.html#task-1",
+    "title": "23  Exercise: Functions",
+    "section": "23.3 Task 1",
+    "text": "23.3 Task 1",
+    "crumbs": [
+      "Functions, Files and error Handling",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise: Functions</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_functions.html#task-2",
+    "href": "exercise_functions.html#task-2",
+    "title": "23  Exercise: Functions",
+    "section": "23.4 Task 2",
+    "text": "23.4 Task 2",
+    "crumbs": [
+      "Functions, Files and error Handling",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise: Functions</span>"
+    ]
+  },
+  {
     "objectID": "exception_handling.html",
     "href": "exception_handling.html",
     "title": "24  Exception (Error) Handling",
@@ -732,8 +754,8 @@
     ]
   },
   {
-    "objectID": "exercise_exception_handling.html",
-    "href": "exercise_exception_handling.html",
+    "objectID": "exercise_exception_and_file_handling.html",
+    "href": "exercise_exception_and_file_handling.html",
     "title": "26  Exercise: Handling errors and files",
     "section": "",
     "text": "26.1 Sample Answers",
@@ -743,8 +765,8 @@
     ]
   },
   {
-    "objectID": "exercise_exception_handling.html#sample-answers",
-    "href": "exercise_exception_handling.html#sample-answers",
+    "objectID": "exercise_exception_and_file_handling.html#sample-answers",
+    "href": "exercise_exception_and_file_handling.html#sample-answers",
     "title": "26  Exercise: Handling errors and files",
     "section": "",
     "text": "Click here to view the answers\n\n\n\n\n\nOpen exercise solutions in Google Colab:   \nYou will need to upload the dataset to the solution notebook if you want to run the solutions.",
@@ -754,11 +776,33 @@
     ]
   },
   {
-    "objectID": "exercise_exception_handling.html#answer-video",
-    "href": "exercise_exception_handling.html#answer-video",
+    "objectID": "exercise_exception_and_file_handling.html#answer-video",
+    "href": "exercise_exception_and_file_handling.html#answer-video",
     "title": "26  Exercise: Handling errors and files",
     "section": "26.2 Answer Video",
-    "text": "26.2 Answer Video\n\n\n\n\n\n\nClick here to view a video explaining the solution\n\n\n\n\n\nComing Soon!",
+    "text": "26.2 Answer Video\n\n\n\n\n\n\nClick here to view a video explaining the solution\n\n\n\n\n\n\n26.3 Task 1\n\n\n\n26.4 Task 2",
+    "crumbs": [
+      "Functions, Files and error Handling",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Exercise: Handling errors and files</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_exception_and_file_handling.html#task-1",
+    "href": "exercise_exception_and_file_handling.html#task-1",
+    "title": "26  Exercise: Handling errors and files",
+    "section": "26.3 Task 1",
+    "text": "26.3 Task 1",
+    "crumbs": [
+      "Functions, Files and error Handling",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Exercise: Handling errors and files</span>"
+    ]
+  },
+  {
+    "objectID": "exercise_exception_and_file_handling.html#task-2",
+    "href": "exercise_exception_and_file_handling.html#task-2",
+    "title": "26  Exercise: Handling errors and files",
+    "section": "26.4 Task 2",
+    "text": "26.4 Task 2",
     "crumbs": [
       "Functions, Files and error Handling",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>Exercise: Handling errors and files</span>"
@@ -1223,28 +1267,6 @@
     "text": "You can find a list of resources for Python beginners in the Google Sheet below.",
     "crumbs": [
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>Further Reading</span>"
-    ]
-  },
-  {
-    "objectID": "exercise_functions.html#task-1",
-    "href": "exercise_functions.html#task-1",
-    "title": "23  Exercise: Functions",
-    "section": "23.3 Task 1",
-    "text": "23.3 Task 1",
-    "crumbs": [
-      "Functions, Files and error Handling",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise: Functions</span>"
-    ]
-  },
-  {
-    "objectID": "exercise_functions.html#task-2",
-    "href": "exercise_functions.html#task-2",
-    "title": "23  Exercise: Functions",
-    "section": "23.4 Task 2",
-    "text": "23.4 Task 2",
-    "crumbs": [
-      "Functions, Files and error Handling",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise: Functions</span>"
     ]
   }
 ]

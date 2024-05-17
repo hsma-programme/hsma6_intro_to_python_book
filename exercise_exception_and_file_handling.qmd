@@ -37,5 +37,11 @@ You will need to upload the dataset to the solution notebook if you want to run 
 
 :::{.callout-tip collapse="true"}
 # Click here to view a video explaining the solution
-Coming Soon!
+
+## Task 1
+{{< video https://youtu.be/UFkUxIRz2zI >}}
+
+## Task 2
+
+{{< video https://youtu.be/wOvMpixoHXI >}}
 :::
