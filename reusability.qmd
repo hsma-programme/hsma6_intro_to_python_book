@@ -1,0 +1,127 @@
+---
+filters:
+  - pyodide
+---
+
+# Reusability
+
+Let’s look at an example.  Here’s a file I created called Penchord_Wizardry.py.
+
+```{python}
+
+import random
+
+# Class defining a Penchordian
+class Penchordian :
+    def __init__(self, name):
+        self.name = name
+        self.is_a_wizard = False
+
+    def write_model(self, type_of_model):
+        print (f"{self.name} is now writing a {type_of_model} model.")
+
+    def tell_joke(self, prob_success):
+        if random.uniform(0,1) < prob_success:
+            print (f"{self.name} attempted a joke.  People loved it!")
+        else:
+            print (f"{self.name} attempted a joke.  It fell flat.")
+
+# Function to turn someone into a wizard
+# Input subject must be an object with a "name" string attribute and a
+# "is_a_wizard" boolean attribute
+def turn_into_a_wizard(subject):
+    subject.is_a_wizard = True
+    print (f"{subject.name} is now a wizard.")
+
+```
+
+
+Then I'm going to create a new file in the **same folder** as `Penchord_Wizardry.py`.
+
+:::{.callout-tip}
+It is possible to call in functions from a Python file stored in a different folder or subfolder - but it starts getting quite complicated to navigate to them in the code, so we won't cover that today.
+:::
+
+At the beginning of my new file I'm going to `import Penchord_Wizardry` to get access to the functions from `Penchord_Wizardry.py`.
+
+```{python}
+# import the entire Penchord_Wizardry module (the Penchordian class and the
+# turn_into_a_wizard function)
+import Penchord_Wizardry
+
+import random
+
+list_of_penchordian_names = ["Dan", "Sammi", "Kerry", "Mike", "Anna", "Tom",
+                             "Amy C", "Amy H", "Chrissie"]
+
+# Randomly select three PenCHORDian names
+# random.sample selects three elements from a list without replacement
+# (if you want values to be able to be repicked (replacement), use
+# random.choices)
+chosen_penchordian_names = random.sample(list_of_penchordian_names, 3)
+
+list_of_penchordians = []
+
+# Create some Penchordian objects using the definition from the imported
+# module
+for name in chosen_penchordian_names:
+    list_of_penchordians.append(Penchord_Wizardry.Penchordian(name))
+
+# Call a couple of the class methods on the three created Penchordian objects
+for penchordian in list_of_penchordians:
+    penchordian.write_model("Discrete Event Simulation")
+    penchordian.tell_joke(0.1)
+
+
+```
+
+
+
+I can also choose just to import the bit(s) of the module I need, rather than the whole thing.
+
+Here we don't import the class `Penchordian`, but we do import the function `turn_into_a_wizard`.
+
+:::{.callout-tip}
+Note that because we've imported the specific function by name, we can just then use `turn_into_a_wizard`.
+:::
+
+
+```{python}
+# just import the turn_into_a_wizard function
+from Penchord_Wizardry import turn_into_a_wizard
+
+# Define a new class called HSMA, which has two attributes - a name, and an
+# is_a_wizard boolean
+class HSMA:
+    def __init__(self, name):
+        self.name = name
+        self.is_a_wizard = False
+
+# Create a new HSMA object, whose name is Gandalf
+my_promising_HSMA = HSMA("Gandalf")
+
+# Turn Gandalf into a wizard using the function we imported from the
+# Penchord_Wizardry module
+turn_into_a_wizard(my_promising_HSMA)
+```
+
+In comparison, if we imported the whole module instead, our code would look like this:
+
+```{python}
+# just import the turn_into_a_wizard function
+import Penchord_Wizardry
+
+# Define a new class called HSMA, which has two attributes - a name, and an
+# is_a_wizard boolean
+class HSMA:
+    def __init__(self, name):
+        self.name = name
+        self.is_a_wizard = False
+
+# Create a new HSMA object, whose name is Gandalf
+my_promising_HSMA = HSMA("Gandalf")
+
+# Turn Gandalf into a wizard using the function we imported from the
+# Penchord_Wizardry module
+Penchord_Wizardry.turn_into_a_wizard(my_promising_HSMA)
+```

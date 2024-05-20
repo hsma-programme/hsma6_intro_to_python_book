@@ -4,3 +4,199 @@ filters:
 ---
 
 # An Introduction to Object Oriented Python
+
+## The structure of a python class
+
+Let’s look at how we write a Class in Python.
+
+We use the class keyword, followed by whatever we want to call our Class to declare a class.  Note - class names must start with a capital letter.
+
+```{python}
+class MyClass:
+
+    def __init__(self, attribute_1, attribute_2):
+        self.attribute_1 = attribute_1
+        self.attribute_2 = attribute_2
+
+    def method_1(self):
+        print ("This is method 1!")
+
+    def method_2(self):
+        print ("This is method 2!")
+```
+
+### The constructor
+
+This is the constructor.  It is the method that is automatically called whenever we say we want a new instance of our class (instantiation).  The purpose is to set up the object ready to use.
+
+```{python}
+#| eval: false
+def __init__(self, attribute_1, attribute_2):
+    self.attribute_1 = attribute_1
+    self.attribute_2 = attribute_2
+```
+
+Here, the constructor assigns values to a couple of attributes for any newly created instance based on the two values passed in to it (ignore self - I’ll come back to that in a moment).
+
+The double underscore before and after init indicates this is a dunder method (“dunder”= “double underscore”).  These are also known as “magic methods”.  They’re called automatically when needed.
+
+:::{.callout-tip}
+#### Me, myself, and Self
+self is an important concept in Object Oriented Coding in Python.  Basically, self stores the instance of the class (ie the copy from the blueprint).  It can be a bit weird to get your head around, particularly if you’re new to coding.
+
+We declare self as the first input to any method definition in the class.  It basically says “Run this class method on this instance” (eg on Dan’s ambulance).  BUT, when we call the method, we don’t include self explicitly (Python does this for us, behind the scenes).
+
+Whenever we need to refer to something belonging to this instance, we say self. to say “Give me the x that belongs to you”.  Eg give me the attribute value that you (Dan’s ambulance) is carrying.  Or run the method that belongs to you.
+
+Basically, by using self we refer to the instance of the class (the individual object) rather than the Class itself (the blueprint).
+
+This will make more sense as you see examples… Promise… :)
+:::
+
+### Class methods
+
+These are the methods (functions) that the class has.  Every class needs at least a constructor, but we can add other things too.
+
+These work exactly the same as any other functions, except we always pass in self as the first input in the method definition (even if there are no other inputs).
+
+```{python}
+#| eval: false
+def method_1(self):
+    print ("This is method 1!")
+
+def method_2(self):
+    print ("This is method 2!")
+```
+
+## An example python class
+
+Let’s look at an example to make this a bit more real.
+
+Let’s see how we might translate our ambulance Class into Python.
+
+```{pyodide-python}
+
+class Ambulance:
+    def __init__(self, name_of_trust, reg_number):
+        self.name_of_trust = name_of_trust
+        self.reg_number = reg_number
+
+        self.patient_on_board = False
+        self.siren_on = False
+
+    def drive(self, speed):
+        print (f"Now driving at {speed}mph")
+
+    def park(self, location):
+        print (f"Now parked at {location}")
+
+    def load_patient(self, patient_name):
+        self.patient_on_board = True
+        print (f"{patient_name} now on board")
+
+    def unload_patient(self, patient_name):
+        self.patient_on_board = False
+        print (f"{patient_name} unloaded")
+
+    def turn_on_siren(self):
+        self.siren_on = True
+        print ("Nee nor nee nor nee nor nee nor nee nor")
+
+    def turn_off_siren(self):
+        self.siren_on = False
+```
+
+### Instantiating our class (creating an instance of the class)
+
+We’ve defined our ambulance class now, but, just as with functions, nothing will happen until we use it.
+
+So let’s create an instance of the class (instantiation), and play with it a bit.
+
+```{pyodide-python}
+dans_ambulance = Ambulance("Chalk NHS Trust", "CH41 LKS")
+```
+
+Note that nothing has been printed out at this point. That's because we've just created the class, so all that's run so far is the code inside the `__init__` method, and there were no statements there that would generate an output.
+
+Let's try using some of the class methods.
+
+```{pyodide-python}
+dans_ambulance.drive(50)
+dans_ambulance.turn_on_siren()
+dans_ambulance.park("Cake shop")
+```
+
+We can also take a look at the attributes of the class.
+
+```{pyodide-python}
+print(f"Name of ambulance: {dans_ambulance.name_of_trust}")
+
+print(f"Registration number: {dans_ambulance.reg_number}")
+
+print(f"Is there a patient on board?: {dans_ambulance.patient_on_board}")
+
+print(f"Is the siren on?: {dans_ambulance.siren_on}")
+```
+
+### Multiple instances of the same class
+
+A key advantage of OOP is that we only need to define a class once, and then can have multiple instances of it doing different things.
+
+Whilst Dan’s taken his ambulance off (siren blaring) to the cake shop, maybe Sammi’s actually attending the scene of an incident…
+
+```{pyodide-python}
+sammis_ambulance = Ambulance("Rosser Healthcare", "HS44 MAS")
+
+sammis_ambulance.drive(70)
+sammis_ambulance.turn_on_siren()
+sammis_ambulance.park("M23 Junction 42")
+sammis_ambulance.load_patient("Jack Shepherd")
+sammis_ambulance.drive(70)
+sammis_ambulance.park("Dharma Hospital")
+sammis_ambulance.turn_off_siren()
+sammis_ambulance.unload_patient("Jack Shepherd")
+
+```
+
+We can see how certain attributes change over time as well.
+
+At the moment, we have no patient in our ambulance.
+
+Let's check the `patient_on_board` attribute.
+
+```{pyodide-python}
+print(f"Is there a patient on board?: {sammis_ambulance.patient_on_board}")
+```
+
+Now let's load another patient. To recap, this is what the `load_patient` method will do...
+
+```{python}
+#| eval: false
+def load_patient(self, patient_name):
+    self.patient_on_board = True
+    print (f"{patient_name} now on board")
+```
+
+```{pyodide-python}
+sammis_ambulance.load_patient("Bob Bobson")
+
+print(f"Is there a patient on board?: {sammis_ambulance.patient_on_board}")
+```
+
+Now, when we unload this patient, the attribute will change again!
+
+To recap, this is what the `unload_patient` method will do...
+
+```{python}
+#| eval: false
+
+def unload_patient(self, patient_name):
+    self.patient_on_board = False
+    print (f"{patient_name} unloaded")
+```
+
+```{pyodide-python}
+sammis_ambulance.unload_patient("Bob Bobson")
+
+print(f"Is there a patient on board?: {sammis_ambulance.patient_on_board}")
+```

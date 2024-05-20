@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HSMA - Programming in Python - 39&nbsp; An Introduction to Matplotlib</title>
+<title>HSMA - Programming in Python - 42&nbsp; An Introduction to Matplotlib</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./matplotlib_chart_types.html" rel="next">
-<link href="./intro_to_oopp.html" rel="prev">
+<link href="./reusability.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -279,7 +279,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nx = [1,2,3,4,5,6,7,8,9,10]\ny = [3,7,2,1,4,8,1,2,3,12]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number of patients')\n\n# Plot our data (x and y here)\nax.plot(x, y)\n\n# Show the figure\nfigure_1.show()","options":{"comment":"","autorun":"","output":"true","fig-height":5,"results":"markup","context":"interactive","read-only":"false","message":"true","label":"","out-height":"","fig-width":7,"out-width":"700px","warning":"true","fig-cap":"","classes":"","dpi":72}},{"id":2,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nx = [1,2,3,4,5,6,7,8,9,10]\ny = [3,7,2,1,4,8,1,2,3,12]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number of patients')\n\n# Plot our data (x and y here)\n# ------------------------------------------- #\n# ** THIS IS THE ONLY LINE WE'VE CHANGED! **  #\n# ------------------------------------------- #\nax.plot(x, y, color=\"red\", linestyle=\"--\")\n\n# Show the figure\nfigure_1.show()","options":{"comment":"","autorun":"","output":"true","fig-height":5,"results":"markup","context":"interactive","read-only":"false","message":"true","label":"","out-height":"","fig-width":7,"out-width":"700px","warning":"true","fig-cap":"","classes":"","dpi":72}},{"id":3,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [1,2,3,4,5,6,7,8,9,10]\n\npatients = [3,7,2,1,4,8,1,2,3,12]\ndoctors = [2,0,1,2,1,1,1,2,0,1]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number in Clinic')\n\n# Plot our data, and set each dataset we plot to a different colour / style\nax.plot(time, patients, color=\"blue\", linestyle=\"-\") # Plot patients over time\nax.plot(time, doctors, color=\"red\", linestyle=\":\") # Plot doctors over time\n\n# Show the figure\nfigure_1.show()","options":{"comment":"","autorun":"","output":"true","fig-height":5,"results":"markup","context":"interactive","read-only":"false","message":"true","label":"","out-height":"","fig-width":7,"out-width":"700px","warning":"true","fig-cap":"","classes":"","dpi":72}},{"id":4,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [1,2,3,4,5,6,7,8,9,10]\n\npatients = [3,7,2,1,4,8,1,2,3,12]\ndoctors = [2,0,1,2,1,1,1,2,0,1]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number in Clinic')\n\n# Plot our data, and set each dataset we plot to a different colour / style\n\n# ------------------------------------------------------------------- #\n# Notice we've added the argument 'label = \"the label we want\"' here  #\n# ------------------------------------------------------------------- #\nax.plot(time, patients, color=\"blue\", linestyle=\"-\", label=\"Patients\")\nax.plot(time, doctors, color=\"red\", linestyle=\":\", label=\"Doctors\")\n\n# -------------------------- #\n# Create and set up a legend #\n# -------------------------- #\nax.legend(loc=\"upper left\")\n\n# Show the figure\nfigure_1.show()","options":{"comment":"","autorun":"","output":"true","fig-height":5,"results":"markup","context":"interactive","read-only":"false","message":"true","label":"","out-height":"","fig-width":7,"out-width":"700px","warning":"true","fig-cap":"","classes":"","dpi":72}}];
+globalThis.qpyodideCellDetails = [{"options":{"warning":"true","dpi":72,"label":"","read-only":"false","fig-width":7,"autorun":"","classes":"","context":"interactive","message":"true","fig-cap":"","comment":"","output":"true","results":"markup","out-height":"","out-width":"700px","fig-height":5},"id":1,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nx = [1,2,3,4,5,6,7,8,9,10]\ny = [3,7,2,1,4,8,1,2,3,12]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number of patients')\n\n# Plot our data (x and y here)\nax.plot(x, y)\n\n# Show the figure\nfigure_1.show()"},{"options":{"warning":"true","dpi":72,"label":"","read-only":"false","fig-width":7,"autorun":"","classes":"","context":"interactive","message":"true","fig-cap":"","comment":"","output":"true","results":"markup","out-height":"","out-width":"700px","fig-height":5},"id":2,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nx = [1,2,3,4,5,6,7,8,9,10]\ny = [3,7,2,1,4,8,1,2,3,12]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number of patients')\n\n# Plot our data (x and y here)\n# ------------------------------------------- #\n# ** THIS IS THE ONLY LINE WE'VE CHANGED! **  #\n# ------------------------------------------- #\nax.plot(x, y, color=\"red\", linestyle=\"--\")\n\n# Show the figure\nfigure_1.show()"},{"options":{"warning":"true","dpi":72,"label":"","read-only":"false","fig-width":7,"autorun":"","classes":"","context":"interactive","message":"true","fig-cap":"","comment":"","output":"true","results":"markup","out-height":"","out-width":"700px","fig-height":5},"id":3,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [1,2,3,4,5,6,7,8,9,10]\n\npatients = [3,7,2,1,4,8,1,2,3,12]\ndoctors = [2,0,1,2,1,1,1,2,0,1]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number in Clinic')\n\n# Plot our data, and set each dataset we plot to a different colour / style\nax.plot(time, patients, color=\"blue\", linestyle=\"-\") # Plot patients over time\nax.plot(time, doctors, color=\"red\", linestyle=\":\") # Plot doctors over time\n\n# Show the figure\nfigure_1.show()"},{"options":{"warning":"true","dpi":72,"label":"","read-only":"false","fig-width":7,"autorun":"","classes":"","context":"interactive","message":"true","fig-cap":"","comment":"","output":"true","results":"markup","out-height":"","out-width":"700px","fig-height":5},"id":4,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [1,2,3,4,5,6,7,8,9,10]\n\npatients = [3,7,2,1,4,8,1,2,3,12]\ndoctors = [2,0,1,2,1,1,1,2,0,1]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number in Clinic')\n\n# Plot our data, and set each dataset we plot to a different colour / style\n\n# ------------------------------------------------------------------- #\n# Notice we've added the argument 'label = \"the label we want\"' here  #\n# ------------------------------------------------------------------- #\nax.plot(time, patients, color=\"blue\", linestyle=\"-\", label=\"Patients\")\nax.plot(time, doctors, color=\"red\", linestyle=\":\", label=\"Doctors\")\n\n# -------------------------- #\n# Create and set up a legend #\n# -------------------------- #\nax.legend(loc=\"upper left\")\n\n# Show the figure\nfigure_1.show()"}];
 
 
 </script>
@@ -472,7 +472,7 @@ globalThis._qpyodideGetInstance = function() {
 
 
 <link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="HSMA - Programming in Python - 39&nbsp; An Introduction to Matplotlib">
+<meta property="og:title" content="HSMA - Programming in Python - 42&nbsp; An Introduction to Matplotlib">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="HSMA - Programming in Python">
 </head>
@@ -526,7 +526,7 @@ globalThis._qpyodideGetInstance = function() {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_matplotlib.html">Graphs with matplotlib</a></li><li class="breadcrumb-item"><a href="./intro_to_matplotlib.html"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_matplotlib.html">Graphs with matplotlib</a></li><li class="breadcrumb-item"><a href="./intro_to_matplotlib.html"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -884,8 +884,26 @@ globalThis._qpyodideGetInstance = function() {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./recap_oop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./intro_to_oopp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inheritance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Inheritance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./reusability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Reusability</span></span></a>
   </div>
 </li>
       </ul>
@@ -902,27 +920,33 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>
@@ -935,10 +959,10 @@ globalThis._qpyodideGetInstance = function() {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#our-first-plot" id="toc-our-first-plot" class="nav-link active" data-scroll-target="#our-first-plot"><span class="header-section-number">39.1</span> Our first plot</a></li>
-  <li><a href="#plotting-multiple-lines" id="toc-plotting-multiple-lines" class="nav-link" data-scroll-target="#plotting-multiple-lines"><span class="header-section-number">39.2</span> Plotting Multiple Lines</a></li>
-  <li><a href="#adding-a-legend" id="toc-adding-a-legend" class="nav-link" data-scroll-target="#adding-a-legend"><span class="header-section-number">39.3</span> Adding a legend</a></li>
-  <li><a href="#exporting-matplotlib-charts" id="toc-exporting-matplotlib-charts" class="nav-link" data-scroll-target="#exporting-matplotlib-charts"><span class="header-section-number">39.4</span> Exporting matplotlib charts</a></li>
+  <li><a href="#our-first-plot" id="toc-our-first-plot" class="nav-link active" data-scroll-target="#our-first-plot"><span class="header-section-number">42.1</span> Our first plot</a></li>
+  <li><a href="#plotting-multiple-lines" id="toc-plotting-multiple-lines" class="nav-link" data-scroll-target="#plotting-multiple-lines"><span class="header-section-number">42.2</span> Plotting Multiple Lines</a></li>
+  <li><a href="#adding-a-legend" id="toc-adding-a-legend" class="nav-link" data-scroll-target="#adding-a-legend"><span class="header-section-number">42.3</span> Adding a legend</a></li>
+  <li><a href="#exporting-matplotlib-charts" id="toc-exporting-matplotlib-charts" class="nav-link" data-scroll-target="#exporting-matplotlib-charts"><span class="header-section-number">42.4</span> Exporting matplotlib charts</a></li>
   </ul>
 </nav>
     </div>
@@ -955,9 +979,9 @@ globalThis._qpyodideGetInstance = function() {
   });
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_matplotlib.html">Graphs with matplotlib</a></li><li class="breadcrumb-item"><a href="./intro_to_matplotlib.html"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_to_matplotlib.html">Graphs with matplotlib</a></li><li class="breadcrumb-item"><a href="./intro_to_matplotlib.html"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></h1>
+<h1 class="title"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></h1>
 </div>
 
 
@@ -982,7 +1006,7 @@ globalThis._qpyodideGetInstance = function() {
 <p>To minimise confusion, and because it is now the officially recommended approach, here we will teach you the Object Oriented approach to using MatPlotLib.</p>
 </div>
 <p>To import matplotlib, we use the following :</p>
-<div id="e9e666cc" class="cell" data-execution_count="1">
+<div id="68baadd6" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -1001,8 +1025,8 @@ Tip
 </div>
 </div>
 <p>Most of the time we’ll just have one axes object (that may have multiple lines / points plotted). For figures with multiple subplots (e.g.&nbsp;side by side, 4 in one figure etc), you’d need multiple axes objects (which we normally name axs) - see here for a simple tutorial : https://matplotlib.org/stable/users/explain/axes/axes_intro.html</p>
-<section id="our-first-plot" class="level2" data-number="39.1">
-<h2 data-number="39.1" class="anchored" data-anchor-id="our-first-plot"><span class="header-section-number">39.1</span> Our first plot</h2>
+<section id="our-first-plot" class="level2" data-number="42.1">
+<h2 data-number="42.1" class="anchored" data-anchor-id="our-first-plot"><span class="header-section-number">42.1</span> Our first plot</h2>
 <p>Let’s start by plotting a basic line plot.</p>
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
@@ -1010,35 +1034,35 @@ Tip
 <div id="qpyodide-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="plotting-multiple-lines" class="level2" data-number="39.2">
-<h2 data-number="39.2" class="anchored" data-anchor-id="plotting-multiple-lines"><span class="header-section-number">39.2</span> Plotting Multiple Lines</h2>
+<section id="plotting-multiple-lines" class="level2" data-number="42.2">
+<h2 data-number="42.2" class="anchored" data-anchor-id="plotting-multiple-lines"><span class="header-section-number">42.2</span> Plotting Multiple Lines</h2>
 <p>Having different line styles is useful when we have multiple lines in the same plot.</p>
 <p>It’s easy to add more lines - we just call the plot method of the axes object again.</p>
 <div id="qpyodide-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="adding-a-legend" class="level2" data-number="39.3">
-<h2 data-number="39.3" class="anchored" data-anchor-id="adding-a-legend"><span class="header-section-number">39.3</span> Adding a legend</h2>
+<section id="adding-a-legend" class="level2" data-number="42.3">
+<h2 data-number="42.3" class="anchored" data-anchor-id="adding-a-legend"><span class="header-section-number">42.3</span> Adding a legend</h2>
 <p>Adding a legend is also easy.</p>
 <p>We just specify we want one, and add the label for each line when we call the plot method.</p>
 <div id="qpyodide-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="exporting-matplotlib-charts" class="level2" data-number="39.4">
-<h2 data-number="39.4" class="anchored" data-anchor-id="exporting-matplotlib-charts"><span class="header-section-number">39.4</span> Exporting matplotlib charts</h2>
-<div id="3400fbcc" class="cell" data-execution_count="2">
+<section id="exporting-matplotlib-charts" class="level2" data-number="42.4">
+<h2 data-number="42.4" class="anchored" data-anchor-id="exporting-matplotlib-charts"><span class="header-section-number">42.4</span> Exporting matplotlib charts</h2>
+<div id="8ca1f4a8" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>figure_1.savefig(<span class="st">"figure_1.pdf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You can save it as a range of different file types.</p>
-<div id="68de6236" class="cell" data-execution_count="3">
+<div id="8c5e4a43" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>figure_1.savefig(<span class="st">"figure_1.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>And call it whatever you want!</p>
-<div id="43dc7d62" class="cell" data-execution_count="4">
+<div id="52a6beb1" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>figure_1.savefig(<span class="st">"my_plot.jpeg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Or put it in a different location, like a subfolder.</p>
-<div id="4f73ef29" class="cell" data-execution_count="5">
+<div id="646cae85" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>figure_1.savefig(<span class="st">"my_saved_plots/my_plot.jpeg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
@@ -1938,13 +1962,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro_to_oopp.html" class="pagination-link" aria-label="An Introduction to Object Oriented Python">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span>
+      <a href="./reusability.html" class="pagination-link" aria-label="Reusability">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Reusability</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./matplotlib_chart_types.html" class="pagination-link" aria-label="Chart types in matplotlib">
-        <span class="nav-page-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

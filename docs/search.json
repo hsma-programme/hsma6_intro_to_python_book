@@ -1260,167 +1260,326 @@
     ]
   },
   {
+    "objectID": "recap_oop.html",
+    "href": "recap_oop.html",
+    "title": "38  A recap of object oriented programming",
+    "section": "",
+    "text": "38.1 An example\nThe pseudocode (i.e. this won’t run in python - but gives you an idea of the structure) shows how we would set up a class and what instances of that class might look like.",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>A recap of object oriented programming</span>"
+    ]
+  },
+  {
+    "objectID": "recap_oop.html#an-example",
+    "href": "recap_oop.html#an-example",
+    "title": "38  A recap of object oriented programming",
+    "section": "",
+    "text": "38.1.1 Class\nCLASS : Ambulance\n\n**Attributes**\nname_of_trust : string\nreg_number : string\npatient_on_board : boolean\nsiren_on : boolean\n\n**Methods**\ndrive (speed : float)\npark (location : string)\nload_patient (patient_name : string)\nunload_patient (patient_name : string)\nturn_on_siren ()\nturn_off_siren ()\n\n\n\n38.1.2 Instances\ndans_ambulance\nname_of_trust = “Chalk NHS Trust”\nreg_number = CH41 LKS\npatient_on_board = False\nsiren_on = True\nsammis_ambulance\nname_of_trust = “Rosser Healthcare”\nreg_number = HS44 MAS\npatient_on_board = True\nsiren_on = True",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>A recap of object oriented programming</span>"
+    ]
+  },
+  {
+    "objectID": "recap_oop.html#constructors",
+    "href": "recap_oop.html#constructors",
+    "title": "38  A recap of object oriented programming",
+    "section": "38.2 Constructors",
+    "text": "38.2 Constructors\nA constructor defines what happens when an object is instantiated from a class (ie created from a blueprint).\nThe constructor essentially “constructs” the object, specifies the initial values for the attributes, and may even run some methods to start things off.\nThe constructor is itself a method within the class.\nIn our example, the constructor might set up the name of the trust and registration number, and specify that the siren is off and there’s no patient loaded at the start.",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>A recap of object oriented programming</span>"
+    ]
+  },
+  {
+    "objectID": "intro_to_oopp.html",
+    "href": "intro_to_oopp.html",
+    "title": "39  An Introduction to Object Oriented Python",
+    "section": "",
+    "text": "39.1 The structure of a python class\nLet’s look at how we write a Class in Python.\nWe use the class keyword, followed by whatever we want to call our Class to declare a class. Note - class names must start with a capital letter.\nclass MyClass:\n\n    def __init__(self, attribute_1, attribute_2):\n        self.attribute_1 = attribute_1\n        self.attribute_2 = attribute_2\n\n    def method_1(self):\n        print (\"This is method 1!\")\n\n    def method_2(self):\n        print (\"This is method 2!\")",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>An Introduction to Object Oriented Python</span>"
+    ]
+  },
+  {
+    "objectID": "intro_to_oopp.html#the-structure-of-a-python-class",
+    "href": "intro_to_oopp.html#the-structure-of-a-python-class",
+    "title": "39  An Introduction to Object Oriented Python",
+    "section": "",
+    "text": "39.1.1 The constructor\nThis is the constructor. It is the method that is automatically called whenever we say we want a new instance of our class (instantiation). The purpose is to set up the object ready to use.\n\ndef __init__(self, attribute_1, attribute_2):\n    self.attribute_1 = attribute_1\n    self.attribute_2 = attribute_2\n\nHere, the constructor assigns values to a couple of attributes for any newly created instance based on the two values passed in to it (ignore self - I’ll come back to that in a moment).\nThe double underscore before and after init indicates this is a dunder method (“dunder”= “double underscore”). These are also known as “magic methods”. They’re called automatically when needed.\n\n\n\n\n\n\nMe, myself, and Self\n\n\n\nself is an important concept in Object Oriented Coding in Python. Basically, self stores the instance of the class (ie the copy from the blueprint). It can be a bit weird to get your head around, particularly if you’re new to coding.\nWe declare self as the first input to any method definition in the class. It basically says “Run this class method on this instance” (eg on Dan’s ambulance). BUT, when we call the method, we don’t include self explicitly (Python does this for us, behind the scenes).\nWhenever we need to refer to something belonging to this instance, we say self. to say “Give me the x that belongs to you”. Eg give me the attribute value that you (Dan’s ambulance) is carrying. Or run the method that belongs to you.\nBasically, by using self we refer to the instance of the class (the individual object) rather than the Class itself (the blueprint).\nThis will make more sense as you see examples… Promise… :)\n\n\n\n\n39.1.2 Class methods\nThese are the methods (functions) that the class has. Every class needs at least a constructor, but we can add other things too.\nThese work exactly the same as any other functions, except we always pass in self as the first input in the method definition (even if there are no other inputs).\n\ndef method_1(self):\n    print (\"This is method 1!\")\n\ndef method_2(self):\n    print (\"This is method 2!\")",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>An Introduction to Object Oriented Python</span>"
+    ]
+  },
+  {
+    "objectID": "intro_to_oopp.html#an-example-python-class",
+    "href": "intro_to_oopp.html#an-example-python-class",
+    "title": "39  An Introduction to Object Oriented Python",
+    "section": "39.2 An example python class",
+    "text": "39.2 An example python class\nLet’s look at an example to make this a bit more real.\nLet’s see how we might translate our ambulance Class into Python.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n39.2.1 Instantiating our class (creating an instance of the class)\nWe’ve defined our ambulance class now, but, just as with functions, nothing will happen until we use it.\nSo let’s create an instance of the class (instantiation), and play with it a bit.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNote that nothing has been printed out at this point. That’s because we’ve just created the class, so all that’s run so far is the code inside the __init__ method, and there were no statements there that would generate an output.\nLet’s try using some of the class methods.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can also take a look at the attributes of the class.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n39.2.2 Multiple instances of the same class\nA key advantage of OOP is that we only need to define a class once, and then can have multiple instances of it doing different things.\nWhilst Dan’s taken his ambulance off (siren blaring) to the cake shop, maybe Sammi’s actually attending the scene of an incident…\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can see how certain attributes change over time as well.\nAt the moment, we have no patient in our ambulance.\nLet’s check the patient_on_board attribute.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNow let’s load another patient. To recap, this is what the load_patient method will do…\n\ndef load_patient(self, patient_name):\n    self.patient_on_board = True\n    print (f\"{patient_name} now on board\")\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNow, when we unload this patient, the attribute will change again!\nTo recap, this is what the unload_patient method will do…\n\ndef unload_patient(self, patient_name):\n    self.patient_on_board = False\n    print (f\"{patient_name} unloaded\")\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>An Introduction to Object Oriented Python</span>"
+    ]
+  },
+  {
+    "objectID": "inheritance.html",
+    "href": "inheritance.html",
+    "title": "40  Inheritance",
+    "section": "",
+    "text": "40.1 Inheritance in Python\nInheritance is really easy to do in Python.\nWe’ll start by creating our parent class.\nNote we don’t have to do anything special here - we just define our class as normal, but only containing the things we want to be common to all child classes.\nLet’s create our first child class.\nThe key bits here are as follows:\nclass Ambulance(Vehicle):\n    def __init__(self, reg_number):\n        # This calls the constructor of the parent (super), and passes the reg\n        # number across to it\n        super().__init__(reg_number)\nNotice when we create the Ambulance class, we put the Vehicle class inside the brackets at the beginning.\nThis tells the class to use the Vehicle class as the parent class.\nWe then need to run the line\nto call the constructor of the parent class.\nIn our case, we also want to pass the reg_number to the parent class, so our line looks like this.\nThe full class looks like this:\nYou can see that other than the __init__ method, the rest of the code (i.e. each method) is actually the same as our earlier ambulance code.\nLet’s create two more child classes: bus and car.\nWhen we want to instantiate an ambulance, we do it exactly the same as before.\nIt’s just we’ve saved ourselves having to rewrite some of the definitions that are common to vehicles.",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Inheritance</span>"
+    ]
+  },
+  {
+    "objectID": "inheritance.html#inheritance-in-python",
+    "href": "inheritance.html#inheritance-in-python",
+    "title": "40  Inheritance",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nsuper().__init__()\n\n\nsuper().__init__(reg_number)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nIf the child class contains no differences in its constructor from the parent class, then you don’t need to define the constructor at all in the child class.\n\nIt will automatically use the parent class constructor on instantiation.",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Inheritance</span>"
+    ]
+  },
+  {
+    "objectID": "reusability.html",
+    "href": "reusability.html",
+    "title": "41  Reusability",
+    "section": "",
+    "text": "Let’s look at an example. Here’s a file I created called Penchord_Wizardry.py.\n\nimport random\n\n# Class defining a Penchordian\nclass Penchordian :\n    def __init__(self, name):\n        self.name = name\n        self.is_a_wizard = False\n\n    def write_model(self, type_of_model):\n        print (f\"{self.name} is now writing a {type_of_model} model.\")\n\n    def tell_joke(self, prob_success):\n        if random.uniform(0,1) &lt; prob_success:\n            print (f\"{self.name} attempted a joke.  People loved it!\")\n        else:\n            print (f\"{self.name} attempted a joke.  It fell flat.\")\n\n# Function to turn someone into a wizard\n# Input subject must be an object with a \"name\" string attribute and a\n# \"is_a_wizard\" boolean attribute\ndef turn_into_a_wizard(subject):\n    subject.is_a_wizard = True\n    print (f\"{subject.name} is now a wizard.\")\n\nThen I’m going to create a new file in the same folder as Penchord_Wizardry.py.\n\n\n\n\n\n\nTip\n\n\n\nIt is possible to call in functions from a Python file stored in a different folder or subfolder - but it starts getting quite complicated to navigate to them in the code, so we won’t cover that today.\n\n\nAt the beginning of my new file I’m going to import Penchord_Wizardry to get access to the functions from Penchord_Wizardry.py.\n\n# import the entire Penchord_Wizardry module (the Penchordian class and the\n# turn_into_a_wizard function)\nimport Penchord_Wizardry\n\nimport random\n\nlist_of_penchordian_names = [\"Dan\", \"Sammi\", \"Kerry\", \"Mike\", \"Anna\", \"Tom\",\n                             \"Amy C\", \"Amy H\", \"Chrissie\"]\n\n# Randomly select three PenCHORDian names\n# random.sample selects three elements from a list without replacement\n# (if you want values to be able to be repicked (replacement), use\n# random.choices)\nchosen_penchordian_names = random.sample(list_of_penchordian_names, 3)\n\nlist_of_penchordians = []\n\n# Create some Penchordian objects using the definition from the imported\n# module\nfor name in chosen_penchordian_names:\n    list_of_penchordians.append(Penchord_Wizardry.Penchordian(name))\n\n# Call a couple of the class methods on the three created Penchordian objects\nfor penchordian in list_of_penchordians:\n    penchordian.write_model(\"Discrete Event Simulation\")\n    penchordian.tell_joke(0.1)\n\nKerry is now writing a Discrete Event Simulation model.\nKerry attempted a joke.  It fell flat.\nChrissie is now writing a Discrete Event Simulation model.\nChrissie attempted a joke.  It fell flat.\nAnna is now writing a Discrete Event Simulation model.\nAnna attempted a joke.  It fell flat.\n\n\nI can also choose just to import the bit(s) of the module I need, rather than the whole thing.\nHere we don’t import the class Penchordian, but we do import the function turn_into_a_wizard.\n\n\n\n\n\n\nTip\n\n\n\nNote that because we’ve imported the specific function by name, we can just then use turn_into_a_wizard.\n\n\n\n# just import the turn_into_a_wizard function\nfrom Penchord_Wizardry import turn_into_a_wizard\n\n# Define a new class called HSMA, which has two attributes - a name, and an\n# is_a_wizard boolean\nclass HSMA:\n    def __init__(self, name):\n        self.name = name\n        self.is_a_wizard = False\n\n# Create a new HSMA object, whose name is Gandalf\nmy_promising_HSMA = HSMA(\"Gandalf\")\n\n# Turn Gandalf into a wizard using the function we imported from the\n# Penchord_Wizardry module\nturn_into_a_wizard(my_promising_HSMA)\n\nGandalf is now a wizard.\n\n\nIn comparison, if we imported the whole module instead, our code would look like this:\n\n# just import the turn_into_a_wizard function\nimport Penchord_Wizardry\n\n# Define a new class called HSMA, which has two attributes - a name, and an\n# is_a_wizard boolean\nclass HSMA:\n    def __init__(self, name):\n        self.name = name\n        self.is_a_wizard = False\n\n# Create a new HSMA object, whose name is Gandalf\nmy_promising_HSMA = HSMA(\"Gandalf\")\n\n# Turn Gandalf into a wizard using the function we imported from the\n# Penchord_Wizardry module\nPenchord_Wizardry.turn_into_a_wizard(my_promising_HSMA)\n\nGandalf is now a wizard.",
+    "crumbs": [
+      "Object-Oriented Python",
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Reusability</span>"
+    ]
+  },
+  {
     "objectID": "intro_to_matplotlib.html",
     "href": "intro_to_matplotlib.html",
-    "title": "39  An Introduction to Matplotlib",
+    "title": "42  An Introduction to Matplotlib",
     "section": "",
-    "text": "39.1 Our first plot\nLet’s start by plotting a basic line plot.\nWe can easily change the style of the line(s) we’re plotting by adding inputs to the plot method of the axes object.",
+    "text": "42.1 Our first plot\nLet’s start by plotting a basic line plot.\nWe can easily change the style of the line(s) we’re plotting by adding inputs to the plot method of the axes object.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
     ]
   },
   {
     "objectID": "intro_to_matplotlib.html#our-first-plot",
     "href": "intro_to_matplotlib.html#our-first-plot",
-    "title": "39  An Introduction to Matplotlib",
+    "title": "42  An Introduction to Matplotlib",
     "section": "",
     "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
     ]
   },
   {
     "objectID": "intro_to_matplotlib.html#plotting-multiple-lines",
     "href": "intro_to_matplotlib.html#plotting-multiple-lines",
-    "title": "39  An Introduction to Matplotlib",
-    "section": "39.2 Plotting Multiple Lines",
-    "text": "39.2 Plotting Multiple Lines\nHaving different line styles is useful when we have multiple lines in the same plot.\nIt’s easy to add more lines - we just call the plot method of the axes object again.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "title": "42  An Introduction to Matplotlib",
+    "section": "42.2 Plotting Multiple Lines",
+    "text": "42.2 Plotting Multiple Lines\nHaving different line styles is useful when we have multiple lines in the same plot.\nIt’s easy to add more lines - we just call the plot method of the axes object again.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
     ]
   },
   {
     "objectID": "intro_to_matplotlib.html#adding-a-legend",
     "href": "intro_to_matplotlib.html#adding-a-legend",
-    "title": "39  An Introduction to Matplotlib",
-    "section": "39.3 Adding a legend",
-    "text": "39.3 Adding a legend\nAdding a legend is also easy.\nWe just specify we want one, and add the label for each line when we call the plot method.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "title": "42  An Introduction to Matplotlib",
+    "section": "42.3 Adding a legend",
+    "text": "42.3 Adding a legend\nAdding a legend is also easy.\nWe just specify we want one, and add the label for each line when we call the plot method.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
     ]
   },
   {
     "objectID": "intro_to_matplotlib.html#exporting-matplotlib-charts",
     "href": "intro_to_matplotlib.html#exporting-matplotlib-charts",
-    "title": "39  An Introduction to Matplotlib",
-    "section": "39.4 Exporting matplotlib charts",
-    "text": "39.4 Exporting matplotlib charts\n\nfigure_1.savefig(\"figure_1.pdf\")\n\nYou can save it as a range of different file types.\n\nfigure_1.savefig(\"figure_1.png\")\n\nAnd call it whatever you want!\n\nfigure_1.savefig(\"my_plot.jpeg\")\n\nOr put it in a different location, like a subfolder.\n\nfigure_1.savefig(\"my_saved_plots/my_plot.jpeg\")",
+    "title": "42  An Introduction to Matplotlib",
+    "section": "42.4 Exporting matplotlib charts",
+    "text": "42.4 Exporting matplotlib charts\n\nfigure_1.savefig(\"figure_1.pdf\")\n\nYou can save it as a range of different file types.\n\nfigure_1.savefig(\"figure_1.png\")\n\nAnd call it whatever you want!\n\nfigure_1.savefig(\"my_plot.jpeg\")\n\nOr put it in a different location, like a subfolder.\n\nfigure_1.savefig(\"my_saved_plots/my_plot.jpeg\")",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>An Introduction to Matplotlib</span>"
     ]
   },
   {
     "objectID": "matplotlib_chart_types.html",
     "href": "matplotlib_chart_types.html",
-    "title": "40  Chart types in matplotlib",
+    "title": "43  Chart types in matplotlib",
     "section": "",
-    "text": "40.1 Line Chart",
+    "text": "43.1 Line Chart",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
     ]
   },
   {
     "objectID": "matplotlib_chart_types.html#line-chart",
     "href": "matplotlib_chart_types.html#line-chart",
-    "title": "40  Chart types in matplotlib",
+    "title": "43  Chart types in matplotlib",
     "section": "",
     "text": "Please enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
     ]
   },
   {
     "objectID": "matplotlib_chart_types.html#bar-chart",
     "href": "matplotlib_chart_types.html#bar-chart",
-    "title": "40  Chart types in matplotlib",
-    "section": "40.2 Bar Chart",
-    "text": "40.2 Bar Chart\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "title": "43  Chart types in matplotlib",
+    "section": "43.2 Bar Chart",
+    "text": "43.2 Bar Chart\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
     ]
   },
   {
     "objectID": "matplotlib_chart_types.html#scatter-plot",
     "href": "matplotlib_chart_types.html#scatter-plot",
-    "title": "40  Chart types in matplotlib",
-    "section": "40.3 Scatter Plot",
-    "text": "40.3 Scatter Plot\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "title": "43  Chart types in matplotlib",
+    "section": "43.3 Scatter Plot",
+    "text": "43.3 Scatter Plot\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
     ]
   },
   {
     "objectID": "matplotlib_chart_types.html#more-chart-types",
     "href": "matplotlib_chart_types.html#more-chart-types",
-    "title": "40  Chart types in matplotlib",
-    "section": "40.4 More chart types",
-    "text": "40.4 More chart types\nYou can find sample code for a wide range of chart types in the matplotlib documentation.",
+    "title": "43  Chart types in matplotlib",
+    "section": "43.4 More chart types",
+    "text": "43.4 More chart types\nYou can find sample code for a wide range of chart types in the matplotlib documentation.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Chart types in matplotlib</span>"
     ]
   },
   {
     "objectID": "other_plotting_libraries.html",
     "href": "other_plotting_libraries.html",
-    "title": "41  Other Plotting Libraries",
+    "title": "44  Other Plotting Libraries",
     "section": "",
-    "text": "41.1 Plotnine\nIf you’ve come from R and made use of the ggplot library, you might like plotnine!\nThis library makes use of the grammar of graphics to build graphs up in steps.\nfrom plotnine import ggplot, geom_line, aes\nfrom plotnine.data import mtcars\nimport pandas as pd\n\ndata = pd.DataFrame()\ndata[\"time\"] = [11,12,23,31,46,52,61,72,83]\ndata[\"count\"] = [23,61,65,81,60,15,29,40,42]\n\n\n(\n    ggplot(data, aes(\"time\", \"count\"))\n    + geom_line()\n)\nPlotnine makes it easy to split data over multiple plots by a category.\nThis example shows a plot of the numbers of miles per gallon achieved by cars with a different number of horsepower, split by flat engines (0) and v-shaped engines (1).\nfrom plotnine.data import mtcars\n\nmtcars.head()\n\n\n\n\n\n\n\n\n\nname\nmpg\ncyl\ndisp\nhp\ndrat\nwt\nqsec\nvs\nam\ngear\ncarb\n\n\n\n\n0\nMazda RX4\n21.0\n6\n160.0\n110\n3.90\n2.620\n16.46\n0\n1\n4\n4\n\n\n1\nMazda RX4 Wag\n21.0\n6\n160.0\n110\n3.90\n2.875\n17.02\n0\n1\n4\n4\n\n\n2\nDatsun 710\n22.8\n4\n108.0\n93\n3.85\n2.320\n18.61\n1\n1\n4\n1\n\n\n3\nHornet 4 Drive\n21.4\n6\n258.0\n110\n3.08\n3.215\n19.44\n1\n0\n3\n1\n\n\n4\nHornet Sportabout\n18.7\n8\n360.0\n175\n3.15\n3.440\n17.02\n0\n0\n3\n2\nfrom plotnine import ggplot, geom_point, aes, stat_smooth, facet_wrap\n(\n    ggplot(mtcars, aes(\"hp\", \"mpg\", color=\"factor(vs)\"))\n    + geom_point()\n    + stat_smooth(method=\"lm\")\n    + facet_wrap(\"vs\")\n)\nYou can read more about the package, and see more code examples, here.",
+    "text": "44.1 Plotnine\nIf you’ve come from R and made use of the ggplot library, you might like plotnine!\nThis library makes use of the grammar of graphics to build graphs up in steps.\nfrom plotnine import ggplot, geom_line, aes\nfrom plotnine.data import mtcars\nimport pandas as pd\n\ndata = pd.DataFrame()\ndata[\"time\"] = [11,12,23,31,46,52,61,72,83]\ndata[\"count\"] = [23,61,65,81,60,15,29,40,42]\n\n\n(\n    ggplot(data, aes(\"time\", \"count\"))\n    + geom_line()\n)\nPlotnine makes it easy to split data over multiple plots by a category.\nThis example shows a plot of the numbers of miles per gallon achieved by cars with a different number of horsepower, split by flat engines (0) and v-shaped engines (1).\nfrom plotnine.data import mtcars\n\nmtcars.head()\n\n\n\n\n\n\n\n\n\nname\nmpg\ncyl\ndisp\nhp\ndrat\nwt\nqsec\nvs\nam\ngear\ncarb\n\n\n\n\n0\nMazda RX4\n21.0\n6\n160.0\n110\n3.90\n2.620\n16.46\n0\n1\n4\n4\n\n\n1\nMazda RX4 Wag\n21.0\n6\n160.0\n110\n3.90\n2.875\n17.02\n0\n1\n4\n4\n\n\n2\nDatsun 710\n22.8\n4\n108.0\n93\n3.85\n2.320\n18.61\n1\n1\n4\n1\n\n\n3\nHornet 4 Drive\n21.4\n6\n258.0\n110\n3.08\n3.215\n19.44\n1\n0\n3\n1\n\n\n4\nHornet Sportabout\n18.7\n8\n360.0\n175\n3.15\n3.440\n17.02\n0\n0\n3\n2\nfrom plotnine import ggplot, geom_point, aes, stat_smooth, facet_wrap\n(\n    ggplot(mtcars, aes(\"hp\", \"mpg\", color=\"factor(vs)\"))\n    + geom_point()\n    + stat_smooth(method=\"lm\")\n    + facet_wrap(\"vs\")\n)\nYou can read more about the package, and see more code examples, here.",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Other Plotting Libraries</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Other Plotting Libraries</span>"
     ]
   },
   {
     "objectID": "other_plotting_libraries.html#plotnine",
     "href": "other_plotting_libraries.html#plotnine",
-    "title": "41  Other Plotting Libraries",
+    "title": "44  Other Plotting Libraries",
     "section": "",
     "text": "Tip\n\n\n\nIn your own environment on your local machine, you will need to run\n\npip install plotnine",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Other Plotting Libraries</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Other Plotting Libraries</span>"
     ]
   },
   {
     "objectID": "other_plotting_libraries.html#plotly",
     "href": "other_plotting_libraries.html#plotly",
-    "title": "41  Other Plotting Libraries",
-    "section": "41.2 Plotly",
-    "text": "41.2 Plotly\nPlotly is a very powerful library for creating interactive graphs.\nThere are several different ways to create plotly graphs, with the more complex methods giving you more control over the end product.\nHowever, the plotly.express module is a great place to start.\n\nimport pandas as pd\nimport plotly.express as px\n\ndata = pd.DataFrame()\ndata[\"time\"] = [11,12,23,31,46,52,61,72,83]\ndata[\"count\"] = [23,61,65,81,60,15,29,40,42]\n\ndata.head()\n\n\n\n\n\n\n\n\n\ntime\ncount\n\n\n\n\n0\n11\n23\n\n\n1\n12\n61\n\n\n2\n23\n65\n\n\n3\n31\n81\n\n\n4\n46\n60\n\n\n\n\n\n\n\n\n\npx.line(data, x=\"time\", y=\"count\")\n\n                                                \n\n\n\n41.2.1 Bar Chart\n\ndata = pd.DataFrame()\ndata[\"hsma_trainers\"] = [\"Dan\", \"Sammi\", \"Amy\"]\ndata[\"hours_of_teaching\"] = [96, 54, 6]\n\ndata\n\n\n\n\n\n\n\n\n\nhsma_trainers\nhours_of_teaching\n\n\n\n\n0\nDan\n96\n\n\n1\nSammi\n54\n\n\n2\nAmy\n6\n\n\n\n\n\n\n\n\n\npx.bar(data, x=\"hsma_trainers\", y=\"hours_of_teaching\")\n\n                                                \n\n\n\n\n41.2.2 Scatter Plot\n\ndata = pd.DataFrame()\ndata[\"a\"] = [11,52,61,72,83,12,23,31,46]\ndata[\"b\"] = [23,61,65,81,60,15,29,40,42]\n\ndata\n\n\n\n\n\n\n\n\n\na\nb\n\n\n\n\n0\n11\n23\n\n\n1\n52\n61\n\n\n2\n61\n65\n\n\n3\n72\n81\n\n\n4\n83\n60\n\n\n5\n12\n15\n\n\n6\n23\n29\n\n\n7\n31\n40\n\n\n8\n46\n42\n\n\n\n\n\n\n\n\n\npx.scatter(data, x=\"a\", y=\"b\")",
+    "title": "44  Other Plotting Libraries",
+    "section": "44.2 Plotly",
+    "text": "44.2 Plotly\nPlotly is a very powerful library for creating interactive graphs.\nThere are several different ways to create plotly graphs, with the more complex methods giving you more control over the end product.\nHowever, the plotly.express module is a great place to start.\n\nimport pandas as pd\nimport plotly.express as px\n\ndata = pd.DataFrame()\ndata[\"time\"] = [11,12,23,31,46,52,61,72,83]\ndata[\"count\"] = [23,61,65,81,60,15,29,40,42]\n\ndata.head()\n\n\n\n\n\n\n\n\n\ntime\ncount\n\n\n\n\n0\n11\n23\n\n\n1\n12\n61\n\n\n2\n23\n65\n\n\n3\n31\n81\n\n\n4\n46\n60\n\n\n\n\n\n\n\n\n\npx.line(data, x=\"time\", y=\"count\")\n\n                                                \n\n\n\n44.2.1 Bar Chart\n\ndata = pd.DataFrame()\ndata[\"hsma_trainers\"] = [\"Dan\", \"Sammi\", \"Amy\"]\ndata[\"hours_of_teaching\"] = [96, 54, 6]\n\ndata\n\n\n\n\n\n\n\n\n\nhsma_trainers\nhours_of_teaching\n\n\n\n\n0\nDan\n96\n\n\n1\nSammi\n54\n\n\n2\nAmy\n6\n\n\n\n\n\n\n\n\n\npx.bar(data, x=\"hsma_trainers\", y=\"hours_of_teaching\")\n\n                                                \n\n\n\n\n44.2.2 Scatter Plot\n\ndata = pd.DataFrame()\ndata[\"a\"] = [11,52,61,72,83,12,23,31,46]\ndata[\"b\"] = [23,61,65,81,60,15,29,40,42]\n\ndata\n\n\n\n\n\n\n\n\n\na\nb\n\n\n\n\n0\n11\n23\n\n\n1\n52\n61\n\n\n2\n61\n65\n\n\n3\n72\n81\n\n\n4\n83\n60\n\n\n5\n12\n15\n\n\n6\n23\n29\n\n\n7\n31\n40\n\n\n8\n46\n42\n\n\n\n\n\n\n\n\n\npx.scatter(data, x=\"a\", y=\"b\")",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Other Plotting Libraries</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Other Plotting Libraries</span>"
     ]
   },
   {
     "objectID": "other_plotting_libraries.html#seaborn",
     "href": "other_plotting_libraries.html#seaborn",
-    "title": "41  Other Plotting Libraries",
-    "section": "41.3 Seaborn",
-    "text": "41.3 Seaborn\nSeaborn builds on matplotlib. It’s good at creating many kinds of visualisations, but does things a little differently to matplotlib.\nYou can take a look at its documentation to see if you like the way it’s written.\nIf you’re struggling to make a graph in matplotlib, it’s worth checking to see if Seaborn provides this graph type instead!",
+    "title": "44  Other Plotting Libraries",
+    "section": "44.3 Seaborn",
+    "text": "44.3 Seaborn\nSeaborn builds on matplotlib. It’s good at creating many kinds of visualisations, but does things a little differently to matplotlib.\nYou can take a look at its documentation to see if you like the way it’s written.\nIf you’re struggling to make a graph in matplotlib, it’s worth checking to see if Seaborn provides this graph type instead!",
     "crumbs": [
       "Graphs with matplotlib",
-      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Other Plotting Libraries</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Other Plotting Libraries</span>"
+    ]
+  },
+  {
+    "objectID": "cheatsheets.html",
+    "href": "cheatsheets.html",
+    "title": "45  Cheatsheets",
+    "section": "",
+    "text": "45.1 Python\nPython Cheatsheet",
+    "crumbs": [
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Cheatsheets</span>"
+    ]
+  },
+  {
+    "objectID": "cheatsheets.html#pandas",
+    "href": "cheatsheets.html#pandas",
+    "title": "45  Cheatsheets",
+    "section": "45.2 Pandas",
+    "text": "45.2 Pandas\nDatacamp - Pandas Cheatsheet\nPandas Documentation - Pandas Cheatsheet\nPandas Documentation - R to Pandas Cheatsheet",
+    "crumbs": [
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Cheatsheets</span>"
+    ]
+  },
+  {
+    "objectID": "cheatsheets.html#numpy",
+    "href": "cheatsheets.html#numpy",
+    "title": "45  Cheatsheets",
+    "section": "45.3 Numpy",
+    "text": "45.3 Numpy\nDatacamp - Numpy Cheatsheet",
+    "crumbs": [
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Cheatsheets</span>"
+    ]
+  },
+  {
+    "objectID": "cheatsheets.html#anaconda",
+    "href": "cheatsheets.html#anaconda",
+    "title": "45  Cheatsheets",
+    "section": "45.4 Anaconda",
+    "text": "45.4 Anaconda\nConda Cheatsheet",
+    "crumbs": [
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Cheatsheets</span>"
+    ]
+  },
+  {
+    "objectID": "cheatsheets.html#matplotlib",
+    "href": "cheatsheets.html#matplotlib",
+    "title": "45  Cheatsheets",
+    "section": "45.5 Matplotlib",
+    "text": "45.5 Matplotlib\nMatplotlib Cheatsheet",
+    "crumbs": [
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Cheatsheets</span>"
+    ]
+  },
+  {
+    "objectID": "cheatsheets.html#converting-between-r-and-python",
+    "href": "cheatsheets.html#converting-between-r-and-python",
+    "title": "45  Cheatsheets",
+    "section": "45.6 Converting between R and Python",
+    "text": "45.6 Converting between R and Python\nMIT - R to Python Cheatsheet\nPandas Documentation - R to Pandas Cheatsheet",
+    "crumbs": [
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Cheatsheets</span>"
     ]
   },
   {
     "objectID": "further_reading.html",
     "href": "further_reading.html",
-    "title": "42  Further Reading",
+    "title": "46  Further Reading",
     "section": "",
     "text": "You can find a list of resources for Python beginners in the Google Sheet below.",
     "crumbs": [
-      "<span class='chapter-number'>42</span>  <span class='chapter-title'>Further Reading</span>"
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Further Reading</span>"
     ]
   }
 ]

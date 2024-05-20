@@ -245,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"for x in range(10):\n    print(x)","options":{"context":"interactive","results":"markup","fig-height":5,"read-only":"false","out-width":"700px","warning":"true","label":"","comment":"","output":"true","message":"true","autorun":"","classes":"","dpi":72,"fig-cap":"","fig-width":7,"out-height":""},"id":1},{"code":"for x in range(10, 20):\n    print(x)","options":{"context":"interactive","results":"markup","fig-height":5,"read-only":"false","out-width":"700px","warning":"true","label":"","comment":"","output":"true","message":"true","autorun":"","classes":"","dpi":72,"fig-cap":"","fig-width":7,"out-height":""},"id":2},{"code":"for x in range(2, 30, 2):\n    print(x)","options":{"context":"interactive","results":"markup","fig-height":5,"read-only":"false","out-width":"700px","warning":"true","label":"","comment":"","output":"true","message":"true","autorun":"","classes":"","dpi":72,"fig-cap":"","fig-width":7,"out-height":""},"id":3},{"code":"for x in range(10, 0, -1):\n    print(x)","options":{"context":"interactive","results":"markup","fig-height":5,"read-only":"false","out-width":"700px","warning":"true","label":"","comment":"","output":"true","message":"true","autorun":"","classes":"","dpi":72,"fig-cap":"","fig-width":7,"out-height":""},"id":4},{"code":"my_list = [1, 10, \"Dan\", True, \"HSMA\"]\n\nfor element in my_list:\n    print(element)","options":{"context":"interactive","results":"markup","fig-height":5,"read-only":"false","out-width":"700px","warning":"true","label":"","comment":"","output":"true","message":"true","autorun":"","classes":"","dpi":72,"fig-cap":"","fig-width":7,"out-height":""},"id":5},{"code":"total = 0\n\nfor x in range(10):\n    total = total + x\n    print(total)\n\n    if total > 5:\n        print(\"Break condition triggered!\")\n        break","options":{"context":"interactive","results":"markup","fig-height":5,"read-only":"false","out-width":"700px","warning":"true","label":"","comment":"","output":"true","message":"true","autorun":"","classes":"","dpi":72,"fig-cap":"","fig-width":7,"out-height":""},"id":6}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"for x in range(10):\n    print(x)","options":{"results":"markup","message":"true","fig-cap":"","out-width":"700px","context":"interactive","output":"true","classes":"","out-height":"","fig-width":7,"warning":"true","comment":"","autorun":"","label":"","dpi":72,"read-only":"false","fig-height":5}},{"id":2,"code":"for x in range(10, 20):\n    print(x)","options":{"results":"markup","message":"true","fig-cap":"","out-width":"700px","context":"interactive","output":"true","classes":"","out-height":"","fig-width":7,"warning":"true","comment":"","autorun":"","label":"","dpi":72,"read-only":"false","fig-height":5}},{"id":3,"code":"for x in range(2, 30, 2):\n    print(x)","options":{"results":"markup","message":"true","fig-cap":"","out-width":"700px","context":"interactive","output":"true","classes":"","out-height":"","fig-width":7,"warning":"true","comment":"","autorun":"","label":"","dpi":72,"read-only":"false","fig-height":5}},{"id":4,"code":"for x in range(10, 0, -1):\n    print(x)","options":{"results":"markup","message":"true","fig-cap":"","out-width":"700px","context":"interactive","output":"true","classes":"","out-height":"","fig-width":7,"warning":"true","comment":"","autorun":"","label":"","dpi":72,"read-only":"false","fig-height":5}},{"id":5,"code":"my_list = [1, 10, \"Dan\", True, \"HSMA\"]\n\nfor element in my_list:\n    print(element)","options":{"results":"markup","message":"true","fig-cap":"","out-width":"700px","context":"interactive","output":"true","classes":"","out-height":"","fig-width":7,"warning":"true","comment":"","autorun":"","label":"","dpi":72,"read-only":"false","fig-height":5}},{"id":6,"code":"total = 0\n\nfor x in range(10):\n    total = total + x\n    print(total)\n\n    if total > 5:\n        print(\"Break condition triggered!\")\n        break","options":{"results":"markup","message":"true","fig-cap":"","out-width":"700px","context":"interactive","output":"true","classes":"","out-height":"","fig-width":7,"warning":"true","comment":"","autorun":"","label":"","dpi":72,"read-only":"false","fig-height":5}}];
 
 
 </script>
@@ -850,8 +850,26 @@ globalThis._qpyodideGetInstance = function() {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./recap_oop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./intro_to_oopp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inheritance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Inheritance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./reusability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Reusability</span></span></a>
   </div>
 </li>
       </ul>
@@ -868,27 +886,33 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>

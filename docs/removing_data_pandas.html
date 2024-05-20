@@ -245,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":1,"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":2,"code":"df.head()"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":3,"code":"df_no_names = df.drop([\"Name\"], axis=1)\n\ndf_no_names.head()"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":4,"code":"df_no_alfred = df.drop([90154])\n\ndf_no_alfred"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":5,"code":"df[df[\"County\"] != \"Cornwall\"]"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":6,"code":"admissions_data= {\n  'Patient ID': [105,243,105,105,316],\n  'Age':[76,31,76,76,52],\n  'Admissions':[3,1,3,3,2]\n}\n\nadmissions_df = pd.DataFrame(admissions_data)\n\nadmissions_df"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":7,"code":"no_dup_admissions_df = admissions_df.drop_duplicates()\n\nno_dup_admissions_df"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":8,"code":"admissions_df.drop_duplicates(keep='last')"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":9,"code":"admissions_data_new = {\n  'Patient ID': [105,243,105,105,316],\n  'Age':[76,31,76,76,52],\n  'Admissions':[3,1,3,4,2] # The penultimate value has changed here\n}\n\nadmissions_df_new = pd.DataFrame(admissions_data_new)\n\nadmissions_df_new"},{"options":{"warning":"true","fig-height":5,"output":"true","read-only":"false","fig-width":7,"comment":"","autorun":"","dpi":72,"context":"interactive","message":"true","classes":"","fig-cap":"","out-height":"","out-width":"700px","results":"markup","label":""},"id":10,"code":"admissions_df.drop_duplicates(subset=[\"Admissions\"])"}];
+globalThis.qpyodideCellDetails = [{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":1,"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":2,"code":"df.head()"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":3,"code":"df_no_names = df.drop([\"Name\"], axis=1)\n\ndf_no_names.head()"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":4,"code":"df_no_alfred = df.drop([90154])\n\ndf_no_alfred"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":5,"code":"df[df[\"County\"] != \"Cornwall\"]"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":6,"code":"admissions_data= {\n  'Patient ID': [105,243,105,105,316],\n  'Age':[76,31,76,76,52],\n  'Admissions':[3,1,3,3,2]\n}\n\nadmissions_df = pd.DataFrame(admissions_data)\n\nadmissions_df"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":7,"code":"no_dup_admissions_df = admissions_df.drop_duplicates()\n\nno_dup_admissions_df"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":8,"code":"admissions_df.drop_duplicates(keep='last')"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":9,"code":"admissions_data_new = {\n  'Patient ID': [105,243,105,105,316],\n  'Age':[76,31,76,76,52],\n  'Admissions':[3,1,3,4,2] # The penultimate value has changed here\n}\n\nadmissions_df_new = pd.DataFrame(admissions_data_new)\n\nadmissions_df_new"},{"options":{"dpi":72,"out-height":"","warning":"true","read-only":"false","label":"","output":"true","comment":"","message":"true","out-width":"700px","fig-width":7,"results":"markup","classes":"","fig-cap":"","fig-height":5,"autorun":"","context":"interactive"},"id":10,"code":"admissions_df.drop_duplicates(subset=[\"Admissions\"])"}];
 
 
 </script>
@@ -850,8 +850,26 @@ globalThis._qpyodideGetInstance = function() {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./recap_oop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./intro_to_oopp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inheritance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Inheritance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./reusability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Reusability</span></span></a>
   </div>
 </li>
       </ul>
@@ -868,27 +886,33 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>

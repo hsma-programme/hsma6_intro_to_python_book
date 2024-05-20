@@ -69,12 +69,16 @@ book:
     - exercise_pandas.qmd
   - part: "Object-Oriented Python"
     chapters:
+    - recap_oop.qmd
     - intro_to_oopp.qmd
+    - inheritance.qmd
+    - reusability.qmd
   - part: "Graphs with matplotlib"
     chapters:
     - intro_to_matplotlib.qmd
     - matplotlib_chart_types.qmd
     - other_plotting_libraries.qmd
+  - cheatsheets.qmd
   - further_reading.qmd
   cover-image: cover.jpeg
   favicon: resources/logos/hsma_logo_transparent_background_large.png

@@ -245,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        print(\"Over 100!\")\n    else:\n        print(\"Under 100!\")"},{"id":2,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nmultiply_and_check(5, 7)"},{"id":3,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"multiply_and_check(5, 7)\n\nmultiply_and_check(24, 6)\n\nmultiply_and_check(2, 100)"},{"id":4,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nthe_result = multiply_and_check(5, 7)\n\nprint(the_result)"},{"id":5,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nprint(multiply_and_check(5, 7))"},{"id":6,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        print(\"Over 100!\")\n    else:\n        print(\"Under 100!\")\n\nmy_special_number = 42\nmy_other_special_number = 13\n\nmultiply_and_check(my_special_number, my_other_special_number)\n\nmy_third_special_number = 101\nmultiply_and_check(my_special_number, my_third_special_number)"},{"id":7,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"\ndef say_hello():\n    print(\"Hello! Welcome to your new Chalk computer! We hope you enjoy\")\n    print(\"using the vast 128k of RAM, and 1Mhz processor. For help, just\")\n    print(\"type ?\")\n\nsay_hello()"},{"id":8,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"\nimport random\n\ndef generate_three_unique_random_integers(low, high):\n    number_1 = random.randint(low, high)\n\n    while True:\n        number_2 = random.randint(low, high)\n        if number_2 != number_1:\n            break\n\n    while True:\n        number_3 = random.randint(low, high)\n        if number_3 != number_1 and number_3 != number_2:\n            break\n\n    return number_1, number_2, number_3\n\nnum_1, num_2, num_3 = generate_three_unique_random_integers(1, 10)\n\nprint (num_1)\nprint (num_2)\nprint (num_3)\n"},{"id":9,"options":{"output":"true","out-height":"","results":"markup","read-only":"false","message":"true","warning":"true","classes":"","context":"interactive","fig-cap":"","dpi":72,"fig-height":5,"out-width":"700px","comment":"","label":"","fig-width":7,"autorun":""},"code":"\n\nimport random\n\ndef generate_three_unique_random_integers(low, high):\n    number_1 = random.randint(low, high)\n\n    while True:\n        number_2 = random.randint(low, high)\n        if number_2 != number_1:\n            break\n\n    while True:\n        number_3 = random.randint(low, high)\n        if number_3 != number_1 and number_3 != number_2:\n            break\n\n    returned_list = [number_1, number_2, number_3]\n    return returned_list\n\nreturned_list = generate_three_unique_random_integers(1, 10)\n\nprint(returned_list)\n\nprint (returned_list[0])\nprint (returned_list[1])\nprint (returned_list[2])\n"}];
+globalThis.qpyodideCellDetails = [{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        print(\"Over 100!\")\n    else:\n        print(\"Under 100!\")","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":1},{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nmultiply_and_check(5, 7)","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":2},{"code":"multiply_and_check(5, 7)\n\nmultiply_and_check(24, 6)\n\nmultiply_and_check(2, 100)","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":3},{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nthe_result = multiply_and_check(5, 7)\n\nprint(the_result)","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":4},{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nprint(multiply_and_check(5, 7))","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":5},{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        print(\"Over 100!\")\n    else:\n        print(\"Under 100!\")\n\nmy_special_number = 42\nmy_other_special_number = 13\n\nmultiply_and_check(my_special_number, my_other_special_number)\n\nmy_third_special_number = 101\nmultiply_and_check(my_special_number, my_third_special_number)","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":6},{"code":"\ndef say_hello():\n    print(\"Hello! Welcome to your new Chalk computer! We hope you enjoy\")\n    print(\"using the vast 128k of RAM, and 1Mhz processor. For help, just\")\n    print(\"type ?\")\n\nsay_hello()","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":7},{"code":"\nimport random\n\ndef generate_three_unique_random_integers(low, high):\n    number_1 = random.randint(low, high)\n\n    while True:\n        number_2 = random.randint(low, high)\n        if number_2 != number_1:\n            break\n\n    while True:\n        number_3 = random.randint(low, high)\n        if number_3 != number_1 and number_3 != number_2:\n            break\n\n    return number_1, number_2, number_3\n\nnum_1, num_2, num_3 = generate_three_unique_random_integers(1, 10)\n\nprint (num_1)\nprint (num_2)\nprint (num_3)\n","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":8},{"code":"\n\nimport random\n\ndef generate_three_unique_random_integers(low, high):\n    number_1 = random.randint(low, high)\n\n    while True:\n        number_2 = random.randint(low, high)\n        if number_2 != number_1:\n            break\n\n    while True:\n        number_3 = random.randint(low, high)\n        if number_3 != number_1 and number_3 != number_2:\n            break\n\n    returned_list = [number_1, number_2, number_3]\n    return returned_list\n\nreturned_list = generate_three_unique_random_integers(1, 10)\n\nprint(returned_list)\n\nprint (returned_list[0])\nprint (returned_list[1])\nprint (returned_list[2])\n","options":{"message":"true","read-only":"false","comment":"","results":"markup","out-width":"700px","fig-width":7,"label":"","fig-cap":"","context":"interactive","warning":"true","out-height":"","classes":"","autorun":"","fig-height":5,"output":"true","dpi":72},"id":9}];
 
 
 </script>
@@ -850,8 +850,26 @@ globalThis._qpyodideGetInstance = function() {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./recap_oop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./intro_to_oopp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inheritance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Inheritance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./reusability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Reusability</span></span></a>
   </div>
 </li>
       </ul>
@@ -868,27 +886,33 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>
