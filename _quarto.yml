@@ -67,6 +67,14 @@ book:
     - aggregating_pandas.qmd
     - sorting_previewing_more_pandas.qmd
     - exercise_pandas.qmd
+  - part: "Object-Oriented Python"
+    chapters:
+    - intro_to_oopp.qmd
+  - part: "Graphs with matplotlib"
+    chapters:
+    - intro_to_matplotlib.qmd
+    - matplotlib_chart_types.qmd
+    - other_plotting_libraries.qmd
   - further_reading.qmd
   cover-image: cover.jpeg
   favicon: resources/logos/hsma_logo_transparent_background_large.png

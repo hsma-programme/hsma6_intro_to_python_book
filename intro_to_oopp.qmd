@@ -1,0 +1,6 @@
+---
+filters:
+  - pyodide
+---
+
+# An Introduction to Object Oriented Python
