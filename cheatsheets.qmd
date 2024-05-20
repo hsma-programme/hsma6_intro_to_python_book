@@ -1,0 +1,31 @@
+# Cheatsheets
+
+## Python
+
+[Python Cheatsheet](https://www.datacamp.com/cheat-sheet/getting-started-with-python-cheat-sheet)
+
+## Pandas
+
+[Datacamp - Pandas Cheatsheet](https://images.datacamp.com/image/upload/v1676302204/Marketing/Blog/Pandas_Cheat_Sheet.pdf)
+
+[Pandas Documentation - Pandas Cheatsheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+
+[Pandas Documentation - R to Pandas Cheatsheet](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_r.html)
+
+## Numpy
+
+[Datacamp - Numpy Cheatsheet](https://images.datacamp.com/image/upload/v1676302459/Marketing/Blog/Numpy_Cheat_Sheet.pdf)
+
+## Anaconda
+
+[Conda Cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+
+## Matplotlib
+
+[Matplotlib Cheatsheet](https://matplotlib.org/cheatsheets/)
+
+## Converting between R and Python
+
+[MIT - R to Python Cheatsheet](https://www.mit.edu/~amidi/teaching/data-science-tools/conversion-guide/r-python-data-manipulation/#main-concepts)
+
+[Pandas Documentation - R to Pandas Cheatsheet](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_r.html)

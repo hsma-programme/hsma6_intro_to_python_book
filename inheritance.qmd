@@ -1,0 +1,148 @@
+---
+filters:
+  - pyodide
+---
+
+# Inheritance
+
+In Object Oriented Programming, we can also have classes that are based on other classes.  This is known as inheritance.
+
+In our example, we could create a Vehicle class that has attributes and methods applicable to all vehicles, and then create an Ambulance class which inherits this stuff but adds its own ambulance-specific things too.
+
+This improves efficiency if we need to write multiple classes that are similar.
+
+In this example, the Vehicle class would be known as the parent and the Ambulance class as the child.
+
+![](assets/2024-05-20-12-18-22.png)
+
+You can see how powerful this may be if we have lots of different child classes.
+
+![](assets/2024-05-20-12-18-58.png)
+
+## Inheritance in Python
+
+Inheritance is really easy to do in Python.
+
+We'll start by creating our parent class.
+
+Note we don't have to do anything special here - we just define our class as normal, but only containing the things we want to be common to all child classes.
+
+```{pyodide-python}
+class Vehicle:
+    def __init__(self, reg_number):
+        self.reg_number = reg_number
+
+    def drive(self, speed):
+        print (f"Now driving at {speed}mph")
+
+    def park(self, location):
+        print (f"Now parked at {location}")
+```
+
+Let's create our first child class.
+
+The key bits here are as follows:
+
+```{python}
+#| eval: false
+
+class Ambulance(Vehicle):
+    def __init__(self, reg_number):
+        # This calls the constructor of the parent (super), and passes the reg
+        # number across to it
+        super().__init__(reg_number)
+```
+
+Notice when we create the `Ambulance` class, we put the `Vehicle` class inside the brackets at the beginning.
+
+This tells the class to use the `Vehicle` class as the parent class.
+
+We then need to run the line
+```
+super().__init__()
+```
+to call the constructor of the parent class.
+
+In our case, we also want to pass the `reg_number` to the parent class, so our line looks like this.
+```
+super().__init__(reg_number)
+```
+
+The full class looks like this:
+
+```{pyodide-python}
+# We pass Vehicle into Ambulance.  This defines Vehicle as the parent, and
+# Ambulance as the child.
+class Ambulance(Vehicle):
+    def __init__(self, reg_number):
+        # This calls the constructor of the parent (super), and passes the reg
+        # number across to it
+        super().__init__(reg_number)
+
+        self.patient_on_board = False
+        self.siren_on = False
+
+    # We don't need to redefine drive() and park() (unless we want to change
+    # them for an ambulance) as we inherit them automatically.  So we just
+    # define any methods unique to an ambulance.  (If we do want to change one
+    # of the inherited methods, we just redefine them here, with the same name)
+    def load_patient(self, patient_name):
+        self.patient_on_board = True
+        print (f"{patient_name} now on board")
+
+    def unload_patient(self, patient_name):
+        self.patient_on_board = False
+        print (f"{patient_name} unloaded")
+
+    def turn_on_siren(self):
+        self.siren_on = True
+        print ("Nee nor nee nor nee nor nee nor nee nor")
+
+    def turn_off_siren(self):
+        self.siren_on = False
+```
+
+You can see that other than the `__init__` method, the rest of the code (i.e. each method) is actually the same as our earlier ambulance code.
+
+Let's create two more child classes: `bus` and `car`.
+
+```{pyodide-python}
+class Bus(Vehicle):
+    def __init__(self, reg_number, passenger_capacity):
+        super().__init__(reg_number)
+        self.passenger_capacity = passenger_capacity
+
+    def open_doors(self):
+        print ("Doors are open")
+
+    def close_doors(self):
+        print ("Doors are closed")
+
+    def take_fare(self, fare_amount):
+        print (f"Taken {fare_amount} as fare")
+```
+
+```{pyodide-python}
+class Car(Vehicle):
+    def __init__(self, reg_number, number_of_doors):
+        super().__init__(reg_number)
+        self.number_of_doors = number_of_doors
+
+    def open_boot(self):
+        print ("Boot is open")
+
+    def close_boot(self):
+        print ("Boot is closed")
+```
+
+When we want to instantiate an ambulance, we do it exactly the same as before.
+
+It’s just we’ve saved ourselves having to rewrite some of the definitions that are common to vehicles.
+
+
+```{.callout-note}
+If the child class contains no differences in its constructor from the parent class, then you don’t need to define the constructor at all in the child class.
+
+It will automatically use the parent class constructor on instantiation.
+
+```
