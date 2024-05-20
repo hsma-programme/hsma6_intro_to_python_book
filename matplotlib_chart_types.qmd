@@ -30,7 +30,7 @@ figure_1, ax = plt.subplots()
 ax.set_xlabel("Time")
 ax.set_ylabel("Count")
 
-ax.line(time, count)
+ax.plot(time, count)
 
 figure_1.show()
 ```
