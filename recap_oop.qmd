@@ -1,0 +1,82 @@
+---
+filters:
+  - pyodide
+---
+
+# A recap of object oriented programming
+
+Let’s say we want to write code that defines how an ambulance works.
+
+There will be properties the ambulance has.  Things like :
+
+- The trust it belongs to
+- The registration number
+- Whether a patient is currently on board
+- Whether the siren is currently going off
+
+There will also be things the ambulance does :
+
+- Driving
+- Parking
+- Having patients loaded into it / out of it
+- Switching the siren on and off
+
+In Object Oriented Programming,
+
+- the things it **has** are known as **attributes**
+- the things it **does** are **methods** (which just means they are *functions* that belong to a *class*!)
+
+![](assets/2024-05-20-12-01-11.png)
+
+## An example
+
+The pseudocode (i.e. this won't run in python - but gives you an idea of the structure) shows how we would set up a **class** and what **instances** of that class might look like.
+
+### Class
+
+```
+CLASS : Ambulance
+
+**Attributes**
+name_of_trust : string
+reg_number : string
+patient_on_board : boolean
+siren_on : boolean
+
+**Methods**
+drive (speed : float)
+park (location : string)
+load_patient (patient_name : string)
+unload_patient (patient_name : string)
+turn_on_siren ()
+turn_off_siren ()
+
+```
+
+### Instances
+
+**dans_ambulance**
+```
+name_of_trust = “Chalk NHS Trust”
+reg_number = CH41 LKS
+patient_on_board = False
+siren_on = True
+```
+
+**sammis_ambulance**
+```
+name_of_trust = “Rosser Healthcare”
+reg_number = HS44 MAS
+patient_on_board = True
+siren_on = True
+```
+
+## Constructors
+
+A constructor defines what happens when an object is instantiated from a class (ie created from a blueprint).
+
+The constructor essentially “constructs” the object, specifies the initial values for the attributes, and may even run some methods to start things off.
+
+The constructor is itself a method within the class.
+
+In our example, the constructor might set up the name of the trust and registration number, and specify that the siren is off and there’s no patient loaded at the start.

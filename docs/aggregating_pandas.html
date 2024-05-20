@@ -245,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"dpi":72,"message":"true","out-width":"700px","context":"interactive","fig-cap":"","comment":"","out-height":"","results":"markup","warning":"true","label":"","fig-width":7,"output":"true","fig-height":5,"classes":"","read-only":"false","autorun":""},"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )"},{"id":2,"options":{"dpi":72,"message":"true","out-width":"700px","context":"interactive","fig-cap":"","comment":"","out-height":"","results":"markup","warning":"true","label":"","fig-width":7,"output":"true","fig-height":5,"classes":"","read-only":"false","autorun":""},"code":"df[\"Flu Vaccine\"].value_counts()"},{"id":3,"options":{"dpi":72,"message":"true","out-width":"700px","context":"interactive","fig-cap":"","comment":"","out-height":"","results":"markup","warning":"true","label":"","fig-width":7,"output":"true","fig-height":5,"classes":"","read-only":"false","autorun":""},"code":"df[df[\"County\"] == \"Cornwall\"][\"Flu Vaccine\"].value_counts()"},{"id":4,"options":{"dpi":72,"message":"true","out-width":"700px","context":"interactive","fig-cap":"","comment":"","out-height":"","results":"markup","warning":"true","label":"","fig-width":7,"output":"true","fig-height":5,"classes":"","read-only":"false","autorun":""},"code":"pivot_age_by_county = pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = \"Age\",\n    aggfunc = \"mean\"\n)\n\npivot_age_by_county"},{"id":5,"options":{"dpi":72,"message":"true","out-width":"700px","context":"interactive","fig-cap":"","comment":"","out-height":"","results":"markup","warning":"true","label":"","fig-width":7,"output":"true","fig-height":5,"classes":"","read-only":"false","autorun":""},"code":"pivot_age_by_county.loc[\"Cornwall\"]"},{"id":6,"options":{"dpi":72,"message":"true","out-width":"700px","context":"interactive","fig-cap":"","comment":"","out-height":"","results":"markup","warning":"true","label":"","fig-width":7,"output":"true","fig-height":5,"classes":"","read-only":"false","autorun":""},"code":"pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = [\"Age\", \"Number Admissions\"],\n    aggfunc = \"mean\"\n)"}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )","options":{"read-only":"false","results":"markup","context":"interactive","classes":"","out-height":"","out-width":"700px","warning":"true","message":"true","fig-height":5,"comment":"","dpi":72,"fig-cap":"","output":"true","fig-width":7,"autorun":"","label":""}},{"id":2,"code":"df[\"Flu Vaccine\"].value_counts()","options":{"read-only":"false","results":"markup","context":"interactive","classes":"","out-height":"","out-width":"700px","warning":"true","message":"true","fig-height":5,"comment":"","dpi":72,"fig-cap":"","output":"true","fig-width":7,"autorun":"","label":""}},{"id":3,"code":"df[df[\"County\"] == \"Cornwall\"][\"Flu Vaccine\"].value_counts()","options":{"read-only":"false","results":"markup","context":"interactive","classes":"","out-height":"","out-width":"700px","warning":"true","message":"true","fig-height":5,"comment":"","dpi":72,"fig-cap":"","output":"true","fig-width":7,"autorun":"","label":""}},{"id":4,"code":"pivot_age_by_county = pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = \"Age\",\n    aggfunc = \"mean\"\n)\n\npivot_age_by_county","options":{"read-only":"false","results":"markup","context":"interactive","classes":"","out-height":"","out-width":"700px","warning":"true","message":"true","fig-height":5,"comment":"","dpi":72,"fig-cap":"","output":"true","fig-width":7,"autorun":"","label":""}},{"id":5,"code":"pivot_age_by_county.loc[\"Cornwall\"]","options":{"read-only":"false","results":"markup","context":"interactive","classes":"","out-height":"","out-width":"700px","warning":"true","message":"true","fig-height":5,"comment":"","dpi":72,"fig-cap":"","output":"true","fig-width":7,"autorun":"","label":""}},{"id":6,"code":"pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = [\"Age\", \"Number Admissions\"],\n    aggfunc = \"mean\"\n)","options":{"read-only":"false","results":"markup","context":"interactive","classes":"","out-height":"","out-width":"700px","warning":"true","message":"true","fig-height":5,"comment":"","dpi":72,"fig-cap":"","output":"true","fig-width":7,"autorun":"","label":""}}];
 
 
 </script>
@@ -839,10 +839,80 @@ globalThis._qpyodideGetInstance = function() {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true">
+ <span class="menu-text">Object-Oriented Python</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./recap_oop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro_to_oopp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inheritance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Inheritance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./reusability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Reusability</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true">
+ <span class="menu-text">Graphs with matplotlib</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>

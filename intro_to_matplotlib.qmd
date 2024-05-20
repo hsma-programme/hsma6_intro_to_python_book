@@ -1,0 +1,194 @@
+---
+filters:
+  - pyodide
+---
+
+# An Introduction to Matplotlib
+
+If we’re going to be building models or analysing data in Python, we’re likely going to want to plot graphs.
+
+We could export the data and plot it elsewhere, but Python has very nice libraries for plotting. One of the most widely used is MatPlotLib, which is included in the Anaconda distribution of Python.
+
+MatPlotLib offers powerful plotting features (including animated and interactive visualisations) and professional-looking plots.
+
+:::{.callout-info}
+However, just to slightly confuse things, historically it has had many different ways of doing exactly the same thing.
+
+To minimise confusion, and because it is now the officially recommended approach, here we will teach you the Object Oriented approach to using MatPlotLib.
+:::
+
+To import matplotlib, we use the following :
+
+```{python}
+#| eval: false
+import matplotlib.pyplot as plt
+```
+
+:::{.callout-tip}
+There are two objects in a MatPlotLib graph :
+
+Figure – holds the graph (plotting area)
+
+Axes – An axes object (not to be confused with an axis object) represents a **subplot** within a figure and is normally named ax.
+:::
+
+Most of the time we’ll just have one axes object (that may have multiple lines / points plotted). For figures with multiple subplots (e.g. side by side, 4 in one figure etc), you’d need multiple axes objects (which we normally name axs) - see here for a simple tutorial : https://matplotlib.org/stable/users/explain/axes/axes_intro.html
+
+## Our first plot
+
+Let’s start by plotting a basic line plot.
+
+```{pyodide-python}
+import matplotlib.pyplot as plt # provides matlab-style plotting interface
+
+# Data to plot
+x = [1,2,3,4,5,6,7,8,9,10]
+y = [3,7,2,1,4,8,1,2,3,12]
+
+# Create a figure object and an axes object, and add the axes object as a
+# subplot of the figure object
+figure_1, ax = plt.subplots()
+
+# Set x axis and y axis labels
+ax.set_xlabel('Time')
+ax.set_ylabel('Number of patients')
+
+# Plot our data (x and y here)
+ax.plot(x, y)
+
+# Show the figure
+figure_1.show()
+```
+
+We can easily change the style of the line(s) we’re plotting by adding inputs to the plot method of the axes object.
+
+```{pyodide-python}
+import matplotlib.pyplot as plt # provides matlab-style plotting interface
+
+# Data to plot
+x = [1,2,3,4,5,6,7,8,9,10]
+y = [3,7,2,1,4,8,1,2,3,12]
+
+# Create a figure object and an axes object, and add the axes object as a
+# subplot of the figure object
+figure_1, ax = plt.subplots()
+
+# Set x axis and y axis labels
+ax.set_xlabel('Time')
+ax.set_ylabel('Number of patients')
+
+# Plot our data (x and y here)
+# ------------------------------------------- #
+# ** THIS IS THE ONLY LINE WE'VE CHANGED! **  #
+# ------------------------------------------- #
+ax.plot(x, y, color="red", linestyle="--")
+
+# Show the figure
+figure_1.show()
+```
+
+## Plotting Multiple Lines
+
+Having different line styles is useful when we have multiple lines in the same plot.
+
+It’s easy to add more lines - we just call the plot method of the axes object again.
+
+```{pyodide-python}
+
+import matplotlib.pyplot as plt # provides matlab-style plotting interface
+
+# Data to plot
+time = [1,2,3,4,5,6,7,8,9,10]
+
+patients = [3,7,2,1,4,8,1,2,3,12]
+doctors = [2,0,1,2,1,1,1,2,0,1]
+
+# Create a figure object and an axes object, and add the axes object as a
+# subplot of the figure object
+figure_1, ax = plt.subplots()
+
+# Set x axis and y axis labels
+ax.set_xlabel('Time')
+ax.set_ylabel('Number in Clinic')
+
+# Plot our data, and set each dataset we plot to a different colour / style
+ax.plot(time, patients, color="blue", linestyle="-") # Plot patients over time
+ax.plot(time, doctors, color="red", linestyle=":") # Plot doctors over time
+
+# Show the figure
+figure_1.show()
+
+```
+
+## Adding a legend
+
+Adding a legend is also easy.
+
+We just specify we want one, and add the label for each line when we call the plot method.
+
+```{pyodide-python}
+import matplotlib.pyplot as plt # provides matlab-style plotting interface
+
+# Data to plot
+time = [1,2,3,4,5,6,7,8,9,10]
+
+patients = [3,7,2,1,4,8,1,2,3,12]
+doctors = [2,0,1,2,1,1,1,2,0,1]
+
+# Create a figure object and an axes object, and add the axes object as a
+# subplot of the figure object
+figure_1, ax = plt.subplots()
+
+# Set x axis and y axis labels
+ax.set_xlabel('Time')
+ax.set_ylabel('Number in Clinic')
+
+# Plot our data, and set each dataset we plot to a different colour / style
+
+# ------------------------------------------------------------------- #
+# Notice we've added the argument 'label = "the label we want"' here  #
+# ------------------------------------------------------------------- #
+ax.plot(time, patients, color="blue", linestyle="-", label="Patients")
+ax.plot(time, doctors, color="red", linestyle=":", label="Doctors")
+
+# -------------------------- #
+# Create and set up a legend #
+# -------------------------- #
+ax.legend(loc="upper left")
+
+# Show the figure
+figure_1.show()
+```
+
+
+## Exporting matplotlib charts
+
+```{python}
+#| eval: false
+
+figure_1.savefig("figure_1.pdf")
+```
+
+You can save it as a range of different file types.
+
+```{python}
+#| eval: false
+
+figure_1.savefig("figure_1.png")
+```
+
+And call it whatever you want!
+
+```{python}
+#| eval: false
+
+figure_1.savefig("my_plot.jpeg")
+```
+
+Or put it in a different location, like a subfolder.
+
+```{python}
+#| eval: false
+
+figure_1.savefig("my_saved_plots/my_plot.jpeg")
+```

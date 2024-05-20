@@ -1,0 +1,124 @@
+---
+filters:
+  - pyodide
+---
+
+# Other Plotting Libraries
+
+## Plotnine
+
+If you've come from R and made use of the `ggplot` library, you might like plotnine!
+
+This library makes use of the grammar of graphics to build graphs up in steps.
+
+:::{.callout-tip}
+In your own environment on your local machine, you will need to run
+
+```{python}
+#| eval: false
+pip install plotnine
+```
+:::
+
+```{python}
+from plotnine import ggplot, geom_line, aes
+from plotnine.data import mtcars
+import pandas as pd
+
+data = pd.DataFrame()
+data["time"] = [11,12,23,31,46,52,61,72,83]
+data["count"] = [23,61,65,81,60,15,29,40,42]
+
+
+(
+    ggplot(data, aes("time", "count"))
+    + geom_line()
+)
+```
+
+Plotnine makes it easy to split data over multiple plots by a category.
+
+This example shows a plot of the numbers of miles per gallon achieved by cars with a different number of horsepower, split by flat engines (0) and v-shaped engines (1).
+
+```{python}
+from plotnine.data import mtcars
+
+mtcars.head()
+```
+
+```{python}
+from plotnine import ggplot, geom_point, aes, stat_smooth, facet_wrap
+(
+    ggplot(mtcars, aes("hp", "mpg", color="factor(vs)"))
+    + geom_point()
+    + stat_smooth(method="lm")
+    + facet_wrap("vs")
+)
+```
+
+You can read more about the package, and see more code examples, [here](https://plotnine.org/).
+
+## Plotly
+
+Plotly is a very powerful library for creating interactive graphs.
+
+There are several different ways to create plotly graphs, with the more complex methods giving you more control over the end product.
+
+However, the `plotly.express` module is a great place to start.
+
+```{python}
+import pandas as pd
+import plotly.express as px
+
+data = pd.DataFrame()
+data["time"] = [11,12,23,31,46,52,61,72,83]
+data["count"] = [23,61,65,81,60,15,29,40,42]
+
+data.head()
+```
+
+
+```{python}
+px.line(data, x="time", y="count")
+```
+
+### Bar Chart
+
+```{python}
+data = pd.DataFrame()
+data["hsma_trainers"] = ["Dan", "Sammi", "Amy"]
+data["hours_of_teaching"] = [96, 54, 6]
+
+data
+```
+
+```{python}
+px.bar(data, x="hsma_trainers", y="hours_of_teaching")
+```
+
+### Scatter Plot
+
+```{python}
+
+data = pd.DataFrame()
+data["a"] = [11,52,61,72,83,12,23,31,46]
+data["b"] = [23,61,65,81,60,15,29,40,42]
+
+data
+```
+
+```{python}
+px.scatter(data, x="a", y="b")
+```
+
+## Seaborn
+
+Seaborn builds on matplotlib. It's good at creating many kinds of visualisations, but does things a little differently to matplotlib.
+
+You can take a look at its documentation to see if you like the way it's written.
+
+If you're struggling to make a graph in matplotlib, it's worth checking to see if Seaborn provides this graph type instead!
+
+```{=html}
+<iframe width="980" height="700" src="https://seaborn.pydata.org/tutorial/introduction.html" title="Introduction to Seaborn"></iframe>
+```
