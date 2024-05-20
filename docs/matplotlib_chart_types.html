@@ -245,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [11,12,23,31,46,52,61,72,83,]\ncount = [23,61,65,81,60,15,29,40,42]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Time\")\nax.set_ylabel(\"Count\")\n\nax.line(time, count)\n\nfigure_1.show()","options":{"context":"interactive","out-width":"700px","read-only":"false","fig-width":7,"message":"true","output":"true","fig-cap":"","comment":"","fig-height":5,"classes":"","warning":"true","dpi":72,"results":"markup","autorun":"","out-height":"","label":""}},{"id":2,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nhsma_trainers = [\"Dan\", \"Sammi\", \"Amy\"]\nhours_of_teaching = [96, 54, 6]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Trainer\")\nax.set_ylabel(\"Hours of Teaching on HSMA\")\n\nax.bar(hsma_trainers, hours_of_teaching)\n\nfigure_1.show()","options":{"context":"interactive","out-width":"700px","read-only":"false","fig-width":7,"message":"true","output":"true","fig-cap":"","comment":"","fig-height":5,"classes":"","warning":"true","dpi":72,"results":"markup","autorun":"","out-height":"","label":""}},{"id":3,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\na = [11,52,61,72,83,12,23,31,46]\nb = [23,61,65,81,60,15,29,40,42]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Variable a\")\nax.set_ylabel(\"Variable b\")\n\nax.scatter(a, b)\n\nfigure_1.show()","options":{"context":"interactive","out-width":"700px","read-only":"false","fig-width":7,"message":"true","output":"true","fig-cap":"","comment":"","fig-height":5,"classes":"","warning":"true","dpi":72,"results":"markup","autorun":"","out-height":"","label":""}}];
+globalThis.qpyodideCellDetails = [{"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [11,12,23,31,46,52,61,72,83,]\ncount = [23,61,65,81,60,15,29,40,42]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Time\")\nax.set_ylabel(\"Count\")\n\nax.line(time, count)\n\nfigure_1.show()","options":{"fig-width":7,"context":"interactive","read-only":"false","dpi":72,"message":"true","results":"markup","fig-cap":"","output":"true","comment":"","autorun":"","warning":"true","label":"","out-width":"700px","fig-height":5,"classes":"","out-height":""},"id":1},{"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nhsma_trainers = [\"Dan\", \"Sammi\", \"Amy\"]\nhours_of_teaching = [96, 54, 6]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Trainer\")\nax.set_ylabel(\"Hours of Teaching on HSMA\")\n\nax.bar(hsma_trainers, hours_of_teaching)\n\nfigure_1.show()","options":{"fig-width":7,"context":"interactive","read-only":"false","dpi":72,"message":"true","results":"markup","fig-cap":"","output":"true","comment":"","autorun":"","warning":"true","label":"","out-width":"700px","fig-height":5,"classes":"","out-height":""},"id":2},{"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\na = [11,52,61,72,83,12,23,31,46]\nb = [23,61,65,81,60,15,29,40,42]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Variable a\")\nax.set_ylabel(\"Variable b\")\n\nax.scatter(a, b)\n\nfigure_1.show()","options":{"fig-width":7,"context":"interactive","read-only":"false","dpi":72,"message":"true","results":"markup","fig-cap":"","output":"true","comment":"","autorun":"","warning":"true","label":"","out-width":"700px","fig-height":5,"classes":"","out-height":""},"id":3}];
 
 
 </script>
@@ -965,6 +965,20 @@ globalThis._qpyodideGetInstance = function() {
 
 
 <p>There are lots of types of plots we can do with MatPlotLib.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Due to a bug, you may need to click into the plot space after running the code cell to make the plot appear.</p>
+<p><img src="assets/2024-05-20-18-28-05.png" class="img-fluid"></p>
+</div>
+</div>
 <section id="line-chart" class="level2" data-number="43.1">
 <h2 data-number="43.1" class="anchored" data-anchor-id="line-chart"><span class="header-section-number">43.1</span> Line Chart</h2>
 <div id="qpyodide-insertion-location-1"></div>
