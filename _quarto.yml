@@ -17,6 +17,13 @@ book:
   - part: "Programming Concepts"
     chapters:
     - intro_to_programming_concepts.qmd
+  # - part: "Using VSCode and Anaconda"
+  #   chapters:
+  #   - initial_vscode_setup.qmd
+  #   - running_python_files.qmd
+  #   - running_jupyter_notebooks.qmd
+  #   - creating_environments_anaconda.qmd
+  #   - creating_environments_python.qmd
   - part: "Your First Steps in Python"
     chapters:
     - intro_to_python.qmd

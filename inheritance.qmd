@@ -5,6 +5,8 @@ filters:
 
 # Inheritance
 
+{{< video https://youtu.be/7oJ0zvA-UMM >}}
+
 In Object Oriented Programming, we can also have classes that are based on other classes.  This is known as inheritance.
 
 In our example, we could create a Vehicle class that has attributes and methods applicable to all vehicles, and then create an Ambulance class which inherits this stuff but adds its own ambulance-specific things too.
@@ -20,6 +22,8 @@ You can see how powerful this may be if we have lots of different child classes.
 ![](assets/2024-05-20-12-18-58.png)
 
 ## Inheritance in Python
+
+{{< video https://youtu.be/ncw0TuXUV1U >}}
 
 Inheritance is really easy to do in Python.
 

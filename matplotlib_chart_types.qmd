@@ -4,6 +4,8 @@ filters:
 ---
 
 # Chart types in matplotlib
+{{< video https://youtu.be/9DRZYfNupUw >}}
+
 
 There are lots of types of plots we can do with MatPlotLib.
 

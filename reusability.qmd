@@ -5,6 +5,8 @@ filters:
 
 # Reusability
 
+{{< video https://youtu.be/sPpbyXyRlQI >}}
+
 Let’s look at an example.  Here’s a file I created called Penchord_Wizardry.py.
 
 ```{python}

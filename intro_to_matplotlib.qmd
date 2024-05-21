@@ -5,6 +5,8 @@ filters:
 
 # An Introduction to Matplotlib
 
+{{< video https://youtu.be/h3afayvOnB4 >}}
+
 If we’re going to be building models or analysing data in Python, we’re likely going to want to plot graphs.
 
 We could export the data and plot it elsewhere, but Python has very nice libraries for plotting. One of the most widely used is MatPlotLib, which is included in the Anaconda distribution of Python.
@@ -25,6 +27,9 @@ import matplotlib.pyplot as plt
 ```
 
 :::{.callout-tip}
+
+{{< video https://youtu.be/HIfAXbGJuTc >}}
+
 There are two objects in a MatPlotLib graph :
 
 Figure – holds the graph (plotting area)
@@ -35,6 +40,8 @@ Axes – An axes object (not to be confused with an axis object) represents a **
 Most of the time we’ll just have one axes object (that may have multiple lines / points plotted). For figures with multiple subplots (e.g. side by side, 4 in one figure etc), you’d need multiple axes objects (which we normally name axs) - see here for a simple tutorial : https://matplotlib.org/stable/users/explain/axes/axes_intro.html
 
 ## Our first plot
+
+{{< video https://youtu.be/M-r_1lMECf8 >}}
 
 Let’s start by plotting a basic line plot.
 
@@ -170,6 +177,8 @@ figure_1.show()
 
 
 ## Exporting matplotlib charts
+
+{{< video https://youtu.be/kUjWaQclC8Y >}}
 
 ```{python}
 #| eval: false

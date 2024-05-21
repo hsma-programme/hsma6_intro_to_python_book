@@ -5,6 +5,8 @@ filters:
 
 # A recap of object oriented programming
 
+{{< video https://youtu.be/3yQ_EG3ktJo >}}
+
 Let’s say we want to write code that defines how an ambulance works.
 
 There will be properties the ambulance has.  Things like :

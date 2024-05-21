@@ -7,6 +7,8 @@ filters:
 
 ## The structure of a python class
 
+{{< video https://youtu.be/iR_825xPblE >}}
+
 Let’s look at how we write a Class in Python.
 
 We use the class keyword, followed by whatever we want to call our Class to declare a class.  Note - class names must start with a capital letter.
@@ -70,6 +72,8 @@ def method_2(self):
 
 ## An example python class
 
+{{< video https://youtu.be/bhNmDUKY2E8 >}}
+
 Let’s look at an example to make this a bit more real.
 
 Let’s see how we might translate our ambulance Class into Python.
@@ -107,6 +111,8 @@ class Ambulance:
 ```
 
 ### Instantiating our class (creating an instance of the class)
+
+{{< video https://youtu.be/TaMONDMov84 >}}
 
 We’ve defined our ambulance class now, but, just as with functions, nothing will happen until we use it.
 
