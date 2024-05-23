@@ -225,7 +225,7 @@ numpy==1.25.2
 pandas==2.0.3
 ```
 
-:::{.callout-info}
+:::{.callout-note}
 In the HSMA programme, all of our environment.yml files point towards the pip installer rather than conda.
 
 However, in environment.yml files found elsewhere, you may need to look at what
