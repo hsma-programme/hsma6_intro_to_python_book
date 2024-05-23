@@ -1,0 +1,22 @@
+# Additional Exercises and Resources - Numpy
+
+Practice Numpy: <a target="_blank" href="https://colab.research.google.com/github/Bergam0t/numpy-100-colab/blob/master/100_Numpy_exercises.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+This notebook comes with some additional features allowing you to get a hint or the solution to each exercise without leaving the notebook!
+
+You can query the answer or an hint with `hint(n)` or `answer(n)` for n question number.
+
+So, for example, `hint(15)` would give you a hint for question 15.
+
+:::{.callout-note}
+Don't feel like you have to do every question in this notebook!
+
+Just try a few of the ones rated 1 star out of 3 (the easiest difficulty) and see how you get on, skipping any you are unsure about or you don't think we have covered in this book.
+
+If you are feeling confident, you can put your Googling skills to the test to try to complete more...
+:::
+
+Credit for this notebook goes to [Nicolas P Rougier](https://github.com/rougier).
+His original repository can be found [here](https://github.com/rougier/numpy-100).

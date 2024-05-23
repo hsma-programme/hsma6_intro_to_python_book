@@ -1,0 +1,37 @@
+# Additional Exercises and Resources - Loops, Lists and Dictionaries
+
+## Coding Notebooks
+
+[Dr Pawel Orzechowski](https://github.com/drpawelo) of the University of Edinburgh has made a range of programming exercises freely available.
+
+You can visit his Code Storytelling website [here](http://www.codestorytelling.com/) to watch some additional videos that go with these exercises.
+
+### Loops
+
+Practice loops: <a target="_blank" href="https://colab.research.google.com/github/drpawelo/python-storytelling/blob/main/B10%20Badge%20-%20Repeating%20things%20with%20Loops%20v1.3.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+Get more practice with loops: <a target="_blank" href="https://colab.research.google.com/github/drpawelo/python-storytelling/blob/main/B11%20Badge%20-%20Common%20things%20you%20can%20do%20with%20Loops%20v1.3.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+### Lists, list comprehensions, and dictionaries
+
+Practice lists and dictionaries: <a target="_blank" href="https://colab.research.google.com/github/drpawelo/python-storytelling/blob/main/B07%20Badge%20-%20Collections%20v1.5.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+Practice lists comprehensions: <a target="_blank" href="https://colab.research.google.com/github/drpawelo/python-storytelling/blob/main/B08%20Badge%20-%20List%20Comprehensions%20v1.2.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+
+## Sololearn
+
+There is a course on Sololearn called ['Introduction to Python'](https://www.sololearn.com/en/learn/courses/python-introduction).
+
+This has some interactive code exercises that build up more gradually.
+You do have to sign up for a free account - but you don't need to sign up for the pro trial or a pro account to access 90% of that particular course.
+
+There is also an app version of this site for your phone/tablet so you can fit in practice on the go or whenever you have a spare moment.

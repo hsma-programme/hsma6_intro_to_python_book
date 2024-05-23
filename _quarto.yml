@@ -39,13 +39,13 @@ book:
     - user_input_casting.qmd
     - mathematical_operators.qmd
     - exercise_10_years_forward.qmd
-    # - additional_exercises_resources_intro_python.qmd
+    - additional_exercises_resources_intro_python.qmd
   - part: "Your Next Python Skills"
     chapters:
     - comments.qmd
     - conditional_logic.qmd
     - exercise_conditional_logic_etc.qmd
-    # - additional_exercises_resources_conditional_logic.qmd
+    - additional_exercises_resources_conditional_logic.qmd
   - part: "Loops, Lists and Dictionaries"
     chapters:
     - loops.qmd
@@ -54,7 +54,7 @@ book:
     - list_comprehensions.qmd
     - dictionaries.qmd
     - exercise_lists_dictionaries.qmd
-    # - additional_exercises_resources_loops_lists_dictionaries.qmd
+    - additional_exercises_resources_loops_lists_dictionaries.qmd
   - part: "An Introduction to Libraries"
     chapters:
     - importing_packages.qmd
@@ -69,14 +69,14 @@ book:
     - exception_handling.qmd
     - file_handling.qmd
     - exercise_exception_and_file_handling.qmd
-    # - additional_exercises_resources_functions_files_error_handling.qmd
+    - additional_exercises_resources_functions_files_error_handling.qmd
   - part: "Numpy"
     chapters:
     - intro_to_numpy.qmd
     - using_numpy.qmd
     - numpy_features.qmd
     - exercise_numpy.qmd
-    # - additional_exercises_resources_numpy.qmd
+    - additional_exercises_resources_numpy.qmd
   - part: "Pandas"
     chapters:
     - intro_to_pandas.qmd
@@ -86,7 +86,7 @@ book:
     - aggregating_pandas.qmd
     - sorting_previewing_more_pandas.qmd
     - exercise_pandas.qmd
-    # - additional_exercises_resources_pandas.qmd
+    - additional_exercises_resources_pandas.qmd
   - part: "Object-Oriented Python"
     chapters:
     - recap_oop.qmd
@@ -94,6 +94,7 @@ book:
     # - class_documentation.qmd
     - inheritance.qmd
     - reusability.qmd
+    - additional_exercises_resources_oop.qmd
   - part: "Graphs"
     chapters:
     - intro_to_matplotlib.qmd
@@ -101,7 +102,7 @@ book:
     - other_plotting_libraries.qmd
     # - additional_exercises_resources_graphs.qmd
   - cheatsheets.qmd
-  #- further_reading.qmd
+  - further_reading.qmd
   cover-image: cover.jpeg
   favicon: resources/logos/hsma_logo_transparent_background_large.png
   search: true

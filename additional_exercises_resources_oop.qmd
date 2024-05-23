@@ -1,0 +1,8 @@
+# Additional Exercises and Resources - OOP
+
+Create a notebook or .py file and work through these exercises on
+[Pynative](https://pynative.com/python-object-oriented-programming-oop-exercise/)
+
+Solutions are available on the page.
+
+Some exercises also have hints available.

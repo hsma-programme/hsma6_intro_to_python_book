@@ -1,0 +1,24 @@
+# Additional Exercises and Resources - Pandas
+
+All credit for the following notebooks goes to [Guilherme Samora](https://github.com/guipsamora)
+
+Solutions and extra exercises can be found in [this repostory](https://github.com/guipsamora/pandas_exercises)
+
+Practice Getting Data with Pandas: <a target="_blank" href="https://colab.research.google.com/github/guipsamora/pandas_exercises/blob/master/01_Getting_%26_Knowing_Your_Data/Occupation/Exercises.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+
+Practice Filtering and Sorting data with Pandas: <a target="_blank" href="https://colab.research.google.com/github/guipsamora/pandas_exercises/blob/master/02_Filtering_%26_Sorting/Euro12/Exercises.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+
+Practice Grouping data: <a target="_blank" href="https://colab.research.google.com/github/guipsamora/pandas_exercises/blob/master/03_Grouping/Occupation/Exercise.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+
+Practice Merging Data: <a target="_blank" href="https://colab.research.google.com/github/guipsamora/pandas_exercises/blob/master/05_Merge/Fictitous Names/Exercises.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>

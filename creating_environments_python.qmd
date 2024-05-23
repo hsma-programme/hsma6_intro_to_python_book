@@ -258,3 +258,11 @@ This gives pip more flexibility to install newer versions of the packages that m
 :::{.callout-warning}
 Different versions of packages may remove or significantly change functions that certain code examples rely on, so this should be avoided where possible.
 :::
+
+
+
+## Alternative Approaches
+
+While we have used the venv capabilities built in to VSCode here, it is possible to use venv entirely separately from VSCode.
+
+You could also choose a central folder where you save all of your environments.

@@ -1,0 +1,25 @@
+# Additional Exercises and Resources - Your First Python
+
+## Coding Notebooks
+
+[Dr Pawel Orzechowski](https://github.com/drpawelo) of the University of Edinburgh has made a range of programming exercises freely available.
+
+You can visit his Code Storytelling website [here](http://www.codestorytelling.com/) to watch some additional videos that go with these exercises.
+
+Practice running code, making variables, strings, printing, simple data types, casting, user input, simple mathematical operations: <a target="_blank" href="https://colab.research.google.com/github/drpawelo/python-storytelling/blob/main/B01 Badge - Write code%2C Run code v1.5.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+
+Get more practice with basic code, understanding errors, and variable types: <a target="_blank" href="https://colab.research.google.com/github/drpawelo/python-storytelling/blob/main/B03%20Badge%20-%20Debugging%20%2B%20Variable%20Types%20v1.5.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+## Sololearn
+
+There is a course on Sololearn called ['Introduction to Python'](https://www.sololearn.com/en/learn/courses/python-introduction)
+
+This has some interactive code exercises that build up more gradually.
+You do have to sign up for a free account - but you don't need to sign up for the pro trial or a pro account to access 90% of that particular course.
+
+There is also an app version of this site for your phone/tablet so you can fit in practice on the go or whenever you have a spare moment.
