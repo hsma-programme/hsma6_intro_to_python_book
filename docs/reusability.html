@@ -640,7 +640,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/sPpbyXyRlQI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Let’s look at an example. Here’s a file I created called Penchord_Wizardry.py.</p>
-<div id="4d98c87e" class="cell" data-execution_count="1">
+<div id="eac76636" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Class defining a Penchordian</span></span>
@@ -680,7 +680,7 @@ Tip
 </div>
 </div>
 <p>At the beginning of my new file I’m going to <code>import Penchord_Wizardry</code> to get access to the functions from <code>Penchord_Wizardry.py</code>.</p>
-<div id="f9f8c575" class="cell" data-execution_count="2">
+<div id="4e8875f3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import the entire Penchord_Wizardry module (the Penchordian class and the</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># turn_into_a_wizard function)</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> Penchord_Wizardry</span>
@@ -709,11 +709,11 @@ Tip
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    penchordian.tell_joke(<span class="fl">0.1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Amy H is now writing a Discrete Event Simulation model.
-Amy H attempted a joke.  People loved it!
-Anna is now writing a Discrete Event Simulation model.
-Anna attempted a joke.  It fell flat.
-Amy C is now writing a Discrete Event Simulation model.
-Amy C attempted a joke.  People loved it!</code></pre>
+Amy H attempted a joke.  It fell flat.
+Kerry is now writing a Discrete Event Simulation model.
+Kerry attempted a joke.  People loved it!
+Dan is now writing a Discrete Event Simulation model.
+Dan attempted a joke.  It fell flat.</code></pre>
 </div>
 </div>
 <p>I can also choose just to import the bit(s) of the module I need, rather than the whole thing.</p>
@@ -731,7 +731,7 @@ Tip
 <p>Note that because we’ve imported the specific function by name, we can just then use <code>turn_into_a_wizard</code>.</p>
 </div>
 </div>
-<div id="0337c32a" class="cell" data-execution_count="3">
+<div id="ad2200a6" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># just import the turn_into_a_wizard function</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> Penchord_Wizardry <span class="im">import</span> turn_into_a_wizard</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -753,7 +753,7 @@ Tip
 </div>
 </div>
 <p>In comparison, if we imported the whole module instead, our code would look like this:</p>
-<div id="845ce6b7" class="cell" data-execution_count="4">
+<div id="089d0452" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># just import the turn_into_a_wizard function</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> Penchord_Wizardry</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
