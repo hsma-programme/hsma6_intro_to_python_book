@@ -58,6 +58,25 @@ This means your module subfolder may look something like this.
 ![](assets/2024-05-23-15-29-14.png)
 :::
 
+:::{.callout-note}
+All requirements.txt files can be downloaded from the HSMA Github.
+
+Follow [this link](https://github.com/hsma-programme/hsma_6_environments_non_conda)
+
+![](assets/2024-05-23-16-43-49.png)
+
+Click into the relevant module folder and then the requirements.txt file.
+
+You can then download this file by clicking 'download raw file'.
+
+![](assets/2024-05-23-16-44-37.png)
+
+Then save this file to the relevant module's folder on your computer.
+
+![](assets/2024-05-23-16-45-25.png)
+
+:::
+
 #### Opening a module folder in VSCode
 
 You will want to open up the entire module folder in VSCode for the next step.
