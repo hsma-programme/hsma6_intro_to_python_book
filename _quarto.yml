@@ -26,6 +26,7 @@ book:
      #- running_jupyter_notebooks.qmd
      #- intro_virtual_environments.qmd
      #- creating_environments_anaconda.qmd
+     # - opening_folders_vscode.qmd
     - the_terminal.qmd
     - creating_environments_python.qmd
      # - selecting_environments_vscode.qmd
@@ -95,6 +96,7 @@ book:
     # - class_documentation.qmd
     - inheritance.qmd
     - reusability.qmd
+    - exercise_first_class.qmd
     - additional_exercises_resources_oop.qmd
   - part: "Graphs"
     chapters:

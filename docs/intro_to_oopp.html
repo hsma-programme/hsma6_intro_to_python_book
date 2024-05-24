@@ -279,7 +279,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":1,"code":"\nclass Ambulance:\n    def __init__(self, name_of_trust, reg_number):\n        self.name_of_trust = name_of_trust\n        self.reg_number = reg_number\n\n        self.patient_on_board = False\n        self.siren_on = False\n\n    def drive(self, speed):\n        print (f\"Now driving at {speed}mph\")\n\n    def park(self, location):\n        print (f\"Now parked at {location}\")\n\n    def load_patient(self, patient_name):\n        self.patient_on_board = True\n        print (f\"{patient_name} now on board\")\n\n    def unload_patient(self, patient_name):\n        self.patient_on_board = False\n        print (f\"{patient_name} unloaded\")\n\n    def turn_on_siren(self):\n        self.siren_on = True\n        print (\"Nee nor nee nor nee nor nee nor nee nor\")\n\n    def turn_off_siren(self):\n        self.siren_on = False"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":2,"code":"dans_ambulance = Ambulance(\"Chalk NHS Trust\", \"CH41 LKS\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":3,"code":"dans_ambulance.drive(50)\ndans_ambulance.turn_on_siren()\ndans_ambulance.park(\"Cake shop\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":4,"code":"print(f\"Name of ambulance: {dans_ambulance.name_of_trust}\")\n\nprint(f\"Registration number: {dans_ambulance.reg_number}\")\n\nprint(f\"Is there a patient on board?: {dans_ambulance.patient_on_board}\")\n\nprint(f\"Is the siren on?: {dans_ambulance.siren_on}\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":5,"code":"sammis_ambulance = Ambulance(\"Rosser Healthcare\", \"HS44 MAS\")\n\nsammis_ambulance.drive(70)\nsammis_ambulance.turn_on_siren()\nsammis_ambulance.park(\"M23 Junction 42\")\nsammis_ambulance.load_patient(\"Jack Shepherd\")\nsammis_ambulance.drive(70)\nsammis_ambulance.park(\"Dharma Hospital\")\nsammis_ambulance.turn_off_siren()\nsammis_ambulance.unload_patient(\"Jack Shepherd\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":6,"code":"print(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":7,"code":"sammis_ambulance.load_patient(\"Bob Bobson\")\n\nprint(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":8,"code":"sammis_ambulance.unload_patient(\"Bob Bobson\")\n\nprint(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"}];
+globalThis.qpyodideCellDetails = [{"id":1,"options":{"results":"markup","context":"interactive","fig-width":7,"read-only":"false","out-width":"700px","comment":"","message":"true","fig-cap":"","output":"true","autorun":"","classes":"","warning":"true","out-height":"","label":"","fig-height":5,"dpi":72},"code":"\nclass Ambulance:\n    def __init__(self, name_of_trust, reg_number):\n        self.name_of_trust = name_of_trust\n        self.reg_number = reg_number\n\n        self.patient_on_board = False\n        self.siren_on = False\n\n    def drive(self, speed):\n        print (f\"Now driving at {speed}mph\")\n\n    def park(self, location):\n        print (f\"Now parked at {location}\")\n\n    def load_patient(self, patient_name):\n        self.patient_on_board = True\n        print (f\"{patient_name} now on board\")\n\n    def unload_patient(self, patient_name):\n        self.patient_on_board = False\n        print (f\"{patient_name} unloaded\")\n\n    def turn_on_siren(self):\n        self.siren_on = True\n        print (\"Nee nor nee nor nee nor nee nor nee nor\")\n\n    def turn_off_siren(self):\n        self.siren_on = False"},{"id":2,"options":{"results":"markup","context":"interactive","fig-width":7,"read-only":"false","out-width":"700px","comment":"","message":"true","fig-cap":"","output":"true","autorun":"","classes":"","warning":"true","out-height":"","label":"","fig-height":5,"dpi":72},"code":"dans_ambulance = Ambulance(\"Chalk NHS Trust\", \"CH41 LKS\")"},{"id":3,"options":{"results":"markup","context":"interactive","fig-width":7,"read-only":"false","out-width":"700px","comment":"","message":"true","fig-cap":"","output":"true","autorun":"","classes":"","warning":"true","out-height":"","label":"","fig-height":5,"dpi":72},"code":"dans_ambulance.drive(50)\ndans_ambulance.turn_on_siren()\ndans_ambulance.park(\"Cake shop\")"},{"id":4,"options":{"results":"markup","context":"interactive","fig-width":7,"read-only":"false","out-width":"700px","comment":"","message":"true","fig-cap":"","output":"true","autorun":"","classes":"","warning":"true","out-height":"","label":"","fig-height":5,"dpi":72},"code":"print(f\"Name of ambulance: {dans_ambulance.name_of_trust}\")\n\nprint(f\"Registration number: {dans_ambulance.reg_number}\")\n\nprint(f\"Is there a patient on board?: {dans_ambulance.patient_on_board}\")\n\nprint(f\"Is the siren on?: {dans_ambulance.siren_on}\")"},{"id":5,"options":{"results":"markup","context":"interactive","fig-width":7,"read-only":"false","out-width":"700px","comment":"","message":"true","fig-cap":"","output":"true","autorun":"","classes":"","warning":"true","out-height":"","label":"","fig-height":5,"dpi":72},"code":"sammis_ambulance = Ambulance(\"Rosser Healthcare\", \"HS44 MAS\")\n\nsammis_ambulance.drive(70)\nsammis_ambulance.turn_on_siren()\nsammis_ambulance.park(\"M23 Junction 42\")\nsammis_ambulance.load_patient(\"Jack Shepherd\")\nsammis_ambulance.drive(70)\nsammis_ambulance.park(\"Dharma Hospital\")\nsammis_ambulance.turn_off_siren()\nsammis_ambulance.unload_patient(\"Jack Shepherd\")"},{"id":6,"options":{"results":"markup","context":"interactive","fig-width":7,"read-only":"false","out-width":"700px","comment":"","message":"true","fig-cap":"","output":"true","autorun":"","classes":"","warning":"true","out-height":"","label":"","fig-height":5,"dpi":72},"code":"print(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"},{"id":7,"options":{"results":"markup","context":"interactive","fig-width":7,"read-only":"false","out-width":"700px","comment":"","message":"true","fig-cap":"","output":"true","autorun":"","classes":"","warning":"true","out-height":"","label":"","fig-height":5,"dpi":72},"code":"sammis_ambulance.load_patient(\"Bob Bobson\")\n\nprint(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"},{"id":8,"options":{"results":"markup","context":"interactive","fig-width":7,"read-only":"false","out-width":"700px","comment":"","message":"true","fig-cap":"","output":"true","autorun":"","classes":"","warning":"true","out-height":"","label":"","fig-height":5,"dpi":72},"code":"sammis_ambulance.unload_patient(\"Bob Bobson\")\n\nprint(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"}];
 
 
 </script>
@@ -967,8 +967,14 @@ globalThis._qpyodideGetInstance = function() {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./exercise_first_class.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Exercise: Classes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_oop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - OOP</span></span></a>
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - OOP</span></span></a>
   </div>
 </li>
       </ul>
@@ -985,19 +991,19 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
   </div>
 </li>
       </ul>
@@ -1005,13 +1011,13 @@ globalThis._qpyodideGetInstance = function() {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">56</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>
@@ -1074,7 +1080,7 @@ globalThis._qpyodideGetInstance = function() {
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/iR_825xPblE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Let’s look at how we write a Class in Python.</p>
 <p>We use the class keyword, followed by whatever we want to call our Class to declare a class. Note - class names must start with a capital letter.</p>
-<div id="2d08038b" class="cell" data-execution_count="1">
+<div id="9643e8c4" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MyClass:</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, attribute_1, attribute_2):</span>
@@ -1090,7 +1096,7 @@ globalThis._qpyodideGetInstance = function() {
 <section id="the-constructor" class="level3" data-number="47.1.1">
 <h3 data-number="47.1.1" class="anchored" data-anchor-id="the-constructor"><span class="header-section-number">47.1.1</span> The constructor</h3>
 <p>This is the constructor. It is the method that is automatically called whenever we say we want a new instance of our class (instantiation). The purpose is to set up the object ready to use.</p>
-<div id="ad3a37b3" class="cell" data-execution_count="2">
+<div id="d06e59d6" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, attribute_1, attribute_2):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.attribute_1 <span class="op">=</span> attribute_1</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.attribute_2 <span class="op">=</span> attribute_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1119,7 +1125,7 @@ Me, myself, and Self
 <h3 data-number="47.1.2" class="anchored" data-anchor-id="class-methods"><span class="header-section-number">47.1.2</span> Class methods</h3>
 <p>These are the methods (functions) that the class has. Every class needs at least a constructor, but we can add other things too.</p>
 <p>These work exactly the same as any other functions, except we always pass in self as the first input in the method definition (even if there are no other inputs).</p>
-<div id="f6ebaa07" class="cell" data-execution_count="3">
+<div id="b41ccce9" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> method_1(<span class="va">self</span>):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (<span class="st">"This is method 1!"</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1162,7 +1168,7 @@ Me, myself, and Self
 <div id="qpyodide-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>Now let’s load another patient. To recap, this is what the <code>load_patient</code> method will do…</p>
-<div id="67a4e750" class="cell" data-execution_count="4">
+<div id="a93c232f" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_patient(<span class="va">self</span>, patient_name):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.patient_on_board <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (<span class="ss">f"</span><span class="sc">{</span>patient_name<span class="sc">}</span><span class="ss"> now on board"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1171,7 +1177,7 @@ Me, myself, and Self
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>Now, when we unload this patient, the attribute will change again!</p>
 <p>To recap, this is what the <code>unload_patient</code> method will do…</p>
-<div id="179ccbd5" class="cell" data-execution_count="5">
+<div id="b5398ab9" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> unload_patient(<span class="va">self</span>, patient_name):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.patient_on_board <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (<span class="ss">f"</span><span class="sc">{</span>patient_name<span class="sc">}</span><span class="ss"> unloaded"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

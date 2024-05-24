@@ -10,8 +10,6 @@ Plus there’s always the documentation for the package you’re using (for NumP
 
 You could also use AI (e.g. ChatGPT, perplexity.ai). These can often give good answers - but they will sometimes give you incorrect information, or 'hallucinate' a function of python that doesn't exist! So use them with caution - but they can be a great tool, and you can ask them to break down their answer in more detail if you don't understand something it has done.
 
-## Exercise: Functions
-
 Open this exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/hsma-programme/h6_1f_python_part_2/blob/main/1f_python_programming_part_2/exercise_3.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
@@ -29,5 +27,11 @@ Open exercise solutions in Google Colab: <a target="_blank" href="https://colab.
 
 :::{.callout-tip collapse="true"}
 # Click here to view a video explaining the solution
-Coming Soon!
+
+## Task 1
+{{< video https://youtu.be/lR3fWTgQL_A >}}
+
+## Task 2
+{{< video https://youtu.be/nz1PqtLc_nA >}}
+
 :::

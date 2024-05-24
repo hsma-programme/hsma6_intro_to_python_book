@@ -245,7 +245,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"comment":"","fig-width":7,"context":"interactive","message":"true","output":"true","label":"","read-only":"false","classes":"","fig-cap":"","out-height":"","dpi":72,"fig-height":5,"out-width":"700px","autorun":"","warning":"true","results":"markup"},"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(my_patient_dictionary)"},{"id":2,"options":{"comment":"","fig-width":7,"context":"interactive","message":"true","output":"true","label":"","read-only":"false","classes":"","fig-cap":"","out-height":"","dpi":72,"fig-height":5,"out-width":"700px","autorun":"","warning":"true","results":"markup"},"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(my_patient_dictionary[\"name\"])"},{"id":3,"options":{"comment":"","fig-width":7,"context":"interactive","message":"true","output":"true","label":"","read-only":"false","classes":"","fig-cap":"","out-height":"","dpi":72,"fig-height":5,"out-width":"700px","autorun":"","warning":"true","results":"markup"},"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(f\"The original name in this dictionary is {my_patient_dictionary['name']}\")\n\nmy_patient_dictionary[\"name\"] = \"Dan Chalk\"\nprint(f\"The name in the updated dictionary is {my_patient_dictionary['name']}\")"},{"id":4,"options":{"comment":"","fig-width":7,"context":"interactive","message":"true","output":"true","label":"","read-only":"false","classes":"","fig-cap":"","out-height":"","dpi":72,"fig-height":5,"out-width":"700px","autorun":"","warning":"true","results":"markup"},"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(f\"The original dictionary is {my_patient_dictionary}\")\n\nmy_patient_dictionary[\"month_of_birth\"] = 6\n\nprint(f\"The updated dictionary is {my_patient_dictionary}\")"},{"id":5,"options":{"comment":"","fig-width":7,"context":"interactive","message":"true","output":"true","label":"","read-only":"false","classes":"","fig-cap":"","out-height":"","dpi":72,"fig-height":5,"out-width":"700px","autorun":"","warning":"true","results":"markup"},"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(f\"The original dictionary is {my_patient_dictionary}\")\n\ndel my_patient_dictionary[\"readmission\"]\n\nprint(f\"The updated dictionary is {my_patient_dictionary}\")"}];
+globalThis.qpyodideCellDetails = [{"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(my_patient_dictionary)","options":{"dpi":72,"classes":"","output":"true","fig-width":7,"results":"markup","comment":"","out-height":"","label":"","message":"true","read-only":"false","autorun":"","fig-height":5,"fig-cap":"","context":"interactive","out-width":"700px","warning":"true"},"id":1},{"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(my_patient_dictionary[\"name\"])","options":{"dpi":72,"classes":"","output":"true","fig-width":7,"results":"markup","comment":"","out-height":"","label":"","message":"true","read-only":"false","autorun":"","fig-height":5,"fig-cap":"","context":"interactive","out-width":"700px","warning":"true"},"id":2},{"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(f\"The original name in this dictionary is {my_patient_dictionary['name']}\")\n\nmy_patient_dictionary[\"name\"] = \"Dan Chalk\"\nprint(f\"The name in the updated dictionary is {my_patient_dictionary['name']}\")","options":{"dpi":72,"classes":"","output":"true","fig-width":7,"results":"markup","comment":"","out-height":"","label":"","message":"true","read-only":"false","autorun":"","fig-height":5,"fig-cap":"","context":"interactive","out-width":"700px","warning":"true"},"id":3},{"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(f\"The original dictionary is {my_patient_dictionary}\")\n\nmy_patient_dictionary[\"month_of_birth\"] = 6\n\nprint(f\"The updated dictionary is {my_patient_dictionary}\")","options":{"dpi":72,"classes":"","output":"true","fig-width":7,"results":"markup","comment":"","out-height":"","label":"","message":"true","read-only":"false","autorun":"","fig-height":5,"fig-cap":"","context":"interactive","out-width":"700px","warning":"true"},"id":4},{"code":"my_patient_dictionary = {\"patient_id\": 1674234,\n                         \"name\": \"Bob Smith\",\n                         \"year_of_birth\": 1961,\n                         \"readmission\": True}\n\nprint(f\"The original dictionary is {my_patient_dictionary}\")\n\ndel my_patient_dictionary[\"readmission\"]\n\nprint(f\"The updated dictionary is {my_patient_dictionary}\")","options":{"dpi":72,"classes":"","output":"true","fig-width":7,"results":"markup","comment":"","out-height":"","label":"","message":"true","read-only":"false","autorun":"","fig-height":5,"fig-cap":"","context":"interactive","out-width":"700px","warning":"true"},"id":5}];
 
 
 </script>
@@ -933,8 +933,14 @@ globalThis._qpyodideGetInstance = function() {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./exercise_first_class.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Exercise: Classes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_oop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - OOP</span></span></a>
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - OOP</span></span></a>
   </div>
 </li>
       </ul>
@@ -951,19 +957,19 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
   </div>
 </li>
       </ul>
@@ -971,13 +977,13 @@ globalThis._qpyodideGetInstance = function() {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">56</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>

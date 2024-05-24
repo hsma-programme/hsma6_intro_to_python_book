@@ -34,5 +34,15 @@ titanic_df = pd.read_csv("https://raw.githubusercontent.com/hsma-programme/h6_1f
 
 :::{.callout-tip collapse="true"}
 # Click here to view a video explaining the solution
-Coming Soon!
+
+## Importing csvs into pandas
+NOTE! Part of the exercise - setting the index column was forgotten in this video!
+In the second video, the answer is corrected to include the step of setting the PassengerId column to being the index.
+
+{{< video https://youtu.be/7e17RHMD1vk >}}
+
+## Working with data using pandas
+
+{{< video https://youtu.be/lLxlmFJD-tQ >}}
+
 :::

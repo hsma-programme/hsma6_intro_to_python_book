@@ -1,0 +1,25 @@
+# Exercise: Classes
+
+Open this exercise in Google Colab: <a target="_blank" href="https://colab.research.google.com/github/Bergam0t/additional_hsma_notebooks/blob/main/hsma_6_1g_exercise_1.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+## Sample Answers
+
+:::{.callout-tip collapse="true"}
+# Click here to view the answer
+
+Open exercise solution: <a target="_blank" href="https://github.com/hsma-programme/h6_1g_python_part_3/blob/main/solutions/exercise_1_solution.py">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+:::
+
+## Answer Video
+
+:::{.callout-tip collapse="true"}
+# Click here to view a video explaining the solution
+
+## Task 1
+{{< video https://www.youtube.com/watch?v=p__2EKHGRi4 >}}
+
+:::

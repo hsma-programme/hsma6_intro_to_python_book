@@ -279,7 +279,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"class Vehicle:\n    def __init__(self, reg_number):\n        self.reg_number = reg_number\n\n    def drive(self, speed):\n        print (f\"Now driving at {speed}mph\")\n\n    def park(self, location):\n        print (f\"Now parked at {location}\")","options":{"context":"interactive","comment":"","dpi":72,"read-only":"false","warning":"true","out-height":"","results":"markup","message":"true","fig-cap":"","classes":"","label":"","out-width":"700px","output":"true","fig-width":7,"fig-height":5,"autorun":""},"id":1},{"code":"# We pass Vehicle into Ambulance.  This defines Vehicle as the parent, and\n# Ambulance as the child.\nclass Ambulance(Vehicle):\n    def __init__(self, reg_number):\n        # This calls the constructor of the parent (super), and passes the reg\n        # number across to it\n        super().__init__(reg_number)\n\n        self.patient_on_board = False\n        self.siren_on = False\n\n    # We don't need to redefine drive() and park() (unless we want to change\n    # them for an ambulance) as we inherit them automatically.  So we just\n    # define any methods unique to an ambulance.  (If we do want to change one\n    # of the inherited methods, we just redefine them here, with the same name)\n    def load_patient(self, patient_name):\n        self.patient_on_board = True\n        print (f\"{patient_name} now on board\")\n\n    def unload_patient(self, patient_name):\n        self.patient_on_board = False\n        print (f\"{patient_name} unloaded\")\n\n    def turn_on_siren(self):\n        self.siren_on = True\n        print (\"Nee nor nee nor nee nor nee nor nee nor\")\n\n    def turn_off_siren(self):\n        self.siren_on = False","options":{"context":"interactive","comment":"","dpi":72,"read-only":"false","warning":"true","out-height":"","results":"markup","message":"true","fig-cap":"","classes":"","label":"","out-width":"700px","output":"true","fig-width":7,"fig-height":5,"autorun":""},"id":2},{"code":"class Bus(Vehicle):\n    def __init__(self, reg_number, passenger_capacity):\n        super().__init__(reg_number)\n        self.passenger_capacity = passenger_capacity\n\n    def open_doors(self):\n        print (\"Doors are open\")\n\n    def close_doors(self):\n        print (\"Doors are closed\")\n\n    def take_fare(self, fare_amount):\n        print (f\"Taken {fare_amount} as fare\")","options":{"context":"interactive","comment":"","dpi":72,"read-only":"false","warning":"true","out-height":"","results":"markup","message":"true","fig-cap":"","classes":"","label":"","out-width":"700px","output":"true","fig-width":7,"fig-height":5,"autorun":""},"id":3},{"code":"class Car(Vehicle):\n    def __init__(self, reg_number, number_of_doors):\n        super().__init__(reg_number)\n        self.number_of_doors = number_of_doors\n\n    def open_boot(self):\n        print (\"Boot is open\")\n\n    def close_boot(self):\n        print (\"Boot is closed\")","options":{"context":"interactive","comment":"","dpi":72,"read-only":"false","warning":"true","out-height":"","results":"markup","message":"true","fig-cap":"","classes":"","label":"","out-width":"700px","output":"true","fig-width":7,"fig-height":5,"autorun":""},"id":4}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"class Vehicle:\n    def __init__(self, reg_number):\n        self.reg_number = reg_number\n\n    def drive(self, speed):\n        print (f\"Now driving at {speed}mph\")\n\n    def park(self, location):\n        print (f\"Now parked at {location}\")","options":{"comment":"","label":"","read-only":"false","out-width":"700px","autorun":"","message":"true","fig-cap":"","dpi":72,"output":"true","results":"markup","fig-width":7,"classes":"","fig-height":5,"warning":"true","context":"interactive","out-height":""}},{"id":2,"code":"# We pass Vehicle into Ambulance.  This defines Vehicle as the parent, and\n# Ambulance as the child.\nclass Ambulance(Vehicle):\n    def __init__(self, reg_number):\n        # This calls the constructor of the parent (super), and passes the reg\n        # number across to it\n        super().__init__(reg_number)\n\n        self.patient_on_board = False\n        self.siren_on = False\n\n    # We don't need to redefine drive() and park() (unless we want to change\n    # them for an ambulance) as we inherit them automatically.  So we just\n    # define any methods unique to an ambulance.  (If we do want to change one\n    # of the inherited methods, we just redefine them here, with the same name)\n    def load_patient(self, patient_name):\n        self.patient_on_board = True\n        print (f\"{patient_name} now on board\")\n\n    def unload_patient(self, patient_name):\n        self.patient_on_board = False\n        print (f\"{patient_name} unloaded\")\n\n    def turn_on_siren(self):\n        self.siren_on = True\n        print (\"Nee nor nee nor nee nor nee nor nee nor\")\n\n    def turn_off_siren(self):\n        self.siren_on = False","options":{"comment":"","label":"","read-only":"false","out-width":"700px","autorun":"","message":"true","fig-cap":"","dpi":72,"output":"true","results":"markup","fig-width":7,"classes":"","fig-height":5,"warning":"true","context":"interactive","out-height":""}},{"id":3,"code":"class Bus(Vehicle):\n    def __init__(self, reg_number, passenger_capacity):\n        super().__init__(reg_number)\n        self.passenger_capacity = passenger_capacity\n\n    def open_doors(self):\n        print (\"Doors are open\")\n\n    def close_doors(self):\n        print (\"Doors are closed\")\n\n    def take_fare(self, fare_amount):\n        print (f\"Taken {fare_amount} as fare\")","options":{"comment":"","label":"","read-only":"false","out-width":"700px","autorun":"","message":"true","fig-cap":"","dpi":72,"output":"true","results":"markup","fig-width":7,"classes":"","fig-height":5,"warning":"true","context":"interactive","out-height":""}},{"id":4,"code":"class Car(Vehicle):\n    def __init__(self, reg_number, number_of_doors):\n        super().__init__(reg_number)\n        self.number_of_doors = number_of_doors\n\n    def open_boot(self):\n        print (\"Boot is open\")\n\n    def close_boot(self):\n        print (\"Boot is closed\")","options":{"comment":"","label":"","read-only":"false","out-width":"700px","autorun":"","message":"true","fig-cap":"","dpi":72,"output":"true","results":"markup","fig-width":7,"classes":"","fig-height":5,"warning":"true","context":"interactive","out-height":""}}];
 
 
 </script>
@@ -967,8 +967,14 @@ globalThis._qpyodideGetInstance = function() {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./exercise_first_class.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Exercise: Classes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_oop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - OOP</span></span></a>
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - OOP</span></span></a>
   </div>
 </li>
       </ul>
@@ -985,19 +991,19 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
   </div>
 </li>
       </ul>
@@ -1005,13 +1011,13 @@ globalThis._qpyodideGetInstance = function() {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">56</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>
@@ -1078,7 +1084,7 @@ globalThis._qpyodideGetInstance = function() {
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>Let’s create our first child class.</p>
 <p>The key bits here are as follows:</p>
-<div id="9959c890" class="cell" data-execution_count="1">
+<div id="d38a36f6" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Ambulance(Vehicle):</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, reg_number):</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="co"># This calls the constructor of the parent (super), and passes the reg</span></span>
