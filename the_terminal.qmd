@@ -1,0 +1,3 @@
+# The Terminal in VSCode
+
+{{< video https://youtu.be/OyRjr3GUN64 >}}

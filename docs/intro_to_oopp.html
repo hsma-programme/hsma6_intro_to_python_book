@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HSMA - Programming in Python - 46&nbsp; An Introduction to Object Oriented Python</title>
+<title>HSMA - Programming in Python - 47&nbsp; An Introduction to Object Oriented Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -279,7 +279,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"classes":"","context":"interactive","comment":"","dpi":72,"label":"","fig-width":7,"results":"markup","warning":"true","read-only":"false","out-width":"700px","output":"true","out-height":"","fig-cap":"","message":"true","autorun":"","fig-height":5},"code":"\nclass Ambulance:\n    def __init__(self, name_of_trust, reg_number):\n        self.name_of_trust = name_of_trust\n        self.reg_number = reg_number\n\n        self.patient_on_board = False\n        self.siren_on = False\n\n    def drive(self, speed):\n        print (f\"Now driving at {speed}mph\")\n\n    def park(self, location):\n        print (f\"Now parked at {location}\")\n\n    def load_patient(self, patient_name):\n        self.patient_on_board = True\n        print (f\"{patient_name} now on board\")\n\n    def unload_patient(self, patient_name):\n        self.patient_on_board = False\n        print (f\"{patient_name} unloaded\")\n\n    def turn_on_siren(self):\n        self.siren_on = True\n        print (\"Nee nor nee nor nee nor nee nor nee nor\")\n\n    def turn_off_siren(self):\n        self.siren_on = False"},{"id":2,"options":{"classes":"","context":"interactive","comment":"","dpi":72,"label":"","fig-width":7,"results":"markup","warning":"true","read-only":"false","out-width":"700px","output":"true","out-height":"","fig-cap":"","message":"true","autorun":"","fig-height":5},"code":"dans_ambulance = Ambulance(\"Chalk NHS Trust\", \"CH41 LKS\")"},{"id":3,"options":{"classes":"","context":"interactive","comment":"","dpi":72,"label":"","fig-width":7,"results":"markup","warning":"true","read-only":"false","out-width":"700px","output":"true","out-height":"","fig-cap":"","message":"true","autorun":"","fig-height":5},"code":"dans_ambulance.drive(50)\ndans_ambulance.turn_on_siren()\ndans_ambulance.park(\"Cake shop\")"},{"id":4,"options":{"classes":"","context":"interactive","comment":"","dpi":72,"label":"","fig-width":7,"results":"markup","warning":"true","read-only":"false","out-width":"700px","output":"true","out-height":"","fig-cap":"","message":"true","autorun":"","fig-height":5},"code":"print(f\"Name of ambulance: {dans_ambulance.name_of_trust}\")\n\nprint(f\"Registration number: {dans_ambulance.reg_number}\")\n\nprint(f\"Is there a patient on board?: {dans_ambulance.patient_on_board}\")\n\nprint(f\"Is the siren on?: {dans_ambulance.siren_on}\")"},{"id":5,"options":{"classes":"","context":"interactive","comment":"","dpi":72,"label":"","fig-width":7,"results":"markup","warning":"true","read-only":"false","out-width":"700px","output":"true","out-height":"","fig-cap":"","message":"true","autorun":"","fig-height":5},"code":"sammis_ambulance = Ambulance(\"Rosser Healthcare\", \"HS44 MAS\")\n\nsammis_ambulance.drive(70)\nsammis_ambulance.turn_on_siren()\nsammis_ambulance.park(\"M23 Junction 42\")\nsammis_ambulance.load_patient(\"Jack Shepherd\")\nsammis_ambulance.drive(70)\nsammis_ambulance.park(\"Dharma Hospital\")\nsammis_ambulance.turn_off_siren()\nsammis_ambulance.unload_patient(\"Jack Shepherd\")"},{"id":6,"options":{"classes":"","context":"interactive","comment":"","dpi":72,"label":"","fig-width":7,"results":"markup","warning":"true","read-only":"false","out-width":"700px","output":"true","out-height":"","fig-cap":"","message":"true","autorun":"","fig-height":5},"code":"print(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"},{"id":7,"options":{"classes":"","context":"interactive","comment":"","dpi":72,"label":"","fig-width":7,"results":"markup","warning":"true","read-only":"false","out-width":"700px","output":"true","out-height":"","fig-cap":"","message":"true","autorun":"","fig-height":5},"code":"sammis_ambulance.load_patient(\"Bob Bobson\")\n\nprint(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"},{"id":8,"options":{"classes":"","context":"interactive","comment":"","dpi":72,"label":"","fig-width":7,"results":"markup","warning":"true","read-only":"false","out-width":"700px","output":"true","out-height":"","fig-cap":"","message":"true","autorun":"","fig-height":5},"code":"sammis_ambulance.unload_patient(\"Bob Bobson\")\n\nprint(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"}];
+globalThis.qpyodideCellDetails = [{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":1,"code":"\nclass Ambulance:\n    def __init__(self, name_of_trust, reg_number):\n        self.name_of_trust = name_of_trust\n        self.reg_number = reg_number\n\n        self.patient_on_board = False\n        self.siren_on = False\n\n    def drive(self, speed):\n        print (f\"Now driving at {speed}mph\")\n\n    def park(self, location):\n        print (f\"Now parked at {location}\")\n\n    def load_patient(self, patient_name):\n        self.patient_on_board = True\n        print (f\"{patient_name} now on board\")\n\n    def unload_patient(self, patient_name):\n        self.patient_on_board = False\n        print (f\"{patient_name} unloaded\")\n\n    def turn_on_siren(self):\n        self.siren_on = True\n        print (\"Nee nor nee nor nee nor nee nor nee nor\")\n\n    def turn_off_siren(self):\n        self.siren_on = False"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":2,"code":"dans_ambulance = Ambulance(\"Chalk NHS Trust\", \"CH41 LKS\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":3,"code":"dans_ambulance.drive(50)\ndans_ambulance.turn_on_siren()\ndans_ambulance.park(\"Cake shop\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":4,"code":"print(f\"Name of ambulance: {dans_ambulance.name_of_trust}\")\n\nprint(f\"Registration number: {dans_ambulance.reg_number}\")\n\nprint(f\"Is there a patient on board?: {dans_ambulance.patient_on_board}\")\n\nprint(f\"Is the siren on?: {dans_ambulance.siren_on}\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":5,"code":"sammis_ambulance = Ambulance(\"Rosser Healthcare\", \"HS44 MAS\")\n\nsammis_ambulance.drive(70)\nsammis_ambulance.turn_on_siren()\nsammis_ambulance.park(\"M23 Junction 42\")\nsammis_ambulance.load_patient(\"Jack Shepherd\")\nsammis_ambulance.drive(70)\nsammis_ambulance.park(\"Dharma Hospital\")\nsammis_ambulance.turn_off_siren()\nsammis_ambulance.unload_patient(\"Jack Shepherd\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":6,"code":"print(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":7,"code":"sammis_ambulance.load_patient(\"Bob Bobson\")\n\nprint(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"},{"options":{"read-only":"false","output":"true","out-width":"700px","out-height":"","fig-width":7,"autorun":"","classes":"","context":"interactive","results":"markup","label":"","comment":"","fig-cap":"","warning":"true","dpi":72,"fig-height":5,"message":"true"},"id":8,"code":"sammis_ambulance.unload_patient(\"Bob Bobson\")\n\nprint(f\"Is there a patient on board?: {sammis_ambulance.patient_on_board}\")"}];
 
 
 </script>
@@ -472,7 +472,7 @@ globalThis._qpyodideGetInstance = function() {
 
 
 <link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="HSMA - Programming in Python - 46&nbsp; An Introduction to Object Oriented Python">
+<meta property="og:title" content="HSMA - Programming in Python - 47&nbsp; An Introduction to Object Oriented Python">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="HSMA - Programming in Python">
 </head>
@@ -526,7 +526,7 @@ globalThis._qpyodideGetInstance = function() {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./recap_oop.html">Object-Oriented Python</a></li><li class="breadcrumb-item"><a href="./intro_to_oopp.html"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./recap_oop.html">Object-Oriented Python</a></li><li class="breadcrumb-item"><a href="./intro_to_oopp.html"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -591,8 +591,14 @@ globalThis._qpyodideGetInstance = function() {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./the_terminal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Terminal in VSCode</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./creating_environments_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Creating Environments with Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Creating Environments with Python</span></span></a>
   </div>
 </li>
       </ul>
@@ -609,49 +615,49 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intro to Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Intro to Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./printing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Printing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Printing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./variables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Variables</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fstrings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Variables and Printing together - the fString</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./user_input_casting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">User Input and Changing Variable Types</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">User Input and Changing Variable Types</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mathematical_operators.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mathematical Operators</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Mathematical Operators</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_10_years_forward.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise: 10 years forward</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Exercise: 10 years forward</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_intro_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Your First Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Your First Python</span></span></a>
   </div>
 </li>
       </ul>
@@ -668,25 +674,25 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comments</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Comments</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./conditional_logic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Conditional Logic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Logic</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_conditional_logic_etc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Exercise: Stepping Up</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Exercise: Stepping Up</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_conditional_logic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Conditional Logic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Conditional Logic</span></span></a>
   </div>
 </li>
       </ul>
@@ -703,43 +709,43 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Loops</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Exercise: Loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Exercise: Loops</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lists.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Lists</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Lists</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./list_comprehensions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">List Comprehensions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">List Comprehensions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_lists_dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Exercise: Lists and Dictionaries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exercise: Lists and Dictionaries</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_loops_lists_dictionaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Loops, Lists and Dictionaries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Loops, Lists and Dictionaries</span></span></a>
   </div>
 </li>
       </ul>
@@ -756,25 +762,25 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./importing_packages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Importing Packages</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Importing Packages</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./the_random_library.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">The Random Library</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">The Random Library</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_smarter_dan_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Exercise: Putting it all together</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Exercise: Putting it all together</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_coding_challenge_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Exercise: Coding Challenge 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Exercise: Coding Challenge 1</span></span></a>
   </div>
 </li>
       </ul>
@@ -791,37 +797,37 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Exercise: Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Exercise: Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exception_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Exception (Error) Handling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Exception (Error) Handling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./file_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">File Handling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">File Handling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_exception_and_file_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Exercise: Handling errors and files</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Exercise: Handling errors and files</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_functions_files_error_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Loops, Lists and Dictionaries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Loops, Lists and Dictionaries</span></span></a>
   </div>
 </li>
       </ul>
@@ -838,31 +844,31 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">An Introduction to NumPy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">An Introduction to NumPy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./using_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Using Numpy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Using Numpy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./numpy_features.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Handy Numpy Features</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Exercise: Numpy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Exercise: Numpy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_numpy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Numpy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Numpy</span></span></a>
   </div>
 </li>
       </ul>
@@ -879,49 +885,49 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">An Introduction to Pandas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">An Introduction to Pandas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pandas_indexing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Selecting Rows and Columns in Pandas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Selecting Rows and Columns in Pandas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./extending_joining_dataframes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Extending and Joining Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Extending and Joining Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./removing_data_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Dropping Data from Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Dropping Data from Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./aggregating_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Aggregating Data in Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sorting_previewing_more_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Sorting, previewing and more with dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Exercise: Pandas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Exercise: Pandas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_pandas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Pandas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - Pandas</span></span></a>
   </div>
 </li>
       </ul>
@@ -938,31 +944,31 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./recap_oop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_oopp.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./inheritance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Inheritance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Inheritance</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./reusability.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Reusability</span></span></a>
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">Reusability</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./additional_exercises_resources_oop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - OOP</span></span></a>
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Additional Exercises and Resources - OOP</span></span></a>
   </div>
 </li>
       </ul>
@@ -979,19 +985,19 @@ globalThis._qpyodideGetInstance = function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_to_matplotlib.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">An Introduction to Matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./matplotlib_chart_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Chart types in matplotlib</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_plotting_libraries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Other Plotting Libraries</span></span></a>
   </div>
 </li>
       </ul>
@@ -999,13 +1005,13 @@ globalThis._qpyodideGetInstance = function() {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cheatsheets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Cheatsheets</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./further_reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Further Reading</span></span></a>
   </div>
 </li>
     </ul>
@@ -1018,15 +1024,15 @@ globalThis._qpyodideGetInstance = function() {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-structure-of-a-python-class" id="toc-the-structure-of-a-python-class" class="nav-link active" data-scroll-target="#the-structure-of-a-python-class"><span class="header-section-number">46.1</span> The structure of a python class</a>
+  <li><a href="#the-structure-of-a-python-class" id="toc-the-structure-of-a-python-class" class="nav-link active" data-scroll-target="#the-structure-of-a-python-class"><span class="header-section-number">47.1</span> The structure of a python class</a>
   <ul class="collapse">
-  <li><a href="#the-constructor" id="toc-the-constructor" class="nav-link" data-scroll-target="#the-constructor"><span class="header-section-number">46.1.1</span> The constructor</a></li>
-  <li><a href="#class-methods" id="toc-class-methods" class="nav-link" data-scroll-target="#class-methods"><span class="header-section-number">46.1.2</span> Class methods</a></li>
+  <li><a href="#the-constructor" id="toc-the-constructor" class="nav-link" data-scroll-target="#the-constructor"><span class="header-section-number">47.1.1</span> The constructor</a></li>
+  <li><a href="#class-methods" id="toc-class-methods" class="nav-link" data-scroll-target="#class-methods"><span class="header-section-number">47.1.2</span> Class methods</a></li>
   </ul></li>
-  <li><a href="#an-example-python-class" id="toc-an-example-python-class" class="nav-link" data-scroll-target="#an-example-python-class"><span class="header-section-number">46.2</span> An example python class</a>
+  <li><a href="#an-example-python-class" id="toc-an-example-python-class" class="nav-link" data-scroll-target="#an-example-python-class"><span class="header-section-number">47.2</span> An example python class</a>
   <ul class="collapse">
-  <li><a href="#instantiating-our-class-creating-an-instance-of-the-class" id="toc-instantiating-our-class-creating-an-instance-of-the-class" class="nav-link" data-scroll-target="#instantiating-our-class-creating-an-instance-of-the-class"><span class="header-section-number">46.2.1</span> Instantiating our class (creating an instance of the class)</a></li>
-  <li><a href="#multiple-instances-of-the-same-class" id="toc-multiple-instances-of-the-same-class" class="nav-link" data-scroll-target="#multiple-instances-of-the-same-class"><span class="header-section-number">46.2.2</span> Multiple instances of the same class</a></li>
+  <li><a href="#instantiating-our-class-creating-an-instance-of-the-class" id="toc-instantiating-our-class-creating-an-instance-of-the-class" class="nav-link" data-scroll-target="#instantiating-our-class-creating-an-instance-of-the-class"><span class="header-section-number">47.2.1</span> Instantiating our class (creating an instance of the class)</a></li>
+  <li><a href="#multiple-instances-of-the-same-class" id="toc-multiple-instances-of-the-same-class" class="nav-link" data-scroll-target="#multiple-instances-of-the-same-class"><span class="header-section-number">47.2.2</span> Multiple instances of the same class</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1044,9 +1050,9 @@ globalThis._qpyodideGetInstance = function() {
   });
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./recap_oop.html">Object-Oriented Python</a></li><li class="breadcrumb-item"><a href="./intro_to_oopp.html"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./recap_oop.html">Object-Oriented Python</a></li><li class="breadcrumb-item"><a href="./intro_to_oopp.html"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></h1>
+<h1 class="title"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">An Introduction to Object Oriented Python</span></h1>
 </div>
 
 
@@ -1063,12 +1069,12 @@ globalThis._qpyodideGetInstance = function() {
 </header>
 
 
-<section id="the-structure-of-a-python-class" class="level2" data-number="46.1">
-<h2 data-number="46.1" class="anchored" data-anchor-id="the-structure-of-a-python-class"><span class="header-section-number">46.1</span> The structure of a python class</h2>
+<section id="the-structure-of-a-python-class" class="level2" data-number="47.1">
+<h2 data-number="47.1" class="anchored" data-anchor-id="the-structure-of-a-python-class"><span class="header-section-number">47.1</span> The structure of a python class</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/iR_825xPblE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Let’s look at how we write a Class in Python.</p>
 <p>We use the class keyword, followed by whatever we want to call our Class to declare a class. Note - class names must start with a capital letter.</p>
-<div id="0f89dd0e" class="cell" data-execution_count="1">
+<div id="2d08038b" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MyClass:</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, attribute_1, attribute_2):</span>
@@ -1081,10 +1087,10 @@ globalThis._qpyodideGetInstance = function() {
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> method_2(<span class="va">self</span>):</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span> (<span class="st">"This is method 2!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="the-constructor" class="level3" data-number="46.1.1">
-<h3 data-number="46.1.1" class="anchored" data-anchor-id="the-constructor"><span class="header-section-number">46.1.1</span> The constructor</h3>
+<section id="the-constructor" class="level3" data-number="47.1.1">
+<h3 data-number="47.1.1" class="anchored" data-anchor-id="the-constructor"><span class="header-section-number">47.1.1</span> The constructor</h3>
 <p>This is the constructor. It is the method that is automatically called whenever we say we want a new instance of our class (instantiation). The purpose is to set up the object ready to use.</p>
-<div id="d3e3d3a6" class="cell" data-execution_count="2">
+<div id="ad3a37b3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, attribute_1, attribute_2):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.attribute_1 <span class="op">=</span> attribute_1</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.attribute_2 <span class="op">=</span> attribute_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1109,11 +1115,11 @@ Me, myself, and Self
 </div>
 </div>
 </section>
-<section id="class-methods" class="level3" data-number="46.1.2">
-<h3 data-number="46.1.2" class="anchored" data-anchor-id="class-methods"><span class="header-section-number">46.1.2</span> Class methods</h3>
+<section id="class-methods" class="level3" data-number="47.1.2">
+<h3 data-number="47.1.2" class="anchored" data-anchor-id="class-methods"><span class="header-section-number">47.1.2</span> Class methods</h3>
 <p>These are the methods (functions) that the class has. Every class needs at least a constructor, but we can add other things too.</p>
 <p>These work exactly the same as any other functions, except we always pass in self as the first input in the method definition (even if there are no other inputs).</p>
-<div id="0397ea70" class="cell" data-execution_count="3">
+<div id="f6ebaa07" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> method_1(<span class="va">self</span>):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (<span class="st">"This is method 1!"</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1122,15 +1128,15 @@ Me, myself, and Self
 </div>
 </section>
 </section>
-<section id="an-example-python-class" class="level2" data-number="46.2">
-<h2 data-number="46.2" class="anchored" data-anchor-id="an-example-python-class"><span class="header-section-number">46.2</span> An example python class</h2>
+<section id="an-example-python-class" class="level2" data-number="47.2">
+<h2 data-number="47.2" class="anchored" data-anchor-id="an-example-python-class"><span class="header-section-number">47.2</span> An example python class</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/bhNmDUKY2E8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Let’s look at an example to make this a bit more real.</p>
 <p>Let’s see how we might translate our ambulance Class into Python.</p>
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<section id="instantiating-our-class-creating-an-instance-of-the-class" class="level3" data-number="46.2.1">
-<h3 data-number="46.2.1" class="anchored" data-anchor-id="instantiating-our-class-creating-an-instance-of-the-class"><span class="header-section-number">46.2.1</span> Instantiating our class (creating an instance of the class)</h3>
+<section id="instantiating-our-class-creating-an-instance-of-the-class" class="level3" data-number="47.2.1">
+<h3 data-number="47.2.1" class="anchored" data-anchor-id="instantiating-our-class-creating-an-instance-of-the-class"><span class="header-section-number">47.2.1</span> Instantiating our class (creating an instance of the class)</h3>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/TaMONDMov84" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>We’ve defined our ambulance class now, but, just as with functions, nothing will happen until we use it.</p>
 <p>So let’s create an instance of the class (instantiation), and play with it a bit.</p>
@@ -1144,8 +1150,8 @@ Me, myself, and Self
 <div id="qpyodide-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="multiple-instances-of-the-same-class" class="level3" data-number="46.2.2">
-<h3 data-number="46.2.2" class="anchored" data-anchor-id="multiple-instances-of-the-same-class"><span class="header-section-number">46.2.2</span> Multiple instances of the same class</h3>
+<section id="multiple-instances-of-the-same-class" class="level3" data-number="47.2.2">
+<h3 data-number="47.2.2" class="anchored" data-anchor-id="multiple-instances-of-the-same-class"><span class="header-section-number">47.2.2</span> Multiple instances of the same class</h3>
 <p>A key advantage of OOP is that we only need to define a class once, and then can have multiple instances of it doing different things.</p>
 <p>Whilst Dan’s taken his ambulance off (siren blaring) to the cake shop, maybe Sammi’s actually attending the scene of an incident…</p>
 <div id="qpyodide-insertion-location-5"></div>
@@ -1156,7 +1162,7 @@ Me, myself, and Self
 <div id="qpyodide-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>Now let’s load another patient. To recap, this is what the <code>load_patient</code> method will do…</p>
-<div id="dcab5649" class="cell" data-execution_count="4">
+<div id="67a4e750" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_patient(<span class="va">self</span>, patient_name):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.patient_on_board <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (<span class="ss">f"</span><span class="sc">{</span>patient_name<span class="sc">}</span><span class="ss"> now on board"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1165,7 +1171,7 @@ Me, myself, and Self
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>Now, when we unload this patient, the attribute will change again!</p>
 <p>To recap, this is what the <code>unload_patient</code> method will do…</p>
-<div id="15db7f0a" class="cell" data-execution_count="5">
+<div id="179ccbd5" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> unload_patient(<span class="va">self</span>, patient_name):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.patient_on_board <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (<span class="ss">f"</span><span class="sc">{</span>patient_name<span class="sc">}</span><span class="ss"> unloaded"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2071,12 +2077,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./recap_oop.html" class="pagination-link" aria-label="A recap of object oriented programming">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">A recap of object oriented programming</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./inheritance.html" class="pagination-link" aria-label="Inheritance">
-        <span class="nav-page-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Inheritance</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Inheritance</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -26,6 +26,7 @@ book:
      #- running_jupyter_notebooks.qmd
      #- intro_virtual_environments.qmd
      #- creating_environments_anaconda.qmd
+    - the_terminal.qmd
     - creating_environments_python.qmd
      # - selecting_environments_vscode.qmd
      # - online_coding_environments.qmd
