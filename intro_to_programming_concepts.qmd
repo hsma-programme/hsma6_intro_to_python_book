@@ -1,7 +1,9 @@
 # An Introduction to Programming Concepts
 
-Coming soon!
+If you are following along with this as part of the HSMA course, we'd strongly recommend that you watch the video below as it will help give you a grounding in the concepts underlying programming before you start working with code.
 
-In the meantime, you can refer to this video:
+It's not an absolute necessity for continuing through the rest of this book - but you may still find it useful if you are brand new to programming and have not come across concepts like conditional logic (if/else if/else), loops and object-oriented programming.
+
+Alternatively, if you get a bit stuck on one of the coding sections later on, you may wish to return to this video to have a bit more of an in-depth look at those concepts.
 
 {{< video https://youtu.be/aftDNqfMe1w?t=9104 >}}

@@ -1,0 +1,19 @@
+# An Introduction to Setting Up the Required Software for Python Coding
+
+## As a casual reader
+
+If you are just working through this book to get an introduction to Python, you do not need to install any software.
+
+You can use the interactive code examples and exercises as explained in the [how to use this book](how_to_use_book.qmd) section.
+
+In short, interactive code cells throughout the book allow you to change and run the code samples given.
+
+The Google Colab link buttons then take you to your own personal coding environment for the more involved exercises in the sessions.
+
+## As a member of the HSMA course
+
+If you are working through this book as part of the HSMA programme, it's highly recommended that you follow the install instructions on [this page](https://sites.google.com/nihr.ac.uk/hsma/hsma-resources#h.hgzgw4ix2tu).
+
+Session 1D of the programme, linked below, then goes through the setup and use of VSCode in greater depth. This will help ensure you are in a good place to continue through the later sections of the HSMA programme, which expect you to be using VSCode and some additional pieces of software such as Anaconda and Quarto.
+
+{{< video https://www.youtube.com/watch?v=0jV0jtIE3_U >}}

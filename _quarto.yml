@@ -14,11 +14,12 @@ book:
   chapters:
   - index.qmd
   - how_to_use_book.qmd
-  - part: "Programming Concepts"
+  - part: "An Optional Introduction to Programming Concepts"
     chapters:
     - intro_to_programming_concepts.qmd
-  - part: "Using VSCode, Python and Anaconda"
+  - part: "Setup for the HSMA Course - Using VSCode, Python and Anaconda"
     chapters:
+    - intro_to_setup.qmd
      #- intro_vs_code.qmd
      #- initial_vscode_setup.qmd
      #- intro_anaconda_python.qmd
