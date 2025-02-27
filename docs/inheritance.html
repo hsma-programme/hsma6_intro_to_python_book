@@ -67,6 +67,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./reusability.html" rel="next">
 <link href="./intro_to_oopp.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -105,6 +107,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K336PKH8C3"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K336PKH8C3', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean",
@@ -279,7 +308,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"fig-cap":"","message":"true","autorun":"","output":"true","classes":"","context":"interactive","fig-width":7,"dpi":72,"out-height":"","read-only":"false","results":"markup","fig-height":5,"label":"","warning":"true","out-width":"700px","comment":""},"code":"class Vehicle:\n    def __init__(self, reg_number):\n        self.reg_number = reg_number\n\n    def drive(self, speed):\n        print (f\"Now driving at {speed}mph\")\n\n    def park(self, location):\n        print (f\"Now parked at {location}\")"},{"id":2,"options":{"fig-cap":"","message":"true","autorun":"","output":"true","classes":"","context":"interactive","fig-width":7,"dpi":72,"out-height":"","read-only":"false","results":"markup","fig-height":5,"label":"","warning":"true","out-width":"700px","comment":""},"code":"# We pass Vehicle into Ambulance.  This defines Vehicle as the parent, and\n# Ambulance as the child.\nclass Ambulance(Vehicle):\n    def __init__(self, reg_number):\n        # This calls the constructor of the parent (super), and passes the reg\n        # number across to it\n        super().__init__(reg_number)\n\n        self.patient_on_board = False\n        self.siren_on = False\n\n    # We don't need to redefine drive() and park() (unless we want to change\n    # them for an ambulance) as we inherit them automatically.  So we just\n    # define any methods unique to an ambulance.  (If we do want to change one\n    # of the inherited methods, we just redefine them here, with the same name)\n    def load_patient(self, patient_name):\n        self.patient_on_board = True\n        print (f\"{patient_name} now on board\")\n\n    def unload_patient(self, patient_name):\n        self.patient_on_board = False\n        print (f\"{patient_name} unloaded\")\n\n    def turn_on_siren(self):\n        self.siren_on = True\n        print (\"Nee nor nee nor nee nor nee nor nee nor\")\n\n    def turn_off_siren(self):\n        self.siren_on = False"},{"id":3,"options":{"fig-cap":"","message":"true","autorun":"","output":"true","classes":"","context":"interactive","fig-width":7,"dpi":72,"out-height":"","read-only":"false","results":"markup","fig-height":5,"label":"","warning":"true","out-width":"700px","comment":""},"code":"class Bus(Vehicle):\n    def __init__(self, reg_number, passenger_capacity):\n        super().__init__(reg_number)\n        self.passenger_capacity = passenger_capacity\n\n    def open_doors(self):\n        print (\"Doors are open\")\n\n    def close_doors(self):\n        print (\"Doors are closed\")\n\n    def take_fare(self, fare_amount):\n        print (f\"Taken {fare_amount} as fare\")"},{"id":4,"options":{"fig-cap":"","message":"true","autorun":"","output":"true","classes":"","context":"interactive","fig-width":7,"dpi":72,"out-height":"","read-only":"false","results":"markup","fig-height":5,"label":"","warning":"true","out-width":"700px","comment":""},"code":"class Car(Vehicle):\n    def __init__(self, reg_number, number_of_doors):\n        super().__init__(reg_number)\n        self.number_of_doors = number_of_doors\n\n    def open_boot(self):\n        print (\"Boot is open\")\n\n    def close_boot(self):\n        print (\"Boot is closed\")"}];
+globalThis.qpyodideCellDetails = [{"options":{"message":"true","warning":"true","output":"true","autorun":"","fig-height":5,"results":"markup","comment":"","read-only":"false","context":"interactive","label":"","fig-cap":"","classes":"","dpi":72,"fig-width":7,"out-width":"700px","out-height":""},"id":1,"code":"class Vehicle:\n    def __init__(self, reg_number):\n        self.reg_number = reg_number\n\n    def drive(self, speed):\n        print (f\"Now driving at {speed}mph\")\n\n    def park(self, location):\n        print (f\"Now parked at {location}\")"},{"options":{"message":"true","warning":"true","output":"true","autorun":"","fig-height":5,"results":"markup","comment":"","read-only":"false","context":"interactive","label":"","fig-cap":"","classes":"","dpi":72,"fig-width":7,"out-width":"700px","out-height":""},"id":2,"code":"# We pass Vehicle into Ambulance.  This defines Vehicle as the parent, and\n# Ambulance as the child.\nclass Ambulance(Vehicle):\n    def __init__(self, reg_number):\n        # This calls the constructor of the parent (super), and passes the reg\n        # number across to it\n        super().__init__(reg_number)\n\n        self.patient_on_board = False\n        self.siren_on = False\n\n    # We don't need to redefine drive() and park() (unless we want to change\n    # them for an ambulance) as we inherit them automatically.  So we just\n    # define any methods unique to an ambulance.  (If we do want to change one\n    # of the inherited methods, we just redefine them here, with the same name)\n    def load_patient(self, patient_name):\n        self.patient_on_board = True\n        print (f\"{patient_name} now on board\")\n\n    def unload_patient(self, patient_name):\n        self.patient_on_board = False\n        print (f\"{patient_name} unloaded\")\n\n    def turn_on_siren(self):\n        self.siren_on = True\n        print (\"Nee nor nee nor nee nor nee nor nee nor\")\n\n    def turn_off_siren(self):\n        self.siren_on = False"},{"options":{"message":"true","warning":"true","output":"true","autorun":"","fig-height":5,"results":"markup","comment":"","read-only":"false","context":"interactive","label":"","fig-cap":"","classes":"","dpi":72,"fig-width":7,"out-width":"700px","out-height":""},"id":3,"code":"class Bus(Vehicle):\n    def __init__(self, reg_number, passenger_capacity):\n        super().__init__(reg_number)\n        self.passenger_capacity = passenger_capacity\n\n    def open_doors(self):\n        print (\"Doors are open\")\n\n    def close_doors(self):\n        print (\"Doors are closed\")\n\n    def take_fare(self, fare_amount):\n        print (f\"Taken {fare_amount} as fare\")"},{"options":{"message":"true","warning":"true","output":"true","autorun":"","fig-height":5,"results":"markup","comment":"","read-only":"false","context":"interactive","label":"","fig-cap":"","classes":"","dpi":72,"fig-width":7,"out-width":"700px","out-height":""},"id":4,"code":"class Car(Vehicle):\n    def __init__(self, reg_number, number_of_doors):\n        super().__init__(reg_number)\n        self.number_of_doors = number_of_doors\n\n    def open_boot(self):\n        print (\"Boot is open\")\n\n    def close_boot(self):\n        print (\"Boot is closed\")"}];
 
 
 </script>
@@ -1090,7 +1119,7 @@ globalThis._qpyodideGetInstance = function() {
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>Let’s create our first child class.</p>
 <p>The key bits here are as follows:</p>
-<div id="d292e732" class="cell" data-execution_count="1">
+<div id="786d8b2c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Ambulance(Vehicle):</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, reg_number):</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="co"># This calls the constructor of the parent (super), and passes the reg</span></span>
@@ -2027,6 +2056,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 <script type="module">
 /**
  * Factory function to create different types of cells based on options.

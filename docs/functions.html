@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="./exercise_functions.html" rel="next">
 <link href="./exercise_coding_challenge_1.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,6 +73,33 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K336PKH8C3"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K336PKH8C3', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean",
@@ -245,7 +274,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        print(\"Over 100!\")\n    else:\n        print(\"Under 100!\")","id":1,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}},{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nmultiply_and_check(5, 7)","id":2,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}},{"code":"multiply_and_check(5, 7)\n\nmultiply_and_check(24, 6)\n\nmultiply_and_check(2, 100)","id":3,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}},{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nthe_result = multiply_and_check(5, 7)\n\nprint(the_result)","id":4,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}},{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nprint(multiply_and_check(5, 7))","id":5,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}},{"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        print(\"Over 100!\")\n    else:\n        print(\"Under 100!\")\n\nmy_special_number = 42\nmy_other_special_number = 13\n\nmultiply_and_check(my_special_number, my_other_special_number)\n\nmy_third_special_number = 101\nmultiply_and_check(my_special_number, my_third_special_number)","id":6,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}},{"code":"\ndef say_hello():\n    print(\"Hello! Welcome to your new Chalk computer! We hope you enjoy\")\n    print(\"using the vast 128k of RAM, and 1Mhz processor. For help, just\")\n    print(\"type ?\")\n\nsay_hello()","id":7,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}},{"code":"\nimport random\n\ndef generate_three_unique_random_integers(low, high):\n    number_1 = random.randint(low, high)\n\n    while True:\n        number_2 = random.randint(low, high)\n        if number_2 != number_1:\n            break\n\n    while True:\n        number_3 = random.randint(low, high)\n        if number_3 != number_1 and number_3 != number_2:\n            break\n\n    return number_1, number_2, number_3\n\nnum_1, num_2, num_3 = generate_three_unique_random_integers(1, 10)\n\nprint (num_1)\nprint (num_2)\nprint (num_3)\n","id":8,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}},{"code":"\n\nimport random\n\ndef generate_three_unique_random_integers(low, high):\n    number_1 = random.randint(low, high)\n\n    while True:\n        number_2 = random.randint(low, high)\n        if number_2 != number_1:\n            break\n\n    while True:\n        number_3 = random.randint(low, high)\n        if number_3 != number_1 and number_3 != number_2:\n            break\n\n    returned_list = [number_1, number_2, number_3]\n    return returned_list\n\nreturned_list = generate_three_unique_random_integers(1, 10)\n\nprint(returned_list)\n\nprint (returned_list[0])\nprint (returned_list[1])\nprint (returned_list[2])\n","id":9,"options":{"context":"interactive","comment":"","out-height":"","results":"markup","fig-height":5,"classes":"","warning":"true","out-width":"700px","read-only":"false","output":"true","fig-width":7,"dpi":72,"message":"true","label":"","autorun":"","fig-cap":""}}];
+globalThis.qpyodideCellDetails = [{"id":1,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        print(\"Over 100!\")\n    else:\n        print(\"Under 100!\")"},{"id":2,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nmultiply_and_check(5, 7)"},{"id":3,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"multiply_and_check(5, 7)\n\nmultiply_and_check(24, 6)\n\nmultiply_and_check(2, 100)"},{"id":4,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nthe_result = multiply_and_check(5, 7)\n\nprint(the_result)"},{"id":5,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        return True\n    else:\n        return False\n\nprint(multiply_and_check(5, 7))"},{"id":6,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"def multiply_and_check(number_1, number_2):\n    result = number_1 * number_2\n\n    if result > 100:\n        print(\"Over 100!\")\n    else:\n        print(\"Under 100!\")\n\nmy_special_number = 42\nmy_other_special_number = 13\n\nmultiply_and_check(my_special_number, my_other_special_number)\n\nmy_third_special_number = 101\nmultiply_and_check(my_special_number, my_third_special_number)"},{"id":7,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"\ndef say_hello():\n    print(\"Hello! Welcome to your new Chalk computer! We hope you enjoy\")\n    print(\"using the vast 128k of RAM, and 1Mhz processor. For help, just\")\n    print(\"type ?\")\n\nsay_hello()"},{"id":8,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"\nimport random\n\ndef generate_three_unique_random_integers(low, high):\n    number_1 = random.randint(low, high)\n\n    while True:\n        number_2 = random.randint(low, high)\n        if number_2 != number_1:\n            break\n\n    while True:\n        number_3 = random.randint(low, high)\n        if number_3 != number_1 and number_3 != number_2:\n            break\n\n    return number_1, number_2, number_3\n\nnum_1, num_2, num_3 = generate_three_unique_random_integers(1, 10)\n\nprint (num_1)\nprint (num_2)\nprint (num_3)\n"},{"id":9,"options":{"classes":"","output":"true","label":"","dpi":72,"results":"markup","context":"interactive","fig-width":7,"warning":"true","read-only":"false","out-width":"700px","out-height":"","message":"true","autorun":"","fig-height":5,"comment":"","fig-cap":""},"code":"\n\nimport random\n\ndef generate_three_unique_random_integers(low, high):\n    number_1 = random.randint(low, high)\n\n    while True:\n        number_2 = random.randint(low, high)\n        if number_2 != number_1:\n            break\n\n    while True:\n        number_3 = random.randint(low, high)\n        if number_3 != number_1 and number_3 != number_2:\n            break\n\n    returned_list = [number_1, number_2, number_3]\n    return returned_list\n\nreturned_list = generate_three_unique_random_integers(1, 10)\n\nprint(returned_list)\n\nprint (returned_list[0])\nprint (returned_list[1])\nprint (returned_list[2])\n"}];
 
 
 </script>
@@ -2056,6 +2085,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 <script type="module">
 /**
  * Factory function to create different types of cells based on options.

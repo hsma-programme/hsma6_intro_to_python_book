@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="./other_plotting_libraries.html" rel="next">
 <link href="./intro_to_matplotlib.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,6 +73,33 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K336PKH8C3"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K336PKH8C3', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean",
@@ -245,7 +274,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [11,12,23,31,46,52,61,72,83,]\ncount = [23,61,65,81,60,15,29,40,42]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Time\")\nax.set_ylabel(\"Count\")\n\nax.plot(time, count)\n\nfigure_1.show()","options":{"warning":"true","context":"interactive","results":"markup","output":"true","comment":"","classes":"","fig-cap":"","dpi":72,"read-only":"false","message":"true","autorun":"","fig-width":7,"label":"","out-height":"","fig-height":5,"out-width":"700px"}},{"id":2,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nhsma_trainers = [\"Dan\", \"Sammi\", \"Amy\"]\nhours_of_teaching = [96, 54, 6]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Trainer\")\nax.set_ylabel(\"Hours of Teaching on HSMA\")\n\nax.bar(hsma_trainers, hours_of_teaching)\n\nfigure_1.show()","options":{"warning":"true","context":"interactive","results":"markup","output":"true","comment":"","classes":"","fig-cap":"","dpi":72,"read-only":"false","message":"true","autorun":"","fig-width":7,"label":"","out-height":"","fig-height":5,"out-width":"700px"}},{"id":3,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\na = [11,52,61,72,83,12,23,31,46]\nb = [23,61,65,81,60,15,29,40,42]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Variable a\")\nax.set_ylabel(\"Variable b\")\n\nax.scatter(a, b)\n\nfigure_1.show()","options":{"warning":"true","context":"interactive","results":"markup","output":"true","comment":"","classes":"","fig-cap":"","dpi":72,"read-only":"false","message":"true","autorun":"","fig-width":7,"label":"","out-height":"","fig-height":5,"out-width":"700px"}}];
+globalThis.qpyodideCellDetails = [{"id":1,"options":{"context":"interactive","read-only":"false","out-width":"700px","autorun":"","classes":"","comment":"","message":"true","fig-width":7,"dpi":72,"label":"","fig-height":5,"fig-cap":"","out-height":"","results":"markup","output":"true","warning":"true"},"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [11,12,23,31,46,52,61,72,83,]\ncount = [23,61,65,81,60,15,29,40,42]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Time\")\nax.set_ylabel(\"Count\")\n\nax.plot(time, count)\n\nfigure_1.show()"},{"id":2,"options":{"context":"interactive","read-only":"false","out-width":"700px","autorun":"","classes":"","comment":"","message":"true","fig-width":7,"dpi":72,"label":"","fig-height":5,"fig-cap":"","out-height":"","results":"markup","output":"true","warning":"true"},"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nhsma_trainers = [\"Dan\", \"Sammi\", \"Amy\"]\nhours_of_teaching = [96, 54, 6]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Trainer\")\nax.set_ylabel(\"Hours of Teaching on HSMA\")\n\nax.bar(hsma_trainers, hours_of_teaching)\n\nfigure_1.show()"},{"id":3,"options":{"context":"interactive","read-only":"false","out-width":"700px","autorun":"","classes":"","comment":"","message":"true","fig-width":7,"dpi":72,"label":"","fig-height":5,"fig-cap":"","out-height":"","results":"markup","output":"true","warning":"true"},"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\na = [11,52,61,72,83,12,23,31,46]\nb = [23,61,65,81,60,15,29,40,42]\n\nfigure_1, ax = plt.subplots()\n\nax.set_xlabel(\"Variable a\")\nax.set_ylabel(\"Variable b\")\n\nax.scatter(a, b)\n\nfigure_1.show()"}];
 
 
 </script>
@@ -1984,6 +2013,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 <script type="module">
 /**
  * Factory function to create different types of cells based on options.

@@ -1,0 +1,12 @@
+{
+  "hash": "959685ab3eecf24b0cf062c6fc73e333",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nfilters:\n  - pyodide\neval: false\n---\n\n# User Input and Changing Variable Types\n\n\n{{< video https://youtu.be/Oor-9idAfOE  >}}\n\n\n\n## User Input\n\nSometimes we need to ask the user to input something in order to continue with the program.\n\nIn Python, getting input from the user is easy.  We simply tell Python that we need an input, any message we want to display to the user, and the name of the variable in which we want to store the input.\n\n::: {#3d8f383a .cell execution_count=1}\n``` {.python .cell-code}\nage = input(\"How old are you?: \")\n```\n:::\n\n\n:::{.callout-important}\nHOWEVER, when we read in the inputs from a user, regardless of what it is supposed to represent, they will be read in as a sequence of characters.  In other words, as a string.\n\nClearly, if we’re reading in something intended to be a number (like an age) that’s no good.  So what can we do?\n\nWell, we are wizards…\n:::\n\n## Casting\n\nPython allows us to turn one type of variable into another, like a magic spell.  This is known as casting.  As long as the value stored in the variable can be interpreted as the type we’re trying to cast it into, it’ll work (otherwise we’ll get an error).\n\nTo cast, we simply wrap the variable on which we’re performing the cast in brackets, and tell it the type of variable we want it to become.\n\n::: {#211666b6 .cell execution_count=2}\n``` {.python .cell-code}\nage = input(\"How old are you?: \")\nint(age)\n```\n:::\n\n\nWe could also do that all in one line of code :\n\n::: {#2222d030 .cell execution_count=3}\n``` {.python .cell-code}\nage = int(input(\"How old are you?: \"))\n```\n:::\n\n\nThis will only work if the user inputs something that can be interpreted as an integer.  “42” will work. “Too old” will not work.\n\n:::{.callout-warning}\nNote - you can cast a float value (e.g. 42.6547) as an integer (it’ll just ignore the decimal place and create an int value of 42 - it won’t round).\n\nHOWEVER, this won’t work for strings - you can’t cast “42.6547” as a string into an int.\n:::\n\n",
+    "supporting": [
+      "user_input_casting_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

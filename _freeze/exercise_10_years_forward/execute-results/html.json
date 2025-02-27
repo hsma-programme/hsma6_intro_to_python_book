@@ -1,0 +1,12 @@
+{
+  "hash": "6b1a4808416186e3bb1ab3195029f6a7",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nfilters:\n  - pyodide\neval: false\n---\n\n# Exercise: 10 years forward\n\nUsing what you’ve learned so far, write a program that asks for the user’s name, then asks for their age, then stores the age as an appropriate variable type, and then prints a message that says hello to them, and tells them how old they will be in 10 years time.\n\nIf you don't have VSCode installed, you can create the program in Google Colab - just make sure you click 'file --> save' when you're done to save it to your Google account.\n\n<a target=\"_blank\" href=\"https://colab.research.google.com/gist/Bergam0t/615deffaa14923c89cd6ce1276392d63/hsma-6-1e-exercise-1.ipynb\">\n  <img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/>\n</a>\n\n## Sample Answer\n\n:::{.callout-tip collapse=\"true\"}\n# Click here to view a sample answer\n\n::: {#67a2f4d1 .cell execution_count=1}\n``` {.python .cell-code}\nname = input(\"What is your name?\")\nage = int(input(\"How old are you?\"))\n\nprint (f\"Hello {name}.  In 10 years time, you will be {age+10}\")\n```\n:::\n\n\n:::\n\n## Answer Video\n\n:::{.callout-tip collapse=\"true\"}\n# Click here to view a video explaining the solution\n\n{{< video https://youtu.be/GdNqEM6aUEs >}}\n\n\n:::\n\n",
+    "supporting": [
+      "exercise_10_years_forward_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

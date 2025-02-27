@@ -67,6 +67,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./matplotlib_chart_types.html" rel="next">
 <link href="./additional_exercises_resources_oop.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -105,6 +107,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K336PKH8C3"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K336PKH8C3', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean",
@@ -279,7 +308,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nx = [1,2,3,4,5,6,7,8,9,10]\ny = [3,7,2,1,4,8,1,2,3,12]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number of patients')\n\n# Plot our data (x and y here)\nax.plot(x, y)\n\n# Show the figure\nfigure_1.show()","options":{"message":"true","out-width":"700px","autorun":"","fig-cap":"","read-only":"false","fig-width":7,"comment":"","classes":"","out-height":"","label":"","dpi":72,"output":"true","fig-height":5,"results":"markup","warning":"true","context":"interactive"}},{"id":2,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nx = [1,2,3,4,5,6,7,8,9,10]\ny = [3,7,2,1,4,8,1,2,3,12]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number of patients')\n\n# Plot our data (x and y here)\n# ------------------------------------------- #\n# ** THIS IS THE ONLY LINE WE'VE CHANGED! **  #\n# ------------------------------------------- #\nax.plot(x, y, color=\"red\", linestyle=\"--\")\n\n# Show the figure\nfigure_1.show()","options":{"message":"true","out-width":"700px","autorun":"","fig-cap":"","read-only":"false","fig-width":7,"comment":"","classes":"","out-height":"","label":"","dpi":72,"output":"true","fig-height":5,"results":"markup","warning":"true","context":"interactive"}},{"id":3,"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [1,2,3,4,5,6,7,8,9,10]\n\npatients = [3,7,2,1,4,8,1,2,3,12]\ndoctors = [2,0,1,2,1,1,1,2,0,1]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number in Clinic')\n\n# Plot our data, and set each dataset we plot to a different colour / style\nax.plot(time, patients, color=\"blue\", linestyle=\"-\") # Plot patients over time\nax.plot(time, doctors, color=\"red\", linestyle=\":\") # Plot doctors over time\n\n# Show the figure\nfigure_1.show()","options":{"message":"true","out-width":"700px","autorun":"","fig-cap":"","read-only":"false","fig-width":7,"comment":"","classes":"","out-height":"","label":"","dpi":72,"output":"true","fig-height":5,"results":"markup","warning":"true","context":"interactive"}},{"id":4,"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [1,2,3,4,5,6,7,8,9,10]\n\npatients = [3,7,2,1,4,8,1,2,3,12]\ndoctors = [2,0,1,2,1,1,1,2,0,1]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number in Clinic')\n\n# Plot our data, and set each dataset we plot to a different colour / style\n\n# ------------------------------------------------------------------- #\n# Notice we've added the argument 'label = \"the label we want\"' here  #\n# ------------------------------------------------------------------- #\nax.plot(time, patients, color=\"blue\", linestyle=\"-\", label=\"Patients\")\nax.plot(time, doctors, color=\"red\", linestyle=\":\", label=\"Doctors\")\n\n# -------------------------- #\n# Create and set up a legend #\n# -------------------------- #\nax.legend(loc=\"upper left\")\n\n# Show the figure\nfigure_1.show()","options":{"message":"true","out-width":"700px","autorun":"","fig-cap":"","read-only":"false","fig-width":7,"comment":"","classes":"","out-height":"","label":"","dpi":72,"output":"true","fig-height":5,"results":"markup","warning":"true","context":"interactive"}}];
+globalThis.qpyodideCellDetails = [{"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nx = [1,2,3,4,5,6,7,8,9,10]\ny = [3,7,2,1,4,8,1,2,3,12]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number of patients')\n\n# Plot our data (x and y here)\nax.plot(x, y)\n\n# Show the figure\nfigure_1.show()","options":{"label":"","read-only":"false","results":"markup","autorun":"","message":"true","output":"true","comment":"","fig-height":5,"out-width":"700px","fig-cap":"","fig-width":7,"warning":"true","classes":"","context":"interactive","out-height":"","dpi":72},"id":1},{"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\nx = [1,2,3,4,5,6,7,8,9,10]\ny = [3,7,2,1,4,8,1,2,3,12]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number of patients')\n\n# Plot our data (x and y here)\n# ------------------------------------------- #\n# ** THIS IS THE ONLY LINE WE'VE CHANGED! **  #\n# ------------------------------------------- #\nax.plot(x, y, color=\"red\", linestyle=\"--\")\n\n# Show the figure\nfigure_1.show()","options":{"label":"","read-only":"false","results":"markup","autorun":"","message":"true","output":"true","comment":"","fig-height":5,"out-width":"700px","fig-cap":"","fig-width":7,"warning":"true","classes":"","context":"interactive","out-height":"","dpi":72},"id":2},{"code":"\nimport matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [1,2,3,4,5,6,7,8,9,10]\n\npatients = [3,7,2,1,4,8,1,2,3,12]\ndoctors = [2,0,1,2,1,1,1,2,0,1]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number in Clinic')\n\n# Plot our data, and set each dataset we plot to a different colour / style\nax.plot(time, patients, color=\"blue\", linestyle=\"-\") # Plot patients over time\nax.plot(time, doctors, color=\"red\", linestyle=\":\") # Plot doctors over time\n\n# Show the figure\nfigure_1.show()","options":{"label":"","read-only":"false","results":"markup","autorun":"","message":"true","output":"true","comment":"","fig-height":5,"out-width":"700px","fig-cap":"","fig-width":7,"warning":"true","classes":"","context":"interactive","out-height":"","dpi":72},"id":3},{"code":"import matplotlib.pyplot as plt # provides matlab-style plotting interface\n\n# Data to plot\ntime = [1,2,3,4,5,6,7,8,9,10]\n\npatients = [3,7,2,1,4,8,1,2,3,12]\ndoctors = [2,0,1,2,1,1,1,2,0,1]\n\n# Create a figure object and an axes object, and add the axes object as a\n# subplot of the figure object\nfigure_1, ax = plt.subplots()\n\n# Set x axis and y axis labels\nax.set_xlabel('Time')\nax.set_ylabel('Number in Clinic')\n\n# Plot our data, and set each dataset we plot to a different colour / style\n\n# ------------------------------------------------------------------- #\n# Notice we've added the argument 'label = \"the label we want\"' here  #\n# ------------------------------------------------------------------- #\nax.plot(time, patients, color=\"blue\", linestyle=\"-\", label=\"Patients\")\nax.plot(time, doctors, color=\"red\", linestyle=\":\", label=\"Doctors\")\n\n# -------------------------- #\n# Create and set up a legend #\n# -------------------------- #\nax.legend(loc=\"upper left\")\n\n# Show the figure\nfigure_1.show()","options":{"label":"","read-only":"false","results":"markup","autorun":"","message":"true","output":"true","comment":"","fig-height":5,"out-width":"700px","fig-cap":"","fig-width":7,"warning":"true","classes":"","context":"interactive","out-height":"","dpi":72},"id":4}];
 
 
 </script>
@@ -1084,7 +1113,7 @@ globalThis._qpyodideGetInstance = function() {
 <p>To minimise confusion, and because it is now the officially recommended approach, here we will teach you the Object Oriented approach to using MatPlotLib.</p>
 </div>
 <p>To import matplotlib, we use the following :</p>
-<div id="a6f3111f" class="cell" data-execution_count="1">
+<div id="f91c7d60" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -1145,19 +1174,19 @@ Warning
 <section id="exporting-matplotlib-charts" class="level2" data-number="53.4">
 <h2 data-number="53.4" class="anchored" data-anchor-id="exporting-matplotlib-charts"><span class="header-section-number">53.4</span> Exporting matplotlib charts</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kUjWaQclC8Y" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div id="bed1f3c9" class="cell" data-execution_count="2">
+<div id="ffa9025a" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>figure_1.savefig(<span class="st">"figure_1.pdf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You can save it as a range of different file types.</p>
-<div id="6fa82e53" class="cell" data-execution_count="3">
+<div id="1cac723e" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>figure_1.savefig(<span class="st">"figure_1.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>And call it whatever you want!</p>
-<div id="88d65fbc" class="cell" data-execution_count="4">
+<div id="307dce92" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>figure_1.savefig(<span class="st">"my_plot.jpeg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Or put it in a different location, like a subfolder.</p>
-<div id="325201ee" class="cell" data-execution_count="5">
+<div id="c370ca8c" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>figure_1.savefig(<span class="st">"my_saved_plots/my_plot.jpeg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
@@ -2068,6 +2097,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 <script type="module">
 /**
  * Factory function to create different types of cells based on options.

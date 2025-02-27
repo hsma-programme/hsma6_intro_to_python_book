@@ -9,6 +9,13 @@ website:
 book:
   title: HSMA - Programming in Python
   subtitle: An introduction to writing code in Python - from scratch!
+  google-analytics:
+    tracking-id: "G-K336PKH8C3"
+    anonymize-ip: true
+  cookie-consent:
+    type: express
+    style: simple
+    palette: dark
   author: Dan Chalk and Sammi Rosser
   date: 14/05/2024
   chapters:
@@ -145,6 +152,8 @@ book:
 bibliography: references.bib
 format:
   html:
+    execute:
+      freeze: auto
     css: include/webex.css
     include-after-body: include/webex.js
     theme:

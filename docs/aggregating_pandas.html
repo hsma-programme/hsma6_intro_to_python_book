@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="./sorting_previewing_more_pandas.html" rel="next">
 <link href="./removing_data_pandas.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,6 +73,33 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K336PKH8C3"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K336PKH8C3', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean",
@@ -245,7 +274,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"classes":"","comment":"","out-width":"700px","message":"true","output":"true","label":"","results":"markup","context":"interactive","dpi":72,"read-only":"false","fig-cap":"","out-height":"","warning":"true","autorun":"","fig-height":5,"fig-width":7},"id":1,"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )"},{"options":{"classes":"","comment":"","out-width":"700px","message":"true","output":"true","label":"","results":"markup","context":"interactive","dpi":72,"read-only":"false","fig-cap":"","out-height":"","warning":"true","autorun":"","fig-height":5,"fig-width":7},"id":2,"code":"df[\"Flu Vaccine\"].value_counts()"},{"options":{"classes":"","comment":"","out-width":"700px","message":"true","output":"true","label":"","results":"markup","context":"interactive","dpi":72,"read-only":"false","fig-cap":"","out-height":"","warning":"true","autorun":"","fig-height":5,"fig-width":7},"id":3,"code":"df[df[\"County\"] == \"Cornwall\"][\"Flu Vaccine\"].value_counts()"},{"options":{"classes":"","comment":"","out-width":"700px","message":"true","output":"true","label":"","results":"markup","context":"interactive","dpi":72,"read-only":"false","fig-cap":"","out-height":"","warning":"true","autorun":"","fig-height":5,"fig-width":7},"id":4,"code":"pivot_age_by_county = pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = \"Age\",\n    aggfunc = \"mean\"\n)\n\npivot_age_by_county"},{"options":{"classes":"","comment":"","out-width":"700px","message":"true","output":"true","label":"","results":"markup","context":"interactive","dpi":72,"read-only":"false","fig-cap":"","out-height":"","warning":"true","autorun":"","fig-height":5,"fig-width":7},"id":5,"code":"pivot_age_by_county.loc[\"Cornwall\"]"},{"options":{"classes":"","comment":"","out-width":"700px","message":"true","output":"true","label":"","results":"markup","context":"interactive","dpi":72,"read-only":"false","fig-cap":"","out-height":"","warning":"true","autorun":"","fig-height":5,"fig-width":7},"id":6,"code":"pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = [\"Age\", \"Number Admissions\"],\n    aggfunc = \"mean\"\n)"}];
+globalThis.qpyodideCellDetails = [{"id":1,"options":{"autorun":"","classes":"","read-only":"false","out-height":"","dpi":72,"out-width":"700px","output":"true","results":"markup","fig-width":7,"context":"interactive","message":"true","fig-height":5,"label":"","comment":"","fig-cap":"","warning":"true"},"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )"},{"id":2,"options":{"autorun":"","classes":"","read-only":"false","out-height":"","dpi":72,"out-width":"700px","output":"true","results":"markup","fig-width":7,"context":"interactive","message":"true","fig-height":5,"label":"","comment":"","fig-cap":"","warning":"true"},"code":"df[\"Flu Vaccine\"].value_counts()"},{"id":3,"options":{"autorun":"","classes":"","read-only":"false","out-height":"","dpi":72,"out-width":"700px","output":"true","results":"markup","fig-width":7,"context":"interactive","message":"true","fig-height":5,"label":"","comment":"","fig-cap":"","warning":"true"},"code":"df[df[\"County\"] == \"Cornwall\"][\"Flu Vaccine\"].value_counts()"},{"id":4,"options":{"autorun":"","classes":"","read-only":"false","out-height":"","dpi":72,"out-width":"700px","output":"true","results":"markup","fig-width":7,"context":"interactive","message":"true","fig-height":5,"label":"","comment":"","fig-cap":"","warning":"true"},"code":"pivot_age_by_county = pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = \"Age\",\n    aggfunc = \"mean\"\n)\n\npivot_age_by_county"},{"id":5,"options":{"autorun":"","classes":"","read-only":"false","out-height":"","dpi":72,"out-width":"700px","output":"true","results":"markup","fig-width":7,"context":"interactive","message":"true","fig-height":5,"label":"","comment":"","fig-cap":"","warning":"true"},"code":"pivot_age_by_county.loc[\"Cornwall\"]"},{"id":6,"options":{"autorun":"","classes":"","read-only":"false","out-height":"","dpi":72,"out-width":"700px","output":"true","results":"markup","fig-width":7,"context":"interactive","message":"true","fig-height":5,"label":"","comment":"","fig-cap":"","warning":"true"},"code":"pd.pivot_table(\n    data = df,\n    index = \"County\",\n    values = [\"Age\", \"Number Admissions\"],\n    aggfunc = \"mean\"\n)"}];
 
 
 </script>
@@ -1995,6 +2024,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 <script type="module">
 /**
  * Factory function to create different types of cells based on options.

@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="./removing_data_pandas.html" rel="next">
 <link href="./pandas_indexing.html" rel="prev">
 <link href="./resources/logos/hsma_logo_transparent_background_large.png" rel="icon" type="image/png">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,6 +73,33 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K336PKH8C3"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K336PKH8C3', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean",
@@ -245,7 +274,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )","id":1,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"row_to_add = [\"Dan\", \"Yes\",42,\"Cornwall\"]\ndf.loc[12345] = row_to_add\n\ndf","id":2,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"\nfirst_five_rows = df.head()\n\nfirst_five_rows[\"Admitted\"] = [\"Yes\", \"No\", \"No\", \"Yes\", \"No\"]\n\nfirst_five_rows","id":3,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_a = pd.DataFrame(\n    [{\"Name\": \"Dan\", \"Trainer?\": \"Yes\"},\n     {\"Name\": \"Sammi\", \"Trainer?\": \"Yes\"}]\n)\n\ndf_b = pd.DataFrame(\n    [{\"Name\": \"Mike\", \"Trainer?\": \"No\"},\n     {\"Name\": \"Tom\", \"Trainer?\": \"No\"}]\n)","id":4,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_a","id":5,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_b","id":6,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_c = pd.concat([df_a, df_b], axis=0)\n\ndf_c","id":7,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_c.reset_index()","id":8,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_c.reset_index(drop=True)","id":9,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_d = pd.DataFrame(\n    [{\"Favourite Decade\": \"80s\", \"Favourite Game\": \"Monkey Island 2\"},\n     {\"Favourite Decade\": \"90s\", \"Favourite Game\": \"Outer Wilds\"}]\n)\n\ndf_d","id":10,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_e = pd.concat([df_a, df_d], axis=1)\n\ndf_e","id":11,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_f = pd.DataFrame(\n    [{\"Name\": \"Dan\", \"Favourite Decade\": \"80s\", \"Favourite Game\": \"Monkey Island 2\"},\n     {\"Name\": \"Sammi\", \"Favourite Decade\": \"90s\", \"Favourite Game\": \"Outer Wilds\"},\n     {\"Name\": \"Hugo\", \"Favourite Decade\": \"70s\", \"Favourite Game\": \"Pong\"}]\n)\n\ndf_f","id":12,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"df_a","id":13,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}},{"code":"pd.merge(df_a, df_f, how=\"right\", on=\"Name\")","id":14,"options":{"output":"true","warning":"true","read-only":"false","message":"true","out-height":"","results":"markup","fig-height":5,"classes":"","dpi":72,"label":"","out-width":"700px","autorun":"","fig-cap":"","context":"interactive","fig-width":7,"comment":""}}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"import pandas as pd\ndf = pd.read_csv(\n    \"https://raw.githubusercontent.com/hsma-programme/h6_1f_python_part_2/main/1f_python_programming_part_2/lecture_examples/input_data.csv\",\n    index_col=\"Patient ID\"\n    )","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":2,"code":"row_to_add = [\"Dan\", \"Yes\",42,\"Cornwall\"]\ndf.loc[12345] = row_to_add\n\ndf","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":3,"code":"\nfirst_five_rows = df.head()\n\nfirst_five_rows[\"Admitted\"] = [\"Yes\", \"No\", \"No\", \"Yes\", \"No\"]\n\nfirst_five_rows","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":4,"code":"df_a = pd.DataFrame(\n    [{\"Name\": \"Dan\", \"Trainer?\": \"Yes\"},\n     {\"Name\": \"Sammi\", \"Trainer?\": \"Yes\"}]\n)\n\ndf_b = pd.DataFrame(\n    [{\"Name\": \"Mike\", \"Trainer?\": \"No\"},\n     {\"Name\": \"Tom\", \"Trainer?\": \"No\"}]\n)","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":5,"code":"df_a","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":6,"code":"df_b","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":7,"code":"df_c = pd.concat([df_a, df_b], axis=0)\n\ndf_c","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":8,"code":"df_c.reset_index()","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":9,"code":"df_c.reset_index(drop=True)","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":10,"code":"df_d = pd.DataFrame(\n    [{\"Favourite Decade\": \"80s\", \"Favourite Game\": \"Monkey Island 2\"},\n     {\"Favourite Decade\": \"90s\", \"Favourite Game\": \"Outer Wilds\"}]\n)\n\ndf_d","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":11,"code":"df_e = pd.concat([df_a, df_d], axis=1)\n\ndf_e","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":12,"code":"df_f = pd.DataFrame(\n    [{\"Name\": \"Dan\", \"Favourite Decade\": \"80s\", \"Favourite Game\": \"Monkey Island 2\"},\n     {\"Name\": \"Sammi\", \"Favourite Decade\": \"90s\", \"Favourite Game\": \"Outer Wilds\"},\n     {\"Name\": \"Hugo\", \"Favourite Decade\": \"70s\", \"Favourite Game\": \"Pong\"}]\n)\n\ndf_f","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":13,"code":"df_a","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}},{"id":14,"code":"pd.merge(df_a, df_f, how=\"right\", on=\"Name\")","options":{"read-only":"false","fig-height":5,"comment":"","results":"markup","warning":"true","context":"interactive","message":"true","out-height":"","output":"true","fig-width":7,"classes":"","label":"","fig-cap":"","out-width":"700px","dpi":72,"autorun":""}}];
 
 
 </script>
@@ -2066,6 +2095,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 <script type="module">
 /**
  * Factory function to create different types of cells based on options.
